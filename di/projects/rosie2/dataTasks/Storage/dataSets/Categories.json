@@ -1,0 +1,25 @@
+{
+  "type": "STORAGE",
+  "virtualEntity": false,
+  "inputDataEntities": [
+    {
+      "type": "NONE",
+      "entityId": "categories",
+      "name": "Categories",
+      "projectId": "${rosie2_r2_branch2}",
+      "dataAppId": "landing-cqy9"
+    }
+  ],
+  "dataEntityAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "id": "categories-hsdc",
+  "name": "Categories",
+  "description": "",
+  "version": "1"
+}
