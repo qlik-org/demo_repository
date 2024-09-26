@@ -1,0 +1,19 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "${task.registered_data_storage-osnz.internalSchema}",
+    "taskSchema": "${task.registered_data_storage-osnz.taskSchema}",
+    "databaseName": "${task.registered_data_storage-osnz.databaseName}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": true,
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "${task.registered_data_storage-osnz.warehouseName}",
+      "selectionMethod": "${task.registered_data_storage-osnz.warehouseSelectionMethod}"
+    }
+  }
+}

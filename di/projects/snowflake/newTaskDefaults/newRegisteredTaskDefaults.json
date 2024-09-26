@@ -1,0 +1,16 @@
+{
+  "incrementalSettings": {
+    "registeredType": "NONE",
+    "useBatchTimeAsFromDate": false,
+    "useSameTableAsCt": false,
+    "softDeleteSupport": false,
+    "priorImageSupport": false
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  },
+  "databaseSelection": {
+    "databaseName": "${task-type.registered.databaseName}",
+    "selectionMethod": "${task-type.registered.databaseSelectionMethod}"
+  }
+}
