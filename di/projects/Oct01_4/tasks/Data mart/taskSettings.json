@@ -1,0 +1,19 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.data_mart-x8_g.internalSchema}}",
+    "taskSchema": "{{task.data_mart-x8_g.taskSchema}}",
+    "databaseName": "{{task.data_mart-x8_g.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": false,
+    "historyEnabled": false,
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.data_mart-x8_g.warehouseName}}",
+      "selectionMethod": "{{task.data_mart-x8_g.warehouseSelectionMethod}}"
+    }
+  }
+}
