@@ -1,0 +1,21 @@
+{
+  "sourceConnection": "{{task.onboarding_landing-wocz.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.onboarding_landing-wocz:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.onboarding_landing-wocz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "database": "{{task.onboarding_landing-wocz:null$_$dbo.database}}",
+      "name": "Customers",
+      "schema": "{{task.onboarding_landing-wocz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    }
+  ]
+}

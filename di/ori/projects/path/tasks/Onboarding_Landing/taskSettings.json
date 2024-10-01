@@ -1,0 +1,219 @@
+{
+  "artifactsInfo": {
+    "prefixForAllTablesAndViews": ""
+  },
+  "errorHandling": {
+    "data": {
+      "truncationPolicyErrors": "ERROR_POLICY_IGNORE_RECORD",
+      "policyErrors": "ERROR_POLICY_IGNORE_RECORD",
+      "escalationPolicy": "ERROR_POLICY_SUSPEND_TABLE",
+      "escalationCount": {
+        "isChecked": false,
+        "value": 50
+      }
+    },
+    "tableError": {
+      "policyErrors": "ERROR_POLICY_SUSPEND_TABLE",
+      "escalationPolicy": "ERROR_POLICY_STOP_TASK",
+      "escalationCount": {
+        "isChecked": false,
+        "value": 50
+      }
+    },
+    "environmental": {
+      "interval": 5,
+      "maximumRetryCount": {
+        "isChecked": true,
+        "value": -1
+      },
+      "maximumRetryInterval": {
+        "isChecked": true,
+        "value": 1800
+      }
+    }
+  },
+  "landingDwSettings": {
+    "landingArtifactsLocation": {
+      "dataAssetSchema": "{{task.onboarding_landing-wocz.taskSchema}}",
+      "database": "{{task.onboarding_landing-wocz.databaseName}}"
+    }
+  },
+  "landingStorageSettings": {
+    "folderLocationType": "DATA_ASSET_NAME",
+    "specificFolder": ""
+  },
+  "landingAppRuntime": {
+    "tableLoadInParallel": 5,
+    "changeProcessingInterval": 60,
+    "sourceCdcFetchIntervalMinutes": 60,
+    "initialLoadMode": "useCache",
+    "workloadExecutionEngine": {
+      "engineType": "DEFAULT",
+      "name": "LOAD_WH"
+    }
+  },
+  "maximumLobSize": 8,
+  "includeLobColumns": true,
+  "isReplicateLanding": false,
+  "landingType": "REPLICATE",
+  "proxySettings": {
+    "proxyOdbc": false,
+    "proxyStorage": false
+  },
+  "fileAttributes": {
+    "general": {
+      "maxFileSize": 100,
+      "useCompression": true
+    }
+  },
+  "changeProcessingTuning": {
+    "batchApply": {
+      "applyIntervalMin": 1,
+      "applyIntervalMax": 30,
+      "forceApplyMemory": 500
+    },
+    "batchSplitSize": {
+      "isChecked": false,
+      "value": 10000
+    },
+    "transactionTuning": {
+      "cacheSize": 50,
+      "transactionTotalMemory": {
+        "isChecked": true,
+        "value": 1024
+      },
+      "transactionDuration": {
+        "isChecked": false,
+        "value": 60
+      },
+      "offloadTransactions": {
+        "storeRecoveryData": false,
+        "applyUsingMerge": false,
+        "optimizeInserts": false,
+        "deleteAndInsertOnPkUpdate": true
+      }
+    },
+    "transactionalApply": {
+      "transactionMinChanges": 1000,
+      "batchTransactionsMaxTime": 1
+    }
+  },
+  "applyChangesOptions": {
+    "changeProcessingTuning": {
+      "batchApplyEnabled": true,
+      "applyChangesMultipleTablesConcurrently": false,
+      "maxTables": 5
+    }
+  },
+  "metadata": {
+    "lobHandling": {
+      "lobChunkSize": 64,
+      "optimizeLobSizeEnabled": false,
+      "optimizeLobSize": 1,
+      "optimizeLobSizeHandlingUnit": "KILOBYTE",
+      "lobColumns": "REPLICATE_LIMITED_LOB_COLUMN"
+    },
+    "controlTableSelection": [
+      {
+        "tableId": "APPLY_EXCEPTIONS",
+        "targetName": "attrep_apply_exceptions",
+        "isChecked": false
+      },
+      {
+        "tableId": "REPLICATION_STATUS",
+        "targetName": "attrep_status",
+        "isChecked": false
+      },
+      {
+        "tableId": "SUSPENDED_TABLES",
+        "targetName": "attrep_suspended_tables",
+        "isChecked": false
+      },
+      {
+        "tableId": "REPLICATION_HISTORY",
+        "targetName": "attrep_history",
+        "isChecked": false
+      },
+      {
+        "tableId": "CHANGE_DATA_PARTITIONS",
+        "targetName": "attrep_cdc_partitions",
+        "isChecked": false
+      },
+      {
+        "tableId": "DDL_HISTORY",
+        "targetName": "attrep_ddl_history",
+        "isChecked": false
+      }
+    ]
+  },
+  "characterSubstitution": {
+    "sourceTargetCharacters": [],
+    "validationSet": {
+      "substituteCharacter": 0
+    }
+  },
+  "moreOptions": [],
+  "storeChangesOptions": {
+    "changeTableHeaderColumn": [
+      {
+        "id": "CHANGE_SEQUENCE",
+        "headerColumn": "change_seq",
+        "isChecked": true
+      },
+      {
+        "id": "CHANGE_OPERATION",
+        "headerColumn": "change_oper",
+        "isChecked": true
+      },
+      {
+        "id": "CHANGE_MASK",
+        "headerColumn": "change_mask",
+        "isChecked": true
+      },
+      {
+        "id": "STREAM_POSITION",
+        "headerColumn": "stream_position",
+        "isChecked": false
+      },
+      {
+        "id": "OPERATION",
+        "headerColumn": "operation",
+        "isChecked": true
+      },
+      {
+        "id": "TRANSACTION_ID",
+        "headerColumn": "transaction_id",
+        "isChecked": false
+      },
+      {
+        "id": "TIMESTAMP",
+        "headerColumn": "timestamp",
+        "isChecked": true
+      },
+      {
+        "id": "PARTITION_NAME",
+        "headerColumn": "partition_name",
+        "isChecked": false
+      }
+    ]
+  },
+  "fullLoadOptions": {
+    "afterFullLoadCompleted": {
+      "createKeyOrUniqueIndex": false
+    },
+    "fullLoadOptionsTuning": {
+      "maxTables": 5,
+      "consistencyTimeout": 600,
+      "commitRate": 10000
+    }
+  },
+  "ddlHandlingPolicy": {
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "IGNORE",
+    "renameColumn": "IGNORE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE"
+  }
+}

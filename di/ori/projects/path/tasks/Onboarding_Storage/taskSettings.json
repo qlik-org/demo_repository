@@ -1,0 +1,19 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.onboarding_storage-woc0.internalSchema}}",
+    "taskSchema": "{{task.onboarding_storage-woc0.taskSchema}}",
+    "databaseName": "{{task.onboarding_storage-woc0.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": true,
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.onboarding_storage-woc0.warehouseName}}",
+      "selectionMethod": "{{task.onboarding_storage-woc0.warehouseSelectionMethod}}"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "customers",
+  "name": "Customers",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-wocz"
+    }
+  ]
+}
