@@ -1,0 +1,14 @@
+{
+  "sourceConnection": "{{task.new_onboarding_landing-j6ra.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.new_onboarding_landing-j6ra:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.new_onboarding_landing-j6ra:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    }
+  ]
+}

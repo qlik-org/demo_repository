@@ -1,0 +1,19 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.new_onboarding_storage-j6rb.internalSchema}}",
+    "taskSchema": "{{task.new_onboarding_storage-j6rb.taskSchema}}",
+    "databaseName": "{{task.new_onboarding_storage-j6rb.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": false,
+    "historyEnabled": true,
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.new_onboarding_storage-j6rb.warehouseName}}",
+      "selectionMethod": "{{task.new_onboarding_storage-j6rb.warehouseSelectionMethod}}"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.registered_data_storage-qogg.internalSchema}}",
+    "taskSchema": "{{task.registered_data_storage-qogg.taskSchema}}",
+    "databaseName": "{{task.registered_data_storage-qogg.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": false,
+    "historyEnabled": true,
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.registered_data_storage-qogg.warehouseName}}",
+      "selectionMethod": "{{task.registered_data_storage-qogg.warehouseSelectionMethod}}"
+    }
+  }
+}
