@@ -1,0 +1,44 @@
+{
+  "id": "$replicate$dbo_customercustomerdemo",
+  "name": "dbo_CustomerCustomerDemo",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "CustomerCustomerDemo",
+    "dbSchema": "{{task.source_1_landing-si4h:AutoNorthwind$_$dbo.schema}}",
+    "dbName": "{{task.source_1_landing-si4h:AutoNorthwind$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "CustomerID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "customerid",
+        "flags": "NONE"
+      },
+      {
+        "name": "CustomerTypeID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "customertypeid",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

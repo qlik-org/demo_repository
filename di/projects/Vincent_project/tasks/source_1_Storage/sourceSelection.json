@@ -1,10 +1,10 @@
 {
   "includePatterns": [
     {
-      "sourceProject": "66f279e94d57ee486d7f0c70",
+      "sourceProject": "{{ref(project.current.projectId)}}",
       "sourceTask": "source_1_landing-si4h",
       "tablePattern": "%",
-      "schemaPattern": "%",
+      "schemaPattern": "{{task.source_1_storage-si4i:null$_$%.schemaPattern}}",
       "type": "TABLE"
     }
   ],

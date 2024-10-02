@@ -34,8 +34,8 @@
   },
   "landingDwSettings": {
     "landingArtifactsLocation": {
-      "dataAssetSchema": "source_1_landing",
-      "database": "ORI"
+      "dataAssetSchema": "{{task.source_1_landing-si4h.taskSchema}}",
+      "database": "{{task.source_1_landing-si4h.databaseName}}"
     }
   },
   "landingStorageSettings": {
@@ -206,5 +206,14 @@
       "consistencyTimeout": 600,
       "commitRate": 10000
     }
+  },
+  "ddlHandlingPolicy": {
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "IGNORE",
+    "renameColumn": "IGNORE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE"
   }
 }

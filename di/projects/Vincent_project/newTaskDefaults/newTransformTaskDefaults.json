@@ -4,8 +4,16 @@
   "taskRuntime": {
     "tableUpdateConcurrency": 10,
     "warehouseSelection": {
-      "warehouseName": "LOAD_WH",
-      "selectionMethod": "DEFAULT"
+      "warehouseName": "{{task-type.transform.warehouseName}}",
+      "selectionMethod": "{{task-type.transform.warehouseSelectionMethod}}"
     }
+  },
+  "taskRunSchedule": {
+    "runInterval": 15,
+    "schedulingType": "EVENT_BASED"
+  },
+  "databaseSelection": {
+    "databaseName": "{{task-type.transform.databaseName}}",
+    "selectionMethod": "{{task-type.transform.databaseSelectionMethod}}"
   }
 }

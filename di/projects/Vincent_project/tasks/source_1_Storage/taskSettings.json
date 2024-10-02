@@ -1,8 +1,8 @@
 {
   "artifactsLocation": {
-    "internalSchema": "source_1_storage__internal",
-    "taskSchema": "source_1_storage",
-    "databaseName": "ORI"
+    "internalSchema": "{{task.source_1_storage-si4i.internalSchema}}",
+    "taskSchema": "{{task.source_1_storage-si4i.taskSchema}}",
+    "databaseName": "{{task.source_1_storage-si4i.databaseName}}"
   },
   "artifactsSettings": {
     "liveViewsEnabled": true,
@@ -12,8 +12,8 @@
   "taskRuntime": {
     "tableUpdateConcurrency": 10,
     "warehouseSelection": {
-      "warehouseName": "LOAD_WH",
-      "selectionMethod": "DEFAULT"
+      "warehouseName": "{{task.source_1_storage-si4i.warehouseName}}",
+      "selectionMethod": "{{task.source_1_storage-si4i.warehouseSelectionMethod}}"
     }
   }
 }

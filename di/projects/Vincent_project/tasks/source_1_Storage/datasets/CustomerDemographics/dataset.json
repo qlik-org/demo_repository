@@ -1,0 +1,21 @@
+{
+  "id": "customerdemographics-si4m",
+  "name": "CustomerDemographics",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "customerdemographics",
+      "name": "CustomerDemographics",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "source_1_landing-si4h"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}

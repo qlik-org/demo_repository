@@ -10,7 +10,7 @@
     "publishDatasets": false
   },
   "databaseSelection": {
-    "databaseName": "ORI",
-    "selectionMethod": "DEFAULT"
+    "databaseName": "{{task-type.registered.databaseName}}",
+    "selectionMethod": "{{task-type.registered.databaseSelectionMethod}}"
   }
 }

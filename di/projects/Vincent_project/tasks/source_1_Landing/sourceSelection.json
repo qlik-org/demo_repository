@@ -1,29 +1,26 @@
 {
-  "sourceConnection": "07fa9543-86ce-4024-b5dc-1ffe6c4809df",
+  "sourceConnection": "{{task.source_1_landing-si4h.sourceConnection}}",
   "includePatterns": [],
   "excludePatterns": [],
   "explicitlySelected": [
     {
-      "name": "Categories",
-      "schema": "dbo",
-      "type": "TABLE",
-      "sourceTableId": "$replicate$dbo_categories"
-    },
-    {
+      "database": "{{task.source_1_landing-si4h:null$_$dbo.database}}",
       "name": "CustomerCustomerDemo",
-      "schema": "dbo",
+      "schema": "{{task.source_1_landing-si4h:null$_$dbo.schema}}",
       "type": "TABLE",
       "sourceTableId": "$replicate$dbo_customercustomerdemo"
     },
     {
+      "database": "{{task.source_1_landing-si4h:null$_$dbo.database}}",
       "name": "CustomerDemographics",
-      "schema": "dbo",
+      "schema": "{{task.source_1_landing-si4h:null$_$dbo.schema}}",
       "type": "TABLE",
       "sourceTableId": "$replicate$dbo_customerdemographics"
     },
     {
+      "database": "{{task.source_1_landing-si4h:null$_$dbo.database}}",
       "name": "Customers",
-      "schema": "dbo",
+      "schema": "{{task.source_1_landing-si4h:null$_$dbo.schema}}",
       "type": "TABLE",
       "sourceTableId": "$replicate$dbo_customers"
     }
