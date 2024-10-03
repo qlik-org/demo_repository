@@ -1,0 +1,38 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "KEEP",
+        "columnName": "OrderID",
+        "expression": {
+          "expressionStatement": "$UPPER(${Discount})",
+          "alias": [
+            {
+              "name": "Discount",
+              "value": "discount"
+            }
+          ]
+        },
+        "primaryKeyOrdinal": 1,
+        "ordinal": 1,
+        "nullable": false,
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Order Details",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Order Details",
+  "id": "order_details-qohe",
+  "description": ""
+}
