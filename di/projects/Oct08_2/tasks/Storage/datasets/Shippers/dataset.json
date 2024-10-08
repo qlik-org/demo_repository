@@ -1,0 +1,21 @@
+{
+  "id": "shippers-iysd",
+  "name": "Shippers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "shippers",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-djvo"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
