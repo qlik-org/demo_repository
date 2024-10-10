@@ -1,0 +1,39 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "KEEP",
+        "columnName": "UnitsInStock",
+        "newColumnName": "Units_In_Stock",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "UnitsOnOrder",
+        "newColumnName": "Units_On_Order",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Products",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Products",
+  "id": "products-i8a8",
+  "description": ""
+}
