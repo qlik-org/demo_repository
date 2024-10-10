@@ -1,0 +1,14 @@
+{
+  "id": "suppliers",
+  "name": "Suppliers",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$Oct07_1_land1_suppliers",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-yy8t",
+      "schema": "{{task.registered_data-yy8t:AutoDWH$_$Oct07_1_land1.schema}}"
+    }
+  ]
+}
