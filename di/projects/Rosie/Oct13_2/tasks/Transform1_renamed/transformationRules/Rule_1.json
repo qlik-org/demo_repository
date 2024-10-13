@@ -1,0 +1,36 @@
+{
+  "ordinal": 1,
+  "actionType": "RENAME_TABLE",
+  "scopeType": "NONE",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "%",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "action": {
+    "renameType": "ADD_PREFIX",
+    "value": "b_",
+    "applyColumnDatatype": false,
+    "column": {
+      "ordinal": 0,
+      "nullable": true,
+      "primaryKeyOrdinal": 0,
+      "datatype": {
+        "type": "STRING",
+        "length": 50,
+        "precision": 0,
+        "scale": 0,
+        "originalTypeFull": ""
+      },
+      "flags": "NONE"
+    }
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Rule_1",
+  "id": "rule_1-p5pb",
+  "description": ""
+}
