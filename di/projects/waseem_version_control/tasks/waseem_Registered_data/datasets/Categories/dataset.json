@@ -1,0 +1,14 @@
+{
+  "id": "categories",
+  "name": "Categories",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$dbo_categories",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "waseem_registered_data-xy6d",
+      "schema": "{{task.waseem_registered_data-xy6d:AAA_WASEEM_DB$_$dbo.schema}}"
+    }
+  ]
+}

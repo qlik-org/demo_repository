@@ -3,22 +3,23 @@
     "sourceCdcFetchIntervalMinutes": 60,
     "initialLoadMode": "useCache"
   },
+  "replicateTaskId": "WW01PuN8UaAaqKFu_gSjtDF915_2EKIv",
   "proxySettings": {
     "proxyOdbc": false,
     "proxyStorage": false
   },
   "targetEndpoint": {
     "connectionId": "07b491ed-4451-44ad-9541-66d6347602e0",
-    "schema": "",
+    "schema": "newSchema",
     "controlTableSchema": ""
   },
   "taskSettings": {
     "fullLoad": true,
     "applyChanges": true,
-    "storeChanges": false
+    "storeChanges": true
   },
   "fullLoadOptions": {
-    "tableExistsHandling": "DROP_AND_CREATE",
+    "tableExistsHandling": "TRUNCATE",
     "afterFullLoadCompleted": {
       "stopTask": {
         "beforeCachedChanges": false,
@@ -33,17 +34,17 @@
     }
   },
   "applyChangesOptions": {
-    "sourceTableDropped": true,
+    "sourceTableDropped": false,
     "sourceTableTruncated": true,
-    "sourceTableAltered": true,
+    "sourceTableAltered": false,
     "changeProcessingTuning": {
       "batchApplyEnabled": true,
-      "applyChangesMultipleTablesConcurrently": false,
-      "maxTables": 5
+      "applyChangesMultipleTablesConcurrently": true,
+      "maxTables": 7
     }
   },
   "storeChangesOptions": {
-    "ddlOptions": true,
+    "ddlOptions": false,
     "onUpdate": true,
     "changeTableCreation": "DROP_AND_CREATE",
     "suffix": "__ct",
@@ -98,8 +99,8 @@
   },
   "errorHandling": {
     "applyConflicts": {
-      "insertPolicy": "ERROR_POLICY_LOG_ERROR",
-      "updatePolicy": "ERROR_POLICY_LOG_ERROR",
+      "insertPolicy": "ERROR_POLICY_SUSPEND_TABLE",
+      "updatePolicy": "ERROR_POLICY_SUSPEND_TABLE",
       "deletePolicy": "ERROR_POLICY_IGNORE_RECORD",
       "escalationCount": {
         "isChecked": false,
@@ -109,7 +110,7 @@
     },
     "data": {
       "truncationPolicyErrors": "ERROR_POLICY_LOG_ERROR",
-      "policyErrors": "ERROR_POLICY_LOG_ERROR",
+      "policyErrors": "ERROR_POLICY_SUSPEND_TABLE",
       "escalationPolicy": "ERROR_POLICY_SUSPEND_TABLE",
       "escalationCount": {
         "isChecked": false,
@@ -138,7 +139,7 @@
   },
   "metadata": {
     "lobHandling": {
-      "maximumLobSize": 8,
+      "maximumLobSize": 9,
       "lobChunkSize": 64,
       "optimizeLobSizeEnabled": false,
       "optimizeLobSize": 1,
@@ -184,9 +185,9 @@
   },
   "changeProcessingTuning": {
     "batchApply": {
-      "applyIntervalMin": 1,
-      "applyIntervalMax": 30,
-      "forceApplyMemory": 500
+      "applyIntervalMin": 2,
+      "applyIntervalMax": 33,
+      "forceApplyMemory": 505
     },
     "batchSplitSize": {
       "isChecked": false,
@@ -196,11 +197,11 @@
       "cacheSize": 50,
       "transactionTotalMemory": {
         "isChecked": true,
-        "value": 1024
+        "value": 1038
       },
       "transactionDuration": {
-        "isChecked": false,
-        "value": 60
+        "isChecked": true,
+        "value": 66
       },
       "offloadTransactions": {
         "storeRecoveryData": false,
@@ -223,12 +224,12 @@
   "moreOptions": [],
   "fileAttributes": {
     "general": {
-      "maxFileSize": 100,
+      "maxFileSize": 111,
       "useCompression": true
     }
   },
   "catalogSettings": {
-    "publish": false,
+    "publish": true,
     "tags": []
   },
   "ddlHandlingPolicy": {

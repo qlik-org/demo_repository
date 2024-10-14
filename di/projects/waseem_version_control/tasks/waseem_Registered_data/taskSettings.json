@@ -1,0 +1,21 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.waseem_registered_data-xy6d.internalSchema}}",
+    "taskSchema": "{{task.waseem_registered_data-xy6d.taskSchema}}",
+    "databaseName": "{{task.waseem_registered_data-xy6d.databaseName}}"
+  },
+  "incrementalSettings": {
+    "registeredType": "NONE",
+    "useBatchTimeAsFromDate": false,
+    "useSameTableAsCt": false,
+    "softDeleteSupport": false,
+    "priorImageSupport": false
+  },
+  "artifactsSettings": {
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  }
+}
