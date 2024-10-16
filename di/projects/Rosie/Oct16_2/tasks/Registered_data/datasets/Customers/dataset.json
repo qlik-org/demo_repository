@@ -1,0 +1,15 @@
+{
+  "id": "customers",
+  "name": "Customers",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$sep16_landing_customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-xych",
+      "schema": "{{task.registered_data-xych:ROSIE$_$sep16_landing.schema}}",
+      "database": "{{task.registered_data-xych:ROSIE$_$sep16_landing.database}}"
+    }
+  ]
+}

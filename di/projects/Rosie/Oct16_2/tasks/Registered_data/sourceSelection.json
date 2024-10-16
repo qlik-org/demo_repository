@@ -3,32 +3,39 @@
   "excludePatterns": [],
   "explicitlySelected": [
     {
-      "database": "{{task.registered_data-xych:ROSIE$_$Oct16_2_onboarding_landing.database}}",
-      "name": "Categories",
-      "schema": "{{task.registered_data-xych:ROSIE$_$Oct16_2_onboarding_landing.schema}}",
+      "database": "{{task.registered_data-xych:ROSIE$_$sep16_landing.database}}",
+      "name": "Customers",
+      "schema": "{{task.registered_data-xych:ROSIE$_$sep16_landing.schema}}",
       "type": "TABLE",
-      "sourceTableId": "$registered_data$Oct16_2_onboarding_landing_categories"
+      "sourceTableId": "$registered_data$sep16_landing_customers"
     },
     {
-      "database": "{{task.registered_data-xych:ROSIE$_$Oct16_2_onboarding_landing.database}}",
+      "database": "{{task.registered_data-xych:ROSIE$_$sep16_landing.database}}",
+      "name": "Employees",
+      "schema": "{{task.registered_data-xych:ROSIE$_$sep16_landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$sep16_landing_employees"
+    },
+    {
+      "database": "{{task.registered_data-xych:ROSIE$_$sep16_landing.database}}",
       "name": "Order Details",
-      "schema": "{{task.registered_data-xych:ROSIE$_$Oct16_2_onboarding_landing.schema}}",
+      "schema": "{{task.registered_data-xych:ROSIE$_$sep16_landing.schema}}",
       "type": "TABLE",
-      "sourceTableId": "$registered_data$Oct16_2_onboarding_landing_order_details"
+      "sourceTableId": "$registered_data$sep16_landing_order_details"
     },
     {
-      "database": "{{task.registered_data-xych:ROSIE$_$Oct16_2_onboarding_landing.database}}",
-      "name": "Products",
-      "schema": "{{task.registered_data-xych:ROSIE$_$Oct16_2_onboarding_landing.schema}}",
+      "database": "{{task.registered_data-xych:ROSIE$_$sep16_landing.database}}",
+      "name": "Orders",
+      "schema": "{{task.registered_data-xych:ROSIE$_$sep16_landing.schema}}",
       "type": "TABLE",
-      "sourceTableId": "$registered_data$Oct16_2_onboarding_landing_products"
+      "sourceTableId": "$registered_data$sep16_landing_orders"
     },
     {
-      "database": "{{task.registered_data-xych:ROSIE$_$Oct16_2_onboarding_landing.database}}",
-      "name": "Suppliers",
-      "schema": "{{task.registered_data-xych:ROSIE$_$Oct16_2_onboarding_landing.schema}}",
+      "database": "{{task.registered_data-xych:ROSIE$_$sep16_landing.database}}",
+      "name": "Shippers",
+      "schema": "{{task.registered_data-xych:ROSIE$_$sep16_landing.schema}}",
       "type": "TABLE",
-      "sourceTableId": "$registered_data$Oct16_2_onboarding_landing_suppliers"
+      "sourceTableId": "$registered_data$sep16_landing_shippers"
     }
   ]
 }

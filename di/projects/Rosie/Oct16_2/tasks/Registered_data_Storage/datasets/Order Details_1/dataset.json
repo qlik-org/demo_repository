@@ -1,0 +1,21 @@
+{
+  "id": "order_details_1-5hh1",
+  "name": "Order Details_1",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "order_details_1",
+      "name": "Order Details_1",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-xych"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
