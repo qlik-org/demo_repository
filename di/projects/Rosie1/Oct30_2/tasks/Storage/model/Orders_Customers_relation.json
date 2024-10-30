@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-8iso",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-8isj"
+  },
+  "targetEntity": {
+    "datasetId": "customers-8isl",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-8isj"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_Customers_relation",
+  "description": "",
+  "id": "orders_customers_relation-8is8"
+}
