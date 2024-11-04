@@ -1,0 +1,14 @@
+{
+  "sourceConnection": "{{task.customer_data_landing-s0om.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.customer_data_landing-s0om:null$_$sales.database}}",
+      "name": "customer",
+      "schema": "{{task.customer_data_landing-s0om:null$_$sales.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$sales_customer"
+    }
+  ]
+}
