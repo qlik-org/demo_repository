@@ -1,0 +1,12 @@
+{
+  "id": "$replicate$dbo_employees",
+  "name": "dbo_Employees",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Employees",
+    "dbSchema": "{{task.replication-a3ti:null$_$dbo.schema}}",
+    "dbName": "{{task.replication-a3ti:null$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
