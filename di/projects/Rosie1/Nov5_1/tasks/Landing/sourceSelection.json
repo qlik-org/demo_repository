@@ -1,0 +1,28 @@
+{
+  "sourceConnection": "{{task.landing-frwl.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.landing-frwl:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.landing-frwl:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "database": "{{task.landing-frwl:null$_$dbo.database}}",
+      "name": "Products",
+      "schema": "{{task.landing-frwl:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    },
+    {
+      "database": "{{task.landing-frwl:null$_$dbo.database}}",
+      "name": "Suppliers",
+      "schema": "{{task.landing-frwl:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_suppliers"
+    }
+  ]
+}
