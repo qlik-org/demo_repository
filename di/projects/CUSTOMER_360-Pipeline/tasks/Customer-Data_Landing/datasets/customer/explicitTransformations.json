@@ -36,6 +36,44 @@
         "nullable": true,
         "addedColumnId": "bdc18492-178f-4af5-ab90-97623f6e57bd",
         "markAsMetadata": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "customerid",
+        "newColumnName": "IdentificationOfTheCustomer",
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "markAsMetadata": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "personid",
+        "newColumnName": "PersonName",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false
+      },
+      {
+        "action": "ADD",
+        "columnName": "MyNewNewColumn",
+        "newDataType": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "",
+          "alias": []
+        },
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "addedColumnId": "53f491c3-ab06-4268-8d83-8b2fc7cd6b95",
+        "markAsMetadata": false
       }
     ]
   },
