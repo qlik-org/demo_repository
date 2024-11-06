@@ -1,0 +1,535 @@
+{
+  "id": "orders-sxai",
+  "name": "Orders",
+  "type": "FACT",
+  "inputDatasets": [
+    {
+      "datasetId": "orders-cl2c",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_7-edch"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Orders",
+    "dbSchema": "vc_20_t_data_mart",
+    "dbName": "ROSIE_DB",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orderid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CustomerID",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "EmployeeID",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDate",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "orderdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RequiredDate",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "requireddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShippedDate",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "shippeddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipVia",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "shipvia",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Freight",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "freight",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipName",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "shipname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipAddress",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "shipaddress",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCity",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "shipcity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipRegion",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "shipregion",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipPostalCode",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "shippostalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCountry",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "shipcountry",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "orders-sxai",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "factDatasetSettings": {
+    "type": "TRANSACTIONAL",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "orders-cl2c",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_7-edch"
+    },
+    "factDimension": [
+      {
+        "name": "Customers",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "customers-rxdq",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart-rxdn"
+        },
+        "dimensionRelationshipPath": "orders_customers_relation-cl2e",
+        "dimensionRelationshipPathDisplayName": "Orders_Customers_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Employees",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "employees-edcs",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart-rxdn"
+        },
+        "dimensionRelationshipPath": "orders_employees_relation-rxdh",
+        "dimensionRelationshipPathDisplayName": "Orders_Employees_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Employees",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "employees-edcs",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart-rxdn"
+        },
+        "dimensionRelationshipPath": "orders_employees_relation-rxdh$_$employees_employees-fywt",
+        "dimensionRelationshipPathDisplayName": "Orders_Employees_relation:Employees_Employees",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Shippers",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "shippers-fywx",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart-rxdn"
+        },
+        "dimensionRelationshipPath": "orders_shippers-sxaa",
+        "dimensionRelationshipPathDisplayName": "Orders_Shippers",
+        "dimensionRelationshipPathShortName": ""
+      }
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "OrderID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${OrderID}",
+            "alias": [
+              {
+                "name": "OrderID",
+                "value": "OrderID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CustomerID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CustomerID}",
+            "alias": [
+              {
+                "name": "CustomerID",
+                "value": "CustomerID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "EmployeeID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDate}",
+            "alias": [
+              {
+                "name": "OrderDate",
+                "value": "OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RequiredDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RequiredDate}",
+            "alias": [
+              {
+                "name": "RequiredDate",
+                "value": "RequiredDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShippedDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShippedDate}",
+            "alias": [
+              {
+                "name": "ShippedDate",
+                "value": "ShippedDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipVia",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipVia}",
+            "alias": [
+              {
+                "name": "ShipVia",
+                "value": "ShipVia"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Freight",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Freight}",
+            "alias": [
+              {
+                "name": "Freight",
+                "value": "Freight"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipName}",
+            "alias": [
+              {
+                "name": "ShipName",
+                "value": "ShipName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipAddress",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipAddress}",
+            "alias": [
+              {
+                "name": "ShipAddress",
+                "value": "ShipAddress"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCity}",
+            "alias": [
+              {
+                "name": "ShipCity",
+                "value": "ShipCity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipRegion",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipRegion}",
+            "alias": [
+              {
+                "name": "ShipRegion",
+                "value": "ShipRegion"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipPostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipPostalCode}",
+            "alias": [
+              {
+                "name": "ShipPostalCode",
+                "value": "ShipPostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCountry",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCountry}",
+            "alias": [
+              {
+                "name": "ShipCountry",
+                "value": "ShipCountry"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "transactionalDate": {
+      "columnName": "ShippedDate",
+      "entityRelationshipPath": "ShippedDate",
+      "entityRelationshipPathDisplayName": "ShippedDate"
+    },
+    "subtype": "MODEL_BASED"
+  }
+}

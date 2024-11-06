@@ -1,0 +1,138 @@
+{
+  "id": "shippers-fywx",
+  "name": "Shippers",
+  "type": "DIMENSION",
+  "inputDatasets": [
+    {
+      "datasetId": "shippers-mzy-",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_7-edch"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Shippers",
+    "columns": [
+      {
+        "name": "ShipperID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "shipperid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "companyname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Phone",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "phone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "dimensionDatasetSettings": {
+    "type": "TYPE2",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "shippers-mzy-",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_7-edch"
+    },
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "ShipperID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${ShipperID}",
+            "alias": [
+              {
+                "name": "ShipperID",
+                "value": "ShipperID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CompanyName}",
+            "alias": [
+              {
+                "name": "CompanyName",
+                "value": "CompanyName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Phone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Phone}",
+            "alias": [
+              {
+                "name": "Phone",
+                "value": "Phone"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED"
+  }
+}
