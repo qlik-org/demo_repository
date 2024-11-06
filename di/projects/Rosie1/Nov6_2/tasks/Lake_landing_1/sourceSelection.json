@@ -1,0 +1,21 @@
+{
+  "sourceConnection": "{{task.lake_landing_1-_vxw.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.lake_landing_1-_vxw:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.lake_landing_1-_vxw:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "database": "{{task.lake_landing_1-_vxw:null$_$dbo.database}}",
+      "name": "Products",
+      "schema": "{{task.lake_landing_1-_vxw:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    }
+  ]
+}

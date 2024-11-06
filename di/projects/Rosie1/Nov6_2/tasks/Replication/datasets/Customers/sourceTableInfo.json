@@ -1,0 +1,12 @@
+{
+  "id": "$replicate$dbo_customers",
+  "name": "dbo_Customers",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Customers",
+    "dbSchema": "{{task.replication-a3ti:null$_$dbo.schema}}",
+    "dbName": "{{task.replication-a3ti:null$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
