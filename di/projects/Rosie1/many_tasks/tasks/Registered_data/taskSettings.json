@@ -1,0 +1,36 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.registered_data-rxcr.internalSchema}}",
+    "taskSchema": "{{task.registered_data-rxcr.taskSchema}}",
+    "databaseName": "{{task.registered_data-rxcr.databaseName}}"
+  },
+  "incrementalSettings": {
+    "registeredType": "REPLICATE",
+    "watermarkColumnName": {
+      "expressionStatement": "header__change_seq"
+    },
+    "useBatchTimeAsFromDate": false,
+    "fromDateColumnName": {
+      "expressionStatement": "header__timestamp"
+    },
+    "useSameTableAsCt": false,
+    "ctTableName": {
+      "expressionStatement": "${SOURCE_TABLE_NAME}__ct"
+    },
+    "softDeleteSupport": true,
+    "softDeleteExpression": {
+      "expressionStatement": "${header__change_oper} = \u0027D\u0027"
+    },
+    "priorImageSupport": true,
+    "priorImageExpression": {
+      "expressionStatement": "${header__change_oper} = \u0027B\u0027"
+    }
+  },
+  "artifactsSettings": {
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  }
+}
