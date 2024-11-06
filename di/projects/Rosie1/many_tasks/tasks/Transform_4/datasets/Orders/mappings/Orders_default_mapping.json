@@ -1,0 +1,181 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "orders-cl1j",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-mzxz"
+  },
+  "mappingFields": [
+    {
+      "columnId": "orderid",
+      "expression": {
+        "expressionStatement": "${OrderID}",
+        "alias": [
+          {
+            "name": "OrderID",
+            "value": "OrderID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "customerid",
+      "expression": {
+        "expressionStatement": "${CustomerID}",
+        "alias": [
+          {
+            "name": "CustomerID",
+            "value": "CustomerID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "employeeid",
+      "expression": {
+        "expressionStatement": "${EmployeeID}",
+        "alias": [
+          {
+            "name": "EmployeeID",
+            "value": "EmployeeID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "orderdate",
+      "expression": {
+        "expressionStatement": "${OrderDate}",
+        "alias": [
+          {
+            "name": "OrderDate",
+            "value": "OrderDate"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "requireddate",
+      "expression": {
+        "expressionStatement": "${RequiredDate}",
+        "alias": [
+          {
+            "name": "RequiredDate",
+            "value": "RequiredDate"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shippeddate",
+      "expression": {
+        "expressionStatement": "${ShippedDate}",
+        "alias": [
+          {
+            "name": "ShippedDate",
+            "value": "ShippedDate"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shipvia",
+      "expression": {
+        "expressionStatement": "${ShipVia}",
+        "alias": [
+          {
+            "name": "ShipVia",
+            "value": "ShipVia"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "freight",
+      "expression": {
+        "expressionStatement": "${Freight}",
+        "alias": [
+          {
+            "name": "Freight",
+            "value": "Freight"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shipname",
+      "expression": {
+        "expressionStatement": "${ShipName}",
+        "alias": [
+          {
+            "name": "ShipName",
+            "value": "ShipName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shipaddress",
+      "expression": {
+        "expressionStatement": "${ShipAddress}",
+        "alias": [
+          {
+            "name": "ShipAddress",
+            "value": "ShipAddress"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shipcity",
+      "expression": {
+        "expressionStatement": "${ShipCity}",
+        "alias": [
+          {
+            "name": "ShipCity",
+            "value": "ShipCity"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shipregion",
+      "expression": {
+        "expressionStatement": "${ShipRegion}",
+        "alias": [
+          {
+            "name": "ShipRegion",
+            "value": "ShipRegion"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shippostalcode",
+      "expression": {
+        "expressionStatement": "${ShipPostalCode}",
+        "alias": [
+          {
+            "name": "ShipPostalCode",
+            "value": "ShipPostalCode"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shipcountry",
+      "expression": {
+        "expressionStatement": "${ShipCountry}",
+        "alias": [
+          {
+            "name": "ShipCountry",
+            "value": "ShipCountry"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "orders_default_mapping-sxzw",
+  "name": "Orders_default_mapping",
+  "description": ""
+}
