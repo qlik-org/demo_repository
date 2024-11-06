@@ -1,0 +1,15 @@
+{
+  "id": "shippers",
+  "name": "Shippers",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$vc_20_t_landing_shippers",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-rxcr",
+      "schema": "{{task.registered_data-rxcr:ROSIE_DB$_$vc_20_t_landing.schema}}",
+      "database": "{{task.registered_data-rxcr:ROSIE_DB$_$vc_20_t_landing.database}}"
+    }
+  ]
+}
