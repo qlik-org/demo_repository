@@ -1,0 +1,61 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "categories-mbr5",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_11-mbr3"
+  },
+  "mappingFields": [
+    {
+      "columnId": "categoryid",
+      "expression": {
+        "expressionStatement": "${CategoryID}",
+        "alias": [
+          {
+            "name": "CategoryID",
+            "value": "CategoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "categoryname",
+      "expression": {
+        "expressionStatement": "${CategoryName}",
+        "alias": [
+          {
+            "name": "CategoryName",
+            "value": "CategoryName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "description",
+      "expression": {
+        "expressionStatement": "${Description}",
+        "alias": [
+          {
+            "name": "Description",
+            "value": "Description"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "picture",
+      "expression": {
+        "expressionStatement": "${Picture}",
+        "alias": [
+          {
+            "name": "Picture",
+            "value": "Picture"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "categories_default_mapping-hjnu",
+  "name": "Categories_default_mapping",
+  "description": ""
+}

@@ -1,0 +1,1332 @@
+{
+  "id": "orders-mbs1",
+  "name": "Orders",
+  "type": "DIMENSION",
+  "inputDatasets": [
+    {
+      "datasetId": "orders-mbsr",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_17-hjnn"
+    },
+    {
+      "datasetId": "employees-mbsp",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_17-hjnn"
+    },
+    {
+      "datasetId": "customers-hjnp",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_17-hjnn"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Orders",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orderid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CustomerID",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "EmployeeID",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDate",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "orderdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RequiredDate",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "requireddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShippedDate",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "shippeddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipVia",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "shipvia",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Freight",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "freight",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipName",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "shipname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipAddress",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "shipaddress",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCity",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "shipcity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipRegion",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "shipregion",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipPostalCode",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "shippostalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCountry",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "shipcountry",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "orders_customers_relation-mbsw$_$companyname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ContactName",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "orders_customers_relation-mbsw$_$contactname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ContactTitle",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "orders_customers_relation-mbsw$_$contacttitle",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Customers_relation_Address",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "orders_customers_relation-mbsw$_$Orders_Customers_relation_Address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Customers_relation_City",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orders_customers_relation-mbsw$_$Orders_Customers_relation_City",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Customers_relation_Region",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orders_customers_relation-mbsw$_$Orders_Customers_relation_Region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Customers_relation_PostalCode",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "orders_customers_relation-mbsw$_$Orders_Customers_relation_PostalCode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Customers_relation_Country",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orders_customers_relation-mbsw$_$Orders_Customers_relation_Country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Phone",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "orders_customers_relation-mbsw$_$phone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Fax",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "orders_customers_relation-mbsw$_$fax",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "LastName",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "orders_employees_relation-hjny$_$lastname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "FirstName",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "orders_employees_relation-hjny$_$firstname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Title",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "orders_employees_relation-hjny$_$title",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "ordinal": 28,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(25)"
+        },
+        "id": "orders_employees_relation-hjny$_$titleofcourtesy",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "BirthDate",
+        "ordinal": 29,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "orders_employees_relation-hjny$_$birthdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "HireDate",
+        "ordinal": 30,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "orders_employees_relation-hjny$_$hiredate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Employees_relation_Address",
+        "ordinal": 31,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "orders_employees_relation-hjny$_$address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Employees_relation_City",
+        "ordinal": 32,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orders_employees_relation-hjny$_$city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Employees_relation_Region",
+        "ordinal": 33,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orders_employees_relation-hjny$_$region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Employees_relation_PostalCode",
+        "ordinal": 34,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "orders_employees_relation-hjny$_$postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Orders_Employees_relation_Country",
+        "ordinal": 35,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orders_employees_relation-hjny$_$country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "HomePhone",
+        "ordinal": 36,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "orders_employees_relation-hjny$_$homephone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Extension",
+        "ordinal": 37,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(4)"
+        },
+        "id": "orders_employees_relation-hjny$_$extension",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Photo",
+        "ordinal": 38,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BLOB",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "id": "orders_employees_relation-hjny$_$photo",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Notes",
+        "ordinal": 39,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 1073741823,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "orders_employees_relation-hjny$_$notes",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ReportsTo",
+        "ordinal": 40,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orders_employees_relation-hjny$_$reportsto",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "PhotoPath",
+        "ordinal": 41,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(255)"
+        },
+        "id": "orders_employees_relation-hjny$_$photopath",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "dimensionDatasetSettings": {
+    "type": "TYPE2",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "orders-mbsr",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_17-hjnn"
+    },
+    "entityRelationshipPath": [
+      "orders_employees_relation-hjny",
+      "orders_customers_relation-mbsw"
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "OrderID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${OrderID}",
+            "alias": [
+              {
+                "name": "OrderID",
+                "value": "OrderID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CustomerID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CustomerID}",
+            "alias": [
+              {
+                "name": "CustomerID",
+                "value": "CustomerID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "EmployeeID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDate}",
+            "alias": [
+              {
+                "name": "OrderDate",
+                "value": "OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RequiredDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RequiredDate}",
+            "alias": [
+              {
+                "name": "RequiredDate",
+                "value": "RequiredDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShippedDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShippedDate}",
+            "alias": [
+              {
+                "name": "ShippedDate",
+                "value": "ShippedDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipVia",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipVia}",
+            "alias": [
+              {
+                "name": "ShipVia",
+                "value": "ShipVia"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Freight",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Freight}",
+            "alias": [
+              {
+                "name": "Freight",
+                "value": "Freight"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipName}",
+            "alias": [
+              {
+                "name": "ShipName",
+                "value": "ShipName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipAddress",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipAddress}",
+            "alias": [
+              {
+                "name": "ShipAddress",
+                "value": "ShipAddress"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCity}",
+            "alias": [
+              {
+                "name": "ShipCity",
+                "value": "ShipCity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipRegion",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipRegion}",
+            "alias": [
+              {
+                "name": "ShipRegion",
+                "value": "ShipRegion"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipPostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipPostalCode}",
+            "alias": [
+              {
+                "name": "ShipPostalCode",
+                "value": "ShipPostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCountry",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCountry}",
+            "alias": [
+              {
+                "name": "ShipCountry",
+                "value": "ShipCountry"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CompanyName}",
+            "alias": [
+              {
+                "name": "CompanyName",
+                "value": "orders_customers_relation-mbsw$_$CompanyName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ContactName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ContactName}",
+            "alias": [
+              {
+                "name": "ContactName",
+                "value": "orders_customers_relation-mbsw$_$ContactName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ContactTitle",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ContactTitle}",
+            "alias": [
+              {
+                "name": "ContactTitle",
+                "value": "orders_customers_relation-mbsw$_$ContactTitle"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Customers_relation_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Customers_relation_Address}",
+            "alias": [
+              {
+                "name": "Orders_Customers_relation_Address",
+                "value": "orders_customers_relation-mbsw$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Customers_relation_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Customers_relation_City}",
+            "alias": [
+              {
+                "name": "Orders_Customers_relation_City",
+                "value": "orders_customers_relation-mbsw$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Customers_relation_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Customers_relation_Region}",
+            "alias": [
+              {
+                "name": "Orders_Customers_relation_Region",
+                "value": "orders_customers_relation-mbsw$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Customers_relation_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Customers_relation_PostalCode}",
+            "alias": [
+              {
+                "name": "Orders_Customers_relation_PostalCode",
+                "value": "orders_customers_relation-mbsw$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Customers_relation_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Customers_relation_Country}",
+            "alias": [
+              {
+                "name": "Orders_Customers_relation_Country",
+                "value": "orders_customers_relation-mbsw$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Phone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Phone}",
+            "alias": [
+              {
+                "name": "Phone",
+                "value": "orders_customers_relation-mbsw$_$Phone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Fax",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Fax}",
+            "alias": [
+              {
+                "name": "Fax",
+                "value": "orders_customers_relation-mbsw$_$Fax"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "LastName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${LastName}",
+            "alias": [
+              {
+                "name": "LastName",
+                "value": "orders_employees_relation-hjny$_$LastName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "FirstName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${FirstName}",
+            "alias": [
+              {
+                "name": "FirstName",
+                "value": "orders_employees_relation-hjny$_$FirstName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Title",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Title}",
+            "alias": [
+              {
+                "name": "Title",
+                "value": "orders_employees_relation-hjny$_$Title"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TitleOfCourtesy",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${TitleOfCourtesy}",
+            "alias": [
+              {
+                "name": "TitleOfCourtesy",
+                "value": "orders_employees_relation-hjny$_$TitleOfCourtesy"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "BirthDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${BirthDate}",
+            "alias": [
+              {
+                "name": "BirthDate",
+                "value": "orders_employees_relation-hjny$_$BirthDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HireDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HireDate}",
+            "alias": [
+              {
+                "name": "HireDate",
+                "value": "orders_employees_relation-hjny$_$HireDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Employees_relation_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Employees_relation_Address}",
+            "alias": [
+              {
+                "name": "Orders_Employees_relation_Address",
+                "value": "orders_employees_relation-hjny$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Employees_relation_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Employees_relation_City}",
+            "alias": [
+              {
+                "name": "Orders_Employees_relation_City",
+                "value": "orders_employees_relation-hjny$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Employees_relation_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Employees_relation_Region}",
+            "alias": [
+              {
+                "name": "Orders_Employees_relation_Region",
+                "value": "orders_employees_relation-hjny$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Employees_relation_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Employees_relation_PostalCode}",
+            "alias": [
+              {
+                "name": "Orders_Employees_relation_PostalCode",
+                "value": "orders_employees_relation-hjny$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Orders_Employees_relation_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Orders_Employees_relation_Country}",
+            "alias": [
+              {
+                "name": "Orders_Employees_relation_Country",
+                "value": "orders_employees_relation-hjny$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HomePhone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HomePhone}",
+            "alias": [
+              {
+                "name": "HomePhone",
+                "value": "orders_employees_relation-hjny$_$HomePhone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Extension",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Extension}",
+            "alias": [
+              {
+                "name": "Extension",
+                "value": "orders_employees_relation-hjny$_$Extension"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Photo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Photo}",
+            "alias": [
+              {
+                "name": "Photo",
+                "value": "orders_employees_relation-hjny$_$Photo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Notes",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Notes}",
+            "alias": [
+              {
+                "name": "Notes",
+                "value": "orders_employees_relation-hjny$_$Notes"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReportsTo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReportsTo}",
+            "alias": [
+              {
+                "name": "ReportsTo",
+                "value": "orders_employees_relation-hjny$_$ReportsTo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "PhotoPath",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${PhotoPath}",
+            "alias": [
+              {
+                "name": "PhotoPath",
+                "value": "orders_employees_relation-hjny$_$PhotoPath"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED"
+  }
+}
