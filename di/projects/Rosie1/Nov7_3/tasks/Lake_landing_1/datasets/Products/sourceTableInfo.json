@@ -1,0 +1,12 @@
+{
+  "id": "$replicate$dbo_products",
+  "name": "dbo_Products",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Products",
+    "dbSchema": "{{task.lake_landing_1-_vxw:null$_$dbo.schema}}",
+    "dbName": "{{task.lake_landing_1-_vxw:null$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
