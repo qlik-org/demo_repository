@@ -1,0 +1,14 @@
+{
+  "sourceConnection": "{{task.landing-nsdt.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.landing-nsdt:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.landing-nsdt:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    }
+  ]
+}
