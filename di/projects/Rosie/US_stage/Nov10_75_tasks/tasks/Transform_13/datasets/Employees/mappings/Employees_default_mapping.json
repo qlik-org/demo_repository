@@ -1,0 +1,229 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "employees-hjmc",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_9-hjmw"
+  },
+  "mappingFields": [
+    {
+      "columnId": "employeeid",
+      "expression": {
+        "expressionStatement": "${EmployeeID}",
+        "alias": [
+          {
+            "name": "EmployeeID",
+            "value": "EmployeeID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "lastname",
+      "expression": {
+        "expressionStatement": "${LastName}",
+        "alias": [
+          {
+            "name": "LastName",
+            "value": "LastName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "firstname",
+      "expression": {
+        "expressionStatement": "${FirstName}",
+        "alias": [
+          {
+            "name": "FirstName",
+            "value": "FirstName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "title",
+      "expression": {
+        "expressionStatement": "${Title}",
+        "alias": [
+          {
+            "name": "Title",
+            "value": "Title"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "titleofcourtesy",
+      "expression": {
+        "expressionStatement": "${TitleOfCourtesy}",
+        "alias": [
+          {
+            "name": "TitleOfCourtesy",
+            "value": "TitleOfCourtesy"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "birthdate",
+      "expression": {
+        "expressionStatement": "${BirthDate}",
+        "alias": [
+          {
+            "name": "BirthDate",
+            "value": "BirthDate"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "hiredate",
+      "expression": {
+        "expressionStatement": "${HireDate}",
+        "alias": [
+          {
+            "name": "HireDate",
+            "value": "HireDate"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "address",
+      "expression": {
+        "expressionStatement": "${Address}",
+        "alias": [
+          {
+            "name": "Address",
+            "value": "Address"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "city",
+      "expression": {
+        "expressionStatement": "${City}",
+        "alias": [
+          {
+            "name": "City",
+            "value": "City"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "region",
+      "expression": {
+        "expressionStatement": "${Region}",
+        "alias": [
+          {
+            "name": "Region",
+            "value": "Region"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "postalcode",
+      "expression": {
+        "expressionStatement": "${PostalCode}",
+        "alias": [
+          {
+            "name": "PostalCode",
+            "value": "PostalCode"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "country",
+      "expression": {
+        "expressionStatement": "${Country}",
+        "alias": [
+          {
+            "name": "Country",
+            "value": "Country"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "homephone",
+      "expression": {
+        "expressionStatement": "${HomePhone}",
+        "alias": [
+          {
+            "name": "HomePhone",
+            "value": "HomePhone"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "extension",
+      "expression": {
+        "expressionStatement": "${Extension}",
+        "alias": [
+          {
+            "name": "Extension",
+            "value": "Extension"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "photo",
+      "expression": {
+        "expressionStatement": "${Photo}",
+        "alias": [
+          {
+            "name": "Photo",
+            "value": "Photo"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "notes",
+      "expression": {
+        "expressionStatement": "${Notes}",
+        "alias": [
+          {
+            "name": "Notes",
+            "value": "Notes"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "reportsto",
+      "expression": {
+        "expressionStatement": "${ReportsTo}",
+        "alias": [
+          {
+            "name": "ReportsTo",
+            "value": "ReportsTo"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "photopath",
+      "expression": {
+        "expressionStatement": "${PhotoPath}",
+        "alias": [
+          {
+            "name": "PhotoPath",
+            "value": "PhotoPath"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "employees_default_mapping-mbsk",
+  "name": "Employees_default_mapping",
+  "description": ""
+}
