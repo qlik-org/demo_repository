@@ -1,0 +1,973 @@
+{
+  "id": "order_details-d_oj",
+  "name": "Order Details",
+  "type": "FACT",
+  "inputDatasets": [
+    {
+      "datasetId": "order_details-d_og",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_25-d_oa"
+    },
+    {
+      "datasetId": "products-w-s5",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_25-d_oa"
+    },
+    {
+      "datasetId": "orders-w-s3",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_25-d_oa"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Order Details",
+    "dbSchema": "vc_many_t_data_mart_10",
+    "dbName": "ROSIE",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orderid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ProductID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "productid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitPrice",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "unitprice",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Quantity",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "quantity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Discount",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "FLOAT4"
+        },
+        "id": "discount",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CustomerID",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "EmployeeID",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "order_details_orders_relation-d_oo$_$employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDate",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$orderdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RequiredDate",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$requireddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShippedDate",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$shippeddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipVia",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "order_details_orders_relation-d_oo$_$shipvia",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Freight",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$freight",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipName",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$shipname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipAddress",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$shipaddress",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCity",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$shipcity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipRegion",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$shipregion",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipPostalCode",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$shippostalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCountry",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_oo$_$shipcountry",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ProductName",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "order_details_products_relation-d_op$_$productname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "SupplierID",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "order_details_products_relation-d_op$_$supplierid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CategoryID",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "order_details_products_relation-d_op$_$categoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "QuantityPerUnit",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "order_details_products_relation-d_op$_$quantityperunit",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_UnitPrice",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "order_details_products_relation-d_op$_$unitprice",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitsInStock",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "order_details_products_relation-d_op$_$unitsinstock",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitsOnOrder",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "order_details_products_relation-d_op$_$unitsonorder",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ReorderLevel",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "order_details_products_relation-d_op$_$reorderlevel",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Discontinued",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BOOLEAN"
+        },
+        "id": "order_details_products_relation-d_op$_$discontinued",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "order_details-d_oj",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "factDatasetSettings": {
+    "type": "TRANSACTIONAL",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "order_details-d_og",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_25-d_oa"
+    },
+    "entityRelationshipPath": [
+      "order_details_products_relation-d_op",
+      "order_details_orders_relation-d_oo"
+    ],
+    "factDimension": [
+      {
+        "name": "Categories",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "categories-d_of",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_10-w-tx"
+        },
+        "dimensionRelationshipPath": "order_details_products_relation-d_op$_$products_categories_relation-w-tf",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Products_relation:Products_Categories_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Customers",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "customers-w-tz",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_10-w-tx"
+        },
+        "dimensionRelationshipPath": "order_details_orders_relation-d_oo$_$orders_customers_relation-d_oq",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Orders_relation:Orders_Customers_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Employees",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "employees-w-ta",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_10-w-tx"
+        },
+        "dimensionRelationshipPath": "order_details_orders_relation-d_oo$_$orders_employees_relation-d_or",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Orders_relation:Orders_Employees_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Orders",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "orders-d_og",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_10-w-tx"
+        },
+        "dimensionRelationshipPath": "order_details_orders_relation-d_oo",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Orders_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Products",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "products-w-tb",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_10-w-tx"
+        },
+        "dimensionRelationshipPath": "order_details_products_relation-d_op",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Products_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Suppliers",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "suppliers-w-td",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_10-w-tx"
+        },
+        "dimensionRelationshipPath": "order_details_products_relation-d_op$_$products_suppliers_relation-d_os",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Products_relation:Products_Suppliers_relation",
+        "dimensionRelationshipPathShortName": ""
+      }
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "OrderID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${OrderID}",
+            "alias": [
+              {
+                "name": "OrderID",
+                "value": "OrderID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ProductID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${ProductID}",
+            "alias": [
+              {
+                "name": "ProductID",
+                "value": "ProductID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitPrice",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitPrice}",
+            "alias": [
+              {
+                "name": "UnitPrice",
+                "value": "UnitPrice"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Quantity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Quantity}",
+            "alias": [
+              {
+                "name": "Quantity",
+                "value": "Quantity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Discount",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Discount}",
+            "alias": [
+              {
+                "name": "Discount",
+                "value": "Discount"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CustomerID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CustomerID}",
+            "alias": [
+              {
+                "name": "CustomerID",
+                "value": "order_details_orders_relation-d_oo$_$CustomerID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "EmployeeID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "order_details_orders_relation-d_oo$_$EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDate}",
+            "alias": [
+              {
+                "name": "OrderDate",
+                "value": "order_details_orders_relation-d_oo$_$OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RequiredDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RequiredDate}",
+            "alias": [
+              {
+                "name": "RequiredDate",
+                "value": "order_details_orders_relation-d_oo$_$RequiredDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShippedDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShippedDate}",
+            "alias": [
+              {
+                "name": "ShippedDate",
+                "value": "order_details_orders_relation-d_oo$_$ShippedDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipVia",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipVia}",
+            "alias": [
+              {
+                "name": "ShipVia",
+                "value": "order_details_orders_relation-d_oo$_$ShipVia"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Freight",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Freight}",
+            "alias": [
+              {
+                "name": "Freight",
+                "value": "order_details_orders_relation-d_oo$_$Freight"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipName}",
+            "alias": [
+              {
+                "name": "ShipName",
+                "value": "order_details_orders_relation-d_oo$_$ShipName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipAddress",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipAddress}",
+            "alias": [
+              {
+                "name": "ShipAddress",
+                "value": "order_details_orders_relation-d_oo$_$ShipAddress"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCity}",
+            "alias": [
+              {
+                "name": "ShipCity",
+                "value": "order_details_orders_relation-d_oo$_$ShipCity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipRegion",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipRegion}",
+            "alias": [
+              {
+                "name": "ShipRegion",
+                "value": "order_details_orders_relation-d_oo$_$ShipRegion"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipPostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipPostalCode}",
+            "alias": [
+              {
+                "name": "ShipPostalCode",
+                "value": "order_details_orders_relation-d_oo$_$ShipPostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCountry",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCountry}",
+            "alias": [
+              {
+                "name": "ShipCountry",
+                "value": "order_details_orders_relation-d_oo$_$ShipCountry"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ProductName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ProductName}",
+            "alias": [
+              {
+                "name": "ProductName",
+                "value": "order_details_products_relation-d_op$_$ProductName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "SupplierID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${SupplierID}",
+            "alias": [
+              {
+                "name": "SupplierID",
+                "value": "order_details_products_relation-d_op$_$SupplierID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CategoryID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryID}",
+            "alias": [
+              {
+                "name": "CategoryID",
+                "value": "order_details_products_relation-d_op$_$CategoryID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "QuantityPerUnit",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${QuantityPerUnit}",
+            "alias": [
+              {
+                "name": "QuantityPerUnit",
+                "value": "order_details_products_relation-d_op$_$QuantityPerUnit"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_UnitPrice",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_UnitPrice}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_UnitPrice",
+                "value": "order_details_products_relation-d_op$_$UnitPrice"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitsInStock",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitsInStock}",
+            "alias": [
+              {
+                "name": "UnitsInStock",
+                "value": "order_details_products_relation-d_op$_$UnitsInStock"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitsOnOrder",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitsOnOrder}",
+            "alias": [
+              {
+                "name": "UnitsOnOrder",
+                "value": "order_details_products_relation-d_op$_$UnitsOnOrder"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReorderLevel",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReorderLevel}",
+            "alias": [
+              {
+                "name": "ReorderLevel",
+                "value": "order_details_products_relation-d_op$_$ReorderLevel"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Discontinued",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Discontinued}",
+            "alias": [
+              {
+                "name": "Discontinued",
+                "value": "order_details_products_relation-d_op$_$Discontinued"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "subtype": "MODEL_BASED"
+  }
+}
