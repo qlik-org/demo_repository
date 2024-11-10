@@ -1,0 +1,59 @@
+{
+  "id": "$replicate$dbo_shippers",
+  "name": "dbo_Shippers",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Shippers",
+    "dbSchema": "{{task.landing-cl0r:null$_$dbo.schema}}",
+    "dbName": "{{task.landing-cl0r:null$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "ShipperID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "shipperid",
+        "flags": "NONE"
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "companyname",
+        "flags": "NONE"
+      },
+      {
+        "name": "Phone",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "phone",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

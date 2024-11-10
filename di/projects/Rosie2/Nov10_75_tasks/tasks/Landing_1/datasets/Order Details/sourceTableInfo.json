@@ -1,0 +1,89 @@
+{
+  "id": "$replicate$dbo_order_details",
+  "name": "dbo_Order Details",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Order Details",
+    "dbSchema": "{{task.landing_1-sxyp:null$_$dbo.schema}}",
+    "dbName": "{{task.landing_1-sxyp:null$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "orderid",
+        "flags": "NONE"
+      },
+      {
+        "name": "ProductID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "productid",
+        "flags": "NONE"
+      },
+      {
+        "name": "UnitPrice",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": ""
+        },
+        "id": "unitprice",
+        "flags": "NONE"
+      },
+      {
+        "name": "Quantity",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "quantity",
+        "flags": "NONE"
+      },
+      {
+        "name": "Discount",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "discount",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
