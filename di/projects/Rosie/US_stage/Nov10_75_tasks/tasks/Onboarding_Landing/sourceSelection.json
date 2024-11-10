@@ -1,0 +1,63 @@
+{
+  "sourceConnection": "{{task.onboarding_landing-mbq9.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.onboarding_landing-mbq9:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.onboarding_landing-mbq9:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "database": "{{task.onboarding_landing-mbq9:null$_$dbo.database}}",
+      "name": "Customers",
+      "schema": "{{task.onboarding_landing-mbq9:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    },
+    {
+      "database": "{{task.onboarding_landing-mbq9:null$_$dbo.database}}",
+      "name": "Employees",
+      "schema": "{{task.onboarding_landing-mbq9:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    },
+    {
+      "database": "{{task.onboarding_landing-mbq9:null$_$dbo.database}}",
+      "name": "Order Details",
+      "schema": "{{task.onboarding_landing-mbq9:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_order_details"
+    },
+    {
+      "database": "{{task.onboarding_landing-mbq9:null$_$dbo.database}}",
+      "name": "Orders",
+      "schema": "{{task.onboarding_landing-mbq9:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_orders"
+    },
+    {
+      "database": "{{task.onboarding_landing-mbq9:null$_$dbo.database}}",
+      "name": "Products",
+      "schema": "{{task.onboarding_landing-mbq9:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    },
+    {
+      "database": "{{task.onboarding_landing-mbq9:null$_$dbo.database}}",
+      "name": "Shippers",
+      "schema": "{{task.onboarding_landing-mbq9:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_shippers"
+    },
+    {
+      "database": "{{task.onboarding_landing-mbq9:null$_$dbo.database}}",
+      "name": "Suppliers",
+      "schema": "{{task.onboarding_landing-mbq9:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_suppliers"
+    }
+  ]
+}

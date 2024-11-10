@@ -1,0 +1,21 @@
+{
+  "artifactsSettings": {
+    "liveViewsEnabled": false,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": false,
+    "currentTableSuffix": "__t",
+    "artifactsPrefix": ""
+  },
+  "artifactsLocation": {
+    "internalSchema": "{{task.data_mart_3-rxd2.internalSchema}}",
+    "taskSchema": "{{task.data_mart_3-rxd2.taskSchema}}",
+    "databaseName": "{{task.data_mart_3-rxd2.databaseName}}"
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.data_mart_3-rxd2.warehouseName}}"
+    }
+  }
+}
