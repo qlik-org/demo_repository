@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "territories-d_ro",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_33-w-wh"
+  },
+  "targetEntity": {
+    "datasetId": "region-d_ri",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_33-w-wh"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "RegionID",
+      "targetColumn": "RegionID",
+      "sourceColumnId": "regionid",
+      "targetColumnId": "regionid"
+    }
+  ],
+  "name": "Territories_Region_relation",
+  "description": "",
+  "id": "territories_region_relation-d_ru"
+}
