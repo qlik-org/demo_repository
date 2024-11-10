@@ -1,0 +1,37 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "region-w-4t",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_48-d_we"
+  },
+  "mappingFields": [
+    {
+      "columnId": "regionid",
+      "expression": {
+        "expressionStatement": "${RegionID}",
+        "alias": [
+          {
+            "name": "RegionID",
+            "value": "RegionID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "regiondescription",
+      "expression": {
+        "expressionStatement": "${RegionDescription}",
+        "alias": [
+          {
+            "name": "RegionDescription",
+            "value": "RegionDescription"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "region_default_mapping-d_wd",
+  "name": "Region_default_mapping",
+  "description": ""
+}
