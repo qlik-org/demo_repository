@@ -1,0 +1,21 @@
+{
+  "id": "customers-d_sn",
+  "name": "Customers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_1-d_sj"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}

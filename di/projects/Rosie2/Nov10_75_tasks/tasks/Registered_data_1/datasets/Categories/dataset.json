@@ -1,0 +1,15 @@
+{
+  "id": "categories",
+  "name": "Categories",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$vc_75_t_landing_2_categories",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_1-d_sj",
+      "schema": "{{task.registered_data_1-d_sj:ROSIE$_$vc_75_t_landing_2.schema}}",
+      "database": "{{task.registered_data_1-d_sj:ROSIE$_$vc_75_t_landing_2.database}}"
+    }
+  ]
+}
