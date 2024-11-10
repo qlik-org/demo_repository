@@ -1,0 +1,21 @@
+{
+  "id": "suppliers-d_ow",
+  "name": "Suppliers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "suppliers",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing_2-w-tf"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
