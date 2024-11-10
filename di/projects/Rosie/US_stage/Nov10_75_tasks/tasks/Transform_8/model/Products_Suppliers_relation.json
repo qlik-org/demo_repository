@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-cl2l",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_8-sxab"
+  },
+  "targetEntity": {
+    "datasetId": "suppliers-rxdj",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_8-sxab"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation-sxad"
+}

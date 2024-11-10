@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-rxc1",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_6-sxz2"
+  },
+  "targetEntity": {
+    "datasetId": "shippers-sxz6",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_6-sxz2"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipVia",
+      "targetColumn": "ShipperID",
+      "sourceColumnId": "shipvia",
+      "targetColumnId": "shipperid"
+    }
+  ],
+  "name": "Orders_Shippers",
+  "description": "",
+  "id": "orders_shippers-fyve"
+}
