@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-mbsr",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_17-hjnn"
+  },
+  "targetEntity": {
+    "datasetId": "customers-hjnp",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_17-hjnn"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_Customers_relation",
+  "description": "",
+  "id": "orders_customers_relation-mbsw"
+}
