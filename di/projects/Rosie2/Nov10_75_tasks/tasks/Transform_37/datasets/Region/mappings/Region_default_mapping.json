@@ -1,0 +1,37 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "region-w-05",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_36-w-0x"
+  },
+  "mappingFields": [
+    {
+      "columnId": "regionid",
+      "expression": {
+        "expressionStatement": "${RegionID}",
+        "alias": [
+          {
+            "name": "RegionID",
+            "value": "RegionID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "regiondescription",
+      "expression": {
+        "expressionStatement": "${RegionDescription}",
+        "alias": [
+          {
+            "name": "RegionDescription",
+            "value": "RegionDescription"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "region_default_mapping-w-1i",
+  "name": "Region_default_mapping",
+  "description": ""
+}
