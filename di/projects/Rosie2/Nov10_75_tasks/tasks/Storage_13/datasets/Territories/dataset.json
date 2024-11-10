@@ -1,0 +1,21 @@
+{
+  "id": "territories-w-ud",
+  "name": "Territories",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "territories",
+      "name": "Territories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing_2-w-tf"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
