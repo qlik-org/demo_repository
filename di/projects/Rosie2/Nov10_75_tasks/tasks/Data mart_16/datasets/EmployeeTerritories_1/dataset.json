@@ -1,0 +1,811 @@
+{
+  "id": "employeeterritories_1-d_tn",
+  "name": "EmployeeTerritories_1",
+  "type": "FACT",
+  "inputDatasets": [
+    {
+      "datasetId": "employeeterritories-d_to",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_38-d_tk"
+    },
+    {
+      "datasetId": "region-d_ts",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_38-d_tk"
+    },
+    {
+      "datasetId": "territories-d_ty",
+      "name": "Territories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_38-d_tk"
+    },
+    {
+      "datasetId": "employees-w-1r",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_38-d_tk"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "EmployeeTerritories_1",
+    "dbSchema": "vc_75_t_data_mart_16",
+    "dbName": "ROSIE",
+    "columns": [
+      {
+        "name": "EmployeeID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TerritoryID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "STRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(20)"
+        },
+        "id": "territoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "LastName",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(20)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$lastname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "FirstName",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$firstname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Title",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(30)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$title",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(25)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$titleofcourtesy",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "BirthDate",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$birthdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "HireDate",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$hiredate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Address",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(60)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "City",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Region",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "PostalCode",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Country",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "HomePhone",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(24)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$homephone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Extension",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(4)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$extension",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Photo",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 16384,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "BINARY",
+          "originalTypeFull": "BINARY(16384)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$photo",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Notes",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 8192,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(8192)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$notes",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ReportsTo",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$reportsto",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "PhotoPath",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(255)"
+        },
+        "id": "employeeterritories_employees_relation-w-1d$_$photopath",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TerritoryDescription",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "employeeterritories_territories_relation-d_ta$_$territorydescription",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RegionID",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "employeeterritories_territories_relation-d_ta$_$regionid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RegionDescription",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "employeeterritories_territories_relation-d_ta$_$territories_region_relation-w-1h$_$regiondescription",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "employeeterritories_1-d_tn",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "factDatasetSettings": {
+    "type": "TRANSACTIONAL",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "employeeterritories-d_to",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_38-d_tk"
+    },
+    "entityRelationshipPath": [
+      "employeeterritories_territories_relation-d_ta$_$territories_region_relation-w-1h",
+      "employeeterritories_territories_relation-d_ta",
+      "employeeterritories_employees_relation-w-1d"
+    ],
+    "factDimension": [
+      {
+        "name": "Employees",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "employees-d_th",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_16-d_te"
+        },
+        "dimensionRelationshipPath": "employeeterritories_employees_relation-w-1d",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_Employees_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Region",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "region-w-1k",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_16-d_te"
+        },
+        "dimensionRelationshipPath": "employeeterritories_territories_relation-d_ta$_$territories_region_relation-w-1h",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_Territories_relation:Territories_Region_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Territories",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "territories-w-1l",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_16-d_te"
+        },
+        "dimensionRelationshipPath": "employeeterritories_territories_relation-d_ta",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_Territories_relation",
+        "dimensionRelationshipPathShortName": ""
+      }
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "EmployeeID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TerritoryID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${TerritoryID}",
+            "alias": [
+              {
+                "name": "TerritoryID",
+                "value": "TerritoryID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "LastName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${LastName}",
+            "alias": [
+              {
+                "name": "LastName",
+                "value": "employeeterritories_employees_relation-w-1d$_$LastName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "FirstName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${FirstName}",
+            "alias": [
+              {
+                "name": "FirstName",
+                "value": "employeeterritories_employees_relation-w-1d$_$FirstName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Title",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Title}",
+            "alias": [
+              {
+                "name": "Title",
+                "value": "employeeterritories_employees_relation-w-1d$_$Title"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TitleOfCourtesy",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${TitleOfCourtesy}",
+            "alias": [
+              {
+                "name": "TitleOfCourtesy",
+                "value": "employeeterritories_employees_relation-w-1d$_$TitleOfCourtesy"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "BirthDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${BirthDate}",
+            "alias": [
+              {
+                "name": "BirthDate",
+                "value": "employeeterritories_employees_relation-w-1d$_$BirthDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HireDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HireDate}",
+            "alias": [
+              {
+                "name": "HireDate",
+                "value": "employeeterritories_employees_relation-w-1d$_$HireDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Address}",
+            "alias": [
+              {
+                "name": "Address",
+                "value": "employeeterritories_employees_relation-w-1d$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${City}",
+            "alias": [
+              {
+                "name": "City",
+                "value": "employeeterritories_employees_relation-w-1d$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Region}",
+            "alias": [
+              {
+                "name": "Region",
+                "value": "employeeterritories_employees_relation-w-1d$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${PostalCode}",
+            "alias": [
+              {
+                "name": "PostalCode",
+                "value": "employeeterritories_employees_relation-w-1d$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Country}",
+            "alias": [
+              {
+                "name": "Country",
+                "value": "employeeterritories_employees_relation-w-1d$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HomePhone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HomePhone}",
+            "alias": [
+              {
+                "name": "HomePhone",
+                "value": "employeeterritories_employees_relation-w-1d$_$HomePhone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Extension",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Extension}",
+            "alias": [
+              {
+                "name": "Extension",
+                "value": "employeeterritories_employees_relation-w-1d$_$Extension"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Photo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Photo}",
+            "alias": [
+              {
+                "name": "Photo",
+                "value": "employeeterritories_employees_relation-w-1d$_$Photo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Notes",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Notes}",
+            "alias": [
+              {
+                "name": "Notes",
+                "value": "employeeterritories_employees_relation-w-1d$_$Notes"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReportsTo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReportsTo}",
+            "alias": [
+              {
+                "name": "ReportsTo",
+                "value": "employeeterritories_employees_relation-w-1d$_$ReportsTo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "PhotoPath",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${PhotoPath}",
+            "alias": [
+              {
+                "name": "PhotoPath",
+                "value": "employeeterritories_employees_relation-w-1d$_$PhotoPath"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TerritoryDescription",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${TerritoryDescription}",
+            "alias": [
+              {
+                "name": "TerritoryDescription",
+                "value": "employeeterritories_territories_relation-d_ta$_$TerritoryDescription"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RegionID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RegionID}",
+            "alias": [
+              {
+                "name": "RegionID",
+                "value": "employeeterritories_territories_relation-d_ta$_$RegionID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RegionDescription",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RegionDescription}",
+            "alias": [
+              {
+                "name": "RegionDescription",
+                "value": "employeeterritories_territories_relation-d_ta$_$territories_region_relation-w-1h$_$RegionDescription"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "subtype": "MODEL_BASED"
+  }
+}
