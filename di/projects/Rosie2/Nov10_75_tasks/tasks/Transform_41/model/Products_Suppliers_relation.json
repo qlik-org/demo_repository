@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-w-2o",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_41-d_uc"
+  },
+  "targetEntity": {
+    "datasetId": "suppliers-d_uo",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_41-d_uc"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation-d_uv"
+}
