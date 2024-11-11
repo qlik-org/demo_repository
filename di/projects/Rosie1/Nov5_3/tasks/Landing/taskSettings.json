@@ -55,7 +55,6 @@
   },
   "maximumLobSize": 8,
   "includeLobColumns": true,
-  "isReplicateLanding": true,
   "landingType": "REPLICATE",
   "proxySettings": {
     "proxyOdbc": false,
@@ -211,8 +210,8 @@
   "ddlHandlingPolicy": {
     "addColumn": "APPLY_TO_TARGET",
     "changeColumnType": "IGNORE",
-    "renameTable": "IGNORE",
-    "renameColumn": "IGNORE",
+    "renameTable": "SUSPEND_TABLE",
+    "renameColumn": "SUSPEND_TABLE",
     "dropTable": "IGNORE",
     "dropColumn": "IGNORE",
     "truncateTable": "IGNORE",
