@@ -1,0 +1,21 @@
+{
+  "sourceConnection": "{{task.replication-a3ti.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.replication-a3ti:null$_$dbo.database}}",
+      "name": "Customers",
+      "schema": "{{task.replication-a3ti:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    },
+    {
+      "database": "{{task.replication-a3ti:null$_$dbo.database}}",
+      "name": "Employees",
+      "schema": "{{task.replication-a3ti:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    }
+  ]
+}
