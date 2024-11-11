@@ -1,0 +1,14 @@
+{
+  "sourceConnection": "{{task.replication_2-v5jc.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.replication_2-v5jc:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.replication_2-v5jc:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    }
+  ]
+}

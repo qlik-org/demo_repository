@@ -1,24 +1,24 @@
 {
   "fullLoadOnly": false,
   "targetEndpoint": {
-    "targetConnection": "{{task.replication-a3ti.targetConnection}}",
-    "targetSchema": "{{task.replication-a3ti.targetSchema}}",
-    "targetStorageConnection": "{{task.replication-a3ti.targetStorageConnection}}",
-    "targetControlTableSchema": "{{task.replication-a3ti.targetControlTableSchema}}"
+    "targetConnection": "{{task.replication_2-v5jc.targetConnection}}",
+    "targetSchema": "{{task.replication_2-v5jc.targetSchema}}",
+    "targetStorageConnection": "{{task.replication_2-v5jc.targetStorageConnection}}",
+    "targetControlTableSchema": "{{task.replication_2-v5jc.targetControlTableSchema}}"
   },
   "replicationAppRuntime": {
     "sourceCdcFetchIntervalMinutes": 60,
     "initialLoadMode": "useCache"
   },
-  "replicateTaskId": "0ChzrHw8QA68vQkH4zk2hr7SammFwQb9",
+  "replicateTaskId": "F_-rS5CKGl2uS0lhRVwwTb1ZVAXdrK8B",
   "proxySettings": {
     "proxyOdbc": false,
     "proxyStorage": false
   },
   "taskSettings": {
     "fullLoad": true,
-    "applyChanges": false,
-    "storeChanges": true
+    "applyChanges": true,
+    "storeChanges": false
   },
   "fullLoadOptions": {
     "tableExistsHandling": "DROP_AND_CREATE",
@@ -54,7 +54,7 @@
     "changeDataPartitioning": {
       "mode": "PARTITION_OFF",
       "partitionEvery": 60,
-      "partitionBaseTime": "2024-10-31T11:16:54.263Z"
+      "partitionBaseTime": "2024-11-03T13:35:46.936Z"
     },
     "changeTableHeaderColumn": [
       {

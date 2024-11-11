@@ -33,6 +33,12 @@
     }
   },
   "fullLoadOnly": true,
+  "targetEndpoint": {
+    "targetConnection": "{{task.lake_landing_1-_vxw.targetConnection}}",
+    "targetSchema": "{{task.lake_landing_1-_vxw.targetSchema}}",
+    "targetStorageConnection": "{{task.lake_landing_1-_vxw.targetStorageConnection}}",
+    "targetControlTableSchema": "{{task.lake_landing_1-_vxw.targetControlTableSchema}}"
+  },
   "landingDwSettings": {
     "landingArtifactsLocation": {
       "dataAssetSchema": "{{task.lake_landing_1-_vxw.taskSchema}}",
@@ -49,12 +55,12 @@
     "sourceCdcFetchIntervalMinutes": 60,
     "initialLoadMode": "useCache",
     "workloadExecutionEngine": {
-      "engineType": "DEFAULT"
+      "engineType": "DEFAULT",
+      "name": ""
     }
   },
   "maximumLobSize": 8,
   "includeLobColumns": true,
-  "isReplicateLanding": false,
   "landingType": "NONE",
   "proxySettings": {
     "proxyOdbc": false,
@@ -89,11 +95,6 @@
     "metadataFiles": {
       "createInTargetFolder": false
     }
-  },
-  "targetEndpoint": {
-    "connectionId": "6c70538d-70e5-4591-96bb-3e9ab723148b",
-    "schema": "",
-    "controlTableSchema": ""
   },
   "changeProcessingTuning": {
     "transactionTuning": {
@@ -223,8 +224,8 @@
   "ddlHandlingPolicy": {
     "addColumn": "APPLY_TO_TARGET",
     "changeColumnType": "IGNORE",
-    "renameTable": "IGNORE",
-    "renameColumn": "IGNORE",
+    "renameTable": "SUSPEND_TABLE",
+    "renameColumn": "SUSPEND_TABLE",
     "dropTable": "IGNORE",
     "dropColumn": "IGNORE",
     "truncateTable": "IGNORE",
