@@ -1,0 +1,200 @@
+{
+  "id": "order_details-d_px",
+  "name": "Order Details",
+  "type": "DIMENSION",
+  "inputDatasets": [
+    {
+      "datasetId": "order_details-w-u0",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_27-w-uu"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Order Details",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orderid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ProductID",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "productid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitPrice",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "unitprice",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Quantity",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "quantity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Discount",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "FLOAT4"
+        },
+        "id": "discount",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "dimensionDatasetSettings": {
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "order_details-w-u0",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_27-w-uu"
+    },
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "OrderID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${OrderID}",
+            "alias": [
+              {
+                "name": "OrderID",
+                "value": "OrderID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ProductID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${ProductID}",
+            "alias": [
+              {
+                "name": "ProductID",
+                "value": "ProductID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitPrice",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitPrice}",
+            "alias": [
+              {
+                "name": "UnitPrice",
+                "value": "UnitPrice"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Quantity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Quantity}",
+            "alias": [
+              {
+                "name": "Quantity",
+                "value": "Quantity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Discount",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Discount}",
+            "alias": [
+              {
+                "name": "Discount",
+                "value": "Discount"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED"
+  }
+}
