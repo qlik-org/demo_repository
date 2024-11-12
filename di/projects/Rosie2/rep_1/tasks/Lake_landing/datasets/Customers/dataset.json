@@ -1,0 +1,15 @@
+{
+  "id": "customers",
+  "name": "Customers",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lake_landing-b80p",
+      "schema": "{{task.lake_landing-b80p:null$_$dbo.schema}}",
+      "database": "{{task.lake_landing-b80p:null$_$dbo.database}}"
+    }
+  ]
+}
