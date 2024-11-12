@@ -1,0 +1,36 @@
+{
+  "ordinal": 0,
+  "actionType": "ADD_COLUMN",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Products",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "action": {
+    "renameType": "RENAME",
+    "applyColumnDatatype": false,
+    "column": {
+      "name": "UnitsInStock2",
+      "ordinal": 0,
+      "nullable": true,
+      "primaryKeyOrdinal": 0,
+      "datatype": {
+        "type": "INT4",
+        "length": 50,
+        "precision": 0,
+        "scale": 0,
+        "originalTypeFull": ""
+      },
+      "flags": "NONE"
+    }
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Rule",
+  "id": "rule-iwlv",
+  "description": ""
+}
