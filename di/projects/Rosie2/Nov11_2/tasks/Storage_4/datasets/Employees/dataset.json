@@ -1,0 +1,21 @@
+{
+  "id": "employees-mbrw",
+  "name": "Employees",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "employees",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-mbq9"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
