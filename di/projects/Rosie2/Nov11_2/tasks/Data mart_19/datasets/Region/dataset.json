@@ -1,0 +1,109 @@
+{
+  "id": "region-w-4k",
+  "name": "Region",
+  "type": "DIMENSION",
+  "inputDatasets": [
+    {
+      "datasetId": "region-d_vu",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_47-d_vm"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Region",
+    "columns": [
+      {
+        "name": "RegionID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "regionid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RegionDescription",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "regiondescription",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "dimensionDatasetSettings": {
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "region-d_vu",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_47-d_vm"
+    },
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "RegionID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${RegionID}",
+            "alias": [
+              {
+                "name": "RegionID",
+                "value": "RegionID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RegionDescription",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RegionDescription}",
+            "alias": [
+              {
+                "name": "RegionDescription",
+                "value": "RegionDescription"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED"
+  }
+}
