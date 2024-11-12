@@ -1,0 +1,386 @@
+{
+  "id": "customers-hjn0",
+  "name": "Customers",
+  "type": "DIMENSION",
+  "inputDatasets": [
+    {
+      "datasetId": "customers-hjnp",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_17-hjnn"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Customers",
+    "columns": [
+      {
+        "name": "CustomerID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "companyname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ContactName",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "contactname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ContactTitle",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "contacttitle",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Address",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "City",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Region",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "PostalCode",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Country",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Phone",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "phone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Fax",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "fax",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "dimensionDatasetSettings": {
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "customers-hjnp",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_17-hjnn"
+    },
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "CustomerID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${CustomerID}",
+            "alias": [
+              {
+                "name": "CustomerID",
+                "value": "CustomerID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CompanyName}",
+            "alias": [
+              {
+                "name": "CompanyName",
+                "value": "CompanyName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ContactName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ContactName}",
+            "alias": [
+              {
+                "name": "ContactName",
+                "value": "ContactName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ContactTitle",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ContactTitle}",
+            "alias": [
+              {
+                "name": "ContactTitle",
+                "value": "ContactTitle"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Address}",
+            "alias": [
+              {
+                "name": "Address",
+                "value": "Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${City}",
+            "alias": [
+              {
+                "name": "City",
+                "value": "City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Region}",
+            "alias": [
+              {
+                "name": "Region",
+                "value": "Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${PostalCode}",
+            "alias": [
+              {
+                "name": "PostalCode",
+                "value": "PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Country}",
+            "alias": [
+              {
+                "name": "Country",
+                "value": "Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Phone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Phone}",
+            "alias": [
+              {
+                "name": "Phone",
+                "value": "Phone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Fax",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Fax}",
+            "alias": [
+              {
+                "name": "Fax",
+                "value": "Fax"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED"
+  }
+}
