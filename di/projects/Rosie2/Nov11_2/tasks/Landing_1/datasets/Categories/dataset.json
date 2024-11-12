@@ -1,0 +1,15 @@
+{
+  "id": "categories",
+  "name": "Categories",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_categories",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing_1-sxyp",
+      "schema": "{{task.landing_1-sxyp:null$_$dbo.schema}}",
+      "database": "{{task.landing_1-sxyp:null$_$dbo.database}}"
+    }
+  ]
+}
