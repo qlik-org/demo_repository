@@ -1,0 +1,15 @@
+{
+  "id": "suppliers",
+  "name": "Suppliers",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$vc_75_t_landing_2_suppliers",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_1-d_sj",
+      "schema": "{{task.registered_data_1-d_sj:ROSIE$_$vc_75_t_landing_2.schema}}",
+      "database": "{{task.registered_data_1-d_sj:ROSIE$_$vc_75_t_landing_2.database}}"
+    }
+  ]
+}
