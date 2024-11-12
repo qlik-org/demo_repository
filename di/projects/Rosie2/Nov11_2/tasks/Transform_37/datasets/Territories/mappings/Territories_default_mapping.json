@@ -1,0 +1,49 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "territories-w-0_",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_36-w-0x"
+  },
+  "mappingFields": [
+    {
+      "columnId": "territoryid",
+      "expression": {
+        "expressionStatement": "${TerritoryID}",
+        "alias": [
+          {
+            "name": "TerritoryID",
+            "value": "TerritoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "territorydescription",
+      "expression": {
+        "expressionStatement": "${TerritoryDescription}",
+        "alias": [
+          {
+            "name": "TerritoryDescription",
+            "value": "TerritoryDescription"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "regionid",
+      "expression": {
+        "expressionStatement": "${RegionID}",
+        "alias": [
+          {
+            "name": "RegionID",
+            "value": "RegionID"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "territories_default_mapping-w-1o",
+  "name": "Territories_default_mapping",
+  "description": ""
+}
