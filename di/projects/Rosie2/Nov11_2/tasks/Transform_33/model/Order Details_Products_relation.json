@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "order_details-w-wl",
+    "name": "Order Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_33-w-wh"
+  },
+  "targetEntity": {
+    "datasetId": "products-w-wp",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_33-w-wh"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ProductID",
+      "targetColumn": "ProductID",
+      "sourceColumnId": "productid",
+      "targetColumnId": "productid"
+    }
+  ],
+  "name": "Order Details_Products_relation",
+  "description": "",
+  "id": "order_details_products_relation-d_rs"
+}
