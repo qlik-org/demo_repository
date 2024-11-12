@@ -1,0 +1,37 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "employeeterritories-w-qq",
+    "name": "EmployeeTerritories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage_1-w-ql"
+  },
+  "mappingFields": [
+    {
+      "columnId": "employeeid",
+      "expression": {
+        "expressionStatement": "${EmployeeID}",
+        "alias": [
+          {
+            "name": "EmployeeID",
+            "value": "EmployeeID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "territoryid",
+      "expression": {
+        "expressionStatement": "${TerritoryID}",
+        "alias": [
+          {
+            "name": "TerritoryID",
+            "value": "TerritoryID"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "employeeterritories_default_mapping-d_l1",
+  "name": "EmployeeTerritories_default_mapping",
+  "description": ""
+}
