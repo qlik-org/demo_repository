@@ -1,0 +1,152 @@
+{
+  "id": "b7b39a8b-ba72-4b4b-a049-8a221e78c246",
+  "description": "",
+  "name": "products_flow",
+  "modelVersion": "1.0.0",
+  "createdAt": "2024-11-12T13:17:07.755Z",
+  "createdBy": "66ab752551e79fb8580145ee",
+  "updatedAt": "2024-11-12T13:18:10.475Z",
+  "updatedBy": "66ab752551e79fb8580145ee",
+  "checksum": "cdcfc1de-5098-4644-a5c2-8a8bfef7a242",
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "88af8ef1-4872-4494-82bb-a4c3a60d17d4",
+        "label": "Products",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "16162d38-cf96-4465-9d32-30f61ca252c0",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-iwll",
+              "entityId": "products-iwlo"
+            },
+            "configuration": {
+              "name": "Products"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "ffe8c5da-2fc6-4d7d-bacd-b466567bda83",
+        "label": "products_flow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "dc2e3600-d217-40c9-8f49-9b6831ce2122",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "products_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "ProductID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "ProductName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "SupplierID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "CategoryID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "QuantityPerUnit",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitPrice",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsInStock",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsOnOrder",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ReorderLevel",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Discontinued",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsInStock2",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "43b9d9c8-5879-4435-b720-38a692e3b127",
+        "sourceHandle": "16162d38-cf96-4465-9d32-30f61ca252c0",
+        "targetHandle": "dc2e3600-d217-40c9-8f49-9b6831ce2122"
+      }
+    ]
+  },
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform-iwlw"
+  }
+}

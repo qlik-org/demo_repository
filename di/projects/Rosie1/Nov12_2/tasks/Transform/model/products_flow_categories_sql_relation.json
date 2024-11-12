@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products_flow-iwlb",
+    "name": "products_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-iwlw"
+  },
+  "targetEntity": {
+    "datasetId": "categories_sql-iwly",
+    "name": "categories_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-iwlw"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CategoryID",
+      "targetColumn": "CategoryID",
+      "sourceColumnId": "categoryid",
+      "targetColumnId": "categoryid"
+    }
+  ],
+  "name": "products_flow_categories_sql_relation",
+  "description": "",
+  "id": "products_flow_categories_sql_relation-iwle"
+}
