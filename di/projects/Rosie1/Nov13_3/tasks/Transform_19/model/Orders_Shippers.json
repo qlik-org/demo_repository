@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-w-qv",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_19-d_l-"
+  },
+  "targetEntity": {
+    "datasetId": "shippers-d_mg",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_19-d_l-"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipVia",
+      "targetColumn": "ShipperID",
+      "sourceColumnId": "shipvia",
+      "targetColumnId": "shipperid"
+    }
+  ],
+  "name": "Orders_Shippers",
+  "description": "",
+  "id": "orders_shippers-d_mp"
+}
