@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-d_qf",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_31-w-v4"
+  },
+  "targetEntity": {
+    "datasetId": "categories-d_qz",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_31-w-v4"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CategoryID",
+      "targetColumn": "CategoryID",
+      "sourceColumnId": "categoryid",
+      "targetColumnId": "categoryid"
+    }
+  ],
+  "name": "Products_Categories_relation",
+  "description": "",
+  "id": "products_categories_relation-d_qq"
+}
