@@ -1,0 +1,21 @@
+{
+  "id": "tbl_750_col-d_oz",
+  "name": "Tbl_750_col",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "tbl_750_col",
+      "name": "Tbl_750_col",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing_2-w-tf"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
