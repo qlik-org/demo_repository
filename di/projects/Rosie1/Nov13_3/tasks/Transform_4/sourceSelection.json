@@ -1,0 +1,28 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform-eda_",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.transform_4-edbu:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform_1-mzxz",
+      "name": "Order Details",
+      "type": "NONE",
+      "sourceTableId": "order_details-sxzv"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform_1-mzxz",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-cl1j"
+    }
+  ]
+}

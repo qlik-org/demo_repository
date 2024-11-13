@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employees-fywr",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_7-edch"
+  },
+  "targetEntity": {
+    "datasetId": "employees-fywr",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_7-edch"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ReportsTo",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "reportsto",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Employees_Employees",
+  "description": "",
+  "id": "employees_employees-fywt"
+}

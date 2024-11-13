@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-cl2c",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_7-edch"
+  },
+  "targetEntity": {
+    "datasetId": "shippers-mzy-",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_7-edch"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipVia",
+      "targetColumn": "ShipperID",
+      "sourceColumnId": "shipvia",
+      "targetColumnId": "shipperid"
+    }
+  ],
+  "name": "Orders_Shippers",
+  "description": "",
+  "id": "orders_shippers-sxaa"
+}
