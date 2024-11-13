@@ -1,0 +1,15 @@
+{
+  "id": "suppliers",
+  "name": "Suppliers",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$Nov13_2_branch1onboarding_landing_suppliers",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-vezi",
+      "schema": "{{task.registered_data-vezi:ROSIE$_$Nov13_2_branch1onboarding_landing.schema}}",
+      "database": "{{task.registered_data-vezi:ROSIE$_$Nov13_2_branch1onboarding_landing.database}}"
+    }
+  ]
+}

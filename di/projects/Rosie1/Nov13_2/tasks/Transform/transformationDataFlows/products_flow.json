@@ -1,0 +1,147 @@
+{
+  "id": "3e93c24c-f722-4da0-9b78-4fb6f1ec5aed",
+  "description": "",
+  "name": "products_flow",
+  "modelVersion": "1.0.0",
+  "createdAt": "2024-11-13T14:18:39.863Z",
+  "createdBy": "673455bb0a5db559a63bdcaf",
+  "updatedAt": "2024-11-13T14:18:57.166Z",
+  "updatedBy": "673455bb0a5db559a63bdcaf",
+  "checksum": "a1c3dc32-1cdb-4887-818b-531789934dd7",
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "a09a834f-3d9a-4505-8daf-a2a184011c01",
+        "label": "Products",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "633b2392-beb0-4ea3-b4a6-55967780d197",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-mvyb",
+              "entityId": "products-mvye"
+            },
+            "configuration": {
+              "name": "Products"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "8935352e-6ce8-44fe-aa7a-6abebbe85ed0",
+        "label": "products_flow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "b473826a-4a53-41d9-a9e8-dac7a83a9a60",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "products_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "ProductID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "ProductName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "SupplierID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "CategoryID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "QuantityPerUnit",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitPrice",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsInStock",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsOnOrder",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ReorderLevel",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Discontinued",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "cdab5e2d-0772-431d-928e-5f5e4ee16513",
+        "sourceHandle": "633b2392-beb0-4ea3-b4a6-55967780d197",
+        "targetHandle": "b473826a-4a53-41d9-a9e8-dac7a83a9a60"
+      }
+    ]
+  },
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform-mvyk"
+  }
+}
