@@ -1,0 +1,26 @@
+{
+  "id": "products_flow-mvym",
+  "name": "products_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "products-mvye",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-mvyb"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "3e93c24c-f722-4da0-9b78-4fb6f1ec5aed",
+    "targetId": "8935352e-6ce8-44fe-aa7a-6abebbe85ed0",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  }
+}

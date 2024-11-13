@@ -1,0 +1,13 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform-mvyk",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.data_mart-vezd:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}
