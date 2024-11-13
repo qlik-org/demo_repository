@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employeeterritories-d_nb",
+    "name": "EmployeeTerritories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_21-w-rt"
+  },
+  "targetEntity": {
+    "datasetId": "territories-w-rj",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_21-w-rt"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "TerritoryID",
+      "targetColumn": "TerritoryID",
+      "sourceColumnId": "territoryid",
+      "targetColumnId": "territoryid"
+    }
+  ],
+  "name": "EmployeeTerritories_Territories_relation",
+  "description": "",
+  "id": "employeeterritories_territories_relation-w-rl"
+}
