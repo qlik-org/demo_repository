@@ -1,0 +1,49 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "shippers-mbrq",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage_3-mbri"
+  },
+  "mappingFields": [
+    {
+      "columnId": "shipperid",
+      "expression": {
+        "expressionStatement": "${ShipperID}",
+        "alias": [
+          {
+            "name": "ShipperID",
+            "value": "ShipperID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "phone",
+      "expression": {
+        "expressionStatement": "${Phone}",
+        "alias": [
+          {
+            "name": "Phone",
+            "value": "Phone"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "shippers_default_mapping-mbr2",
+  "name": "Shippers_default_mapping",
+  "description": ""
+}
