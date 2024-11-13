@@ -1,0 +1,146 @@
+{
+  "id": "employeeterritories-d_ma",
+  "name": "EmployeeTerritories",
+  "type": "FACT",
+  "inputDatasets": [
+    {
+      "datasetId": "employeeterritories-d_mc",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_19-d_l-"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "EmployeeTerritories",
+    "dbSchema": "vc_many_t_data_mart_5",
+    "dbName": "ROSIE",
+    "columns": [
+      {
+        "name": "EmployeeID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TerritoryID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "territoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "employeeterritories-d_ma",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "factDatasetSettings": {
+    "type": "TRANSACTIONAL",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "employeeterritories-d_mc",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_19-d_l-"
+    },
+    "factDimension": [
+      {
+        "name": "Employees",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "employees-d_mu",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_5-d_mq"
+        },
+        "dimensionRelationshipPath": "employeeterritories_employees_relation-w-q7",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_Employees_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Region",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "region-d_mw",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_5-d_mq"
+        },
+        "dimensionRelationshipPath": "employeeterritories_territories_relation-w-q_$_$territories_region_relation-w-q8",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_Territories_relation:Territories_Region_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Territories",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "territories-d_mz",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_5-d_mq"
+        },
+        "dimensionRelationshipPath": "employeeterritories_territories_relation-w-q_",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_Territories_relation",
+        "dimensionRelationshipPathShortName": ""
+      }
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "EmployeeID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TerritoryID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${TerritoryID}",
+            "alias": [
+              {
+                "name": "TerritoryID",
+                "value": "TerritoryID"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "subtype": "MODEL_BASED"
+  }
+}
