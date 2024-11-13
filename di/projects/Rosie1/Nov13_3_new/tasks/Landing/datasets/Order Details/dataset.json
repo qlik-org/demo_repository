@@ -1,0 +1,15 @@
+{
+  "id": "order_details",
+  "name": "Order Details",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_order_details",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-cl0r",
+      "schema": "{{task.landing-cl0r:null$_$dbo.schema}}",
+      "database": "{{task.landing-cl0r:null$_$dbo.database}}"
+    }
+  ]
+}
