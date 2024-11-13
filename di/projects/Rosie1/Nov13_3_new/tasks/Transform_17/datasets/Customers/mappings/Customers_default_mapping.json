@@ -1,0 +1,145 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "customers-hjnb",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_13-mbsf"
+  },
+  "mappingFields": [
+    {
+      "columnId": "customerid",
+      "expression": {
+        "expressionStatement": "${CustomerID}",
+        "alias": [
+          {
+            "name": "CustomerID",
+            "value": "CustomerID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "contactname",
+      "expression": {
+        "expressionStatement": "${ContactName}",
+        "alias": [
+          {
+            "name": "ContactName",
+            "value": "ContactName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "contacttitle",
+      "expression": {
+        "expressionStatement": "${ContactTitle}",
+        "alias": [
+          {
+            "name": "ContactTitle",
+            "value": "ContactTitle"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "address",
+      "expression": {
+        "expressionStatement": "${Address}",
+        "alias": [
+          {
+            "name": "Address",
+            "value": "Address"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "city",
+      "expression": {
+        "expressionStatement": "${City}",
+        "alias": [
+          {
+            "name": "City",
+            "value": "City"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "region",
+      "expression": {
+        "expressionStatement": "${Region}",
+        "alias": [
+          {
+            "name": "Region",
+            "value": "Region"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "postalcode",
+      "expression": {
+        "expressionStatement": "${PostalCode}",
+        "alias": [
+          {
+            "name": "PostalCode",
+            "value": "PostalCode"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "country",
+      "expression": {
+        "expressionStatement": "${Country}",
+        "alias": [
+          {
+            "name": "Country",
+            "value": "Country"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "phone",
+      "expression": {
+        "expressionStatement": "${Phone}",
+        "alias": [
+          {
+            "name": "Phone",
+            "value": "Phone"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "fax",
+      "expression": {
+        "expressionStatement": "${Fax}",
+        "alias": [
+          {
+            "name": "Fax",
+            "value": "Fax"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "customers_default_mapping-hjnq",
+  "name": "Customers_default_mapping",
+  "description": ""
+}
