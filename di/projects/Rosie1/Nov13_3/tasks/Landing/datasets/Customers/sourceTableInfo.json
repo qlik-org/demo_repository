@@ -1,0 +1,12 @@
+{
+  "id": "$replicate$dbo_customers",
+  "name": "dbo_Customers",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Customers",
+    "dbSchema": "{{task.landing-cl0r:AutoNorthwind$_$dbo.schema}}",
+    "dbName": "{{task.landing-cl0r:AutoNorthwind$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
