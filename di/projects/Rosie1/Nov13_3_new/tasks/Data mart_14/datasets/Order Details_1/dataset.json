@@ -1,0 +1,2272 @@
+{
+  "id": "order_details_1-w-xc",
+  "name": "Order Details_1",
+  "type": "FACT",
+  "inputDatasets": [
+    {
+      "datasetId": "order_details-w-wl",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_33-w-wh"
+    },
+    {
+      "datasetId": "suppliers-d_rm",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_33-w-wh"
+    },
+    {
+      "datasetId": "categories-w-wj",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_33-w-wh"
+    },
+    {
+      "datasetId": "products-w-wp",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_33-w-wh"
+    },
+    {
+      "datasetId": "employees-d_re",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_33-w-wh"
+    },
+    {
+      "datasetId": "customers-d_rc",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_33-w-wh"
+    },
+    {
+      "datasetId": "orders-w-wn",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_33-w-wh"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Order Details_1",
+    "dbSchema": "vc_many_t_data_mart_14",
+    "dbName": "ROSIE",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orderid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ProductID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "productid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitPrice",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "unitprice",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Quantity",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "quantity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Discount",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "FLOAT4"
+        },
+        "id": "discount",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CustomerID",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "EmployeeID",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "order_details_orders_relation-d_rr$_$employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDate",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orderdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RequiredDate",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$requireddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShippedDate",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$shippeddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipVia",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "order_details_orders_relation-d_rr$_$shipvia",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Freight",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$freight",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipName",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$shipname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipAddress",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$shipaddress",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCity",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$shipcity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipRegion",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$shipregion",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipPostalCode",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$shippostalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCountry",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$shipcountry",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ProductName",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "order_details_products_relation-d_rs$_$productname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "SupplierID",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "order_details_products_relation-d_rs$_$supplierid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CategoryID",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "order_details_products_relation-d_rs$_$categoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "QuantityPerUnit",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "order_details_products_relation-d_rs$_$quantityperunit",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_UnitPrice",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "order_details_products_relation-d_rs$_$unitprice",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitsInStock",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "order_details_products_relation-d_rs$_$unitsinstock",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitsOnOrder",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "order_details_products_relation-d_rs$_$unitsonorder",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ReorderLevel",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "order_details_products_relation-d_rs$_$reorderlevel",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Discontinued",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BOOLEAN"
+        },
+        "id": "order_details_products_relation-d_rs$_$discontinued",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_CompanyName",
+        "ordinal": 28,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_CompanyName",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_ContactName",
+        "ordinal": 29,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_ContactName",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_ContactTitle",
+        "ordinal": 30,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_ContactTitle",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_Address",
+        "ordinal": 31,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_Address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_City",
+        "ordinal": 32,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_City",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_Region",
+        "ordinal": 33,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_Region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_PostalCode",
+        "ordinal": 34,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_PostalCode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_Country",
+        "ordinal": 35,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_Country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_Phone",
+        "ordinal": 36,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_Phone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Customers_relation_Fax",
+        "ordinal": 37,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Order_Details_Orders_relation_Orders_Customers_relation_Fax",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "LastName",
+        "ordinal": 38,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$lastname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "FirstName",
+        "ordinal": 39,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$firstname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Title",
+        "ordinal": 40,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$title",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "ordinal": 41,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(25)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$titleofcourtesy",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "BirthDate",
+        "ordinal": 42,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$birthdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "HireDate",
+        "ordinal": 43,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$hiredate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Employees_relation_Address",
+        "ordinal": 44,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Employees_relation_City",
+        "ordinal": 45,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Employees_relation_Region",
+        "ordinal": 46,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Employees_relation_PostalCode",
+        "ordinal": 47,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Orders_relation_Orders_Employees_relation_Country",
+        "ordinal": 48,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "HomePhone",
+        "ordinal": 49,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$homephone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Extension",
+        "ordinal": 50,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(4)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$extension",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Photo",
+        "ordinal": 51,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BLOB",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$photo",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Notes",
+        "ordinal": 52,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 1073741823,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$notes",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ReportsTo",
+        "ordinal": 53,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$reportsto",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "PhotoPath",
+        "ordinal": 54,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(255)"
+        },
+        "id": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$photopath",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CategoryName",
+        "ordinal": 55,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_categories_relation-w-w0$_$categoryname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Description",
+        "ordinal": 56,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 1073741823,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_categories_relation-w-w0$_$description",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Picture",
+        "ordinal": 57,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BLOB",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_categories_relation-w-w0$_$picture",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_CompanyName",
+        "ordinal": 58,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$companyname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_ContactName",
+        "ordinal": 59,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$contactname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_ContactTitle",
+        "ordinal": 60,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$contacttitle",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_Address",
+        "ordinal": 61,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_City",
+        "ordinal": 62,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_Region",
+        "ordinal": 63,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_PostalCode",
+        "ordinal": 64,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_Country",
+        "ordinal": 65,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_Phone",
+        "ordinal": 66,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$phone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Order_Details_Products_relation_Products_Suppliers_relation_Fax",
+        "ordinal": 67,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$fax",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "HomePage",
+        "ordinal": 68,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 1073741823,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$homepage",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "order_details_1-w-xc",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "factDatasetSettings": {
+    "type": "TRANSACTIONAL",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "order_details-w-wl",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_33-w-wh"
+    },
+    "entityRelationshipPath": [
+      "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt",
+      "order_details_products_relation-d_rs$_$products_categories_relation-w-w0",
+      "order_details_products_relation-d_rs",
+      "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz",
+      "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy",
+      "order_details_orders_relation-d_rr"
+    ],
+    "factDimension": [
+      {
+        "name": "Categories",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "categories-w-w3",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_14-w-w1"
+        },
+        "dimensionRelationshipPath": "order_details_products_relation-d_rs$_$products_categories_relation-w-w0",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Products_relation:Products_Categories_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Customers",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "customers-w-w4",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_14-w-w1"
+        },
+        "dimensionRelationshipPath": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Orders_relation:Orders_Customers_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Employees",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "employees-w-w5",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_14-w-w1"
+        },
+        "dimensionRelationshipPath": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Orders_relation:Orders_Employees_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Orders",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "orders-w-w8",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_14-w-w1"
+        },
+        "dimensionRelationshipPath": "order_details_orders_relation-d_rr",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Orders_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Products",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "products-w-w9",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_14-w-w1"
+        },
+        "dimensionRelationshipPath": "order_details_products_relation-d_rs",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Products_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Suppliers",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "suppliers-w-xa",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_14-w-w1"
+        },
+        "dimensionRelationshipPath": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt",
+        "dimensionRelationshipPathDisplayName": "Order_Details_Products_relation:Products_Suppliers_relation",
+        "dimensionRelationshipPathShortName": ""
+      }
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "OrderID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${OrderID}",
+            "alias": [
+              {
+                "name": "OrderID",
+                "value": "OrderID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ProductID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${ProductID}",
+            "alias": [
+              {
+                "name": "ProductID",
+                "value": "ProductID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitPrice",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitPrice}",
+            "alias": [
+              {
+                "name": "UnitPrice",
+                "value": "UnitPrice"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Quantity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Quantity}",
+            "alias": [
+              {
+                "name": "Quantity",
+                "value": "Quantity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Discount",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Discount}",
+            "alias": [
+              {
+                "name": "Discount",
+                "value": "Discount"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CustomerID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CustomerID}",
+            "alias": [
+              {
+                "name": "CustomerID",
+                "value": "order_details_orders_relation-d_rr$_$CustomerID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "EmployeeID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "order_details_orders_relation-d_rr$_$EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDate}",
+            "alias": [
+              {
+                "name": "OrderDate",
+                "value": "order_details_orders_relation-d_rr$_$OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RequiredDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RequiredDate}",
+            "alias": [
+              {
+                "name": "RequiredDate",
+                "value": "order_details_orders_relation-d_rr$_$RequiredDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShippedDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShippedDate}",
+            "alias": [
+              {
+                "name": "ShippedDate",
+                "value": "order_details_orders_relation-d_rr$_$ShippedDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipVia",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipVia}",
+            "alias": [
+              {
+                "name": "ShipVia",
+                "value": "order_details_orders_relation-d_rr$_$ShipVia"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Freight",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Freight}",
+            "alias": [
+              {
+                "name": "Freight",
+                "value": "order_details_orders_relation-d_rr$_$Freight"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipName}",
+            "alias": [
+              {
+                "name": "ShipName",
+                "value": "order_details_orders_relation-d_rr$_$ShipName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipAddress",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipAddress}",
+            "alias": [
+              {
+                "name": "ShipAddress",
+                "value": "order_details_orders_relation-d_rr$_$ShipAddress"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCity}",
+            "alias": [
+              {
+                "name": "ShipCity",
+                "value": "order_details_orders_relation-d_rr$_$ShipCity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipRegion",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipRegion}",
+            "alias": [
+              {
+                "name": "ShipRegion",
+                "value": "order_details_orders_relation-d_rr$_$ShipRegion"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipPostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipPostalCode}",
+            "alias": [
+              {
+                "name": "ShipPostalCode",
+                "value": "order_details_orders_relation-d_rr$_$ShipPostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCountry",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCountry}",
+            "alias": [
+              {
+                "name": "ShipCountry",
+                "value": "order_details_orders_relation-d_rr$_$ShipCountry"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ProductName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ProductName}",
+            "alias": [
+              {
+                "name": "ProductName",
+                "value": "order_details_products_relation-d_rs$_$ProductName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "SupplierID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${SupplierID}",
+            "alias": [
+              {
+                "name": "SupplierID",
+                "value": "order_details_products_relation-d_rs$_$SupplierID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CategoryID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryID}",
+            "alias": [
+              {
+                "name": "CategoryID",
+                "value": "order_details_products_relation-d_rs$_$CategoryID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "QuantityPerUnit",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${QuantityPerUnit}",
+            "alias": [
+              {
+                "name": "QuantityPerUnit",
+                "value": "order_details_products_relation-d_rs$_$QuantityPerUnit"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_UnitPrice",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_UnitPrice}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_UnitPrice",
+                "value": "order_details_products_relation-d_rs$_$UnitPrice"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitsInStock",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitsInStock}",
+            "alias": [
+              {
+                "name": "UnitsInStock",
+                "value": "order_details_products_relation-d_rs$_$UnitsInStock"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitsOnOrder",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitsOnOrder}",
+            "alias": [
+              {
+                "name": "UnitsOnOrder",
+                "value": "order_details_products_relation-d_rs$_$UnitsOnOrder"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReorderLevel",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReorderLevel}",
+            "alias": [
+              {
+                "name": "ReorderLevel",
+                "value": "order_details_products_relation-d_rs$_$ReorderLevel"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Discontinued",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Discontinued}",
+            "alias": [
+              {
+                "name": "Discontinued",
+                "value": "order_details_products_relation-d_rs$_$Discontinued"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_CompanyName}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_CompanyName",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$CompanyName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_ContactName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_ContactName}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_ContactName",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$ContactName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_ContactTitle",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_ContactTitle}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_ContactTitle",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$ContactTitle"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_Address}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_Address",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_City}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_City",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_Region}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_Region",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_PostalCode}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_PostalCode",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_Country}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_Country",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_Phone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_Phone}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_Phone",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Phone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Customers_relation_Fax",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Customers_relation_Fax}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Customers_relation_Fax",
+                "value": "order_details_orders_relation-d_rr$_$orders_customers_relation-w-wy$_$Fax"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "LastName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${LastName}",
+            "alias": [
+              {
+                "name": "LastName",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$LastName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "FirstName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${FirstName}",
+            "alias": [
+              {
+                "name": "FirstName",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$FirstName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Title",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Title}",
+            "alias": [
+              {
+                "name": "Title",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$Title"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TitleOfCourtesy",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${TitleOfCourtesy}",
+            "alias": [
+              {
+                "name": "TitleOfCourtesy",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$TitleOfCourtesy"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "BirthDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${BirthDate}",
+            "alias": [
+              {
+                "name": "BirthDate",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$BirthDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HireDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HireDate}",
+            "alias": [
+              {
+                "name": "HireDate",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$HireDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Employees_relation_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Employees_relation_Address}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Employees_relation_Address",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Employees_relation_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Employees_relation_City}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Employees_relation_City",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Employees_relation_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Employees_relation_Region}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Employees_relation_Region",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Employees_relation_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Employees_relation_PostalCode}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Employees_relation_PostalCode",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Orders_relation_Orders_Employees_relation_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Orders_relation_Orders_Employees_relation_Country}",
+            "alias": [
+              {
+                "name": "Order_Details_Orders_relation_Orders_Employees_relation_Country",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HomePhone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HomePhone}",
+            "alias": [
+              {
+                "name": "HomePhone",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$HomePhone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Extension",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Extension}",
+            "alias": [
+              {
+                "name": "Extension",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$Extension"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Photo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Photo}",
+            "alias": [
+              {
+                "name": "Photo",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$Photo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Notes",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Notes}",
+            "alias": [
+              {
+                "name": "Notes",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$Notes"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReportsTo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReportsTo}",
+            "alias": [
+              {
+                "name": "ReportsTo",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$ReportsTo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "PhotoPath",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${PhotoPath}",
+            "alias": [
+              {
+                "name": "PhotoPath",
+                "value": "order_details_orders_relation-d_rr$_$orders_employees_relation-w-wz$_$PhotoPath"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CategoryName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryName}",
+            "alias": [
+              {
+                "name": "CategoryName",
+                "value": "order_details_products_relation-d_rs$_$products_categories_relation-w-w0$_$CategoryName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Description",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Description}",
+            "alias": [
+              {
+                "name": "Description",
+                "value": "order_details_products_relation-d_rs$_$products_categories_relation-w-w0$_$Description"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Picture",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Picture}",
+            "alias": [
+              {
+                "name": "Picture",
+                "value": "order_details_products_relation-d_rs$_$products_categories_relation-w-w0$_$Picture"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_CompanyName}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_CompanyName",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$CompanyName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_ContactName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_ContactName}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_ContactName",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$ContactName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_ContactTitle",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_ContactTitle}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_ContactTitle",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$ContactTitle"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_Address}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_Address",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_City}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_City",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_Region}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_Region",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_PostalCode}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_PostalCode",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_Country}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_Country",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_Phone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_Phone}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_Phone",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$Phone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Order_Details_Products_relation_Products_Suppliers_relation_Fax",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Order_Details_Products_relation_Products_Suppliers_relation_Fax}",
+            "alias": [
+              {
+                "name": "Order_Details_Products_relation_Products_Suppliers_relation_Fax",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$Fax"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HomePage",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HomePage}",
+            "alias": [
+              {
+                "name": "HomePage",
+                "value": "order_details_products_relation-d_rs$_$products_suppliers_relation-d_rt$_$HomePage"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "subtype": "MODEL_BASED"
+  }
+}
