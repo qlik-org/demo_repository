@@ -1,0 +1,14 @@
+{
+  "sourceConnection": "{{task.replication-optb.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.replication-optb:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.replication-optb:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    }
+  ]
+}
