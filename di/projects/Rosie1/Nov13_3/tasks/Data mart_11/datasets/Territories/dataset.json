@@ -1,0 +1,138 @@
+{
+  "id": "territories-d_pd",
+  "name": "Territories",
+  "type": "DIMENSION",
+  "inputDatasets": [
+    {
+      "datasetId": "territories-d_pr",
+      "name": "Territories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform_27-w-uu"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Territories",
+    "columns": [
+      {
+        "name": "TerritoryID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "territoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TerritoryDescription",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(50)"
+        },
+        "id": "territorydescription",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RegionID",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "regionid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "dimensionDatasetSettings": {
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "territories-d_pr",
+      "name": "Territories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform_27-w-uu"
+    },
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "TerritoryID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${TerritoryID}",
+            "alias": [
+              {
+                "name": "TerritoryID",
+                "value": "TerritoryID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TerritoryDescription",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${TerritoryDescription}",
+            "alias": [
+              {
+                "name": "TerritoryDescription",
+                "value": "TerritoryDescription"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RegionID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RegionID}",
+            "alias": [
+              {
+                "name": "RegionID",
+                "value": "RegionID"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED"
+  }
+}

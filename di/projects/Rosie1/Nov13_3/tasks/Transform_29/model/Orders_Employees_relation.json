@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-w-vw",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_29-w-vq"
+  },
+  "targetEntity": {
+    "datasetId": "employees-d_pw",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_29-w-vq"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Orders_Employees_relation",
+  "description": "",
+  "id": "orders_employees_relation-w-vi"
+}
