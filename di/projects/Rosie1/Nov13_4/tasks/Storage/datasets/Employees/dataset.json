@@ -1,0 +1,21 @@
+{
+  "id": "employees-r63h",
+  "name": "Employees",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "employees",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-r82q"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
