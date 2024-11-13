@@ -1,0 +1,133 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "products-mbrh",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage_5-hjmq"
+  },
+  "mappingFields": [
+    {
+      "columnId": "productid",
+      "expression": {
+        "expressionStatement": "${ProductID}",
+        "alias": [
+          {
+            "name": "ProductID",
+            "value": "ProductID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "productname",
+      "expression": {
+        "expressionStatement": "${ProductName}",
+        "alias": [
+          {
+            "name": "ProductName",
+            "value": "ProductName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "supplierid",
+      "expression": {
+        "expressionStatement": "${SupplierID}",
+        "alias": [
+          {
+            "name": "SupplierID",
+            "value": "SupplierID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "categoryid",
+      "expression": {
+        "expressionStatement": "${CategoryID}",
+        "alias": [
+          {
+            "name": "CategoryID",
+            "value": "CategoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "quantityperunit",
+      "expression": {
+        "expressionStatement": "${QuantityPerUnit}",
+        "alias": [
+          {
+            "name": "QuantityPerUnit",
+            "value": "QuantityPerUnit"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "unitprice",
+      "expression": {
+        "expressionStatement": "${UnitPrice}",
+        "alias": [
+          {
+            "name": "UnitPrice",
+            "value": "UnitPrice"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "unitsinstock",
+      "expression": {
+        "expressionStatement": "${UnitsInStock}",
+        "alias": [
+          {
+            "name": "UnitsInStock",
+            "value": "UnitsInStock"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "unitsonorder",
+      "expression": {
+        "expressionStatement": "${UnitsOnOrder}",
+        "alias": [
+          {
+            "name": "UnitsOnOrder",
+            "value": "UnitsOnOrder"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "reorderlevel",
+      "expression": {
+        "expressionStatement": "${ReorderLevel}",
+        "alias": [
+          {
+            "name": "ReorderLevel",
+            "value": "ReorderLevel"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "discontinued",
+      "expression": {
+        "expressionStatement": "${Discontinued}",
+        "alias": [
+          {
+            "name": "Discontinued",
+            "value": "Discontinued"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "products_default_mapping-hjm8",
+  "name": "Products_default_mapping",
+  "description": ""
+}
