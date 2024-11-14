@@ -1,0 +1,14 @@
+{
+  "sourceConnection": "{{task.onboarding_barb_landing-mes4.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.onboarding_barb_landing-mes4:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.onboarding_barb_landing-mes4:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    }
+  ]
+}
