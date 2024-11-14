@@ -1,11 +1,25 @@
 {
-  "id": "$replicate$dbo_orders",
-  "name": "dbo_Orders",
-  "type": "LANDING",
+  "id": "orders-a5f5",
+  "name": "Orders",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "orders-fytw",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-fytq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
   "tableDef": {
     "name": "Orders",
-    "dbSchema": "{{task.onboarding_landing-fytp:AutoNorthwind$_$dbo.schema}}",
-    "dbName": "{{task.onboarding_landing-fytp:AutoNorthwind$_$dbo.database}}",
     "columns": [
       {
         "name": "OrderID",
@@ -17,10 +31,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INTEGER"
         },
         "id": "orderid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "CustomerID",
@@ -32,10 +49,13 @@
           "length": 5,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(5)"
         },
         "id": "customerid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "EmployeeID",
@@ -47,10 +67,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INTEGER"
         },
         "id": "employeeid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "OrderDate",
@@ -62,10 +85,13 @@
           "length": 0,
           "precision": 3,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
         },
         "id": "orderdate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "RequiredDate",
@@ -77,10 +103,13 @@
           "length": 0,
           "precision": 3,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
         },
         "id": "requireddate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShippedDate",
@@ -92,10 +121,13 @@
           "length": 0,
           "precision": 3,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
         },
         "id": "shippeddate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipVia",
@@ -107,10 +139,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INTEGER"
         },
         "id": "shipvia",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Freight",
@@ -122,10 +157,13 @@
           "length": 0,
           "precision": 19,
           "scale": 4,
-          "originalTypeFull": ""
+          "originalTypeFull": "NUMBER(19,4)"
         },
         "id": "freight",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipName",
@@ -137,10 +175,13 @@
           "length": 40,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(40)"
         },
         "id": "shipname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipAddress",
@@ -152,10 +193,13 @@
           "length": 60,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(60)"
         },
         "id": "shipaddress",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipCity",
@@ -167,10 +211,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(15)"
         },
         "id": "shipcity",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipRegion",
@@ -182,10 +229,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(15)"
         },
         "id": "shipregion",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipPostalCode",
@@ -197,10 +247,13 @@
           "length": 10,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(10)"
         },
         "id": "shippostalcode",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipCountry",
@@ -212,10 +265,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(15)"
         },
         "id": "shipcountry",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       }
     ],
     "secureQri": "",

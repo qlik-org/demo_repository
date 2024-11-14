@@ -1,11 +1,25 @@
 {
-  "id": "$replicate$dbo_order_details",
-  "name": "dbo_Order Details",
-  "type": "LANDING",
+  "id": "order_details-glb7",
+  "name": "Order Details",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "order_details-fytv",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-fytq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
   "tableDef": {
     "name": "Order Details",
-    "dbSchema": "{{task.onboarding_landing-fytp:AutoNorthwind$_$dbo.schema}}",
-    "dbName": "{{task.onboarding_landing-fytp:AutoNorthwind$_$dbo.database}}",
     "columns": [
       {
         "name": "OrderID",
@@ -17,10 +31,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INTEGER"
         },
         "id": "orderid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ProductID",
@@ -32,10 +49,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INTEGER"
         },
         "id": "productid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "UnitPrice",
@@ -47,10 +67,13 @@
           "length": 0,
           "precision": 19,
           "scale": 4,
-          "originalTypeFull": ""
+          "originalTypeFull": "NUMBER(19,4)"
         },
         "id": "unitprice",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Quantity",
@@ -62,10 +85,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "SMALLINT"
         },
         "id": "quantity",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Discount",
@@ -77,10 +103,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "FLOAT4"
         },
         "id": "discount",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       }
     ],
     "secureQri": "",
