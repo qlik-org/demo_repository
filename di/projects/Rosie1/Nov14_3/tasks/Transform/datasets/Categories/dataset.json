@@ -1,11 +1,25 @@
 {
-  "id": "$replicate$dbo_categories",
-  "name": "dbo_Categories",
-  "type": "LANDING",
+  "id": "categories-a5fs",
+  "name": "Categories",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "categories-fyts",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-fytq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
   "tableDef": {
     "name": "Categories",
-    "dbSchema": "{{task.onboarding_landing-fytp:AutoNorthwind$_$dbo.schema}}",
-    "dbName": "{{task.onboarding_landing-fytp:AutoNorthwind$_$dbo.database}}",
     "columns": [
       {
         "name": "CategoryID",
@@ -17,10 +31,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INTEGER"
         },
         "id": "categoryid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "CategoryName",
@@ -32,10 +49,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(15)"
         },
         "id": "categoryname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Description",
@@ -47,10 +67,13 @@
           "length": 1073741823,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(8388608)"
         },
         "id": "description",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Picture",
@@ -62,10 +85,13 @@
           "length": 2147483647,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "BINARY(8388608)"
         },
         "id": "picture",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       }
     ],
     "secureQri": "",
