@@ -1,11 +1,25 @@
 {
-  "id": "$replicate$dbo_employees",
-  "name": "dbo_Employees",
-  "type": "LANDING",
+  "id": "employees-a5f3",
+  "name": "Employees",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "employees-fytu",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-fytq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
   "tableDef": {
     "name": "Employees",
-    "dbSchema": "{{task.onboarding_landing-fytp:AutoNorthwind$_$dbo.schema}}",
-    "dbName": "{{task.onboarding_landing-fytp:AutoNorthwind$_$dbo.database}}",
     "columns": [
       {
         "name": "EmployeeID",
@@ -17,10 +31,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INTEGER"
         },
         "id": "employeeid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "LastName",
@@ -32,10 +49,13 @@
           "length": 20,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(20)"
         },
         "id": "lastname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "FirstName",
@@ -47,10 +67,13 @@
           "length": 10,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(10)"
         },
         "id": "firstname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Title",
@@ -62,10 +85,13 @@
           "length": 30,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(30)"
         },
         "id": "title",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "TitleOfCourtesy",
@@ -77,10 +103,13 @@
           "length": 25,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(25)"
         },
         "id": "titleofcourtesy",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "BirthDate",
@@ -92,10 +121,13 @@
           "length": 0,
           "precision": 3,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
         },
         "id": "birthdate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "HireDate",
@@ -107,10 +139,13 @@
           "length": 0,
           "precision": 3,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
         },
         "id": "hiredate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Address",
@@ -122,10 +157,13 @@
           "length": 60,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(60)"
         },
         "id": "address",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "City",
@@ -137,10 +175,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(15)"
         },
         "id": "city",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Region",
@@ -152,10 +193,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(15)"
         },
         "id": "region",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "PostalCode",
@@ -167,10 +211,13 @@
           "length": 10,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(10)"
         },
         "id": "postalcode",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Country",
@@ -182,10 +229,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(15)"
         },
         "id": "country",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "HomePhone",
@@ -197,10 +247,13 @@
           "length": 24,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(24)"
         },
         "id": "homephone",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Extension",
@@ -212,10 +265,13 @@
           "length": 4,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(4)"
         },
         "id": "extension",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Photo",
@@ -227,10 +283,13 @@
           "length": 2147483647,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "BINARY(8388608)"
         },
         "id": "photo",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Notes",
@@ -242,10 +301,13 @@
           "length": 1073741823,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(8388608)"
         },
         "id": "notes",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ReportsTo",
@@ -257,10 +319,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INTEGER"
         },
         "id": "reportsto",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "PhotoPath",
@@ -272,10 +337,13 @@
           "length": 255,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(255)"
         },
         "id": "photopath",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       }
     ],
     "secureQri": "",
