@@ -1,0 +1,21 @@
+{
+  "artifactsSettings": {
+    "liveViewsEnabled": false,
+    "historyEnabled": true,
+    "materialized": false,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "artifactsPrefix": ""
+  },
+  "artifactsLocation": {
+    "internalSchema": "{{task.transform1114-t-ng.internalSchema}}",
+    "taskSchema": "{{task.transform1114-t-ng.taskSchema}}",
+    "databaseName": "{{task.transform1114-t-ng.databaseName}}"
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.transform1114-t-ng.warehouseName}}"
+    }
+  }
+}

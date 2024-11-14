@@ -1,0 +1,13 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "customers_0ct22_landing-mz1x",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.customers_0ct22_storage-mz1y:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}
