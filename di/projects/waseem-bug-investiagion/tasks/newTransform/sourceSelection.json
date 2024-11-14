@@ -2,8 +2,9 @@
   "includePatterns": [
     {
       "sourceProject": "{{ref(project.current.projectId)}}",
-      "sourceTask": "investigation_landing-vh-c",
+      "sourceTask": "investigation_storage-vh-d",
       "tablePattern": "%",
+      "schemaPattern": "{{task.newtransform-s_m-:null$_$%.schemaPattern}}",
       "type": "TABLE"
     }
   ],
