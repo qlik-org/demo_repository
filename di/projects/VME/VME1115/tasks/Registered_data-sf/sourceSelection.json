@@ -1,0 +1,20 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.registered_data_sf-metm:ORI$_$NORTHWIND.database}}",
+      "name": "Categories",
+      "schema": "{{task.registered_data_sf-metm:ORI$_$NORTHWIND.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$NORTHWIND_categories"
+    },
+    {
+      "database": "{{task.registered_data_sf-metm:ORI$_$NORTHWIND.database}}",
+      "name": "Contacts",
+      "schema": "{{task.registered_data_sf-metm:ORI$_$NORTHWIND.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$NORTHWIND_contacts"
+    }
+  ]
+}

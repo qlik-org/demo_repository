@@ -1,0 +1,31 @@
+{
+  "id": "flow1-metx",
+  "name": "FLow1",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "categories-metp",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_sf_storage-metn"
+    },
+    {
+      "datasetId": "contacts-metq",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_sf_storage-metn"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "d35ca753-2b68-45e7-b3d5-a0134a5581ba",
+    "targetId": "e487a666-537b-4214-a7ce-00a2eefada87",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  }
+}

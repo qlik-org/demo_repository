@@ -1,0 +1,15 @@
+{
+  "id": "contacts",
+  "name": "Contacts",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$NORTHWIND_contacts",
+      "name": "Contacts",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_sf-metm",
+      "schema": "{{task.registered_data_sf-metm:ORI$_$NORTHWIND.schema}}",
+      "database": "{{task.registered_data_sf-metm:ORI$_$NORTHWIND.database}}"
+    }
+  ]
+}
