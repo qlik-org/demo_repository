@@ -1,0 +1,58 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "KEEP",
+        "columnName": "Description",
+        "newColumnName": "DescriptionOfCategory",
+        "newDataType": {
+          "type": "UNSPECIFIED",
+          "length": 150,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false
+      },
+      {
+        "action": "ADD",
+        "columnName": "NewCol1",
+        "newDataType": {
+          "type": "DATE",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "",
+          "alias": []
+        },
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "addedColumnId": "5d6af365-e55a-4ecc-b6b1-e5a6534563e4",
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "datasetId": "categories",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Categories",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Categories",
+  "id": "categories-metw",
+  "description": ""
+}

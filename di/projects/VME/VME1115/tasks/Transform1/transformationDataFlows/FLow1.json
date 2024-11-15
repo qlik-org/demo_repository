@@ -1,0 +1,292 @@
+{
+  "id": "d35ca753-2b68-45e7-b3d5-a0134a5581ba",
+  "description": "",
+  "name": "FLow1",
+  "modelVersion": "1.0.0",
+  "createdAt": "2024-11-15T14:36:51.606Z",
+  "createdBy": "673455bb0a5db559a63bdcaf",
+  "updatedAt": "2024-11-15T14:38:57.377Z",
+  "updatedBy": "673455bb0a5db559a63bdcaf",
+  "checksum": "1ba4b230-f919-4e52-9cc2-f123fdfdfc05",
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "1ad351cc-992f-46e6-87f7-279f3c42dc24",
+        "label": "Categories",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "f4c8822f-988a-47fe-8fe0-413965b16d07",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "registered_data_sf_storage-metn",
+              "entityId": "categories-metp"
+            },
+            "configuration": {
+              "name": "Categories"
+            }
+          }
+        }
+      },
+      {
+        "type": "source",
+        "id": "c33fcf1d-32c7-44b2-ba69-5521ff211022",
+        "label": "Contacts",
+        "graphical": {
+          "position": {
+            "x": 120,
+            "y": 200
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "d3ab49ed-64b2-4b4c-86f2-86519da5e9c4",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "registered_data_sf_storage-metn",
+              "entityId": "contacts-metq"
+            },
+            "configuration": {
+              "name": "Contacts"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "e487a666-537b-4214-a7ce-00a2eefada87",
+        "label": "FLow1",
+        "graphical": {
+          "position": {
+            "x": 640,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "046d80c4-8dc7-4851-9eec-54df3808ec20",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "FLow1",
+              "settings": {
+                "materialized": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "CategoryID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CategoryName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "DescriptionOfCategory",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "NewCol1",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "ContactType",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "CompanyName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactTitle",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Extension",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Fax",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HomePage",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PhotoPath",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Photo",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "c9ecd0e9-867d-4d88-b638-eb2ecfdb6235",
+        "label": "Join 1",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "union-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "9757832c-cacf-4c24-b262-027e402edc20",
+              "type": "DEFAULT"
+            },
+            {
+              "id": "e857aace-f3ff-4798-9695-50d0289d0e38",
+              "type": "LOOKUP"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "b2540441-7c70-4b0c-a4dc-a21f498376bf",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "join",
+          "label": "Join",
+          "properties": {
+            "tckType": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjSm9pbjI",
+            "configuration": {
+              "joinFunction": "LEFT_OUTER_JOIN",
+              "conditions": [
+                {
+                  "leftKey": "CategoryID",
+                  "rightKey": "ContactID",
+                  "keepBothKeysInOutput": true,
+                  "$leftKey_name": "CategoryID",
+                  "$rightKey_name": "ContactID"
+                }
+              ],
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "5bbc3aa1-4a4f-401e-9e58-aedd780ca4bb",
+        "sourceHandle": "f4c8822f-988a-47fe-8fe0-413965b16d07",
+        "targetHandle": "9757832c-cacf-4c24-b262-027e402edc20"
+      },
+      {
+        "id": "reactflow__edge-c33fcf1d-32c7-44b2-ba69-5521ff211022d3ab49ed-64b2-4b4c-86f2-86519da5e9c4-c9ecd0e9-867d-4d88-b638-eb2ecfdb6235e857aace-f3ff-4798-9695-50d0289d0e38",
+        "sourceHandle": "d3ab49ed-64b2-4b4c-86f2-86519da5e9c4",
+        "targetHandle": "e857aace-f3ff-4798-9695-50d0289d0e38"
+      },
+      {
+        "id": "234bf130-48ac-4eb0-be24-507ee5f1ae8d",
+        "sourceHandle": "b2540441-7c70-4b0c-a4dc-a21f498376bf",
+        "targetHandle": "046d80c4-8dc7-4851-9eec-54df3808ec20"
+      }
+    ]
+  },
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform1-9ox9"
+  }
+}
