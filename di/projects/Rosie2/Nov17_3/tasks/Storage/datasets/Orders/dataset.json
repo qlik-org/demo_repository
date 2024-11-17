@@ -1,0 +1,21 @@
+{
+  "id": "orders-y3b2",
+  "name": "Orders",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-in3j"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
