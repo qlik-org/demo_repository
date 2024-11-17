@@ -1,0 +1,21 @@
+{
+  "sourceConnection": "{{task.replication-d1cm.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.replication-d1cm:null$_$dbo.database}}",
+      "name": "EmployeeTerritories",
+      "schema": "{{task.replication-d1cm:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employeeterritories"
+    },
+    {
+      "database": "{{task.replication-d1cm:null$_$dbo.database}}",
+      "name": "Territories",
+      "schema": "{{task.replication-d1cm:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_territories"
+    }
+  ]
+}
