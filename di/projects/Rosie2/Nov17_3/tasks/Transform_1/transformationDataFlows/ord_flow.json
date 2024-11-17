@@ -1,0 +1,167 @@
+{
+  "id": "d29be47c-86a9-4102-94be-f767aa7bfb8c",
+  "description": "",
+  "name": "ord_flow",
+  "modelVersion": "1.0.0",
+  "createdAt": "2024-11-17T22:46:12.580Z",
+  "createdBy": "673455bb0a5db559a63bdcaf",
+  "updatedAt": "2024-11-17T22:46:31.655Z",
+  "updatedBy": "673455bb0a5db559a63bdcaf",
+  "checksum": "bfe54bca-7ce9-49c5-8f81-2f978d99b499",
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "403abf55-8bfd-445f-bff0-9999833651dd",
+        "label": "Orders",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "c2641d72-7544-4ede-881e-59c17058fd4b",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "storage_1-bdyz",
+              "entityId": "orders-bdyd"
+            },
+            "configuration": {
+              "name": "Orders"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "c1937971-180e-4de7-8fd5-b2690c7c2490",
+        "label": "ord_flow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "ffb27a2d-4e5b-40b5-b060-b841c32fef55",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "ord_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "OrderID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CustomerID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "EmployeeID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "OrderDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "RequiredDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShippedDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipVia",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Freight",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipAddress",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipCity",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipRegion",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipPostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipCountry",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "3902ca36-2ccb-4f68-a4c7-cc352d235fe8",
+        "sourceHandle": "c2641d72-7544-4ede-881e-59c17058fd4b",
+        "targetHandle": "ffb27a2d-4e5b-40b5-b060-b841c32fef55"
+      }
+    ]
+  },
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform_1-bdye"
+  }
+}
