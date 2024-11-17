@@ -1,0 +1,77 @@
+{
+  "sourceConnection": "{{task.landing-pepz.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "Customers",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    },
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "Employees",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    },
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "EmployeeTerritories",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employeeterritories"
+    },
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "Order Details",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_order_details"
+    },
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "Orders",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_orders"
+    },
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "Products",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    },
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "Region",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_region"
+    },
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "Shippers",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_shippers"
+    },
+    {
+      "database": "{{task.landing-pepz:null$_$dbo.database}}",
+      "name": "Suppliers",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_suppliers"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "region",
+  "name": "Region",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_region",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-pepz",
+      "schema": "{{task.landing-pepz:null$_$dbo.schema}}",
+      "database": "{{task.landing-pepz:null$_$dbo.database}}"
+    }
+  ]
+}
