@@ -20,7 +20,7 @@
   },
   "tableDef": {
     "name": "EmployeeTerritories",
-    "dbSchema": "Nov17_3_data_mart",
+    "dbSchema": "Nov17_3_branch2_data_mart",
     "dbName": "ROSIE",
     "columns": [
       {
@@ -84,6 +84,30 @@
         },
         "dimensionRelationshipPath": "employeeterritories_employees_relation-bdyk",
         "dimensionRelationshipPathDisplayName": "EmployeeTerritories_Employees_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Region",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "region-bdyx",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart-y3cf"
+        },
+        "dimensionRelationshipPath": "employeeterritories_terrsql-bdyy$_$terrsql_region-y3cs",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_TerrSql:TerrSql_Region",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "terr_sql",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "terr_sql-y3cr",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart-y3cf"
+        },
+        "dimensionRelationshipPath": "employeeterritories_terrsql-bdyy",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_TerrSql",
         "dimensionRelationshipPathShortName": ""
       }
     ],

@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "terr_sql-bdyi",
+    "name": "terr_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-bdx9"
+  },
+  "targetEntity": {
+    "datasetId": "region-y3ca",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-bdx9"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "RegionID",
+      "targetColumn": "RegionID",
+      "sourceColumnId": "regionid",
+      "targetColumnId": "regionid"
+    }
+  ],
+  "name": "TerrSql_Region",
+  "description": "",
+  "id": "terrsql_region-y3cs"
+}

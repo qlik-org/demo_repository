@@ -1,0 +1,21 @@
+{
+  "id": "orders-bdyd",
+  "name": "Orders",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing_1-bdyy"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}

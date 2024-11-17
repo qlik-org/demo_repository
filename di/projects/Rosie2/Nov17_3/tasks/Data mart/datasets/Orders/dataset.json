@@ -352,44 +352,8 @@
         }
       },
       {
-        "name": "City",
-        "ordinal": 19,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 15,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(15)"
-        },
-        "id": "orders_customers_relation-y3cd$_$city",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "Region",
-        "ordinal": 20,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 15,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(15)"
-        },
-        "id": "orders_customers_relation-y3cd$_$region",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
         "name": "PostalCode",
-        "ordinal": 21,
+        "ordinal": 19,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -407,7 +371,7 @@
       },
       {
         "name": "Country",
-        "ordinal": 22,
+        "ordinal": 20,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -425,7 +389,7 @@
       },
       {
         "name": "Phone",
-        "ordinal": 23,
+        "ordinal": 21,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -443,7 +407,7 @@
       },
       {
         "name": "Fax",
-        "ordinal": 24,
+        "ordinal": 22,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -454,6 +418,24 @@
           "originalTypeFull": "NVARCHAR(24)"
         },
         "id": "orders_customers_relation-y3cd$_$fax",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShippedDate_1",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "ShippedDate_1-6039",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
@@ -713,32 +695,6 @@
           }
         },
         {
-          "columnName": "City",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${City}",
-            "alias": [
-              {
-                "name": "City",
-                "value": "orders_customers_relation-y3cd$_$City"
-              }
-            ]
-          }
-        },
-        {
-          "columnName": "Region",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${Region}",
-            "alias": [
-              {
-                "name": "Region",
-                "value": "orders_customers_relation-y3cd$_$Region"
-              }
-            ]
-          }
-        },
-        {
           "columnName": "PostalCode",
           "type": "NONE",
           "expression": {
@@ -786,6 +742,19 @@
               {
                 "name": "Fax",
                 "value": "orders_customers_relation-y3cd$_$Fax"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShippedDate_1",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShippedDate}",
+            "alias": [
+              {
+                "name": "ShippedDate",
+                "value": "ShippedDate"
               }
             ]
           }
