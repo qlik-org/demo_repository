@@ -1,0 +1,12 @@
+{
+  "id": "$replicate$dbo_territories",
+  "name": "dbo_Territories",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Territories",
+    "dbSchema": "{{task.lake_landing-d1cn:null$_$dbo.schema}}",
+    "dbName": "{{task.lake_landing-d1cn:null$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

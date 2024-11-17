@@ -1,0 +1,12 @@
+{
+  "id": "$replicate$dbo_employeeterritories",
+  "name": "dbo_EmployeeTerritories",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "EmployeeTerritories",
+    "dbSchema": "{{task.replication-d1cm:null$_$dbo.schema}}",
+    "dbName": "{{task.replication-d1cm:null$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
