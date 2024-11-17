@@ -34,15 +34,15 @@
   },
   "fullLoadOnly": false,
   "targetEndpoint": {
-    "targetConnection": "{{task.lake_landing-a0x4.targetConnection}}",
-    "targetSchema": "{{task.lake_landing-a0x4.targetSchema}}",
-    "targetStorageConnection": "{{task.lake_landing-a0x4.targetStorageConnection}}",
-    "targetControlTableSchema": "{{task.lake_landing-a0x4.targetControlTableSchema}}"
+    "targetConnection": "{{task.lake_landing_1-xqbw.targetConnection}}",
+    "targetSchema": "{{task.lake_landing_1-xqbw.targetSchema}}",
+    "targetStorageConnection": "{{task.lake_landing_1-xqbw.targetStorageConnection}}",
+    "targetControlTableSchema": "{{task.lake_landing_1-xqbw.targetControlTableSchema}}"
   },
   "landingDwSettings": {
     "landingArtifactsLocation": {
-      "dataAssetSchema": "{{task.lake_landing-a0x4.taskSchema}}",
-      "database": "{{task.lake_landing-a0x4.databaseName}}"
+      "dataAssetSchema": "{{task.lake_landing_1-xqbw.taskSchema}}",
+      "database": "{{task.lake_landing_1-xqbw.databaseName}}"
     }
   },
   "landingStorageSettings": {
@@ -55,8 +55,7 @@
     "sourceCdcFetchIntervalMinutes": 60,
     "initialLoadMode": "useCache",
     "workloadExecutionEngine": {
-      "engineType": "DEFAULT",
-      "name": ""
+      "engineType": "DEFAULT"
     }
   },
   "maximumLobSize": 8,
