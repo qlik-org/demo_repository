@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employeeterritories-y3b8",
+    "name": "EmployeeTerritories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-bdx9"
+  },
+  "targetEntity": {
+    "datasetId": "terr_sql-bdyi",
+    "name": "terr_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-bdx9"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "TerritoryID",
+      "targetColumn": "TerritoryID",
+      "sourceColumnId": "territoryid",
+      "targetColumnId": "territoryid"
+    }
+  ],
+  "name": "EmployeeTerritories_TerrSql",
+  "description": "",
+  "id": "employeeterritories_terrsql-bdyy"
+}

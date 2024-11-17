@@ -1,15 +1,15 @@
 {
   "sourceEntity": {
-    "datasetId": "employeeterritories-y3b8",
-    "name": "EmployeeTerritories",
+    "datasetId": "ord_flow-bdyn",
+    "name": "ord_flow",
     "projectId": "{{ref(project.current.projectId)}}",
-    "taskId": "transform-bdx9"
+    "taskId": "transform_1-bdye"
   },
   "targetEntity": {
-    "datasetId": "employees-bdyc",
-    "name": "Employees",
+    "datasetId": "emp_sql-bdym",
+    "name": "emp_sql",
     "projectId": "{{ref(project.current.projectId)}}",
-    "taskId": "transform-bdx9"
+    "taskId": "transform_1-bdye"
   },
   "columnRelationships": [
     {
@@ -19,7 +19,7 @@
       "targetColumnId": "employeeid"
     }
   ],
-  "name": "EmployeeTerritories_Employees_relation",
+  "name": "ord_flow_emp_sql_relation",
   "description": "",
-  "id": "employeeterritories_employees_relation-bdyk"
+  "id": "ord_flow_emp_sql_relation-bdyp"
 }

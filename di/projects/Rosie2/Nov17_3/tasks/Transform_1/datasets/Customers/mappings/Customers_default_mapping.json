@@ -1,9 +1,9 @@
 {
   "sourceDataEntityKey": {
-    "datasetId": "customers-y3b0",
+    "datasetId": "customers-bdyb",
     "name": "Customers",
     "projectId": "{{ref(project.current.projectId)}}",
-    "taskId": "storage-bdx7"
+    "taskId": "storage_1-bdyz"
   },
   "mappingFields": [
     {
@@ -103,6 +103,18 @@
       }
     },
     {
+      "columnId": "country",
+      "expression": {
+        "expressionStatement": "${Country}",
+        "alias": [
+          {
+            "name": "Country",
+            "value": "Country"
+          }
+        ]
+      }
+    },
+    {
       "columnId": "phone",
       "expression": {
         "expressionStatement": "${Phone}",
@@ -125,21 +137,9 @@
           }
         ]
       }
-    },
-    {
-      "columnId": "ContactName_1-0968",
-      "expression": {
-        "expressionStatement": "${ContactName}",
-        "alias": [
-          {
-            "name": "ContactName",
-            "value": "ContactName"
-          }
-        ]
-      }
     }
   ],
-  "id": "customers_default_mapping-y3b7",
+  "id": "customers_default_mapping-y3cm",
   "name": "Customers_default_mapping",
   "description": ""
 }

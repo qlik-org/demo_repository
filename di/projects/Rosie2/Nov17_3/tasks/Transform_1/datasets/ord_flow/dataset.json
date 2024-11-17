@@ -1,0 +1,26 @@
+{
+  "id": "ord_flow-bdyn",
+  "name": "ord_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "orders-bdyd",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage_1-bdyz"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "d29be47c-86a9-4102-94be-f767aa7bfb8c",
+    "targetId": "c1937971-180e-4de7-8fd5-b2690c7c2490",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  }
+}

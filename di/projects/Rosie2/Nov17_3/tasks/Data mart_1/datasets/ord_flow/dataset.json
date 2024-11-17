@@ -1,19 +1,13 @@
 {
-  "id": "orders-bdyr",
-  "name": "Orders",
-  "type": "DIMENSION",
+  "id": "ord_flow-bdyr",
+  "name": "ord_flow",
+  "type": "FACT",
   "inputDatasets": [
     {
-      "datasetId": "orders-y3b-",
-      "name": "Orders",
+      "datasetId": "ord_flow-bdyn",
+      "name": "ord_flow",
       "projectId": "{{ref(project.current.projectId)}}",
-      "taskId": "transform-bdx9"
-    },
-    {
-      "datasetId": "customers-y3b6",
-      "name": "Customers",
-      "projectId": "{{ref(project.current.projectId)}}",
-      "taskId": "transform-bdx9"
+      "taskId": "transform_1-bdye"
     }
   ],
   "datasetAttributes": {
@@ -25,19 +19,21 @@
     "watermarkIncrementalSettings": "INHERIT"
   },
   "tableDef": {
-    "name": "Orders",
+    "name": "ord_flow",
+    "dbSchema": "Nov17_3_branch2_data_mart_1",
+    "dbName": "ROSIE",
     "columns": [
       {
         "name": "OrderID",
         "ordinal": 1,
-        "nullable": true,
+        "nullable": false,
         "primaryKeyOrdinal": 1,
         "datatype": {
-          "type": "INT4",
+          "type": "NUMERIC",
           "length": 0,
-          "precision": 0,
+          "precision": 38,
           "scale": 0,
-          "originalTypeFull": "INTEGER"
+          "originalTypeFull": "NUMBER(38,0)"
         },
         "id": "orderid",
         "flags": "NONE",
@@ -69,11 +65,11 @@
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
-          "type": "INT4",
+          "type": "NUMERIC",
           "length": 0,
-          "precision": 0,
+          "precision": 38,
           "scale": 0,
-          "originalTypeFull": "INTEGER"
+          "originalTypeFull": "NUMBER(38,0)"
         },
         "id": "employeeid",
         "flags": "NONE",
@@ -141,11 +137,11 @@
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
-          "type": "INT4",
+          "type": "NUMERIC",
           "length": 0,
-          "precision": 0,
+          "precision": 38,
           "scale": 0,
-          "originalTypeFull": "INTEGER"
+          "originalTypeFull": "NUMBER(38,0)"
         },
         "id": "shipvia",
         "flags": "NONE",
@@ -278,185 +274,46 @@
         "properties": {
           "documentMetadata": false
         }
-      },
-      {
-        "name": "CompanyName",
-        "ordinal": 15,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 40,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(40)"
-        },
-        "id": "orders_customers_relation-y3cd$_$companyname",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "ContactName",
-        "ordinal": 16,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 30,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(30)"
-        },
-        "id": "orders_customers_relation-y3cd$_$contactname",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "ContactTitle",
-        "ordinal": 17,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 30,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(30)"
-        },
-        "id": "orders_customers_relation-y3cd$_$contacttitle",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "Address",
-        "ordinal": 18,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 60,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(60)"
-        },
-        "id": "orders_customers_relation-y3cd$_$address",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "PostalCode",
-        "ordinal": 19,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 10,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(10)"
-        },
-        "id": "orders_customers_relation-y3cd$_$postalcode",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "Country",
-        "ordinal": 20,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 15,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(15)"
-        },
-        "id": "orders_customers_relation-y3cd$_$country",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "Phone",
-        "ordinal": 21,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 24,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(24)"
-        },
-        "id": "orders_customers_relation-y3cd$_$phone",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "Fax",
-        "ordinal": 22,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 24,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(24)"
-        },
-        "id": "orders_customers_relation-y3cd$_$fax",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "ShippedDate_1",
-        "ordinal": 23,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "DATETIME",
-          "length": 0,
-          "precision": 3,
-          "scale": 0,
-          "originalTypeFull": "TIMESTAMP_NTZ(3)"
-        },
-        "id": "ShippedDate_1-6039",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
       }
     ],
-    "entityId": "",
+    "entityId": "ord_flow-bdyr",
     "secureQri": "",
     "fullLoadOnly": false
   },
-  "dimensionDatasetSettings": {
-    "type": "TYPE1",
+  "factDatasetSettings": {
+    "type": "TRANSACTIONAL",
     "rootDataEntityId": {
       "type": "NONE",
-      "entityId": "orders-y3b-",
-      "name": "Orders",
+      "entityId": "ord_flow-bdyn",
+      "name": "ord_flow",
       "projectId": "{{ref(project.current.projectId)}}",
-      "dataAppId": "transform-bdx9"
+      "dataAppId": "transform_1-bdye"
     },
-    "entityRelationshipPath": [
-      "orders_customers_relation-y3cd"
+    "factDimension": [
+      {
+        "name": "Customers",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "customers-y3cq",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_1-y3co"
+        },
+        "dimensionRelationshipPath": "ord_flow_customers_relation-bdyo",
+        "dimensionRelationshipPathDisplayName": "ord_flow_Customers_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "emp_sql",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "emp_sql-bdyq",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart_1-y3co"
+        },
+        "dimensionRelationshipPath": "ord_flow_emp_sql_relation-bdyp",
+        "dimensionRelationshipPathDisplayName": "ord_flow_emp_sql_relation",
+        "dimensionRelationshipPathShortName": ""
+      }
     ],
     "mapping": {
       "columns": [
@@ -641,127 +498,9 @@
               }
             ]
           }
-        },
-        {
-          "columnName": "CompanyName",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${CompanyName}",
-            "alias": [
-              {
-                "name": "CompanyName",
-                "value": "orders_customers_relation-y3cd$_$CompanyName"
-              }
-            ]
-          }
-        },
-        {
-          "columnName": "ContactName",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${ContactName}",
-            "alias": [
-              {
-                "name": "ContactName",
-                "value": "orders_customers_relation-y3cd$_$ContactName"
-              }
-            ]
-          }
-        },
-        {
-          "columnName": "ContactTitle",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${ContactTitle}",
-            "alias": [
-              {
-                "name": "ContactTitle",
-                "value": "orders_customers_relation-y3cd$_$ContactTitle"
-              }
-            ]
-          }
-        },
-        {
-          "columnName": "Address",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${Address}",
-            "alias": [
-              {
-                "name": "Address",
-                "value": "orders_customers_relation-y3cd$_$Address"
-              }
-            ]
-          }
-        },
-        {
-          "columnName": "PostalCode",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${PostalCode}",
-            "alias": [
-              {
-                "name": "PostalCode",
-                "value": "orders_customers_relation-y3cd$_$PostalCode"
-              }
-            ]
-          }
-        },
-        {
-          "columnName": "Country",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${Country}",
-            "alias": [
-              {
-                "name": "Country",
-                "value": "orders_customers_relation-y3cd$_$Country"
-              }
-            ]
-          }
-        },
-        {
-          "columnName": "Phone",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${Phone}",
-            "alias": [
-              {
-                "name": "Phone",
-                "value": "orders_customers_relation-y3cd$_$Phone"
-              }
-            ]
-          }
-        },
-        {
-          "columnName": "Fax",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${Fax}",
-            "alias": [
-              {
-                "name": "Fax",
-                "value": "orders_customers_relation-y3cd$_$Fax"
-              }
-            ]
-          }
-        },
-        {
-          "columnName": "ShippedDate_1",
-          "type": "NONE",
-          "expression": {
-            "expressionStatement": "${ShippedDate}",
-            "alias": [
-              {
-                "name": "ShippedDate",
-                "value": "ShippedDate"
-              }
-            ]
-          }
         }
       ]
     },
-    "fullyType2Sources": false,
     "subtype": "MODEL_BASED"
   }
 }

@@ -1,13 +1,13 @@
 {
-  "id": "employees-bdyc",
-  "name": "Employees",
+  "id": "customers-y3cl",
+  "name": "Customers",
   "type": "TRANSFORM_MODEL_BASED",
   "inputDatasets": [
     {
-      "datasetId": "employees-y3bw",
-      "name": "Employees",
+      "datasetId": "customers-bdyb",
+      "name": "Customers",
       "projectId": "{{ref(project.current.projectId)}}",
-      "taskId": "storage-bdx7"
+      "taskId": "storage_1-bdyz"
     }
   ],
   "datasetAttributes": {
@@ -19,64 +19,64 @@
     "watermarkIncrementalSettings": "INHERIT"
   },
   "tableDef": {
-    "name": "Employees",
+    "name": "Customers",
     "columns": [
       {
-        "name": "EmployeeID",
+        "name": "CustomerID",
         "ordinal": 1,
         "nullable": false,
         "primaryKeyOrdinal": 1,
         "datatype": {
-          "type": "INT4",
-          "length": 0,
+          "type": "WSTRING",
+          "length": 5,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": "INTEGER"
+          "originalTypeFull": "NVARCHAR(5)"
         },
-        "id": "employeeid",
+        "id": "customerid",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "LastName",
+        "name": "CompanyName",
         "ordinal": 2,
         "nullable": false,
         "primaryKeyOrdinal": 0,
         "datatype": {
           "type": "WSTRING",
-          "length": 20,
+          "length": 40,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": "NVARCHAR(20)"
+          "originalTypeFull": "NVARCHAR(40)"
         },
-        "id": "lastname",
+        "id": "companyname",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "FirstName",
+        "name": "ContactName",
         "ordinal": 3,
-        "nullable": false,
+        "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
           "type": "WSTRING",
-          "length": 10,
+          "length": 30,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": "NVARCHAR(10)"
+          "originalTypeFull": "NVARCHAR(30)"
         },
-        "id": "firstname",
+        "id": "contactname",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "Title",
+        "name": "ContactTitle",
         "ordinal": 4,
         "nullable": true,
         "primaryKeyOrdinal": 0,
@@ -87,61 +87,7 @@
           "scale": 0,
           "originalTypeFull": "NVARCHAR(30)"
         },
-        "id": "title",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "TitleOfCourtesy",
-        "ordinal": 5,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 25,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(25)"
-        },
-        "id": "titleofcourtesy",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "BirthDate",
-        "ordinal": 6,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "DATETIME",
-          "length": 0,
-          "precision": 3,
-          "scale": 0,
-          "originalTypeFull": "TIMESTAMP_NTZ(3)"
-        },
-        "id": "birthdate",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "HireDate",
-        "ordinal": 7,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "DATETIME",
-          "length": 0,
-          "precision": 3,
-          "scale": 0,
-          "originalTypeFull": "TIMESTAMP_NTZ(3)"
-        },
-        "id": "hiredate",
+        "id": "contacttitle",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
@@ -149,7 +95,7 @@
       },
       {
         "name": "Address",
-        "ordinal": 8,
+        "ordinal": 5,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -167,7 +113,7 @@
       },
       {
         "name": "City",
-        "ordinal": 9,
+        "ordinal": 6,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -185,7 +131,7 @@
       },
       {
         "name": "Region",
-        "ordinal": 10,
+        "ordinal": 7,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -203,7 +149,7 @@
       },
       {
         "name": "PostalCode",
-        "ordinal": 11,
+        "ordinal": 8,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -221,7 +167,7 @@
       },
       {
         "name": "Country",
-        "ordinal": 12,
+        "ordinal": 9,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -238,8 +184,8 @@
         }
       },
       {
-        "name": "HomePhone",
-        "ordinal": 13,
+        "name": "Phone",
+        "ordinal": 10,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
@@ -249,97 +195,25 @@
           "scale": 0,
           "originalTypeFull": "NVARCHAR(24)"
         },
-        "id": "homephone",
+        "id": "phone",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "Extension",
-        "ordinal": 14,
+        "name": "Fax",
+        "ordinal": 11,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
           "type": "WSTRING",
-          "length": 4,
+          "length": 24,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": "NVARCHAR(4)"
+          "originalTypeFull": "NVARCHAR(24)"
         },
-        "id": "extension",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "Photo",
-        "ordinal": 15,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "BLOB",
-          "length": 2147483647,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "BINARY(8388608)"
-        },
-        "id": "photo",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "Notes",
-        "ordinal": 16,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "NCLOB",
-          "length": 1073741823,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(8388608)"
-        },
-        "id": "notes",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "ReportsTo",
-        "ordinal": 17,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "INT4",
-          "length": 0,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "INTEGER"
-        },
-        "id": "reportsto",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "PhotoPath",
-        "ordinal": 18,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 255,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": "NVARCHAR(255)"
-        },
-        "id": "photopath",
+        "id": "fax",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
