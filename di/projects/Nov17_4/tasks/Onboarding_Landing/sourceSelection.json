@@ -1,0 +1,35 @@
+{
+  "sourceConnection": "{{task.onboarding_landing-9la3.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.onboarding_landing-9la3:null$_$dbo.database}}",
+      "name": "Employees",
+      "schema": "{{task.onboarding_landing-9la3:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    },
+    {
+      "database": "{{task.onboarding_landing-9la3:null$_$dbo.database}}",
+      "name": "EmployeeTerritories",
+      "schema": "{{task.onboarding_landing-9la3:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employeeterritories"
+    },
+    {
+      "database": "{{task.onboarding_landing-9la3:null$_$dbo.database}}",
+      "name": "Region",
+      "schema": "{{task.onboarding_landing-9la3:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_region"
+    },
+    {
+      "database": "{{task.onboarding_landing-9la3:null$_$dbo.database}}",
+      "name": "Territories",
+      "schema": "{{task.onboarding_landing-9la3:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_territories"
+    }
+  ]
+}
