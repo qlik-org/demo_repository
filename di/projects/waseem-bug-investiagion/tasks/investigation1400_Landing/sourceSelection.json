@@ -1,0 +1,28 @@
+{
+  "sourceConnection": "{{task.investigation1400_landing-feaj.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.investigation1400_landing-feaj:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.investigation1400_landing-feaj:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "database": "{{task.investigation1400_landing-feaj:null$_$dbo.database}}",
+      "name": "Customers",
+      "schema": "{{task.investigation1400_landing-feaj:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    },
+    {
+      "database": "{{task.investigation1400_landing-feaj:null$_$dbo.database}}",
+      "name": "Employees",
+      "schema": "{{task.investigation1400_landing-feaj:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    }
+  ]
+}

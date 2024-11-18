@@ -1,0 +1,21 @@
+{
+  "id": "customers-fean",
+  "name": "Customers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "investigation1400_landing-feaj"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
