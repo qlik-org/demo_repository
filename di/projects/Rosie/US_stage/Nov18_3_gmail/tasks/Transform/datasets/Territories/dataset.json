@@ -1,11 +1,25 @@
 {
-  "id": "$replicate$dbo_territories",
-  "name": "dbo_Territories",
-  "type": "LANDING",
+  "id": "territories-oj-g",
+  "name": "Territories",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "territories-bq_c",
+      "name": "Territories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-bq_x"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
   "tableDef": {
     "name": "Territories",
-    "dbSchema": "{{task.onboarding_landing-bq_w:AutoNorthwind$_$dbo.schema}}",
-    "dbName": "{{task.onboarding_landing-bq_w:AutoNorthwind$_$dbo.database}}",
     "columns": [
       {
         "name": "TerritoryID",
@@ -17,10 +31,13 @@
           "length": 20,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(20)"
         },
         "id": "territoryid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "TerritoryDescription",
@@ -32,10 +49,13 @@
           "length": 50,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(50)"
         },
         "id": "territorydescription",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "RegionID",
@@ -47,10 +67,13 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INTEGER"
         },
         "id": "regionid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       }
     ],
     "secureQri": "",
