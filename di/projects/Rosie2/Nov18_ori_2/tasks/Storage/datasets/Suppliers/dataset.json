@@ -1,0 +1,21 @@
+{
+  "id": "suppliers-5ceh",
+  "name": "Suppliers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "suppliers",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-nedr"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
