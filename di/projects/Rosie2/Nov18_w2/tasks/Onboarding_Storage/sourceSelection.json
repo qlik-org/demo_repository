@@ -1,0 +1,13 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_landing-sarv",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.onboarding_storage-sarw:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}
