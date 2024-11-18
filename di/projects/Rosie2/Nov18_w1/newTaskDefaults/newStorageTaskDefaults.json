@@ -1,0 +1,19 @@
+{
+  "hasLiveViews": false,
+  "hasHistory": true,
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task-type.storage.warehouseName}}",
+      "selectionMethod": "{{task-type.storage.warehouseSelectionMethod}}"
+    }
+  },
+  "taskRunSchedule": {
+    "runInterval": 15,
+    "schedulingType": "TIME_BASED"
+  },
+  "databaseSelection": {
+    "databaseName": "{{task-type.storage.databaseName}}",
+    "selectionMethod": "{{task-type.storage.databaseSelectionMethod}}"
+  }
+}
