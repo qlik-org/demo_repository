@@ -1,0 +1,61 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "categories-vh-f",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "investigation_storage-vh-d"
+  },
+  "mappingFields": [
+    {
+      "columnId": "categoryid",
+      "expression": {
+        "expressionStatement": "${CategoryID}",
+        "alias": [
+          {
+            "name": "CategoryID",
+            "value": "CategoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "categoryname",
+      "expression": {
+        "expressionStatement": "${CategoryName}",
+        "alias": [
+          {
+            "name": "CategoryName",
+            "value": "CategoryName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "description",
+      "expression": {
+        "expressionStatement": "${Description}",
+        "alias": [
+          {
+            "name": "Description",
+            "value": "Description"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "picture",
+      "expression": {
+        "expressionStatement": "${RenamedPicture}",
+        "alias": [
+          {
+            "name": "RenamedPicture",
+            "value": "RenamedPicture"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "categories_default_mapping-tyve",
+  "name": "Categories_default_mapping",
+  "description": ""
+}
