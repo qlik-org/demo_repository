@@ -1,0 +1,13 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage--ltp",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.transform--lt0:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}
