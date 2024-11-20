@@ -1,0 +1,28 @@
+{
+  "sourceConnection": "{{task.landing-bw2h.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.landing-bw2h:null$_$dbo.database}}",
+      "name": "Region",
+      "schema": "{{task.landing-bw2h:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_region"
+    },
+    {
+      "database": "{{task.landing-bw2h:null$_$dbo.database}}",
+      "name": "Shippers",
+      "schema": "{{task.landing-bw2h:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_shippers"
+    },
+    {
+      "database": "{{task.landing-bw2h:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.landing-bw2h:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    }
+  ]
+}
