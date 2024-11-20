@@ -1,0 +1,15 @@
+{
+  "id": "categories",
+  "name": "Categories",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$A_ALTERNATING_CHRONOLOGY_REGISTER_CUSTOM_REPLICATE_DEFAULTS_SQL_SERVER_SNOWFLAKE_136_1landing_categories",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-spen",
+      "schema": "{{task.registered_data-spen:DIS_AUTOMATION$_$A_ALTERNATING_CHRONOLOGY_REGISTER_CUSTOM_REPLICATE_DEFAULTS_SQL_SERVER_SNOWFLAKE_136_1landing.schema}}",
+      "database": "{{task.registered_data-spen:DIS_AUTOMATION$_$A_ALTERNATING_CHRONOLOGY_REGISTER_CUSTOM_REPLICATE_DEFAULTS_SQL_SERVER_SNOWFLAKE_136_1landing.database}}"
+    }
+  ]
+}
