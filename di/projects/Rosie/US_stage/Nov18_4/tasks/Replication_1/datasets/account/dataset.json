@@ -1,0 +1,13 @@
+{
+  "id": "account",
+  "name": "account",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$external_data_provider$_account$_$Describe/Account/Account",
+      "name": "account",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "replication_1-dm8w"
+    }
+  ]
+}
