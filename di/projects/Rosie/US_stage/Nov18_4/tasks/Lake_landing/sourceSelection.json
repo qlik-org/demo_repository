@@ -1,0 +1,28 @@
+{
+  "sourceConnection": "{{task.lake_landing-4fem.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.lake_landing-4fem:null$_$dbo.database}}",
+      "name": "Order Details",
+      "schema": "{{task.lake_landing-4fem:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_order_details"
+    },
+    {
+      "database": "{{task.lake_landing-4fem:null$_$dbo.database}}",
+      "name": "Orders",
+      "schema": "{{task.lake_landing-4fem:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_orders"
+    },
+    {
+      "database": "{{task.lake_landing-4fem:null$_$dbo.database}}",
+      "name": "Products",
+      "schema": "{{task.lake_landing-4fem:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    }
+  ]
+}
