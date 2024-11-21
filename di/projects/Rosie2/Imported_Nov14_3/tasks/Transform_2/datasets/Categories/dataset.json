@@ -1,5 +1,5 @@
 {
-  "id": "categories-a5fs",
+  "id": "categories-thxb",
   "name": "Categories",
   "type": "TRANSFORM_MODEL_BASED",
   "inputDatasets": [
@@ -27,10 +27,11 @@
         "nullable": false,
         "primaryKeyOrdinal": 1,
         "datatype": {
-          "type": "INT8",
+          "type": "INT4",
           "length": 0,
           "precision": 0,
-          "scale": 0
+          "scale": 0,
+          "originalTypeFull": "INT"
         },
         "id": "categoryid",
         "flags": "NONE",
@@ -45,9 +46,10 @@
         "primaryKeyOrdinal": 0,
         "datatype": {
           "type": "WSTRING",
-          "length": 16,
+          "length": 15,
           "precision": 0,
-          "scale": 0
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
         },
         "id": "categoryname",
         "flags": "NONE",
@@ -65,7 +67,7 @@
           "length": 1073741823,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(MAX)"
         },
         "id": "description",
         "flags": "NONE",
@@ -83,7 +85,7 @@
           "length": 2147483647,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARBINARY(MAX)"
         },
         "id": "picture",
         "flags": "NONE",

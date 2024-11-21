@@ -1,11 +1,11 @@
 {
-  "id": "customers-glb5",
-  "name": "Customers",
+  "id": "products-thxl",
+  "name": "Products",
   "type": "TRANSFORM_MODEL_BASED",
   "inputDatasets": [
     {
-      "datasetId": "customers-fytt",
-      "name": "Customers",
+      "datasetId": "products-fytx",
+      "name": "Products",
       "projectId": "{{ref(project.current.projectId)}}",
       "taskId": "onboarding_storage-fytq"
     }
@@ -19,28 +19,28 @@
     "watermarkIncrementalSettings": "INHERIT"
   },
   "tableDef": {
-    "name": "Customers",
+    "name": "Products",
     "columns": [
       {
-        "name": "CustomerID",
+        "name": "ProductID",
         "ordinal": 1,
         "nullable": false,
         "primaryKeyOrdinal": 1,
         "datatype": {
-          "type": "WSTRING",
-          "length": 5,
+          "type": "INT4",
+          "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INT"
         },
-        "id": "customerid",
+        "id": "productid",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "CompanyName",
+        "name": "ProductName",
         "ordinal": 2,
         "nullable": false,
         "primaryKeyOrdinal": 0,
@@ -49,171 +49,153 @@
           "length": 40,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(40)"
         },
-        "id": "companyname",
+        "id": "productname",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "ContactName",
+        "name": "SupplierID",
         "ordinal": 3,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
-          "type": "WSTRING",
-          "length": 30,
+          "type": "INT4",
+          "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INT"
         },
-        "id": "contactname",
+        "id": "supplierid",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "ContactTitle",
+        "name": "CategoryID",
         "ordinal": 4,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
-          "type": "WSTRING",
-          "length": 30,
+          "type": "INT4",
+          "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "INT"
         },
-        "id": "contacttitle",
+        "id": "categoryid",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "Address",
+        "name": "QuantityPerUnit",
         "ordinal": 5,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
           "type": "WSTRING",
-          "length": 60,
+          "length": 20,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "NVARCHAR(20)"
         },
-        "id": "address",
+        "id": "quantityperunit",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "City",
+        "name": "UnitPrice",
         "ordinal": 6,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
-          "type": "WSTRING",
-          "length": 15,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": ""
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMERIC(19,4)"
         },
-        "id": "city",
+        "id": "unitprice",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "Region",
+        "name": "UnitsInStock",
         "ordinal": 7,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
-          "type": "WSTRING",
-          "length": 15,
+          "type": "INT2",
+          "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "SMALLINT"
         },
-        "id": "region",
+        "id": "unitsinstock",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "PostalCode",
+        "name": "UnitsOnOrder",
         "ordinal": 8,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
-          "type": "WSTRING",
-          "length": 10,
+          "type": "INT2",
+          "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "SMALLINT"
         },
-        "id": "postalcode",
+        "id": "unitsonorder",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "Country",
+        "name": "ReorderLevel",
         "ordinal": 9,
         "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
-          "type": "WSTRING",
-          "length": 15,
+          "type": "INT2",
+          "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "SMALLINT"
         },
-        "id": "country",
+        "id": "reorderlevel",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
         }
       },
       {
-        "name": "Phone",
+        "name": "Discontinued",
         "ordinal": 10,
-        "nullable": true,
+        "nullable": false,
         "primaryKeyOrdinal": 0,
         "datatype": {
-          "type": "WSTRING",
-          "length": 24,
+          "type": "BOOLEAN",
+          "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "TINYINT"
         },
-        "id": "phone",
-        "flags": "NONE",
-        "properties": {
-          "documentMetadata": false
-        }
-      },
-      {
-        "name": "Fax",
-        "ordinal": 11,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "WSTRING",
-          "length": 24,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": ""
-        },
-        "id": "fax",
+        "id": "discontinued",
         "flags": "NONE",
         "properties": {
           "documentMetadata": false
