@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-oxcy",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-oxcs"
+  },
+  "targetEntity": {
+    "datasetId": "customers-oxcu",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-oxcs"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_Customers_relation",
+  "description": "",
+  "id": "orders_customers_relation-oxc4"
+}
