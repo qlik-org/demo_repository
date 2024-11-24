@@ -1,0 +1,12 @@
+{
+  "id": "$replicate$dbo_shippers",
+  "name": "dbo_Shippers",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Shippers",
+    "dbSchema": "{{task.replication-oxcd:null$_$dbo.schema}}",
+    "dbName": "{{task.replication-oxcd:null$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
