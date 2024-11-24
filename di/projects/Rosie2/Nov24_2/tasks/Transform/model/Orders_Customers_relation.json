@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-exgd",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-exgx"
+  },
+  "targetEntity": {
+    "datasetId": "customers-exgz",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-exgx"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_Customers_relation",
+  "description": "",
+  "id": "orders_customers_relation-exgl"
+}

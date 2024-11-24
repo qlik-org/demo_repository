@@ -1,0 +1,35 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-exgj",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.transform-exgx:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-exgq",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories-exgs"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-exgq",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products-exgt"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-exgq",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers-exgu"
+    }
+  ]
+}

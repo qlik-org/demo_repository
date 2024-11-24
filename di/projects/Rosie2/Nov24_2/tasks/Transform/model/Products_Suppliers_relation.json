@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-exgh",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-exgx"
+  },
+  "targetEntity": {
+    "datasetId": "suppliers-exgj",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-exgx"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation-exgo"
+}

@@ -1,26 +1,43 @@
 {
-  "id": "$replicate$dbo_suppliers",
-  "name": "dbo_Suppliers",
-  "type": "LANDING",
+  "id": "customers-exgz",
+  "name": "Customers",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "customers-exgl",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-exgj"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
   "tableDef": {
-    "name": "Suppliers",
-    "dbSchema": "{{task.onboarding_landing-exgp:AutoNorthwind$_$dbo.schema}}",
-    "dbName": "{{task.onboarding_landing-exgp:AutoNorthwind$_$dbo.database}}",
+    "name": "Customers",
     "columns": [
       {
-        "name": "SupplierID",
+        "name": "CustomerID",
         "ordinal": 1,
         "nullable": false,
         "primaryKeyOrdinal": 1,
         "datatype": {
-          "type": "INT4",
-          "length": 0,
+          "type": "WSTRING",
+          "length": 5,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(5)"
         },
-        "id": "supplierid",
-        "flags": "NONE"
+        "id": "customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "CompanyName",
@@ -32,10 +49,13 @@
           "length": 40,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(40)"
         },
         "id": "companyname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ContactName",
@@ -47,10 +67,13 @@
           "length": 30,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(30)"
         },
         "id": "contactname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ContactTitle",
@@ -62,10 +85,13 @@
           "length": 30,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(30)"
         },
         "id": "contacttitle",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Address",
@@ -77,10 +103,13 @@
           "length": 60,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(60)"
         },
         "id": "address",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "City",
@@ -92,10 +121,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(15)"
         },
         "id": "city",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Region",
@@ -107,10 +139,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(15)"
         },
         "id": "region",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "PostalCode",
@@ -122,10 +157,13 @@
           "length": 10,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(10)"
         },
         "id": "postalcode",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Country",
@@ -137,10 +175,13 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(15)"
         },
         "id": "country",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Phone",
@@ -152,10 +193,13 @@
           "length": 24,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(24)"
         },
         "id": "phone",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Fax",
@@ -167,25 +211,13 @@
           "length": 24,
           "precision": 0,
           "scale": 0,
-          "originalTypeFull": ""
+          "originalTypeFull": "VARCHAR(24)"
         },
         "id": "fax",
-        "flags": "NONE"
-      },
-      {
-        "name": "HomePage",
-        "ordinal": 12,
-        "nullable": true,
-        "primaryKeyOrdinal": 0,
-        "datatype": {
-          "type": "NCLOB",
-          "length": 1073741823,
-          "precision": 0,
-          "scale": 0,
-          "originalTypeFull": ""
-        },
-        "id": "homepage",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       }
     ],
     "secureQri": "",
