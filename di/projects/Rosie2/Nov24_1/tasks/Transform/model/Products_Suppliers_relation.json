@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-wpwk",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-wpwg"
+  },
+  "targetEntity": {
+    "datasetId": "suppliers-wpwm",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-wpwg"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation-wpwx"
+}
