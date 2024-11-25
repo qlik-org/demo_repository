@@ -1,0 +1,12 @@
+{
+  "id": "$replicate$dbo_products",
+  "name": "dbo_Products",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Products",
+    "dbSchema": "{{task.landing-h09n:null$_$dbo.schema}}",
+    "dbName": "{{task.landing-h09n:null$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
