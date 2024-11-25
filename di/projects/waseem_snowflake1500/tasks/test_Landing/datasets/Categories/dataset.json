@@ -1,0 +1,15 @@
+{
+  "id": "categories",
+  "name": "Categories",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_categories",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "test_landing-pclt",
+      "schema": "{{task.test_landing-pclt:null$_$dbo.schema}}",
+      "database": "{{task.test_landing-pclt:null$_$dbo.database}}"
+    }
+  ]
+}
