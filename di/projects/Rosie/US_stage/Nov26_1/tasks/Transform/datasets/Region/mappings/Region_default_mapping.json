@@ -1,0 +1,37 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "region-dxss",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-b2g2"
+  },
+  "mappingFields": [
+    {
+      "columnId": "regionid",
+      "expression": {
+        "expressionStatement": "${RegionID}",
+        "alias": [
+          {
+            "name": "RegionID",
+            "value": "RegionID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "regiondescription",
+      "expression": {
+        "expressionStatement": "${RegionDescription}",
+        "alias": [
+          {
+            "name": "RegionDescription",
+            "value": "RegionDescription"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "region_default_mapping-ytwd",
+  "name": "Region_default_mapping",
+  "description": ""
+}

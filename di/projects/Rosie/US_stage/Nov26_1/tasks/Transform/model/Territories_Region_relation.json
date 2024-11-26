@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "territories-2n2q",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-ytwa"
+  },
+  "targetEntity": {
+    "datasetId": "region-ytwc",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-ytwa"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "RegionID",
+      "targetColumn": "RegionID",
+      "sourceColumnId": "regionid",
+      "targetColumnId": "regionid"
+    }
+  ],
+  "name": "Territories_Region_relation",
+  "description": "",
+  "id": "territories_region_relation-b2g4"
+}

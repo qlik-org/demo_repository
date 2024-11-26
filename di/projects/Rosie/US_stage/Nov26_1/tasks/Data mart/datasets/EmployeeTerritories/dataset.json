@@ -1,0 +1,134 @@
+{
+  "id": "employeeterritories-b2g6",
+  "name": "EmployeeTerritories",
+  "type": "FACT",
+  "inputDatasets": [
+    {
+      "datasetId": "employeeterritories-mdlh",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform-ytwa"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "EmployeeTerritories",
+    "dbSchema": "Nov26_1_data_mart",
+    "dbName": "ROSIE_DB",
+    "columns": [
+      {
+        "name": "EmployeeID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TerritoryID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "territoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "employeeterritories-b2g6",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "factDatasetSettings": {
+    "type": "TRANSACTIONAL",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "employeeterritories-mdlh",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform-ytwa"
+    },
+    "factDimension": [
+      {
+        "name": "Employees",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "employees-dxsw",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart-i89u"
+        },
+        "dimensionRelationshipPath": "employeeterritories_employees_relation-ytwe",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_Employees_relation",
+        "dimensionRelationshipPathShortName": ""
+      },
+      {
+        "name": "Territories",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "territories-b2g5",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "data_mart-i89u"
+        },
+        "dimensionRelationshipPath": "employeeterritories_territories_relation-2n2s",
+        "dimensionRelationshipPathDisplayName": "EmployeeTerritories_Territories_relation",
+        "dimensionRelationshipPathShortName": ""
+      }
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "EmployeeID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TerritoryID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${TerritoryID}",
+            "alias": [
+              {
+                "name": "TerritoryID",
+                "value": "TerritoryID"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "subtype": "MODEL_BASED"
+  }
+}
