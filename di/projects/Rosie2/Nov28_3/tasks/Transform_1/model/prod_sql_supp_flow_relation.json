@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "prod_sql-v7rw",
+    "name": "prod_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-v7rk"
+  },
+  "targetEntity": {
+    "datasetId": "supp_flow-v7rx",
+    "name": "supp_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-v7rk"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "prod_sql_supp_flow_relation",
+  "description": "",
+  "id": "prod_sql_supp_flow_relation-v7ry"
+}

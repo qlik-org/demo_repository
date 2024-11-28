@@ -1,0 +1,26 @@
+{
+  "id": "supp_flow-v7rx",
+  "name": "supp_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "suppliers-v7rj",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage_1-v7rf"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "6b209da5-fa14-41f7-9c25-d472fabaf340",
+    "targetId": "d9a078b6-4d94-4e3d-878c-2baebb428297",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  }
+}
