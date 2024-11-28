@@ -1,0 +1,157 @@
+{
+  "id": "6b209da5-fa14-41f7-9c25-d472fabaf340",
+  "description": "",
+  "name": "supp_flow",
+  "modelVersion": "1.0.0",
+  "createdAt": "2024-11-28T16:21:10.678Z",
+  "createdBy": "673455bb0a5db559a63bdcaf",
+  "updatedAt": "2024-11-28T16:21:29.649Z",
+  "updatedBy": "673455bb0a5db559a63bdcaf",
+  "checksum": "8ad5cf85-925e-4d07-ba1f-0b1e4268faa2",
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "8c92e0e2-4c88-4902-a679-78e2c4df8c7b",
+        "label": "Suppliers",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "d196f5cf-3a77-4410-b375-ea76956640d1",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "storage_1-v7rf",
+              "entityId": "suppliers-v7rj"
+            },
+            "configuration": {
+              "name": "Suppliers"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "d9a078b6-4d94-4e3d-878c-2baebb428297",
+        "label": "supp_flow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "148509b3-3dab-4fd2-8edf-be30f68bbd24",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "supp_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "SupplierID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CompanyName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactTitle",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Fax",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HomePage",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "acb04a08-515d-4760-bf50-df038da4b291",
+        "sourceHandle": "d196f5cf-3a77-4410-b375-ea76956640d1",
+        "targetHandle": "148509b3-3dab-4fd2-8edf-be30f68bbd24"
+      }
+    ]
+  },
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform_1-v7rk"
+  }
+}

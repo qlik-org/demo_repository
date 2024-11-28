@@ -17,7 +17,7 @@
     "selectionMethod": "{{task-type.transform.databaseSelectionMethod}}"
   },
   "tableTypeSettings": {
-    "tableType": "REGULAR",
+    "tableType": "ICEBERG",
     "icebergSettings": {
       "externalVolume": "{{task-type.transform.snowflakeExternalVolume}}",
       "folderLocationType": "DATA_ASSET_NAME",
