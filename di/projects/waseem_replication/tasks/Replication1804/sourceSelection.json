@@ -1,0 +1,21 @@
+{
+  "sourceConnection": "{{task.replication1804-x-cv.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.replication1804-x-cv:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.replication1804-x-cv:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "database": "{{task.replication1804-x-cv:null$_$dbo.database}}",
+      "name": "Customers",
+      "schema": "{{task.replication1804-x-cv:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    }
+  ]
+}
