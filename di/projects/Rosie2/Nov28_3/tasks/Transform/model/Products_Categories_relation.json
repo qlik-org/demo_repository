@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-v7ra",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-v7q8"
+  },
+  "targetEntity": {
+    "datasetId": "categories-v7q-",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-v7q8"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CategoryID",
+      "targetColumn": "CategoryID",
+      "sourceColumnId": "categoryid",
+      "targetColumnId": "categoryid"
+    }
+  ],
+  "name": "Products_Categories_relation",
+  "description": "",
+  "id": "products_categories_relation-v7rf"
+}

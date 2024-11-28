@@ -1,0 +1,232 @@
+{
+  "id": "supp_sql-v7rp",
+  "name": "supp_sql",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "datasetId": "suppliers-v7q5",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-v7q0"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "supp_sql",
+    "columns": [
+      {
+        "name": "SupplierID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 10,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(10,0)"
+        },
+        "id": "supplierid",
+        "flags": "NONE"
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "companyname",
+        "flags": "NONE"
+      },
+      {
+        "name": "ContactName",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "contactname",
+        "flags": "NONE"
+      },
+      {
+        "name": "ContactTitle",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "contacttitle",
+        "flags": "NONE"
+      },
+      {
+        "name": "Address",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "address",
+        "flags": "NONE"
+      },
+      {
+        "name": "City",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "city",
+        "flags": "NONE"
+      },
+      {
+        "name": "Region",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "region",
+        "flags": "NONE"
+      },
+      {
+        "name": "PostalCode",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "postalcode",
+        "flags": "NONE"
+      },
+      {
+        "name": "Country",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "country",
+        "flags": "NONE"
+      },
+      {
+        "name": "Phone",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "phone",
+        "flags": "NONE"
+      },
+      {
+        "name": "Fax",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "fax",
+        "flags": "NONE"
+      },
+      {
+        "name": "HomePage",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "homepage",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {
+      "expressionStatement": "select * from ${Suppliers}",
+      "alias": [
+        {
+          "name": "Suppliers",
+          "value": "{{ref(project.current.projectId)}}$_$storage-v7q0$_$suppliers-v7q5"
+        }
+      ]
+    },
+    "incremental": false
+  }
+}

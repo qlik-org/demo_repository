@@ -1,0 +1,31 @@
+{
+  "artifactsSettings": {
+    "liveViewsEnabled": false,
+    "historyEnabled": true,
+    "materialized": false,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "artifactsPrefix": ""
+  },
+  "artifactsLocation": {
+    "internalSchema": "{{task.transform-v7q8.internalSchema}}",
+    "taskSchema": "{{task.transform-v7q8.taskSchema}}",
+    "databaseName": "{{task.transform-v7q8.databaseName}}"
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.transform-v7q8.warehouseName}}"
+    }
+  },
+  "tableTypeSettings": {
+    "tableType": "ICEBERG",
+    "icebergSettings": {
+      "externalVolume": "{{task.transform-v7q8.snowflakeExternalVolume}}",
+      "folderLocationType": "DATA_ASSET_NAME",
+      "specificFolder": "",
+      "enableOpenCatalogSync": false,
+      "openCatalogName": ""
+    }
+  }
+}

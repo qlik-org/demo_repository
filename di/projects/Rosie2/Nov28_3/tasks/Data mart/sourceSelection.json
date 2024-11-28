@@ -1,0 +1,13 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform-v7q8",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.data_mart-v7rh:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}
