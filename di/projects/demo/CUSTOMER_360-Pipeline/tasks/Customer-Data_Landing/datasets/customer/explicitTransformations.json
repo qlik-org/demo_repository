@@ -40,17 +40,37 @@
       {
         "action": "KEEP",
         "columnName": "modifieddate",
-        "newColumnName": "DateOfModification",
+        "newColumnName": "Date_modified",
         "newDataType": {
-          "type": "DATE",
+          "type": "DATETIME",
           "length": 0,
-          "precision": 0,
+          "precision": 6,
           "scale": 0,
           "originalTypeFull": ""
         },
         "primaryKeyOrdinal": 0,
         "ordinal": 0,
         "nullable": false,
+        "markAsMetadata": false
+      },
+      {
+        "action": "ADD",
+        "columnName": "Sales-Owner",
+        "newDataType": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "",
+          "alias": []
+        },
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "addedColumnId": "c54736ca-e2fc-4101-a91b-1c5250cb2c95",
         "markAsMetadata": false
       }
     ]
