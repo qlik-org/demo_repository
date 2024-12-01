@@ -1,0 +1,21 @@
+{
+  "artifactsSettings": {
+    "liveViewsEnabled": false,
+    "historyEnabled": true,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "artifactsPrefix": ""
+  },
+  "artifactsLocation": {
+    "internalSchema": "{{task.transform-lujk.internalSchema}}",
+    "taskSchema": "{{task.transform-lujk.taskSchema}}",
+    "databaseName": "{{task.transform-lujk.databaseName}}"
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.transform-lujk.warehouseName}}"
+    }
+  }
+}
