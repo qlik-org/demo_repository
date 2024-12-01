@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-rxfc",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-rxe-"
+  },
+  "targetEntity": {
+    "datasetId": "categories-rxfa",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-rxe-"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CategoryID",
+      "targetColumn": "CategoryID",
+      "sourceColumnId": "categoryid",
+      "targetColumnId": "categoryid"
+    }
+  ],
+  "name": "Products_Categories_relation",
+  "description": "",
+  "id": "products_categories_relation-rxfg"
+}

@@ -17,7 +17,7 @@
     "selectionMethod": "{{task-type.datamart.databaseSelectionMethod}}"
   },
   "tableTypeSettings": {
-    "tableType": "REGULAR",
+    "tableType": "ICEBERG",
     "icebergSettings": {
       "externalVolume": "{{task-type.datamart.snowflakeExternalVolume}}",
       "folderLocationType": "DATA_ASSET_NAME",
