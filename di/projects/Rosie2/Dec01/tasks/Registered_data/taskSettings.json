@@ -1,0 +1,21 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.registered_data-rxet.internalSchema}}",
+    "taskSchema": "{{task.registered_data-rxet.taskSchema}}",
+    "databaseName": "{{task.registered_data-rxet.databaseName}}"
+  },
+  "incrementalSettings": {
+    "registeredType": "NONE",
+    "useBatchTimeAsFromDate": false,
+    "useSameTableAsCt": false,
+    "softDeleteSupport": false,
+    "priorImageSupport": false
+  },
+  "artifactsSettings": {
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  }
+}
