@@ -1,0 +1,15 @@
+{
+  "id": "customers",
+  "name": "Customers",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "replication-wwrn",
+      "schema": "{{task.replication-wwrn:null$_$dbo.schema}}",
+      "database": "{{task.replication-wwrn:null$_$dbo.database}}"
+    }
+  ]
+}
