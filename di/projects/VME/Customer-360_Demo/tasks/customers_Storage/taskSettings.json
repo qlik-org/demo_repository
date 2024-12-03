@@ -1,0 +1,31 @@
+{
+  "ddlHandlingPolicy": {
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "IGNORE",
+    "renameColumn": "IGNORE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE",
+    "createTable": "APPLY_TO_TARGET"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "artifactsPrefix": ""
+  },
+  "artifactsLocation": {
+    "internalSchema": "{{task.customers_0ct22_storage-mz1y.internalSchema}}",
+    "taskSchema": "{{task.customers_0ct22_storage-mz1y.taskSchema}}",
+    "databaseName": "{{task.customers_0ct22_storage-mz1y.databaseName}}"
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.customers_0ct22_storage-mz1y.warehouseName}}"
+    }
+  }
+}
