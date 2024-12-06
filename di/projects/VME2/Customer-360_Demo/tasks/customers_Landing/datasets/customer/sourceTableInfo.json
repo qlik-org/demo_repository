@@ -1,0 +1,104 @@
+{
+  "id": "$replicate$sales_customer",
+  "name": "sales_customer",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "customer",
+    "dbSchema": "{{task.customers_0ct22_landing-mz1x:Adventureworks$_$sales.schema}}",
+    "dbName": "{{task.customers_0ct22_landing-mz1x:Adventureworks$_$sales.database}}",
+    "columns": [
+      {
+        "name": "customerid",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "customerid",
+        "flags": "NONE"
+      },
+      {
+        "name": "personid",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "personid",
+        "flags": "NONE"
+      },
+      {
+        "name": "storeid",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "storeid",
+        "flags": "NONE"
+      },
+      {
+        "name": "territoryid",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "territoryid",
+        "flags": "NONE"
+      },
+      {
+        "name": "rowguid",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 36,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rowguid",
+        "flags": "NONE"
+      },
+      {
+        "name": "modifieddate",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "modifieddate",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
