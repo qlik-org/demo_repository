@@ -1,0 +1,15 @@
+{
+  "id": "region",
+  "name": "Region",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$A_ACI_MAL_REGISTERED_DATA_TRANSFORMATIONS_SQL_SERVER_SNOWFLAKE_09_32_59landing_region",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-ihnk",
+      "schema": "{{task.registered_data-ihnk:DIS_AUTOMATION$_$A_ACI_MAL_REGISTERED_DATA_TRANSFORMATIONS_SQL_SERVER_SNOWFLAKE_09_32_59landing.schema}}",
+      "database": "{{task.registered_data-ihnk:DIS_AUTOMATION$_$A_ACI_MAL_REGISTERED_DATA_TRANSFORMATIONS_SQL_SERVER_SNOWFLAKE_09_32_59landing.database}}"
+    }
+  ]
+}
