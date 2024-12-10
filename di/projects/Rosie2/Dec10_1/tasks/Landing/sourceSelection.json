@@ -1,0 +1,14 @@
+{
+  "sourceConnection": "{{task.landing-ihnn.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.landing-ihnn:null$_$dbo.database}}",
+      "name": "Customers",
+      "schema": "{{task.landing-ihnn:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    }
+  ]
+}
