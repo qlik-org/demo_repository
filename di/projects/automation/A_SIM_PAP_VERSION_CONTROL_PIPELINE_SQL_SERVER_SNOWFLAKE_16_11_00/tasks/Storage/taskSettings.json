@@ -1,0 +1,41 @@
+{
+  "ddlHandlingPolicy": {
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "SUSPEND_TABLE",
+    "renameColumn": "SUSPEND_TABLE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE",
+    "createTable": "APPLY_TO_TARGET"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": false,
+    "historyEnabled": true,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "artifactsPrefix": ""
+  },
+  "artifactsLocation": {
+    "internalSchema": "{{task.storage-ijoo.internalSchema}}",
+    "taskSchema": "{{task.storage-ijoo.taskSchema}}",
+    "databaseName": "{{task.storage-ijoo.databaseName}}"
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.storage-ijoo.warehouseName}}"
+    }
+  },
+  "tableTypeSettings": {
+    "tableType": "REGULAR",
+    "icebergSettings": {
+      "externalVolume": "",
+      "folderLocationType": "DATA_ASSET_NAME",
+      "specificFolder": "",
+      "enableOpenCatalogSync": false,
+      "openCatalogName": ""
+    }
+  }
+}
