@@ -1,0 +1,15 @@
+{
+  "id": "employees",
+  "name": "Employees",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_employees",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-ijoc",
+      "schema": "{{task.landing-ijoc:null$_$dbo.schema}}",
+      "database": "{{task.landing-ijoc:null$_$dbo.database}}"
+    }
+  ]
+}
