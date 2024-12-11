@@ -1,0 +1,27 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.registered_data-vqlz:DIS_AUTOMATION$_$A_SIM_BIN_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_09_51_26landing.database}}",
+      "name": "Customers",
+      "schema": "{{task.registered_data-vqlz:DIS_AUTOMATION$_$A_SIM_BIN_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_09_51_26landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$Dec08_2_landing_customers"
+    },
+    {
+      "database": "{{task.registered_data-vqlz:DIS_AUTOMATION$_$A_SIM_BIN_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_09_51_26landing.database}}",
+      "name": "Employees",
+      "schema": "{{task.registered_data-vqlz:DIS_AUTOMATION$_$A_SIM_BIN_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_09_51_26landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$Dec08_2_landing_employees"
+    },
+    {
+      "database": "{{task.registered_data-vqlz:DIS_AUTOMATION$_$A_SIM_BIN_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_09_51_26landing.database}}",
+      "name": "Orders",
+      "schema": "{{task.registered_data-vqlz:DIS_AUTOMATION$_$A_SIM_BIN_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_09_51_26landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$Dec08_2_landing_orders"
+    }
+  ]
+}
