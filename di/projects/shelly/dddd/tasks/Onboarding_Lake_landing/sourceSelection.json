@@ -1,0 +1,14 @@
+{
+  "sourceConnection": "{{task.onboarding_lake_landing-bxhu.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.onboarding_lake_landing-bxhu:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.onboarding_lake_landing-bxhu:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    }
+  ]
+}
