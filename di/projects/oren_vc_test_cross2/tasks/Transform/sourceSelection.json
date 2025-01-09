@@ -1,0 +1,28 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-vzpc",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.transform-vzpo:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.ori$_$oren_vc_test_cross.projectId}}",
+      "sourceTask": "onboarding_storage-vzpo",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories-vzpq"
+    },
+    {
+      "sourceProject": "{{project.ori$_$oren_vc_test_cross.projectId}}",
+      "sourceTask": "onboarding_storage-vzpo",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-vzpr"
+    }
+  ]
+}
