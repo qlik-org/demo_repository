@@ -1,0 +1,41 @@
+{
+  "ddlHandlingPolicy": {
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "SUSPEND_TABLE",
+    "renameColumn": "SUSPEND_TABLE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE",
+    "createTable": "APPLY_TO_TARGET"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": true,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "artifactsPrefix": ""
+  },
+  "artifactsLocation": {
+    "internalSchema": "{{task.onboarding_storage-cnxo.internalSchema}}",
+    "taskSchema": "{{task.onboarding_storage-cnxo.taskSchema}}",
+    "databaseName": "{{task.onboarding_storage-cnxo.databaseName}}"
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.onboarding_storage-cnxo.warehouseName}}"
+    }
+  },
+  "tableTypeSettings": {
+    "tableType": "REGULAR",
+    "icebergSettings": {
+      "snowflakeExternalVolume": "",
+      "folderLocationType": "DATA_ASSET_NAME",
+      "specificFolder": "",
+      "enableOpenCatalogSync": false,
+      "snowflakeOpenCatalog": ""
+    }
+  }
+}

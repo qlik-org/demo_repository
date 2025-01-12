@@ -1,0 +1,21 @@
+{
+  "id": "shippers-cnxx",
+  "name": "Shippers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "shippers",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-cnxn"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
