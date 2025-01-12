@@ -1,0 +1,12 @@
+{
+  "id": "$replicate$dbo_shippers",
+  "name": "dbo_Shippers",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Shippers",
+    "dbSchema": "{{task.onboarding_landing-cnxn:null$_$dbo.schema}}",
+    "dbName": "{{task.onboarding_landing-cnxn:null$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
