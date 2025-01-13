@@ -1,0 +1,21 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.reg-uk6u.internalSchema}}",
+    "taskSchema": "{{task.reg-uk6u.taskSchema}}",
+    "databaseName": "{{task.reg-uk6u.databaseName}}"
+  },
+  "incrementalSettings": {
+    "registeredType": "NONE",
+    "useBatchTimeAsFromDate": false,
+    "useSameTableAsCt": false,
+    "softDeleteSupport": false,
+    "priorImageSupport": false
+  },
+  "artifactsSettings": {
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  }
+}
