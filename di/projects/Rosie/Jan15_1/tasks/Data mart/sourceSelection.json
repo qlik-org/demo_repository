@@ -11,21 +11,21 @@
   "excludePatterns": [],
   "explicitlySelected": [
     {
-      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09 (6759681d4a084a8d3f0692ed_branch).projectId}}",
+      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09.projectId}}",
       "sourceTask": "transform--c0y",
       "name": "Customers",
       "type": "NONE",
       "sourceTableId": "customers-sfwr"
     },
     {
-      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09 (6759681d4a084a8d3f0692ed_branch).projectId}}",
+      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09.projectId}}",
       "sourceTask": "transform--c0y",
       "name": "Employees",
       "type": "NONE",
       "sourceTableId": "employees--c00"
     },
     {
-      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09 (6759681d4a084a8d3f0692ed_branch).projectId}}",
+      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09.projectId}}",
       "sourceTask": "transform--c0y",
       "name": "Orders",
       "type": "NONE",
@@ -51,6 +51,34 @@
       "name": "Employees",
       "type": "NONE",
       "sourceTableId": "employees-c5v8"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Jan15_2.projectId}}",
+      "sourceTask": "onboarding_storage-meql",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-meqn"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Jan15_2.projectId}}",
+      "sourceTask": "onboarding_storage-meql",
+      "name": "EmployeeTerritories",
+      "type": "NONE",
+      "sourceTableId": "employeeterritories-meqo"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Jan15_2.projectId}}",
+      "sourceTask": "onboarding_storage-meql",
+      "name": "Region",
+      "type": "NONE",
+      "sourceTableId": "region-meqp"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Jan15_2.projectId}}",
+      "sourceTask": "onboarding_storage-meql",
+      "name": "Territories",
+      "type": "NONE",
+      "sourceTableId": "territories-meqq"
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employeeterritories-meqv",
+    "name": "EmployeeTerritories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-meql"
+  },
+  "targetEntity": {
+    "datasetId": "territories-meqz",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-meql"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "TerritoryID",
+      "targetColumn": "TerritoryID",
+      "sourceColumnId": "territoryid",
+      "targetColumnId": "territoryid"
+    }
+  ],
+  "name": "EmployeeTerritories_Territories_relation",
+  "description": "",
+  "id": "employeeterritories_territories_relation-meq4"
+}
