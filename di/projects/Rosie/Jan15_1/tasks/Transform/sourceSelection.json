@@ -1,0 +1,35 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-meqg",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.transform-meql:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09.projectId}}",
+      "sourceTask": "storage-ijoo",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-mhui"
+    },
+    {
+      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09.projectId}}",
+      "sourceTask": "storage-ijoo",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-mhuj"
+    },
+    {
+      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09.projectId}}",
+      "sourceTask": "storage-ijoo",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-mhuk"
+    }
+  ]
+}

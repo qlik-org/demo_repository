@@ -1,0 +1,35 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform-meql",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.data_mart-meqt:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09 (6759681d4a084a8d3f0692ed_branch).projectId}}",
+      "sourceTask": "transform--c0y",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-sfwr"
+    },
+    {
+      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09 (6759681d4a084a8d3f0692ed_branch).projectId}}",
+      "sourceTask": "transform--c0y",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees--c00"
+    },
+    {
+      "sourceProject": "{{project.automation$_$A_AGE_BOU_VERSION_CONTROL_PIPELINE_SQL_SERVER_SNOWFLAKE_10_23_09 (6759681d4a084a8d3f0692ed_branch).projectId}}",
+      "sourceTask": "transform--c0y",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-ijob"
+    }
+  ]
+}
