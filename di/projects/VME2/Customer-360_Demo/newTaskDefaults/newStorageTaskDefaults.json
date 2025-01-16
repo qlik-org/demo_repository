@@ -15,5 +15,15 @@
   "databaseSelection": {
     "databaseName": "{{task-type.storage.databaseName}}",
     "selectionMethod": "{{task-type.storage.databaseSelectionMethod}}"
+  },
+  "tableTypeSettings": {
+    "tableType": "REGULAR",
+    "icebergSettings": {
+      "snowflakeExternalVolume": "{{task-type.storage.snowflakeExternalVolume}}",
+      "folderLocationType": "DATA_ASSET_NAME",
+      "specificFolder": "",
+      "enableOpenCatalogSync": false,
+      "snowflakeOpenCatalog": "{{task-type.storage.snowflakeOpenCatalog}}"
+    }
   }
 }
