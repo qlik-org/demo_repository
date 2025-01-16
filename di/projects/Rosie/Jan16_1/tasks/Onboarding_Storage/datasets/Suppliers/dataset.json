@@ -1,0 +1,21 @@
+{
+  "id": "suppliers-merf",
+  "name": "Suppliers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "suppliers",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-mera"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
