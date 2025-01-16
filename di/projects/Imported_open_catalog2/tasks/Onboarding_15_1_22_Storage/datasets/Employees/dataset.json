@@ -1,0 +1,21 @@
+{
+  "id": "employees-6pxu",
+  "name": "Employees",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "employees",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_15_1_22_lake_landing-6pxh"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
