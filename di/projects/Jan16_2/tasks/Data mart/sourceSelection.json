@@ -1,0 +1,35 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform-merx",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.data_mart-5dkv:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.rosie$_$Jan16_1.projectId}}",
+      "sourceTask": "transform-5dkj",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories-5dkx"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Jan16_1.projectId}}",
+      "sourceTask": "transform-5dkj",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products-5dkz"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Jan16_1.projectId}}",
+      "sourceTask": "transform-5dkj",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers-5dk1"
+    }
+  ]
+}
