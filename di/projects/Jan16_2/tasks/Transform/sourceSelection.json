@@ -1,0 +1,35 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-merr",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.transform-merx:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.rosie$_$Jan16_1.projectId}}",
+      "sourceTask": "onboarding_storage-merb",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories-merd"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Jan16_1.projectId}}",
+      "sourceTask": "onboarding_storage-merb",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products-mere"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Jan16_1.projectId}}",
+      "sourceTask": "onboarding_storage-merb",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers-merf"
+    }
+  ]
+}
