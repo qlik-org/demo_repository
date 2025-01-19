@@ -1,0 +1,49 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "categories-isz8",
+    "name": "Categories",
+    "projectId": "{{project.ShellyM$_$test_cross.projectId}}",
+    "taskId": "onboarding_19_1_storage-isz6"
+  },
+  "mappingFields": [
+    {
+      "columnId": "categoryid",
+      "expression": {
+        "expressionStatement": "${CategoryID}",
+        "alias": [
+          {
+            "name": "CategoryID",
+            "value": "CategoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "description",
+      "expression": {
+        "expressionStatement": "${Description}",
+        "alias": [
+          {
+            "name": "Description",
+            "value": "Description"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "picture",
+      "expression": {
+        "expressionStatement": "${Picture}",
+        "alias": [
+          {
+            "name": "Picture",
+            "value": "Picture"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "categories_default_mapping-uzs0",
+  "name": "Categories_default_mapping",
+  "description": ""
+}
