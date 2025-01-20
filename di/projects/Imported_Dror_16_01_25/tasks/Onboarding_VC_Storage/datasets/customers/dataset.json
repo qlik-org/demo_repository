@@ -1,0 +1,21 @@
+{
+  "id": "customers-0mrh",
+  "name": "customers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "customers",
+      "name": "customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_vc_landing-0mre"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}

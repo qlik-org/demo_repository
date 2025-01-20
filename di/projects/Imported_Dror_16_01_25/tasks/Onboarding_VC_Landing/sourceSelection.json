@@ -1,0 +1,21 @@
+{
+  "sourceConnection": "{{task.onboarding_vc_landing-0mre.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.onboarding_vc_landing-0mre:null$_$dbo.database}}",
+      "name": "customers",
+      "schema": "{{task.onboarding_vc_landing-0mre:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    },
+    {
+      "database": "{{task.onboarding_vc_landing-0mre:null$_$dbo.database}}",
+      "name": "invoices",
+      "schema": "{{task.onboarding_vc_landing-0mre:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_invoices"
+    }
+  ]
+}

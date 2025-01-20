@@ -1,0 +1,130 @@
+{
+  "id": "vcsql-jpxr",
+  "name": "VCsql",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "datasetId": "invoices-0mri",
+      "name": "invoices",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_vc_storage-0mrf"
+    },
+    {
+      "datasetId": "items-z70a",
+      "name": "items",
+      "projectId": "{{project.Dror_Space$_$Shop_Items.projectId}}",
+      "taskId": "onboarding_shop_items_storage-z7z-"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "VCsql",
+    "columns": [
+      {
+        "name": "invoice_id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "invoice_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "item_id",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "item_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "customer_id",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "customer_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "item_name",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(255)"
+        },
+        "id": "item_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "item_price",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 10,
+          "scale": 2,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(10,2)"
+        },
+        "id": "item_price",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {
+      "expressionStatement": "\nSELECT \n    i.\u0022invoice_id\u0022,\n    i.\u0022item_id\u0022,\n    i.\u0022customer_id\u0022,\n    it.\u0022item_name\u0022,\n    it.\u0022item_price\u0022\nFROM ${invoices} i\nJOIN ${items} it ON i.\u0022item_id\u0022 = it.\u0022item_id\u0022;\n",
+      "alias": [
+        {
+          "name": "invoices",
+          "value": "{{ref(project.current.projectId)}}$_$onboarding_vc_storage-0mrf$_$invoices-0mri"
+        },
+        {
+          "name": "items",
+          "value": "677d163f113f8a4ca60de2e1$_$onboarding_shop_items_storage-z7z-$_$items-z70a"
+        }
+      ]
+    },
+    "incremental": false
+  }
+}

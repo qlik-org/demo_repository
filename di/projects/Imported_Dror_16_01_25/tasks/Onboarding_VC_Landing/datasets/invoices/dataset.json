@@ -1,0 +1,15 @@
+{
+  "id": "invoices",
+  "name": "invoices",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_invoices",
+      "name": "invoices",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_vc_landing-0mre",
+      "schema": "{{task.onboarding_vc_landing-0mre:null$_$dbo.schema}}",
+      "database": "{{task.onboarding_vc_landing-0mre:null$_$dbo.database}}"
+    }
+  ]
+}

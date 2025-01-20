@@ -1,0 +1,44 @@
+{
+  "id": "$replicate$dbo_customers",
+  "name": "dbo_customers",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "customers",
+    "dbSchema": "{{task.onboarding_vc_landing-0mre:null$_$dbo.schema}}",
+    "dbName": "{{task.onboarding_vc_landing-0mre:null$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "customer_id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "customer_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "customer_name",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "customer_name",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
