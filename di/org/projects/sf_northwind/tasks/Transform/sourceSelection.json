@@ -1,0 +1,26 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-cnxo",
+      "tablePattern": "%",
+      "schemaPattern": "{{task.transform-c5v2:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceTask": "onboarding_storage-cnxo",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories-cnxq"
+    },
+    {
+      "sourceTask": "onboarding_storage-cnxo",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-cnxr"
+    }
+  ]
+}
