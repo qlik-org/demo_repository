@@ -1,0 +1,21 @@
+{
+  "sourceConnection": "{{task.landing-nzni.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.landing-nzni:null$_$dbo.database}}",
+      "name": "Products",
+      "schema": "{{task.landing-nzni:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    },
+    {
+      "database": "{{task.landing-nzni:null$_$dbo.database}}",
+      "name": "Suppliers",
+      "schema": "{{task.landing-nzni:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_suppliers"
+    }
+  ]
+}
