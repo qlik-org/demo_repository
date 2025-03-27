@@ -1,0 +1,21 @@
+{
+  "taskRuntime": {
+    "tableUpdateConcurrency": 0,
+    "warehouseSelection": {
+      "warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
+      "selectionMethod": "{{task-type.fileBasedKnowledgeMart.warehouseSelectionMethod}}"
+    }
+  },
+  "indexArtifactsLocation": {
+    "databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
+    "database": ""
+  },
+  "taskRunSchedule": {
+    "runInterval": 15,
+    "schedulingType": "NONE"
+  },
+  "vectorDbTargetType": "{{task-type.fileBasedKnowledgeMart.vectorDbTargetType}}",
+  "vectorDbConnection": "{{task-type.fileBasedKnowledgeMart.vectorDbConnection}}",
+  "llmConnection": "{{task-type.fileBasedKnowledgeMart.llmConnection}}",
+  "llmSettings": {}
+}

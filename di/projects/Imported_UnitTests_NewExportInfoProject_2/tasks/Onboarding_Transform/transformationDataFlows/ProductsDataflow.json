@@ -1,0 +1,148 @@
+{
+  "id": "8f80f8a2-16f8-48a4-a56b-142bb53f5c5e",
+  "description": "",
+  "name": "ProductsDataflow",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "onboarding_transform-emfa"
+  },
+  "createdAt": "2025-03-27T14:47:48.333Z",
+  "createdBy": "67b59b4f7b19597264ad1823",
+  "updatedAt": "2025-03-27T14:48:01.258Z",
+  "updatedBy": "67b59b4f7b19597264ad1823",
+  "checksum": "865a1931-580b-49da-b6f9-555588416c16",
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "d997d7e6-99b0-4f33-88c0-589dd870dd57",
+        "label": "Products",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "2a41d7e6-8403-4010-bef2-758a5ee5f1aa",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-eme0",
+              "entityId": "products-eme7"
+            },
+            "configuration": {
+              "name": "Products"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "aa4fa6ab-1e4f-4343-af8c-2fdc2e855ade",
+        "label": "ProductsDataflow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "60cadd85-41cc-4e8f-8e60-1ec7f6e658eb",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "ProductsDataflow",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "ProductID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "ProductName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "SupplierID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "CategoryID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "QuantityPerUnit",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitPrice",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsInStock",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsOnOrder",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ReorderLevel",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Discontinued",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "a6ff7482-c787-4e44-b6fb-e6c0f2e5dab8",
+        "sourceHandle": "2a41d7e6-8403-4010-bef2-758a5ee5f1aa",
+        "targetHandle": "60cadd85-41cc-4e8f-8e60-1ec7f6e658eb"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

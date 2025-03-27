@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "order_details-emfl",
+    "name": "Order Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_transform-emfa"
+  },
+  "targetEntity": {
+    "datasetId": "productsdataflow-h5yp",
+    "name": "ProductsDataflow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_transform-emfa"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ProductID",
+      "targetColumn": "ProductID",
+      "sourceColumnId": "productid",
+      "targetColumnId": "productid"
+    }
+  ],
+  "name": "Order Details_ProductsDataflow_relation",
+  "description": "",
+  "id": "order_details_productsdataflow_relation-h5yq"
+}

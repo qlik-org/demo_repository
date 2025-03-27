@@ -1,0 +1,118 @@
+{
+  "id": "fb91b807-f324-469a-8ef6-ce276251bf43",
+  "description": "",
+  "name": "CategoriesDataflow",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "onboarding_transform-emfa"
+  },
+  "createdAt": "2025-03-27T09:55:21.110Z",
+  "createdBy": "67b59b4f7b19597264ad1823",
+  "updatedAt": "2025-03-27T09:55:51.657Z",
+  "updatedBy": "67b59b4f7b19597264ad1823",
+  "checksum": "064cefba-fecc-4135-b13f-1ddf11a82e97",
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "605dd724-49dc-4e6a-acfe-7389cc78aad2",
+        "label": "Categories",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "a957376d-8555-4cfb-bb79-b7c2b719ffcf",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-eme0",
+              "entityId": "categories-eme2"
+            },
+            "configuration": {
+              "name": "Categories"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "b98281c3-4046-4a55-9c24-920c3a9a1401",
+        "label": "CategoriesDataflow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "bca5902c-4b9b-4062-8031-8deb0d7fab03",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "CategoriesDataflow",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "CategoryID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CategoryName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Description",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Picture",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "5a5bb872-14ca-4950-89d5-46eb08168837",
+        "sourceHandle": "a957376d-8555-4cfb-bb79-b7c2b719ffcf",
+        "targetHandle": "bca5902c-4b9b-4062-8031-8deb0d7fab03"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}
