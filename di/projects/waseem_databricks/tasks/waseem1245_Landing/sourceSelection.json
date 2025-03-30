@@ -1,0 +1,56 @@
+{
+  "sourceConnection": "{{task.waseem1245_landing-lkrf.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.waseem1245_landing-lkrf:null$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.waseem1245_landing-lkrf:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "database": "{{task.waseem1245_landing-lkrf:null$_$dbo.database}}",
+      "name": "Customers",
+      "schema": "{{task.waseem1245_landing-lkrf:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    },
+    {
+      "database": "{{task.waseem1245_landing-lkrf:null$_$dbo.database}}",
+      "name": "Employees",
+      "schema": "{{task.waseem1245_landing-lkrf:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    },
+    {
+      "database": "{{task.waseem1245_landing-lkrf:null$_$dbo.database}}",
+      "name": "Orders",
+      "schema": "{{task.waseem1245_landing-lkrf:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_orders"
+    },
+    {
+      "database": "{{task.waseem1245_landing-lkrf:null$_$dbo.database}}",
+      "name": "Products",
+      "schema": "{{task.waseem1245_landing-lkrf:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    },
+    {
+      "database": "{{task.waseem1245_landing-lkrf:null$_$dbo.database}}",
+      "name": "Region",
+      "schema": "{{task.waseem1245_landing-lkrf:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_region"
+    },
+    {
+      "database": "{{task.waseem1245_landing-lkrf:null$_$dbo.database}}",
+      "name": "Shippers",
+      "schema": "{{task.waseem1245_landing-lkrf:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_shippers"
+    }
+  ]
+}

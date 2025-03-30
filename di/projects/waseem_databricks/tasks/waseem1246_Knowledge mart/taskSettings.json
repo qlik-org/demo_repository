@@ -1,0 +1,52 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.waseem1246_knowledge_mart-lkrp.internalSchema}}",
+    "taskSchema": "{{task.waseem1246_knowledge_mart-lkrp.taskSchema}}",
+    "databaseName": "{{task.waseem1246_knowledge_mart-lkrp.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "bulkSize": "100",
+    "maxNumberOfRecords": "{{task.waseem1246_knowledge_mart-lkrp.maxNumberOfRecords}}",
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.waseem1246_knowledge_mart-lkrp.warehouseName}}"
+    }
+  },
+  "loadViewsSuffix": "__publish_doc_view",
+  "cdcViewsSuffix": "__publish_doc_cdc_view",
+  "outputDirectory": "",
+  "indexActionOnPrepare": "RECREATE",
+  "viewType": "DEFAULT",
+  "testAssistantSettings": {
+    "numberOfDocumentsRetrieved": 2,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
+    "filterConditions": "",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "searchFunction": ""
+  },
+  "indexArtifactsLocation": {
+    "schema": "{{task.waseem1246_knowledge_mart-lkrp.indexSchema}}",
+    "name": "{{task.waseem1246_knowledge_mart-lkrp.indexName}}",
+    "databricksVectorSearchEndpoint": "{{task.waseem1246_knowledge_mart-lkrp.databricksVectorSearchEndpoint}}",
+    "database": "{{task.waseem1246_knowledge_mart-lkrp.indexDatabase}}"
+  },
+  "vectorDbTargetType": "PROJECT_PLATFORM",
+  "vectorDbConnection": "{{task.waseem1246_knowledge_mart-lkrp.vectorDbConnection}}",
+  "llmConnection": "{{task.waseem1246_knowledge_mart-lkrp.llmConnection}}",
+  "llmSettings": {
+    "kindId": "llm:databricks",
+    "parameters": {
+      "embedding_model_serving_endpoint": "llma-serve",
+      "completion_model_serving_endpoint": "chat-openai"
+    }
+  }
+}

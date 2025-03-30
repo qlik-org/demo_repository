@@ -1,0 +1,21 @@
+{
+  "id": "orders-lkrl",
+  "name": "Orders",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "waseem1245_landing-lkrf"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}

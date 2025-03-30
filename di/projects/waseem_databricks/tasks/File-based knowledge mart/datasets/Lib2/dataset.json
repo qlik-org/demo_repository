@@ -1,0 +1,44 @@
+{
+  "id": "Lib2",
+  "name": "Lib2",
+  "type": "DIRECTORY",
+  "inputDatasets": [
+    {
+      "datasetId": "Lib2",
+      "name": "Lib2",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "file_based_knowledge_mart-gtbp"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Lib2",
+    "columns": [
+      {
+        "name": "FileName",
+        "ordinal": 0,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 200,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "file",
+        "flags": "NONE"
+      }
+    ],
+    "entityId": "Lib2",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
