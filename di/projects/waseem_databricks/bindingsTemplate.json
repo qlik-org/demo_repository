@@ -71,7 +71,8 @@
     "task.file_based_knowledge_mart-gtbp.indexName": "",
     "task.file_based_knowledge_mart-gtbp.indexSchema": "",
     "task.file_based_knowledge_mart-gtbp.indexDatabase": "",
-    "task.file_based_knowledge_mart-gtbp.warehouseName": ""
+    "task.file_based_knowledge_mart-gtbp.warehouseName": "",
+    "task.file_based_knowledge_mart-gtbp.sourceConnection": ""
   },
   "idToNameMap": {
     "waseem1245_landing-lkrf": "waseem1245_Landing",
@@ -96,6 +97,10 @@
     "{{id(connection, rosie.OpenAI)}}": {
       "type": "external_data_provider",
       "kindId": "llm:OpenAI@1.0.0"
+    },
+    "{{id(connection, rosie.Sharepoint)}}": {
+      "type": "external_data_provider",
+      "kindId": "filesource:sharepoint"
     }
   }
 }
