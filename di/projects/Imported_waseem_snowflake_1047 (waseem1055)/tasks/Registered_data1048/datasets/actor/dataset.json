@@ -1,0 +1,15 @@
+{
+  "id": "actor",
+  "name": "actor",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$DEKEL_actor",
+      "name": "actor",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data1048-q4cz",
+      "schema": "{{task.registered_data1048-q4cz:AAA_WASEEM_DB$_$DEKEL.schema}}",
+      "database": "{{task.registered_data1048-q4cz:AAA_WASEEM_DB$_$DEKEL.database}}"
+    }
+  ]
+}
