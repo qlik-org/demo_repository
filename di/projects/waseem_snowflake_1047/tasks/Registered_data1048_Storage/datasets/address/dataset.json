@@ -1,0 +1,21 @@
+{
+  "id": "address-q4c3",
+  "name": "address",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "address",
+      "name": "address",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data1048-q4cz"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
