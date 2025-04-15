@@ -1,0 +1,68 @@
+{
+  "variables": {
+    "projectName": "",
+    "platformConnection": "",
+    "cloudStagingConnection": "",
+    "project.current.prefixSchema": "",
+    "task-type.landing.warehouseName": "",
+    "task-type.landing.warehouseSelectionMethod": "",
+    "task-type.landing.databaseName": "",
+    "task-type.landing.databaseSelectionMethod": "",
+    "task-type.registered.databaseName": "",
+    "task-type.registered.databaseSelectionMethod": "",
+    "task-type.storage.warehouseName": "",
+    "task-type.storage.warehouseSelectionMethod": "",
+    "task-type.storage.databaseName": "",
+    "task-type.storage.databaseSelectionMethod": "",
+    "task-type.storage.snowflakeExternalVolume": "",
+    "task-type.storage.snowflakeOpenCatalog": "",
+    "task-type.transform.warehouseName": "",
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task-type.transform.databaseName": "",
+    "task-type.transform.databaseSelectionMethod": "",
+    "task-type.transform.snowflakeExternalVolume": "",
+    "task-type.transform.snowflakeOpenCatalog": "",
+    "task-type.datamart.warehouseName": "",
+    "task-type.datamart.warehouseSelectionMethod": "",
+    "task-type.datamart.databaseName": "",
+    "task-type.datamart.databaseSelectionMethod": "",
+    "task-type.datamart.snowflakeExternalVolume": "",
+    "task-type.datamart.snowflakeOpenCatalog": "",
+    "task-type.knowledgeMart.vectorDbConnection": "",
+    "task-type.knowledgeMart.vectorDbTargetType": "",
+    "task-type.knowledgeMart.llmConnection": "",
+    "task-type.knowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.knowledgeMart.databaseName": "",
+    "task-type.knowledgeMart.databaseSelectionMethod": "",
+    "task-type.knowledgeMart.warehouseName": "",
+    "task-type.knowledgeMart.warehouseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbConnection": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbTargetType": "",
+    "task-type.fileBasedKnowledgeMart.llmConnection": "",
+    "task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.fileBasedKnowledgeMart.databaseName": "",
+    "task-type.fileBasedKnowledgeMart.databaseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.warehouseName": "",
+    "task-type.fileBasedKnowledgeMart.warehouseSelectionMethod": "",
+    "task.uppercasecheck_landing-olej.databaseName": "",
+    "task.uppercasecheck_landing-olej.taskSchema": "",
+    "task.uppercasecheck_landing-olej.sourceConnection": "",
+    "task.uppercasecheck_landing-olej:null$_$dbo.schema": "",
+    "task.uppercasecheck_storage-olek.databaseName": "",
+    "task.uppercasecheck_storage-olek.internalSchema": "",
+    "task.uppercasecheck_storage-olek.taskSchema": "",
+    "task.uppercasecheck_storage-olek.warehouseName": ""
+  },
+  "idToNameMap": {
+    "uppercasecheck_landing-olej": "UpperCaseCheck_Landing",
+    "uppercasecheck_storage-olek": "UpperCaseCheck_Storage"
+  },
+  "connectionProperties": {
+    "{{id(connection, waseem.Waseem_Snowflake_Target)}}": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
+      "type": "repsrc_mssql"
+    }
+  }
+}

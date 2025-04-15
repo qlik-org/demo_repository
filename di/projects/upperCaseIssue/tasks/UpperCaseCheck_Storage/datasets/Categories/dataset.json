@@ -1,0 +1,21 @@
+{
+  "id": "categories-olem",
+  "name": "Categories",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "categories",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "uppercasecheck_landing-olej"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}

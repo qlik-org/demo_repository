@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.uppercasecheck_landing-olej.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Categories",
+      "schema": "{{task.uppercasecheck_landing-olej:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "name": "Customers",
+      "schema": "{{task.uppercasecheck_landing-olej:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    }
+  ]
+}
