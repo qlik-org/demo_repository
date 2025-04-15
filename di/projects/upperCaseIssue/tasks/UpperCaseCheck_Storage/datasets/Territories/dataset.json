@@ -1,0 +1,21 @@
+{
+  "id": "territories-olew",
+  "name": "Territories",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "territories",
+      "name": "Territories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "uppercasecheck_landing-olej"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
