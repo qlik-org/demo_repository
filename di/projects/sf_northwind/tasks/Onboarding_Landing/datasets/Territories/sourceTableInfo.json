@@ -4,8 +4,55 @@
   "type": "LANDING",
   "tableDef": {
     "name": "Territories",
-    "dbSchema": "{{task.onboarding_landing-cnxn:null$_$dbo.schema}}",
-    "dbName": "{{task.onboarding_landing-cnxn:null$_$dbo.database}}",
+    "dbSchema": "dbo",
+    "dbName": "AutoNorthwind",
+    "columns": [
+      {
+        "name": "TerritoryID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "territoryid",
+        "flags": "NONE"
+      },
+      {
+        "name": "TerritoryDescription",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "territorydescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "RegionID",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "regionid",
+        "flags": "NONE"
+      }
+    ],
     "secureQri": "",
     "fullLoadOnly": false
   }
