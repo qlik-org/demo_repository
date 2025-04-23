@@ -1,0 +1,88 @@
+{
+  "variables": {
+    "projectName": "",
+    "platformConnection": "",
+    "cloudStagingConnection": "",
+    "project.current.prefixSchema": "",
+    "task-type.landing.warehouseName": "",
+    "task-type.landing.warehouseSelectionMethod": "",
+    "task-type.landing.databaseName": "",
+    "task-type.landing.databaseSelectionMethod": "",
+    "task-type.registered.databaseName": "",
+    "task-type.registered.databaseSelectionMethod": "",
+    "task-type.storage.warehouseName": "",
+    "task-type.storage.warehouseSelectionMethod": "",
+    "task-type.storage.databaseName": "",
+    "task-type.storage.databaseSelectionMethod": "",
+    "task-type.storage.snowflakeExternalVolume": "",
+    "task-type.storage.snowflakeOpenCatalog": "",
+    "task-type.transform.warehouseName": "",
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task-type.transform.databaseName": "",
+    "task-type.transform.databaseSelectionMethod": "",
+    "task-type.transform.snowflakeExternalVolume": "",
+    "task-type.transform.snowflakeOpenCatalog": "",
+    "task-type.datamart.warehouseName": "",
+    "task-type.datamart.warehouseSelectionMethod": "",
+    "task-type.datamart.databaseName": "",
+    "task-type.datamart.databaseSelectionMethod": "",
+    "task-type.datamart.snowflakeExternalVolume": "",
+    "task-type.datamart.snowflakeOpenCatalog": "",
+    "task-type.knowledgeMart.vectorDbConnection": "",
+    "task-type.knowledgeMart.vectorDbTargetType": "",
+    "task-type.knowledgeMart.llmConnection": "",
+    "task-type.knowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.knowledgeMart.indexDatabase": "",
+    "task-type.knowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.knowledgeMart.warehouseName": "",
+    "task-type.knowledgeMart.warehouseSelectionMethod": "",
+    "task-type.knowledgeMart.databaseName": "",
+    "task-type.knowledgeMart.databaseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbConnection": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbTargetType": "",
+    "task-type.fileBasedKnowledgeMart.llmConnection": "",
+    "task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabase": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.warehouseName": "",
+    "task-type.fileBasedKnowledgeMart.warehouseSelectionMethod": "",
+    "task.onboarding_landing-taby.databaseName": "",
+    "task.onboarding_landing-taby.taskSchema": "",
+    "task.onboarding_landing-taby.sourceConnection": "",
+    "task.onboarding_landing-taby:null$_$dbo.schema": "",
+    "task.onboarding_storage-tabz.databaseName": "",
+    "task.onboarding_storage-tabz.internalSchema": "",
+    "task.onboarding_storage-tabz.taskSchema": "",
+    "task.onboarding_storage-tabz.warehouseName": "",
+    "task.knowledge_mart-tab3.vectorDbConnection": "",
+    "task.knowledge_mart-tab3.llmConnection": "",
+    "task.knowledge_mart-tab3.databricksVectorSearchEndpoint": "",
+    "task.knowledge_mart-tab3.indexName": "",
+    "task.knowledge_mart-tab3.databaseName": "",
+    "task.knowledge_mart-tab3.internalSchema": "",
+    "task.knowledge_mart-tab3.taskSchema": "",
+    "task.knowledge_mart-tab3.warehouseName": "",
+    "task.knowledge_mart-tab3.maxNumberOfRecords": ""
+  },
+  "idToNameMap": {
+    "onboarding_landing-taby": "Onboarding_Landing",
+    "onboarding_storage-tabz": "Onboarding_Storage",
+    "knowledge_mart-tab3": "Knowledge mart"
+  },
+  "connectionProperties": {
+    "{{id(connection, waseem.Waseem_Snowflake_Target)}}": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "{{id(connection, rosie.Microsoft_SQL_Server_(log_based)_oshrat_test)}}": {
+      "type": "repsrc_mssql"
+    },
+    "{{id(connection, rula_s.Pinecone_r)}}": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Pinecone@1.0.0"
+    },
+    "{{id(connection, rosie.OpenAI)}}": {
+      "type": "external_data_provider",
+      "kindId": "llm:OpenAI@1.0.0"
+    }
+  }
+}

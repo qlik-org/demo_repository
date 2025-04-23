@@ -1,0 +1,22 @@
+{
+  "id": "customercustomerdemo-tab2",
+  "name": "CustomerCustomerDemo",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "customercustomerdemo",
+      "name": "CustomerCustomerDemo",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-taby"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false
+}
