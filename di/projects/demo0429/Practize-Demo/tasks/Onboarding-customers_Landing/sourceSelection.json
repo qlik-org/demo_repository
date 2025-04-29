@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.onboarding_customers_landing-8_f3.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "customer",
+      "schema": "{{task.onboarding_customers_landing-8_f3:null$_$sales.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$sales_customer"
+    }
+  ]
+}
