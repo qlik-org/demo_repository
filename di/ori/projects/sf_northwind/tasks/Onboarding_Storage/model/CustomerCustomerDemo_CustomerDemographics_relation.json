@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "customercustomerdemo-kvda",
+    "name": "CustomerCustomerDemo",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-kvdx"
+  },
+  "targetEntity": {
+    "datasetId": "customerdemographics-kvdb",
+    "name": "CustomerDemographics",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-kvdx"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerTypeID",
+      "targetColumn": "CustomerTypeID",
+      "sourceColumnId": "customertypeid",
+      "targetColumnId": "customertypeid"
+    }
+  ],
+  "name": "CustomerCustomerDemo_CustomerDemographics_relation",
+  "description": "",
+  "id": "customercustomerdemo_customerdemographics_relation-vjp5"
+}
