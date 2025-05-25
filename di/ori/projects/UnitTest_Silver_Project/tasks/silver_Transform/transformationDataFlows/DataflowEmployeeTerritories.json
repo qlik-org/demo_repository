@@ -1,0 +1,102 @@
+{
+  "name": "DataflowEmployeeTerritories",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "silver_transform--t6z"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "1bbe1baf-6d5b-497e-bb65-36657a3f6f89",
+        "label": "EmployeeTerritories",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "528cce95-b703-451d-aebe-ca5232322aee",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{project.ori$_$UnitTest_Bronze_Project.projectId}}",
+              "dataAppId": "bronze_storage--t6y",
+              "entityId": "employeeterritories--t6d"
+            },
+            "configuration": {
+              "name": "EmployeeTerritories"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "49869208-e860-49dd-b617-91afd7f7fb12",
+        "label": "DataflowEmployeeTerritories",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "96fe935c-94eb-47d8-8284-9074e022f315",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "DataflowEmployeeTerritories",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "EmployeeID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "TerritoryID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "014a48cc-c0fc-4abf-b002-257fa60a9616",
+        "sourceHandle": "528cce95-b703-451d-aebe-ca5232322aee",
+        "targetHandle": "96fe935c-94eb-47d8-8284-9074e022f315"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

@@ -1,0 +1,49 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "shippers--t6i",
+    "name": "Shippers",
+    "projectId": "{{project.ori$_$UnitTest_Bronze_Project.projectId}}",
+    "taskId": "bronze_storage--t6y"
+  },
+  "mappingFields": [
+    {
+      "columnId": "shipperid",
+      "expression": {
+        "expressionStatement": "${ShipperID}",
+        "alias": [
+          {
+            "name": "ShipperID",
+            "value": "ShipperID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "phone",
+      "expression": {
+        "expressionStatement": "${Phone}",
+        "alias": [
+          {
+            "name": "Phone",
+            "value": "Phone"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "shippers_default_mapping--t6_",
+  "name": "Shippers_default_mapping",
+  "description": ""
+}
