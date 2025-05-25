@@ -1,6 +1,6 @@
 {
   "taskRuntime": {
-    "chunkSize": "2000",
+    "chunkSize": "50000",
     "chunkOverlap": "0",
     "bulkSize": "100",
     "filesLocation": {
@@ -14,7 +14,7 @@
       "warehouseName": "{{task.file_based_knowledge_mart-cuv9.warehouseName}}"
     }
   },
-  "indexActionOnPrepare": "CREATE_IF_NOT_EXISTS",
+  "indexActionOnPrepare": "RECREATE",
   "includedFilesPatterns": "*.pdf,*.docx,*.txt",
   "testAssistantSettings": {
     "numberOfDocumentsRetrieved": 2,
