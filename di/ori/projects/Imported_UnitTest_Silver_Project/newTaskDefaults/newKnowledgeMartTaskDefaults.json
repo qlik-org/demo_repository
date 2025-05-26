@@ -1,0 +1,35 @@
+{
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
+      "selectionMethod": "{{task-type.knowledgeMart.warehouseSelectionMethod}}"
+    }
+  },
+  "database": {
+    "databaseName": "{{task-type.knowledgeMart.databaseName}}",
+    "selectionMethod": "{{task-type.knowledgeMart.databaseSelectionMethod}}"
+  },
+  "viewType": "DEFAULT",
+  "indexArtifactsLocation": {
+    "databaseSelection": {
+      "databaseName": "{{task-type.knowledgeMart.indexDatabase}}",
+      "selectionMethod": "{{task-type.knowledgeMart.indexDatabaseSelectionMethod}}"
+    },
+    "databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}"
+  },
+  "taskRunSchedule": {
+    "runInterval": 15,
+    "schedulingType": "EVENT_BASED"
+  },
+  "vectorDbTargetType": "{{task-type.knowledgeMart.vectorDbTargetType}}",
+  "vectorDbConnection": "{{task-type.knowledgeMart.vectorDbConnection}}",
+  "llmConnection": "{{task-type.knowledgeMart.llmConnection}}",
+  "llmSettings": {
+    "kindId": "llm:SnowflakeCortex@1.0.0",
+    "parameters": {
+      "embedding_model": "nv-embed-qa-4",
+      "completion_model": "mistral-7b"
+    }
+  }
+}
