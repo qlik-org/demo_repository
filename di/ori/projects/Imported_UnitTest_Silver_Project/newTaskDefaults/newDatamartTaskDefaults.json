@@ -1,0 +1,30 @@
+{
+  "materialized": false,
+  "hasHistory": false,
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task-type.datamart.warehouseName}}",
+      "selectionMethod": "{{task-type.datamart.warehouseSelectionMethod}}"
+    }
+  },
+  "taskRunSchedule": {
+    "runInterval": 15,
+    "schedulingType": "EVENT_BASED"
+  },
+  "databaseSelection": {
+    "databaseName": "{{task-type.datamart.databaseName}}",
+    "selectionMethod": "{{task-type.datamart.databaseSelectionMethod}}"
+  },
+  "tableTypeSettings": {
+    "tableType": "REGULAR",
+    "icebergSettings": {
+      "snowflakeExternalVolume": "",
+      "folderLocationType": "DATA_ASSET_NAME",
+      "specificFolder": "",
+      "enableOpenCatalogSync": false,
+      "snowflakeOpenCatalog": ""
+    }
+  },
+  "viewType": "DEFAULT"
+}
