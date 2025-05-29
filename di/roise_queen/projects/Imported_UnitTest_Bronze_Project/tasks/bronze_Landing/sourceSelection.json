@@ -1,0 +1,73 @@
+{
+  "sourceConnection": "{{task.bronze_landing--t6x.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Categories",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "name": "Customers",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    },
+    {
+      "name": "Employees",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    },
+    {
+      "name": "Order Details",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_order_details"
+    },
+    {
+      "name": "EmployeeTerritories",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employeeterritories"
+    },
+    {
+      "name": "Orders",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_orders"
+    },
+    {
+      "name": "Products",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    },
+    {
+      "name": "Region",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_region"
+    },
+    {
+      "name": "Shippers",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_shippers"
+    },
+    {
+      "name": "Suppliers",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_suppliers"
+    },
+    {
+      "name": "Territories",
+      "schema": "{{task.bronze_landing--t6x:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_territories"
+    }
+  ]
+}

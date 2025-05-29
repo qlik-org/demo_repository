@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products--t6g",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "bronze_storage--t6y"
+  },
+  "targetEntity": {
+    "datasetId": "suppliers--t6j",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "bronze_storage--t6y"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation--t6u"
+}

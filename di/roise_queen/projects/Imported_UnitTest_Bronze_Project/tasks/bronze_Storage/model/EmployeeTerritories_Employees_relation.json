@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employeeterritories--t6d",
+    "name": "EmployeeTerritories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "bronze_storage--t6y"
+  },
+  "targetEntity": {
+    "datasetId": "employees--t6c",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "bronze_storage--t6y"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "EmployeeTerritories_Employees_relation",
+  "description": "",
+  "id": "employeeterritories_employees_relation--t6n"
+}

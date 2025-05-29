@@ -1,0 +1,23 @@
+{
+  "id": "order_details--t6e",
+  "name": "Order Details",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "order_details",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "bronze_landing--t6x"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

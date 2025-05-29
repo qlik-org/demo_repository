@@ -1,0 +1,23 @@
+{
+  "id": "shippers--t6i",
+  "name": "Shippers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "shippers",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "bronze_landing--t6x"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
