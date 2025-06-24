@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-bhko",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "targetEntity": {
+    "datasetId": "categories-bhkf",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CategoryID",
+      "targetColumn": "CategoryID",
+      "sourceColumnId": "categoryid",
+      "targetColumnId": "categoryid"
+    }
+  ],
+  "name": "Products_Categories_relation",
+  "description": "",
+  "id": "products_categories_relation-bhk9"
+}

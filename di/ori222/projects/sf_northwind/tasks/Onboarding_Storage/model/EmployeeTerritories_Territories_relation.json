@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employeeterritories-bhkk",
+    "name": "EmployeeTerritories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "targetEntity": {
+    "datasetId": "territories-bhks",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "TerritoryID",
+      "targetColumn": "TerritoryID",
+      "sourceColumnId": "territoryid",
+      "targetColumnId": "territoryid"
+    }
+  ],
+  "name": "EmployeeTerritories_Territories_relation",
+  "description": "",
+  "id": "employeeterritories_territories_relation-bhk4"
+}

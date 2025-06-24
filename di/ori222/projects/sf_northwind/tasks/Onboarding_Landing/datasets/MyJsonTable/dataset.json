@@ -1,0 +1,16 @@
+{
+  "id": "myjsontable",
+  "name": "MyJsonTable",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_myjsontable",
+      "name": "MyJsonTable",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-bhkc",
+      "schema": "{{task.onboarding_landing-bhkc:null$_$dbo.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

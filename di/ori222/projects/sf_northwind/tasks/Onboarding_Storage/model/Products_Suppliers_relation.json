@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-bhko",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "targetEntity": {
+    "datasetId": "suppliers-bhkr",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation-bhk-"
+}

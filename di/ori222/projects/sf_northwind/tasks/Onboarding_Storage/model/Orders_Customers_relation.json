@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-bhkn",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "targetEntity": {
+    "datasetId": "customers-bhki",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_Customers_relation",
+  "description": "",
+  "id": "orders_customers_relation-bhk7"
+}
