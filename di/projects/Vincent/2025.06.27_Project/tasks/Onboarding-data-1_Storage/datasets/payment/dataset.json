@@ -1,0 +1,23 @@
+{
+  "id": "payment-qtax",
+  "name": "payment",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "payment",
+      "name": "payment",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_data_1_landing-qtau"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
