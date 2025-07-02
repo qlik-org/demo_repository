@@ -1,0 +1,23 @@
+{
+  "id": "category-jlj4",
+  "name": "category",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "category-jljy",
+      "name": "category",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-jljx"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

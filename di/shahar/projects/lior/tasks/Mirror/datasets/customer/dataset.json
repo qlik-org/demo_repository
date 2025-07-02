@@ -1,0 +1,23 @@
+{
+  "id": "customer-jlj5",
+  "name": "customer",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "customer-jljz",
+      "name": "customer",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-jljx"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
