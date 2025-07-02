@@ -1,0 +1,23 @@
+{
+  "id": "category-cs2m",
+  "name": "category",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "category",
+      "name": "category",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_lake_landing-jljw"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

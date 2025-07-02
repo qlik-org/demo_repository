@@ -1,0 +1,36 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.storage-cs2l.internalSchema}}",
+    "taskSchema": "{{task.storage-cs2l.taskSchema}}",
+    "databaseName": "{{task.storage-cs2l.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": true,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "storageLocationSettings": {
+    "folderLocationType": "DATA_ASSET_NAME",
+    "specificFolder": ""
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  },
+  "ddlHandlingPolicy": {
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "SUSPEND_TABLE",
+    "renameColumn": "SUSPEND_TABLE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE",
+    "createTable": "APPLY_TO_TARGET"
+  },
+  "taskRuntime": {
+    "lakehouseCluster": "{{task.storage-cs2l.lakehouseCluster}}"
+  }
+}

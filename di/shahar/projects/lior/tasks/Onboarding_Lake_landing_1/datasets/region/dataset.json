@@ -1,0 +1,16 @@
+{
+  "id": "region",
+  "name": "region",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$northwind_region",
+      "name": "region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_lake_landing_1-cs2p",
+      "schema": "{{task.onboarding_lake_landing_1-cs2p:null$_$northwind.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

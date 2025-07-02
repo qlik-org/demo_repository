@@ -1,0 +1,25 @@
+{
+  "sourceConnection": "{{task.onboarding_lake_landing_1-cs2p.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "region",
+      "schema": "{{task.onboarding_lake_landing_1-cs2p:null$_$northwind.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$northwind_region"
+    },
+    {
+      "name": "shipper",
+      "schema": "{{task.onboarding_lake_landing_1-cs2p:null$_$northwind.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$northwind_shipper"
+    },
+    {
+      "name": "supplier",
+      "schema": "{{task.onboarding_lake_landing_1-cs2p:null$_$northwind.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$northwind_supplier"
+    }
+  ]
+}

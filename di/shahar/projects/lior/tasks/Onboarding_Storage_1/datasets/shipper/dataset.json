@@ -1,0 +1,23 @@
+{
+  "id": "shipper-cs2s",
+  "name": "shipper",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "shipper",
+      "name": "shipper",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_lake_landing_1-cs2p"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
