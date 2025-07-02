@@ -1,0 +1,11 @@
+{
+  "id": "$replicate$northwind_region",
+  "name": "northwind_region",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "region",
+    "dbSchema": "{{task.onboarding_lake_landing-sbpu:null$_$northwind.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

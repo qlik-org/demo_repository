@@ -1,0 +1,11 @@
+{
+  "id": "$replicate$northwind_shipper",
+  "name": "northwind_shipper",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "shipper",
+    "dbSchema": "{{task.onboarding_lake_landing-sbpu:null$_$northwind.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

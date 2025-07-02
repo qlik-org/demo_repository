@@ -1,0 +1,16 @@
+{
+  "id": "shipper",
+  "name": "shipper",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$northwind_shipper",
+      "name": "shipper",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_lake_landing-sbpu",
+      "schema": "{{task.onboarding_lake_landing-sbpu:null$_$northwind.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

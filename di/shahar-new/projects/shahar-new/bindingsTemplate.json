@@ -1,0 +1,33 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.icebergStorage.lakehouseCluster": "",
+    "task.mirror-sbpy.databaseName": "{{task-type.mirror.databaseName}}",
+    "task.mirror-sbpy.internalSchema": "",
+    "task.mirror-sbpy.snowflakeExternalVolume": "{{task-type.mirror.snowflakeExternalVolume}}",
+    "task.mirror-sbpy.snowflakeOpenCatalog": "{{task-type.mirror.snowflakeOpenCatalog}}",
+    "task.mirror-sbpy.targetConnection": "",
+    "task.mirror-sbpy.taskSchema": "",
+    "task.mirror-sbpy.warehouseName": "{{task-type.mirror.warehouseName}}",
+    "task.onboarding_lake_landing-sbpu.sourceConnection": "",
+    "task.onboarding_lake_landing-sbpu.taskSchema": "",
+    "task.onboarding_lake_landing-sbpu:null$_$northwind.schema": "",
+    "task.onboarding_storage-sbpv.databaseName": "{{task-type.icebergStorage.databaseName}}",
+    "task.onboarding_storage-sbpv.internalSchema": "",
+    "task.onboarding_storage-sbpv.lakehouseCluster": "",
+    "task.onboarding_storage-sbpv.taskSchema": ""
+  },
+  "idToNameMap": {
+    "mirror-sbpy": "Mirror",
+    "onboarding_lake_landing-sbpu": "Onboarding_Lake_landing",
+    "onboarding_storage-sbpv": "Onboarding_Storage"
+  },
+  "connectionProperties": {
+    "task.onboarding_lake_landing-sbpu.sourceConnection": {
+      "type": "repsrc_mysql"
+    }
+  }
+}
