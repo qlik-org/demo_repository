@@ -5,6 +5,38 @@
   "tableDef": {
     "name": "region",
     "dbSchema": "{{task.onboarding_lake_landing-sbpu:null$_$northwind.schema}}",
+    "columns": [
+      {
+        "name": "regionId",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "regionid",
+        "flags": "NONE"
+      },
+      {
+        "name": "regiondescription",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "regiondescription",
+        "flags": "NONE"
+      }
+    ],
     "secureQri": "",
     "fullLoadOnly": false
   }
