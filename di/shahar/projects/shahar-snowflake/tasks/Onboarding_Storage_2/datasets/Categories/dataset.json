@@ -1,0 +1,35 @@
+{
+  "id": "categories-bt6a",
+  "name": "Categories",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "categories",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing_2-bt6x"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "OFF",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Categories",
+    "dbSchema": "onboarding_storage_2",
+    "dbName": "AAAA_SHAHAR_DB",
+    "columns": [],
+    "entityId": "categories-bt6a",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

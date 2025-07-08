@@ -1,0 +1,171 @@
+{
+  "id": "categories-bt6e",
+  "name": "Categories",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "categories-bt6a",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage_2-bt6y"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Categories",
+    "dbSchema": "transform_6",
+    "dbName": "AAAA_SHAHAR_DB",
+    "columns": [
+      {
+        "name": "CategoryID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "expression": {
+          "expressionStatement": "${CategoryID}",
+          "alias": [
+            {
+              "name": "CategoryID",
+              "value": "CategoryID"
+            }
+          ]
+        },
+        "id": "categoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CategoryName",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "expression": {
+          "expressionStatement": "${CategoryName}",
+          "alias": [
+            {
+              "name": "CategoryName",
+              "value": "CategoryName"
+            }
+          ]
+        },
+        "id": "categoryname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Description",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 1073741823,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "expression": {
+          "expressionStatement": "${Description}",
+          "alias": [
+            {
+              "name": "Description",
+              "value": "Description"
+            }
+          ]
+        },
+        "id": "description",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Picture",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BLOB",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "expression": {
+          "expressionStatement": "${Picture}",
+          "alias": [
+            {
+              "name": "Picture",
+              "value": "Picture"
+            }
+          ]
+        },
+        "id": "picture",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CreatedDate",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "expression": {
+          "expressionStatement": "${CreatedDate}",
+          "alias": [
+            {
+              "name": "CreatedDate",
+              "value": "CreatedDate"
+            }
+          ]
+        },
+        "id": "createddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "categories-bt6e",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

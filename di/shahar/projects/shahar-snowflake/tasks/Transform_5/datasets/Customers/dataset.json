@@ -1,0 +1,333 @@
+{
+  "id": "customers-7euh",
+  "name": "Customers",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "customers-7euc",
+      "name": "Customers",
+      "projectId": "{{project.shahar$_$p1.projectId}}",
+      "taskId": "mirror_2-7eua"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Customers",
+    "dbSchema": "transform_5",
+    "dbName": "AAAA_SHAHAR_DB",
+    "columns": [
+      {
+        "name": "CustomerID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${CustomerID}",
+          "alias": [
+            {
+              "name": "CustomerID",
+              "value": "CustomerID"
+            }
+          ]
+        },
+        "id": "customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${CompanyName}",
+          "alias": [
+            {
+              "name": "CompanyName",
+              "value": "CompanyName"
+            }
+          ]
+        },
+        "id": "companyname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ContactName",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${ContactName}",
+          "alias": [
+            {
+              "name": "ContactName",
+              "value": "ContactName"
+            }
+          ]
+        },
+        "id": "contactname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ContactTitle",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${ContactTitle}",
+          "alias": [
+            {
+              "name": "ContactTitle",
+              "value": "ContactTitle"
+            }
+          ]
+        },
+        "id": "contacttitle",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Address",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${Address}",
+          "alias": [
+            {
+              "name": "Address",
+              "value": "Address"
+            }
+          ]
+        },
+        "id": "address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "City",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${City}",
+          "alias": [
+            {
+              "name": "City",
+              "value": "City"
+            }
+          ]
+        },
+        "id": "city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Region",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${Region}",
+          "alias": [
+            {
+              "name": "Region",
+              "value": "Region"
+            }
+          ]
+        },
+        "id": "region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "PostalCode",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${PostalCode}",
+          "alias": [
+            {
+              "name": "PostalCode",
+              "value": "PostalCode"
+            }
+          ]
+        },
+        "id": "postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Country",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${Country}",
+          "alias": [
+            {
+              "name": "Country",
+              "value": "Country"
+            }
+          ]
+        },
+        "id": "country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Phone",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${Phone}",
+          "alias": [
+            {
+              "name": "Phone",
+              "value": "Phone"
+            }
+          ]
+        },
+        "id": "phone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Fax",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${Fax}",
+          "alias": [
+            {
+              "name": "Fax",
+              "value": "Fax"
+            }
+          ]
+        },
+        "id": "fax",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "customers-7euh",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
