@@ -1,0 +1,23 @@
+{
+  "id": "order_details-saoq",
+  "name": "Order Details",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "order_details",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing_1-saof"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

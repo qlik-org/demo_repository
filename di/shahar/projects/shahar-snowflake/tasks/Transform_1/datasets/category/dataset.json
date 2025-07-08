@@ -1,0 +1,225 @@
+{
+  "id": "category-cll1",
+  "name": "category",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "category-cllp",
+      "name": "category",
+      "projectId": "{{project.shahar$_$shahar.projectId}}",
+      "taskId": "mirror_1-cllo"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "category",
+    "dbSchema": "transform_1",
+    "dbName": "AAAA_SHAHAR_DB",
+    "columns": [
+      {
+        "name": "categoryId",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${categoryId}",
+          "alias": [
+            {
+              "name": "categoryId",
+              "value": "categoryId"
+            }
+          ]
+        },
+        "id": "categoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "categoryName",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${categoryName}",
+          "alias": [
+            {
+              "name": "categoryName",
+              "value": "categoryName"
+            }
+          ]
+        },
+        "id": "categoryname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "description",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 65535,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${description}",
+          "alias": [
+            {
+              "name": "description",
+              "value": "description"
+            }
+          ]
+        },
+        "id": "description",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "picture",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 65535,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${picture}",
+          "alias": [
+            {
+              "name": "picture",
+              "value": "picture"
+            }
+          ]
+        },
+        "id": "picture",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "newCol",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${newCol}",
+          "alias": [
+            {
+              "name": "newCol",
+              "value": "newCol"
+            }
+          ]
+        },
+        "id": "newcol",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "newCol2",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${newCol2}",
+          "alias": [
+            {
+              "name": "newCol2",
+              "value": "newCol2"
+            }
+          ]
+        },
+        "id": "newcol2",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Column1",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${Column1}",
+          "alias": [
+            {
+              "name": "Column1",
+              "value": "Column1"
+            }
+          ]
+        },
+        "id": "column1",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "category-cll1",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

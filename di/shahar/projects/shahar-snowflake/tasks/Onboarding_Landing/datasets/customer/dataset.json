@@ -1,0 +1,16 @@
+{
+  "id": "customer",
+  "name": "customer",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$northwind_customer",
+      "name": "customer",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-dzfn",
+      "schema": "{{task.onboarding_landing-dzfn:null$_$northwind.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

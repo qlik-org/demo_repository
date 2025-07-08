@@ -1,0 +1,43 @@
+{
+  "id": "$replicate$dbo_customerdemographics",
+  "name": "dbo_CustomerDemographics",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "CustomerDemographics",
+    "dbSchema": "{{task.onboarding_landing_1-saof:null$_$dbo.schema}}",
+    "columns": [
+      {
+        "name": "CustomerTypeID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "customertypeid",
+        "flags": "NONE"
+      },
+      {
+        "name": "CustomerDesc",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 1073741823,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "customerdesc",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

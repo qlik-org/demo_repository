@@ -1,0 +1,43 @@
+{
+  "id": "$replicate$dbo_mytable",
+  "name": "dbo_MyTable",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "MyTable",
+    "dbSchema": "{{task.onboarding_landing_1-saof:null$_$dbo.schema}}",
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "id",
+        "flags": "NONE"
+      },
+      {
+        "name": "json_data",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "CLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "json_data",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

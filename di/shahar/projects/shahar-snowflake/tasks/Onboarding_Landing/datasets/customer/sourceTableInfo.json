@@ -1,0 +1,11 @@
+{
+  "id": "$replicate$northwind_customer",
+  "name": "northwind_customer",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "customer",
+    "dbSchema": "{{task.onboarding_landing-dzfn:null$_$northwind.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
