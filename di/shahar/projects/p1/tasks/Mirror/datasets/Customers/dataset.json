@@ -1,0 +1,23 @@
+{
+  "id": "customers-yh2c",
+  "name": "Customers",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "customers-7euz",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-7eux"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

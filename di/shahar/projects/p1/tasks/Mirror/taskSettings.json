@@ -1,0 +1,45 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.mirror-yh2a.internalSchema}}",
+    "taskSchema": "{{task.mirror-yh2a.taskSchema}}",
+    "databaseName": "{{task.mirror-yh2a.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  },
+  "viewType": "DEFAULT",
+  "platformConfig": {
+    "platformType": "SNOWFLAKE",
+    "connection": "{{task.mirror-yh2a.targetConnection}}",
+    "snowflakeIcebergSettings": {
+      "snowflakeExternalVolume": "{{task.mirror-yh2a.snowflakeExternalVolume}}",
+      "snowflakeCatalogIntegration": "{{task.mirror-yh2a.snowflakeOpenCatalog}}",
+      "refreshMethod": "AUTO_REFRESH"
+    }
+  },
+  "ddlHandlingPolicy": {
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "SUSPEND_TABLE",
+    "renameColumn": "SUSPEND_TABLE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE",
+    "createTable": "APPLY_TO_TARGET"
+  },
+  "taskRuntime": {
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.mirror-yh2a.warehouseName}}"
+    }
+  }
+}
