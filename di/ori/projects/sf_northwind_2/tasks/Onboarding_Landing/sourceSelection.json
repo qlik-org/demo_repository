@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.onboarding_landing-xvbl.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Categories",
+      "schema": "{{task.onboarding_landing-xvbl:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "name": "Customers",
+      "schema": "{{task.onboarding_landing-xvbl:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    }
+  ]
+}
