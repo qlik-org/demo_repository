@@ -1,0 +1,110 @@
+{
+  "id": "$registered_data$dbo_region_first20000000",
+  "name": "dbo_Region_First20000000",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "Region_First20000000",
+    "dbSchema": "{{task.registered_data_1-mopj:OLEG_LANDING2$_$dbo.schema}}",
+    "dbName": "{{task.registered_data_1-mopj:OLEG_LANDING2$_$dbo.database}}",
+    "columns": [
+      {
+        "name": "RegionID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "regionid",
+        "flags": "NONE"
+      },
+      {
+        "name": "RegionDescription",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "regiondescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "newcol",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "newcol",
+        "flags": "NONE"
+      },
+      {
+        "name": "newcol2",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "newcol2",
+        "flags": "NONE"
+      },
+      {
+        "name": "newcol3",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "newcol3",
+        "flags": "NONE"
+      },
+      {
+        "name": "newcol4",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "newcol4",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

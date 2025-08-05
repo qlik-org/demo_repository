@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.landing-45jv.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "My_Order_Details",
+      "schema": "{{task.landing-45jv:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_my_order_details"
+    },
+    {
+      "name": "OrderDetails_Large",
+      "schema": "{{task.landing-45jv:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_orderdetails_large"
+    }
+  ]
+}

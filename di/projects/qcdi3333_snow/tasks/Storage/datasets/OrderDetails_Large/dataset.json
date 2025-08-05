@@ -1,0 +1,23 @@
+{
+  "id": "orderdetails_large-mopf",
+  "name": "OrderDetails_Large",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "orderdetails_large",
+      "name": "OrderDetails_Large",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-45jv"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "$replicate$dbo_orderdetails_large",
+  "name": "dbo_OrderDetails_Large",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "OrderDetails_Large",
+    "dbSchema": "{{task.landing-45jv:null$_$dbo.schema}}",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "orderid",
+        "flags": "NONE"
+      },
+      {
+        "name": "ProductID",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "productid",
+        "flags": "NONE"
+      },
+      {
+        "name": "UnitPrice",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": ""
+        },
+        "id": "unitprice",
+        "flags": "NONE"
+      },
+      {
+        "name": "Quantity",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "quantity",
+        "flags": "NONE"
+      },
+      {
+        "name": "Discount",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "discount",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

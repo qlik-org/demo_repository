@@ -1,0 +1,23 @@
+{
+  "id": "region_first20000000-mopm",
+  "name": "Region_First20000000",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "region_first20000000",
+      "name": "Region_First20000000",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_1-mopj"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

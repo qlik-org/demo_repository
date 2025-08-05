@@ -1,0 +1,23 @@
+{
+  "id": "my_order_details-45jd",
+  "name": "My_Order_Details",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "my_order_details",
+      "name": "My_Order_Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-45jv"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

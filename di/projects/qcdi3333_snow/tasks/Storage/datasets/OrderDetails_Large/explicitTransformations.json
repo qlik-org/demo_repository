@@ -1,0 +1,40 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "KEEP",
+        "columnName": "OrderID",
+        "newColumnName": "OrderID",
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "markAsMetadata": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "ProductID",
+        "newColumnName": "ProductID",
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "datasetId": "orderdetails_large-mopf",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "OrderDetails_Large",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "OrderDetails_Large",
+  "id": "orderdetails_large-mopg",
+  "description": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "orderdetails_large",
+  "name": "OrderDetails_Large",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$a1test3333_landing_orderdetails_large",
+      "name": "OrderDetails_Large",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-mooj",
+      "schema": "{{task.registered_data-mooj:ROSIE$_$a1test3333_landing.schema}}",
+      "database": "{{task.registered_data-mooj:ROSIE$_$a1test3333_landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

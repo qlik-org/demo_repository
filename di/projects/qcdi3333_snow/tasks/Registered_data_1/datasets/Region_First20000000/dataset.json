@@ -1,0 +1,17 @@
+{
+  "id": "region_first20000000",
+  "name": "Region_First20000000",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$dbo_region_first20000000",
+      "name": "Region_First20000000",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_1-mopj",
+      "schema": "{{task.registered_data_1-mopj:OLEG_LANDING2$_$dbo.schema}}",
+      "database": "{{task.registered_data_1-mopj:OLEG_LANDING2$_$dbo.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
