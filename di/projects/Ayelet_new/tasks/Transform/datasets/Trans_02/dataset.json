@@ -1,0 +1,39 @@
+{
+  "id": "trans_02-kuqe",
+  "name": "Trans_02",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "datasetId": "question_bank_locales-jfn4",
+      "name": "question_bank_locales",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-jfn0"
+    },
+    {
+      "datasetId": "question_bank_modifiers-jfn5",
+      "name": "question_bank_modifiers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-jfn0"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Trans_02",
+    "columns": [],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {},
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

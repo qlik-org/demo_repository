@@ -1,0 +1,264 @@
+{
+  "id": "question_bank_modifiers_options-zlre",
+  "name": "question_bank_modifiers_options",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "datasetId": "question_bank_modifiers_options-jfn6",
+      "name": "question_bank_modifiers_options",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-jfn0"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "question_bank_modifiers_options",
+    "columns": [
+      {
+        "name": "modifier_options_id",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "modifier_options_id",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "question_id_question_bank",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "question_id_question_bank",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "value",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 77,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(77)"
+        },
+        "id": "value",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "array_index",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BIGINT"
+        },
+        "id": "array_index-7f81",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "array_index_question_bank_modifiers",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BIGINT"
+        },
+        "id": "array_index_question_bank_modifiers-2d2a",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "modifier_options_id_1",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "modifier_options_id_1-b91a",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "question_id_question_bank_1",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "question_id_question_bank_1-46b2",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "value_1",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 77,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(77)"
+        },
+        "id": "value_1-7f64",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "array_index_1",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BIGINT"
+        },
+        "id": "array_index_1-d786",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "array_index_question_bank_modifiers_1",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BIGINT"
+        },
+        "id": "array_index_question_bank_modifiers_1-7f31",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "modifier_options_id_2",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "modifier_options_id_2-87ad",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "question_id_question_bank_2",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "question_id_question_bank_2-28df",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "value_2",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 77,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(77)"
+        },
+        "id": "value_2-b402",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

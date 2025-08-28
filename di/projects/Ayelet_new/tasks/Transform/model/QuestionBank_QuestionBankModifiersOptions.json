@@ -1,0 +1,61 @@
+{
+  "sourceEntity": {
+    "datasetId": "question_bank-qjai",
+    "name": "question_bank",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-15nz"
+  },
+  "targetEntity": {
+    "datasetId": "question_bank_modifiers_options-zlre",
+    "name": "question_bank_modifiers_options",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-15nz"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "question_id",
+      "targetColumn": "question_id_question_bank",
+      "sourceColumnId": "question_id-863f",
+      "targetColumnId": "question_id_question_bank"
+    },
+    {
+      "sourceColumn": "question_id",
+      "targetColumn": "array_index",
+      "sourceColumnId": "question_id-863f",
+      "targetColumnId": "array_index-7f81"
+    },
+    {
+      "sourceColumn": "question_id",
+      "targetColumn": "array_index_question_bank_modifiers",
+      "sourceColumnId": "question_id-863f",
+      "targetColumnId": "array_index_question_bank_modifiers-2d2a"
+    },
+    {
+      "sourceColumn": "question_id",
+      "targetColumn": "question_id_question_bank_1",
+      "sourceColumnId": "question_id-863f",
+      "targetColumnId": "question_id_question_bank_1-46b2"
+    },
+    {
+      "sourceColumn": "question_id",
+      "targetColumn": "array_index_1",
+      "sourceColumnId": "question_id-863f",
+      "targetColumnId": "array_index_1-d786"
+    },
+    {
+      "sourceColumn": "question_id",
+      "targetColumn": "array_index_question_bank_modifiers_1",
+      "sourceColumnId": "question_id-863f",
+      "targetColumnId": "array_index_question_bank_modifiers_1-7f31"
+    },
+    {
+      "sourceColumn": "question_id",
+      "targetColumn": "question_id_question_bank_2",
+      "sourceColumnId": "question_id-863f",
+      "targetColumnId": "question_id_question_bank_2-28df"
+    }
+  ],
+  "name": "QuestionBank_QuestionBankModifiersOptions",
+  "description": "",
+  "id": "questionbank_questionbankmodifiersoptions-wj0n"
+}

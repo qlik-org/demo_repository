@@ -1,0 +1,37 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "question_bank-jfn3",
+    "name": "question_bank",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-jfn0"
+  },
+  "mappingFields": [
+    {
+      "columnId": "question_id-863f",
+      "expression": {
+        "expressionStatement": "${question_id}",
+        "alias": [
+          {
+            "name": "question_id",
+            "value": "question_id"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "text-9362",
+      "expression": {
+        "expressionStatement": "${text}",
+        "alias": [
+          {
+            "name": "text",
+            "value": "text"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "question_bank_default_mapping-qjaj",
+  "name": "question_bank_default_mapping",
+  "description": ""
+}

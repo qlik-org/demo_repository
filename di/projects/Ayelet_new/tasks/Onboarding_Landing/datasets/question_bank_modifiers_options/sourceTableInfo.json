@@ -1,0 +1,105 @@
+{
+  "id": "$external_data_provider$_question_bank_modifiers_options$_$Question Bank",
+  "name": "question_bank_modifiers_options",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "question_bank_modifiers_options",
+    "columns": [
+      {
+        "name": "array_index",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "array_index",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "array_index_question_bank_modifiers",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "array_index_question_bank_modifiers",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "modifier_options_id",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "modifier_options_id",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "question_id_question_bank",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "question_id_question_bank",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "value",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 77,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "value",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "datasetId": "questionbankmodifiersoptions",
+    "dbTableId": "question_bank_modifiers_options$_$Question Bank",
+    "entityId": "questionbankmodifiersoptions",
+    "secureQri": "",
+    "fullLoadOnly": true
+  }
+}

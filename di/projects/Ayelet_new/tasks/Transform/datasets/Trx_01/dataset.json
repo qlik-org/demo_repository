@@ -1,0 +1,33 @@
+{
+  "id": "trx_01-v9mz",
+  "name": "Trx_01",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "datasetId": "question_bank-jfn3",
+      "name": "question_bank",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-jfn0"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Trx_01",
+    "columns": [],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {},
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,42 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-jfn0",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-jfn0",
+      "name": "question_bank",
+      "type": "NONE",
+      "sourceTableId": "question_bank-jfn3"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-jfn0",
+      "name": "question_bank_locales",
+      "type": "NONE",
+      "sourceTableId": "question_bank_locales-jfn4"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-jfn0",
+      "name": "question_bank_modifiers",
+      "type": "NONE",
+      "sourceTableId": "question_bank_modifiers-jfn5"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-jfn0",
+      "name": "question_bank_modifiers_options",
+      "type": "NONE",
+      "sourceTableId": "question_bank_modifiers_options-jfn6"
+    }
+  ]
+}

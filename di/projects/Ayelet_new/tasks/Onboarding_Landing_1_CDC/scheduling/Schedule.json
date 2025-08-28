@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "schedulingType": "TIME_BASED",
+  "timeBasedScheduling": {
+    "schedule": [
+      "RRULE:FREQ=HOURLY;INTERVAL=6;BYMINUTE=50;BYSECOND=0"
+    ],
+    "startDateTime": "2025-05-25T07:50:00.000Z",
+    "timezone": "Etc/UTC"
+  },
+  "eventBasedScheduling": {
+    "eventSchedulingType": "ANY_INPUT_TASK",
+    "triggerApps": []
+  },
+  "runOnReconnect": "ONSCHEDULED",
+  "id": "schedule-jb1h",
+  "name": "Schedule",
+  "description": "",
+  "version": "1"
+}

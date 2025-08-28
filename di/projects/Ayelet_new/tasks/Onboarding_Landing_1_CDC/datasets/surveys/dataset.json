@@ -1,0 +1,15 @@
+{
+  "id": "surveys",
+  "name": "surveys",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$external_data_provider$_surveys$_$Surveys",
+      "name": "surveys",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing_1_cdc-jb1d"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

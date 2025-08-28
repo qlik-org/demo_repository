@@ -1,0 +1,23 @@
+{
+  "id": "question_bank_locales-jfn4",
+  "name": "question_bank_locales",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "question_bank_locales",
+      "name": "question_bank_locales",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-jfnz"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

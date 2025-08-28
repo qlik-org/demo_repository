@@ -1,0 +1,31 @@
+{
+  "sourceEntity": {
+    "datasetId": "question_bank_modifiers_options-jfn6",
+    "name": "question_bank_modifiers_options",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-jfn0"
+  },
+  "targetEntity": {
+    "datasetId": "question_bank_modifiers-jfn5",
+    "name": "question_bank_modifiers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-jfn0"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "array_index",
+      "targetColumn": "array_index",
+      "sourceColumnId": "array_index",
+      "targetColumnId": "array_index"
+    },
+    {
+      "sourceColumn": "question_id_question_bank",
+      "targetColumn": "question_id_question_bank",
+      "sourceColumnId": "question_id_question_bank",
+      "targetColumnId": "question_id_question_bank"
+    }
+  ],
+  "name": "question_bank_modifiers_options_question_bank_modifiers_relation",
+  "description": "",
+  "id": "question_bank_modifiers_options_question_bank_modifiers_relation-meb3"
+}
