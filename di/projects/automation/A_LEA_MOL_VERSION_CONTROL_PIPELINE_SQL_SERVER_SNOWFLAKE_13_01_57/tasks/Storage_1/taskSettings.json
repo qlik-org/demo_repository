@@ -1,23 +1,33 @@
 {
+  "ddlHandlingPolicy": {
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "SUSPEND_TABLE",
+    "renameColumn": "SUSPEND_TABLE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE",
+    "createTable": "APPLY_TO_TARGET"
+  },
   "artifactsSettings": {
     "liveViewsEnabled": false,
-    "historyEnabled": false,
+    "historyEnabled": true,
     "materialized": true,
-    "changeTablesEnabled": false,
-    "currentTableSuffix": "__t",
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
     "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
     "artifactsPrefix": ""
   },
   "fullLoadOnly": false,
   "artifactsLocation": {
-    "internalSchema": "{{task.data_mart-ijoh.internalSchema}}",
-    "taskSchema": "{{task.data_mart-ijoh.taskSchema}}",
-    "databaseName": "{{task.data_mart-ijoh.databaseName}}"
+    "internalSchema": "{{task.storage_1-ijs3.internalSchema}}",
+    "taskSchema": "{{task.storage_1-ijs3.taskSchema}}",
+    "databaseName": "{{task.storage_1-ijs3.databaseName}}"
   },
   "taskRuntime": {
     "tableUpdateConcurrency": 10,
     "warehouseSelection": {
-      "warehouseName": "{{task.data_mart-ijoh.warehouseName}}"
+      "warehouseName": "{{task.storage_1-ijs3.warehouseName}}"
     }
   },
   "catalogIntegration": {
