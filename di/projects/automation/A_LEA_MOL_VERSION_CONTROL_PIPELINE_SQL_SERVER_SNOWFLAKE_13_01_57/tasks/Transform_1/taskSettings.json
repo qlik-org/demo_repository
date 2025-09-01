@@ -1,23 +1,23 @@
 {
   "artifactsSettings": {
     "liveViewsEnabled": false,
-    "historyEnabled": false,
+    "historyEnabled": true,
     "materialized": true,
-    "changeTablesEnabled": false,
-    "currentTableSuffix": "__t",
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
     "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
     "artifactsPrefix": ""
   },
   "fullLoadOnly": false,
   "artifactsLocation": {
-    "internalSchema": "{{task.data_mart-ijoh.internalSchema}}",
-    "taskSchema": "{{task.data_mart-ijoh.taskSchema}}",
-    "databaseName": "{{task.data_mart-ijoh.databaseName}}"
+    "internalSchema": "{{task.transform_1-vqpt.internalSchema}}",
+    "taskSchema": "{{task.transform_1-vqpt.taskSchema}}",
+    "databaseName": "{{task.transform_1-vqpt.databaseName}}"
   },
   "taskRuntime": {
     "tableUpdateConcurrency": 10,
     "warehouseSelection": {
-      "warehouseName": "{{task.data_mart-ijoh.warehouseName}}"
+      "warehouseName": "{{task.transform_1-vqpt.warehouseName}}"
     }
   },
   "catalogIntegration": {
