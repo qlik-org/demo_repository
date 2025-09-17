@@ -1,0 +1,146 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "suppliers-oxau",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage_1-oxas"
+  },
+  "mappingFields": [
+    {
+      "columnId": "supplierid",
+      "expression": {
+        "expressionStatement": "${SupplierID}",
+        "alias": [
+          {
+            "name": "SupplierID",
+            "value": "SupplierID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "contactname",
+      "expression": {
+        "expressionStatement": "${ContactName}",
+        "alias": [
+          {
+            "name": "ContactName",
+            "value": "ContactName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "contacttitle",
+      "expression": {
+        "expressionStatement": "${ContactTitle}",
+        "alias": [
+          {
+            "name": "ContactTitle",
+            "value": "ContactTitle"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "address",
+      "expression": {
+        "expressionStatement": "${Address}",
+        "alias": [
+          {
+            "name": "Address",
+            "value": "Address"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "city",
+      "expression": {
+        "expressionStatement": "${City}",
+        "alias": [
+          {
+            "name": "City",
+            "value": "City"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "myregion",
+      "expression": {
+        "expressionStatement": "${MyRegion}",
+        "alias": [
+          {
+            "name": "MyRegion",
+            "value": "MyRegion"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "mycountry",
+      "expression": {
+        "expressionStatement": "${MyCountry}",
+        "alias": [
+          {
+            "name": "MyCountry",
+            "value": "MyCountry"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "phone",
+      "expression": {
+        "expressionStatement": "${Phone}",
+        "alias": [
+          {
+            "name": "Phone",
+            "value": "Phone"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "homepage",
+      "expression": {
+        "expressionStatement": "${HomePage}",
+        "alias": [
+          {
+            "name": "HomePage",
+            "value": "HomePage"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "column1",
+      "expression": {
+        "expressionStatement": "${Column1}",
+        "alias": [
+          {
+            "name": "Column1",
+            "value": "Column1"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "suppliers_default_mapping-oxpk",
+  "name": "Suppliers_default_mapping",
+  "description": ""
+}

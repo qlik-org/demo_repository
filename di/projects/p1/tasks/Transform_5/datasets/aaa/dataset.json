@@ -1,0 +1,29 @@
+{
+  "id": "aaa-1ip2",
+  "name": "aaa",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "suppliers-oxau",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage_1-oxas"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, aaa)}}",
+    "targetId": "ab1f51c6-e5a6-479d-b62b-f3312e6ac20e",
+    "dataflowTargetState": "NOT_VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

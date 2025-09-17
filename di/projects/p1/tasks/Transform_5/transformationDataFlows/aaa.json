@@ -1,0 +1,91 @@
+{
+  "name": "aaa",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform_5-oxpe"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "3e963962-2257-4303-b6ea-750562cd11f9",
+        "label": "Suppliers",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "bf77cc7e-f96b-4d30-93be-d8803ef04588",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage_1-oxas",
+              "entityId": "suppliers-oxau"
+            },
+            "configuration": {
+              "name": "Suppliers"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "ab1f51c6-e5a6-479d-b62b-f3312e6ac20e",
+        "label": "aaa",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "41c68956-67cb-48cb-8950-78083a0b6fdc",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "aaa",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": []
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "d43386b9-3778-4850-9ed8-30bef5a3225d",
+        "sourceHandle": "bf77cc7e-f96b-4d30-93be-d8803ef04588",
+        "targetHandle": "41c68956-67cb-48cb-8950-78083a0b6fdc"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

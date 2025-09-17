@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.landing-veh8.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Products",
+      "schema": "{{task.landing-veh8:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    },
+    {
+      "name": "Territories",
+      "schema": "{{task.landing-veh8:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_territories"
+    }
+  ]
+}

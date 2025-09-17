@@ -1,0 +1,50 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "territories-oxav",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage_1-oxas"
+  },
+  "mappingFields": [
+    {
+      "columnId": "territoryid",
+      "expression": {
+        "expressionStatement": "${TerritoryID}",
+        "alias": [
+          {
+            "name": "TerritoryID",
+            "value": "TerritoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "territorydescription",
+      "expression": {
+        "expressionStatement": "${TerritoryDescription}",
+        "alias": [
+          {
+            "name": "TerritoryDescription",
+            "value": "TerritoryDescription"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "regionid",
+      "expression": {
+        "expressionStatement": "${RegionID}",
+        "alias": [
+          {
+            "name": "RegionID",
+            "value": "RegionID"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "territories_default_mapping-oxpj",
+  "name": "Territories_default_mapping",
+  "description": ""
+}
