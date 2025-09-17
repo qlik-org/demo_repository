@@ -1,0 +1,20 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.registered_data-tkze:AUTONORTHWIND$_$dbo.database}}",
+      "name": "Suppliers",
+      "schema": "{{task.registered_data-tkze:AUTONORTHWIND$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$dbo_suppliers"
+    },
+    {
+      "database": "{{task.registered_data-tkze:AUTONORTHWIND$_$dbo.database}}",
+      "name": "Territories",
+      "schema": "{{task.registered_data-tkze:AUTONORTHWIND$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$dbo_territories"
+    }
+  ]
+}

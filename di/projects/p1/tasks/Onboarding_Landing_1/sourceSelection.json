@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.onboarding_landing_1-oxar.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Suppliers",
+      "schema": "{{task.onboarding_landing_1-oxar:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_suppliers"
+    },
+    {
+      "name": "Territories",
+      "schema": "{{task.onboarding_landing_1-oxar:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_territories"
+    }
+  ]
+}

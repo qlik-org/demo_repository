@@ -1,0 +1,91 @@
+{
+  "name": "aaa",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform_1-b75c"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "d48c8140-2f02-4a63-9319-109159998afb",
+        "label": "Suppliers",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "90e98b49-0107-4410-a0ad-4ab5b8c4e54c",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "registered_data_storage-tkzf",
+              "entityId": "suppliers-tkzh"
+            },
+            "configuration": {
+              "name": "Suppliers"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "41996868-bcca-49d6-a214-231cc0a4fa56",
+        "label": "aaa",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "32cfa638-fa40-47b2-be66-a8c36165fc02",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "aaa",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": []
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "35cce7ed-e094-4a4e-bc7e-5c93767da366",
+        "sourceHandle": "90e98b49-0107-4410-a0ad-4ab5b8c4e54c",
+        "targetHandle": "32cfa638-fa40-47b2-be66-a8c36165fc02"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

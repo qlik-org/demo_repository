@@ -1,0 +1,42 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "ADD",
+        "columnName": "json",
+        "newDataType": {
+          "type": "JSON",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "PARSE_JSON(\u0027{\u0022b\u0022:\u00221\u0022,\u0022a\u0022:\u00222\u0022}\u0027)",
+          "alias": []
+        },
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "addedColumnId": "c835d5c8-7a1c-4b62-8b05-dab2b9c8ee8f",
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "datasetId": "suppliers-oxau",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Suppliers",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Suppliers",
+  "id": "suppliers-pqsh",
+  "description": ""
+}

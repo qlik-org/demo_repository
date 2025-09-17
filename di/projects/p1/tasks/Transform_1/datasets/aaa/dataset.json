@@ -1,0 +1,29 @@
+{
+  "id": "aaa-b75e",
+  "name": "aaa",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "suppliers-tkzh",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_storage-tkzf"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, aaa)}}",
+    "targetId": "41996868-bcca-49d6-a214-231cc0a4fa56",
+    "dataflowTargetState": "NOT_VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
