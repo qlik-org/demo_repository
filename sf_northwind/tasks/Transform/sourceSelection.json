@@ -1,0 +1,28 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-kvdx",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.ori$_$sf_northwind_2.projectId}}",
+      "sourceTask": "onboarding_storage-kvdx",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-kvdc"
+    },
+    {
+      "sourceProject": "{{project.ori$_$sf_northwind_2.projectId}}",
+      "sourceTask": "onboarding_storage-kvdx",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-kvdg"
+    }
+  ]
+}

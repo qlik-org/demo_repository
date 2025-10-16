@@ -1,0 +1,46 @@
+{
+  "id": "space_issue",
+  "name": "space_issue",
+  "type": "DIRECTORY",
+  "inputDatasets": [
+    {
+      "datasetId": "space_issue",
+      "name": "space_issue",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "file_based_knowledge_mart-cuv9"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "space_issue",
+    "columns": [
+      {
+        "name": "FileName",
+        "ordinal": 0,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 200,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "file",
+        "flags": "NONE"
+      }
+    ],
+    "entityId": "space_issue",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

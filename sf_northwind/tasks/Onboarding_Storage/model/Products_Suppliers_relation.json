@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-kvdh",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-kvdx"
+  },
+  "targetEntity": {
+    "datasetId": "suppliers-kvdk",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-kvdx"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation-vjqc"
+}

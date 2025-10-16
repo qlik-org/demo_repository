@@ -1,0 +1,23 @@
+{
+  "id": "employeeterritories-kvde",
+  "name": "EmployeeTerritories",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "employeeterritories",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-kvdw"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
