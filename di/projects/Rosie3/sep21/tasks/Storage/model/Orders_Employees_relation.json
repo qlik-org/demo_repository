@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orders-u_ev",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-t1ko"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "employees-u_eu",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-t1ko"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Orders_Employees_relation",
+  "description": "",
+  "id": "orders_employees_relation-e-b_"
+}

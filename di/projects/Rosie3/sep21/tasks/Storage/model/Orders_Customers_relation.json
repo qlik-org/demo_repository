@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orders-u_ev",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-t1ko"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "customers-u_et",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-t1ko"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_Customers_relation",
+  "description": "",
+  "id": "orders_customers_relation-epcv"
+}
