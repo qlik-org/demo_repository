@@ -40,12 +40,6 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
-    "task.file_based_knowledge_mart-epcx.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
-    "task.file_based_knowledge_mart-epcx.indexDatabase": "{{task-type.fileBasedKnowledgeMart.indexDatabase}}",
-    "task.file_based_knowledge_mart-epcx.indexName": "",
-    "task.file_based_knowledge_mart-epcx.indexSchema": "",
-    "task.file_based_knowledge_mart-epcx.sourceConnection": "",
-    "task.file_based_knowledge_mart-epcx.warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
     "task.knowledge_mart-ftl_.databaseName": "{{task-type.knowledgeMart.databaseName}}",
     "task.knowledge_mart-ftl_.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
     "task.knowledge_mart-ftl_.indexDatabase": "{{task-type.knowledgeMart.indexDatabase}}",
@@ -62,19 +56,19 @@
     "task.storage-t1ko.databaseName": "{{task-type.storage.databaseName}}",
     "task.storage-t1ko.internalSchema": "",
     "task.storage-t1ko.taskSchema": "",
-    "task.storage-t1ko.warehouseName": "{{task-type.storage.warehouseName}}"
+    "task.storage-t1ko.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.storage_1-1h_l.databaseName": "{{task-type.storage.databaseName}}",
+    "task.storage_1-1h_l.internalSchema": "",
+    "task.storage_1-1h_l.taskSchema": "",
+    "task.storage_1-1h_l.warehouseName": "{{task-type.storage.warehouseName}}"
   },
   "idToNameMap": {
-    "file_based_knowledge_mart-epcx": "File-based knowledge mart",
     "knowledge_mart-ftl_": "Knowledge mart",
     "landing-epcu": "Landing",
-    "storage-t1ko": "Storage"
+    "storage-t1ko": "Storage",
+    "storage_1-1h_l": "Storage_1"
   },
   "connectionProperties": {
-    "task.file_based_knowledge_mart-epcx.sourceConnection": {
-      "type": "external_data_provider",
-      "kindId": "filesource:onedrive"
-    },
     "task.landing-epcu.sourceConnection": {
       "type": "repsrc_mssql"
     }
