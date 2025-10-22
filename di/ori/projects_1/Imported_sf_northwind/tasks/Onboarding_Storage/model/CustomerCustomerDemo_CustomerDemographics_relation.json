@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "customercustomerdemo-bhkg",
+    "name": "CustomerCustomerDemo",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "customerdemographics-bhkh",
+    "name": "CustomerDemographics",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-bhkd"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerTypeID",
+      "targetColumn": "CustomerTypeID",
+      "sourceColumnId": "customertypeid",
+      "targetColumnId": "customertypeid"
+    }
+  ],
+  "name": "CustomerCustomerDemo_CustomerDemographics_relation",
+  "description": "",
+  "id": "customercustomerdemo_customerdemographics_relation-bhk1"
+}

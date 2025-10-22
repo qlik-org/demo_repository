@@ -1,0 +1,17 @@
+{
+  "id": "customerdemographics",
+  "name": "CustomerDemographics",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "$replicate$dbo_customerdemographics",
+      "name": "CustomerDemographics",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-bhkc",
+      "schema": "{{task.onboarding_landing-bhkc:null$_$dbo.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
