@@ -1,0 +1,24 @@
+{
+  "id": "address-uath",
+  "name": "address",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "address",
+      "name": "address",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboardingdata1234_landing-uatd"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

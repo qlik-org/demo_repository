@@ -1,0 +1,17 @@
+{
+  "id": "actor",
+  "name": "actor",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$sakila_actor",
+      "name": "actor",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboardingdata1234_landing-uatd",
+      "schema": "{{task.onboardingdata1234_landing-uatd:null$_$sakila.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
