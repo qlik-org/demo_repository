@@ -1,0 +1,24 @@
+{
+  "id": "products-qwop",
+  "name": "Products",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "products",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-qwog"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
