@@ -1,0 +1,38 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "categories-b5m2",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-b5m0"
+  },
+  "mappingFields": [
+    {
+      "columnId": "categoryid",
+      "expression": {
+        "expressionStatement": "${CategoryID}",
+        "alias": [
+          {
+            "name": "CategoryID",
+            "value": "CategoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "categoryname",
+      "expression": {
+        "expressionStatement": "${CategoryName}",
+        "alias": [
+          {
+            "name": "CategoryName",
+            "value": "CategoryName"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "categories_default_mapping-b5nr",
+  "name": "Categories_default_mapping",
+  "description": ""
+}

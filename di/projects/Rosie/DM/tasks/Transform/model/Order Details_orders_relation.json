@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "order_details-b5nl",
+    "name": "Order Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-b5nb"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "orders-b5ne",
+    "name": "orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-b5nb"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "OrderID",
+      "targetColumn": "OrderID",
+      "sourceColumnId": "orderid",
+      "targetColumnId": "orderid"
+    }
+  ],
+  "name": "Order Details_orders_relation",
+  "description": "",
+  "id": "order_details_orders_relation-b5nt"
+}

@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orders_1-b5ni",
+    "name": "Orders_m",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-b5nb"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "employees-b5nd",
+    "name": "employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-b5nb"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Orders_m_employees_relation",
+  "description": "",
+  "id": "orders_m_employees_relation-b5nz"
+}

@@ -1,0 +1,27 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.registered_data-9hcm:ROSIE$_$dbo.database}}",
+      "name": "Categories",
+      "schema": "{{task.registered_data-9hcm:ROSIE$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$dbo_categories"
+    },
+    {
+      "database": "{{task.registered_data-9hcm:ROSIE$_$dbo.database}}",
+      "name": "Customers",
+      "schema": "{{task.registered_data-9hcm:ROSIE$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$dbo_customers"
+    },
+    {
+      "database": "{{task.registered_data-9hcm:ROSIE$_$dbo.database}}",
+      "name": "Employees",
+      "schema": "{{task.registered_data-9hcm:ROSIE$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$dbo_employees"
+    }
+  ]
+}
