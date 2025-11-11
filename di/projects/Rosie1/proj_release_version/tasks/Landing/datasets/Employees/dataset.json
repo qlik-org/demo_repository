@@ -1,0 +1,17 @@
+{
+  "id": "employees",
+  "name": "Employees",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_employees",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-lmfm",
+      "schema": "{{task.landing-lmfm:null$_$dbo.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
