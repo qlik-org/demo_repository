@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.replication-e6ts.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "SpecialCharsTable",
+      "schema": "{{task.replication-e6ts:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_specialcharstable"
+    }
+  ]
+}
