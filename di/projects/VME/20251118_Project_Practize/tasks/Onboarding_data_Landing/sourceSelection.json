@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.onboarding_data_landing-a96j.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "customer",
+      "schema": "{{task.onboarding_data_landing-a96j:null$_$sakila.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$sakila_customer"
+    }
+  ]
+}
