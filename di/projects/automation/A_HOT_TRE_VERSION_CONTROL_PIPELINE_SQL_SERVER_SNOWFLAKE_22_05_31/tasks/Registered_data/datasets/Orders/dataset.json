@@ -1,0 +1,18 @@
+{
+  "id": "orders",
+  "name": "Orders",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$Dec08_2_landing_orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-vqlz",
+      "schema": "{{task.registered_data-vqlz:AutoDWH$_$Dec08_2_landing.schema}}",
+      "database": "{{task.registered_data-vqlz:AutoDWH$_$Dec08_2_landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
