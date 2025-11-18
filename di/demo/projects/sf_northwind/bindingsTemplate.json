@@ -44,17 +44,30 @@
     "task.onboarding_landing-qwog.sourceConnection": "",
     "task.onboarding_landing-qwog.taskSchema": "",
     "task.onboarding_landing-qwog:null$_$dbo.schema": "",
+    "task.onboarding_landing_1-jttx.databaseName": "{{task-type.landing.databaseName}}",
+    "task.onboarding_landing_1-jttx.sourceConnection": "",
+    "task.onboarding_landing_1-jttx.taskSchema": "",
+    "task.onboarding_landing_1-jttx:null$_$A - DEMO.schema": "",
     "task.onboarding_storage-qwoh.databaseName": "{{task-type.storage.databaseName}}",
     "task.onboarding_storage-qwoh.internalSchema": "",
     "task.onboarding_storage-qwoh.taskSchema": "",
-    "task.onboarding_storage-qwoh.warehouseName": "{{task-type.storage.warehouseName}}"
+    "task.onboarding_storage-qwoh.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.onboarding_storage_1-jtty.databaseName": "{{task-type.storage.databaseName}}",
+    "task.onboarding_storage_1-jtty.internalSchema": "",
+    "task.onboarding_storage_1-jtty.taskSchema": "",
+    "task.onboarding_storage_1-jtty.warehouseName": "{{task-type.storage.warehouseName}}"
   },
   "idToNameMap": {
     "onboarding_landing-qwog": "Onboarding_Landing",
-    "onboarding_storage-qwoh": "Onboarding_Storage"
+    "onboarding_landing_1-jttx": "Onboarding_Landing_1",
+    "onboarding_storage-qwoh": "Onboarding_Storage",
+    "onboarding_storage_1-jtty": "Onboarding_Storage_1"
   },
   "connectionProperties": {
     "task.onboarding_landing-qwog.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.onboarding_landing_1-jttx.sourceConnection": {
       "type": "repsrc_mssql"
     }
   }

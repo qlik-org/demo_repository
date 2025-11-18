@@ -1,0 +1,24 @@
+{
+  "id": "vbak-jtta",
+  "name": "VBAK",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "vbak",
+      "name": "VBAK",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing_1-jttx"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

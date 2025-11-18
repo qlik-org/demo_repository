@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.onboarding_landing_1-jttx.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "VBAK",
+      "schema": "{{task.onboarding_landing_1-jttx:null$_$A - DEMO.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$A - DEMO_vbak"
+    },
+    {
+      "name": "VBAP",
+      "schema": "{{task.onboarding_landing_1-jttx:null$_$A - DEMO.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$A - DEMO_vbap"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "vbap",
+  "name": "VBAP",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$A - DEMO_vbap",
+      "name": "VBAP",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing_1-jttx",
+      "schema": "{{task.onboarding_landing_1-jttx:null$_$A - DEMO.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
