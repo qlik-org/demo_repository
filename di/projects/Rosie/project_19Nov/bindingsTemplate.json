@@ -39,8 +39,20 @@
     "task-type.transform.databaseName": "",
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
-    "task-type.transform.warehouseSelectionMethod": ""
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.registered_data-q4mj.databaseName": "{{task-type.registered.databaseName}}",
+    "task.registered_data-q4mj.internalSchema": "",
+    "task.registered_data-q4mj.taskSchema": "",
+    "task.registered_data-q4mj:ROSIE$_$AI-ready data.database": "",
+    "task.registered_data-q4mj:ROSIE$_$AI-ready data.schema": "",
+    "task.registered_data_storage-q4mk.databaseName": "{{task-type.storage.databaseName}}",
+    "task.registered_data_storage-q4mk.internalSchema": "",
+    "task.registered_data_storage-q4mk.taskSchema": "",
+    "task.registered_data_storage-q4mk.warehouseName": "{{task-type.storage.warehouseName}}"
   },
-  "idToNameMap": {},
+  "idToNameMap": {
+    "registered_data-q4mj": "Registered_data",
+    "registered_data_storage-q4mk": "Registered_data_Storage"
+  },
   "connectionProperties": {}
 }

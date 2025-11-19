@@ -1,0 +1,18 @@
+{
+  "id": "ai_ready_data",
+  "name": "ai-ready data",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$AI-ready data_ai_ready_data",
+      "name": "ai-ready data",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-q4mj",
+      "schema": "{{task.registered_data-q4mj:ROSIE$_$AI-ready data.schema}}",
+      "database": "{{task.registered_data-q4mj:ROSIE$_$AI-ready data.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
