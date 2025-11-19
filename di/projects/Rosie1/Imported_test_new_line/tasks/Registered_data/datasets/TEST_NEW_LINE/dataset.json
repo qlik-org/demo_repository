@@ -1,0 +1,18 @@
+{
+  "id": "test_new_line",
+  "name": "TEST_NEW_LINE",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$SRC_test_new_line",
+      "name": "TEST_NEW_LINE",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-xnoa",
+      "schema": "{{task.registered_data-xnoa:ORI$_$SRC.schema}}",
+      "database": "{{task.registered_data-xnoa:ORI$_$SRC.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

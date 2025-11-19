@@ -1,0 +1,62 @@
+{
+  "id": "$registered_data$SRC_test_new_line",
+  "name": "SRC_TEST_NEW_LINE",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "TEST_NEW_LINE",
+    "dbSchema": "{{task.registered_data-xnoa:ORI$_$SRC.schema}}",
+    "dbName": "{{task.registered_data-xnoa:ORI$_$SRC.database}}",
+    "columns": [
+      {
+        "name": "ID_T",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(30)"
+        },
+        "id": "id_t",
+        "flags": "NONE"
+      },
+      {
+        "name": "ORDER_ID",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(19,0)"
+        },
+        "id": "order_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "NEW\nLINE\nTEST",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(30)"
+        },
+        "id": "new\nline\ntest",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
