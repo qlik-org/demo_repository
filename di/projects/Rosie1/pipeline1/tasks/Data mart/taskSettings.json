@@ -6,7 +6,7 @@
     "changeTablesEnabled": false,
     "currentTableSuffix": "__t",
     "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
-    "artifactsPrefix": ""
+    "artifactsPrefix": "a_"
   },
   "fullLoadOnly": false,
   "artifactsLocation": {
@@ -15,23 +15,23 @@
     "databaseName": "{{task.data_mart-jw1h.databaseName}}"
   },
   "taskRuntime": {
-    "tableUpdateConcurrency": 10,
+    "tableUpdateConcurrency": 12,
     "warehouseSelection": {
       "warehouseName": "{{task.data_mart-jw1h.warehouseName}}"
     }
   },
   "catalogIntegration": {
-    "publishDatasets": true
+    "publishDatasets": false
   },
   "tableTypeSettings": {
-    "tableType": "REGULAR",
+    "tableType": "ICEBERG",
     "icebergSettings": {
-      "snowflakeExternalVolume": "",
-      "folderLocationType": "DATA_ASSET_NAME",
+      "snowflakeExternalVolume": "{{task.data_mart-jw1h.snowflakeExternalVolume}}",
+      "folderLocationType": "ROOT_FOLDER",
       "specificFolder": "",
-      "enableOpenCatalogSync": false,
-      "snowflakeOpenCatalog": ""
+      "enableOpenCatalogSync": true,
+      "snowflakeOpenCatalog": "{{task.data_mart-jw1h.snowflakeOpenCatalog}}"
     }
   },
-  "viewType": "DEFAULT"
+  "viewType": "SECURE_VIEW"
 }

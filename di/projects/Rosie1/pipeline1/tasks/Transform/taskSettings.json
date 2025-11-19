@@ -1,8 +1,8 @@
 {
   "artifactsSettings": {
     "liveViewsEnabled": false,
-    "historyEnabled": true,
-    "materialized": false,
+    "historyEnabled": false,
+    "materialized": true,
     "changeTablesEnabled": true,
     "currentTableSuffix": "__current",
     "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
@@ -15,13 +15,13 @@
     "databaseName": "{{task.transform-jw0z.databaseName}}"
   },
   "taskRuntime": {
-    "tableUpdateConcurrency": 10,
+    "tableUpdateConcurrency": 11,
     "warehouseSelection": {
       "warehouseName": "{{task.transform-jw0z.warehouseName}}"
     }
   },
   "catalogIntegration": {
-    "publishDatasets": false
+    "publishDatasets": true
   },
   "tableTypeSettings": {
     "tableType": "REGULAR",
@@ -33,5 +33,5 @@
       "snowflakeOpenCatalog": ""
     }
   },
-  "viewType": "DEFAULT"
+  "viewType": "SECURE_VIEW"
 }

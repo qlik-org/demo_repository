@@ -10,8 +10,8 @@
     "createTable": "APPLY_TO_TARGET"
   },
   "artifactsSettings": {
-    "liveViewsEnabled": true,
-    "historyEnabled": true,
+    "liveViewsEnabled": false,
+    "historyEnabled": false,
     "materialized": true,
     "changeTablesEnabled": true,
     "currentTableSuffix": "__current",
@@ -25,20 +25,20 @@
     "databaseName": "{{task.onboarding_storage-jw0m.databaseName}}"
   },
   "taskRuntime": {
-    "tableUpdateConcurrency": 10,
+    "tableUpdateConcurrency": 9,
     "warehouseSelection": {
       "warehouseName": "{{task.onboarding_storage-jw0m.warehouseName}}"
     }
   },
   "catalogIntegration": {
-    "publishDatasets": false
+    "publishDatasets": true
   },
   "tableTypeSettings": {
-    "tableType": "REGULAR",
+    "tableType": "ICEBERG",
     "icebergSettings": {
-      "snowflakeExternalVolume": "",
-      "folderLocationType": "DATA_ASSET_NAME",
-      "specificFolder": "",
+      "snowflakeExternalVolume": "{{task.onboarding_storage-jw0m.snowflakeExternalVolume}}",
+      "folderLocationType": "SPECIFIC_FOLDER",
+      "specificFolder": "{{task.onboarding_storage-jw0m.icebergFolder}}",
       "enableOpenCatalogSync": false,
       "snowflakeOpenCatalog": ""
     }

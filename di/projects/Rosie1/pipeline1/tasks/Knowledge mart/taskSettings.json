@@ -11,12 +11,12 @@
     "changeTablesEnabled": true,
     "currentTableSuffix": "__current",
     "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
-    "artifactsPrefix": ""
+    "artifactsPrefix": "p1_"
   },
   "taskRuntime": {
     "bulkSize": "100",
     "maxNumberOfRecords": "{{task.knowledge_mart-jw1n.maxNumberOfRecords}}",
-    "tableUpdateConcurrency": 10,
+    "tableUpdateConcurrency": 11,
     "warehouseSelection": {
       "warehouseName": "{{task.knowledge_mart-jw1n.warehouseName}}"
     }
@@ -25,11 +25,11 @@
   "cdcViewsSuffix": "__publish_doc_cdc_view",
   "outputDirectory": "",
   "indexActionOnPrepare": "RECREATE",
-  "viewType": "DEFAULT",
+  "viewType": "SECURE_VIEW",
   "testAssistantSettings": {
-    "numberOfDocumentsRetrieved": 2,
+    "numberOfDocumentsRetrieved": 7,
     "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
-    "filterConditions": "",
+    "filterConditions": "\u0022metadata\u0022:\u0022UnitsInStock\u0022 = 39",
     "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
     "answerGeneration": "ANSWER_GENERATION_ENABLED",
     "searchFunction": ""
