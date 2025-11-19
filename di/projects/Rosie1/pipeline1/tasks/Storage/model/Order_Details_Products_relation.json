@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "order_details-jw0w",
+    "name": "Order_Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-jw0t"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "products-jw0x",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-jw0t"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ProductID",
+      "targetColumn": "ProductID",
+      "sourceColumnId": "productid",
+      "targetColumnId": "productid"
+    }
+  ],
+  "name": "Order_Details_Products_relation",
+  "description": "",
+  "id": "order_details_products_relation-jw1r"
+}

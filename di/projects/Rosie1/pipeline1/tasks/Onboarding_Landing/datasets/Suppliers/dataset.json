@@ -1,0 +1,17 @@
+{
+  "id": "suppliers",
+  "name": "Suppliers",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_suppliers",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-jw0l",
+      "schema": "{{task.onboarding_landing-jw0l:null$_$dbo.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

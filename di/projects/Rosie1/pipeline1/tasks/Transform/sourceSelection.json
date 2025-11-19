@@ -1,0 +1,42 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-jw0m",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-jw0t",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories-jw0v"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-jw0t",
+      "name": "Order_Details",
+      "type": "NONE",
+      "sourceTableId": "order_details-jw0w"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-jw0t",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products-jw0x"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-jw0t",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers-jw0y"
+    }
+  ]
+}
