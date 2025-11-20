@@ -53,6 +53,10 @@
     "changeProcessingInterval": 60,
     "sourceCdcFetchIntervalMinutes": 60,
     "initialLoadMode": "useCache",
+    "cdcSettings": {
+      "cdcMode": "PERIODIC",
+      "sourceCdcFetchIntervalSeconds": 60
+    },
     "workloadExecutionEngine": {
       "engineType": "DEFAULT",
       "name": "RND_WH"
