@@ -34,11 +34,11 @@
     "publishDatasets": true
   },
   "tableTypeSettings": {
-    "tableType": "ICEBERG",
+    "tableType": "REGULAR",
     "icebergSettings": {
-      "snowflakeExternalVolume": "{{task.onboarding_storage-jw0m.snowflakeExternalVolume}}",
-      "folderLocationType": "SPECIFIC_FOLDER",
-      "specificFolder": "{{task.onboarding_storage-jw0m.icebergFolder}}",
+      "snowflakeExternalVolume": "",
+      "folderLocationType": "DATA_ASSET_NAME",
+      "specificFolder": "",
       "enableOpenCatalogSync": false,
       "snowflakeOpenCatalog": ""
     }

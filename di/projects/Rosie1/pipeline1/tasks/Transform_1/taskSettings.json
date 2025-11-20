@@ -1,23 +1,23 @@
 {
   "artifactsSettings": {
     "liveViewsEnabled": false,
-    "historyEnabled": false,
-    "materialized": true,
-    "changeTablesEnabled": false,
-    "currentTableSuffix": "__t",
+    "historyEnabled": true,
+    "materialized": false,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
     "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
-    "artifactsPrefix": "a_"
+    "artifactsPrefix": ""
   },
   "fullLoadOnly": false,
   "artifactsLocation": {
-    "internalSchema": "{{task.data_mart-jw1h.internalSchema}}",
-    "taskSchema": "{{task.data_mart-jw1h.taskSchema}}",
-    "databaseName": "{{task.data_mart-jw1h.databaseName}}"
+    "internalSchema": "{{task.transform_1-jond.internalSchema}}",
+    "taskSchema": "{{task.transform_1-jond.taskSchema}}",
+    "databaseName": "{{task.transform_1-jond.databaseName}}"
   },
   "taskRuntime": {
-    "tableUpdateConcurrency": 12,
+    "tableUpdateConcurrency": 10,
     "warehouseSelection": {
-      "warehouseName": "{{task.data_mart-jw1h.warehouseName}}"
+      "warehouseName": "{{task.transform_1-jond.warehouseName}}"
     }
   },
   "catalogIntegration": {
@@ -33,5 +33,5 @@
       "snowflakeOpenCatalog": ""
     }
   },
-  "viewType": "SECURE_VIEW"
+  "viewType": "DEFAULT"
 }

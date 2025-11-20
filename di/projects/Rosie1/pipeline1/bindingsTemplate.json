@@ -43,8 +43,6 @@
     "task-type.transform.warehouseSelectionMethod": "",
     "task.data_mart-jw1h.databaseName": "{{task-type.datamart.databaseName}}",
     "task.data_mart-jw1h.internalSchema": "",
-    "task.data_mart-jw1h.snowflakeExternalVolume": "{{task-type.datamart.snowflakeExternalVolume}}",
-    "task.data_mart-jw1h.snowflakeOpenCatalog": "{{task-type.datamart.snowflakeOpenCatalog}}",
     "task.data_mart-jw1h.taskSchema": "",
     "task.data_mart-jw1h.warehouseName": "{{task-type.datamart.warehouseName}}",
     "task.knowledge_mart-jw1n.databaseName": "{{task-type.knowledgeMart.databaseName}}",
@@ -61,9 +59,7 @@
     "task.onboarding_landing-jw0l.taskSchema": "",
     "task.onboarding_landing-jw0l:null$_$dbo.schema": "",
     "task.onboarding_storage-jw0m.databaseName": "{{task-type.storage.databaseName}}",
-    "task.onboarding_storage-jw0m.icebergFolder": "",
     "task.onboarding_storage-jw0m.internalSchema": "",
-    "task.onboarding_storage-jw0m.snowflakeExternalVolume": "{{task-type.storage.snowflakeExternalVolume}}",
     "task.onboarding_storage-jw0m.taskSchema": "",
     "task.onboarding_storage-jw0m.warehouseName": "{{task-type.storage.warehouseName}}",
     "task.storage-jw0t.databaseName": "{{task-type.storage.databaseName}}",
@@ -73,7 +69,11 @@
     "task.transform-jw0z.databaseName": "{{task-type.transform.databaseName}}",
     "task.transform-jw0z.internalSchema": "",
     "task.transform-jw0z.taskSchema": "",
-    "task.transform-jw0z.warehouseName": "{{task-type.transform.warehouseName}}"
+    "task.transform-jw0z.warehouseName": "{{task-type.transform.warehouseName}}",
+    "task.transform_1-jond.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform_1-jond.internalSchema": "",
+    "task.transform_1-jond.taskSchema": "",
+    "task.transform_1-jond.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
     "data_mart-jw1h": "Data mart",
@@ -81,7 +81,8 @@
     "onboarding_landing-jw0l": "Onboarding_Landing",
     "onboarding_storage-jw0m": "Onboarding_Storage",
     "storage-jw0t": "Storage",
-    "transform-jw0z": "Transform"
+    "transform-jw0z": "Transform",
+    "transform_1-jond": "Transform_1"
   },
   "connectionProperties": {
     "task.onboarding_landing-jw0l.sourceConnection": {
