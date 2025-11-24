@@ -1,0 +1,193 @@
+{
+  "id": "customer-9pxs",
+  "name": "customer",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "customer-a96m",
+      "name": "customer",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_data_storage-a96k"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "customer",
+    "columns": [
+      {
+        "name": "customer_id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "UINT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "customer_id",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "store_id",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "UINT1",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BYTEINT"
+        },
+        "id": "store_id",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "first_name",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "first_name",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "last_name",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 45,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(45)"
+        },
+        "id": "last_name",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "email",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(50)"
+        },
+        "id": "email",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "address_id",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "UINT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "address_id",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "active",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT1",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BYTEINT"
+        },
+        "id": "active",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "create_date",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(0)"
+        },
+        "id": "create_date",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "last_update",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(0)"
+        },
+        "id": "last_update",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
