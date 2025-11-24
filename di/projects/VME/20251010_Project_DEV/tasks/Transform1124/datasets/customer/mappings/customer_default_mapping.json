@@ -1,0 +1,122 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "customer-a96m",
+    "name": "customer",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_data_storage-a96k"
+  },
+  "mappingFields": [
+    {
+      "columnId": "customer_id",
+      "expression": {
+        "expressionStatement": "${customer_id}",
+        "alias": [
+          {
+            "name": "customer_id",
+            "value": "customer_id"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "store_id",
+      "expression": {
+        "expressionStatement": "${store_id}",
+        "alias": [
+          {
+            "name": "store_id",
+            "value": "store_id"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "first_name",
+      "expression": {
+        "expressionStatement": "${first_name}",
+        "alias": [
+          {
+            "name": "first_name",
+            "value": "first_name"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "last_name",
+      "expression": {
+        "expressionStatement": "${last_name}",
+        "alias": [
+          {
+            "name": "last_name",
+            "value": "last_name"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "email",
+      "expression": {
+        "expressionStatement": "${email}",
+        "alias": [
+          {
+            "name": "email",
+            "value": "email"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "address_id",
+      "expression": {
+        "expressionStatement": "${address_id}",
+        "alias": [
+          {
+            "name": "address_id",
+            "value": "address_id"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "active",
+      "expression": {
+        "expressionStatement": "${active}",
+        "alias": [
+          {
+            "name": "active",
+            "value": "active"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "create_date",
+      "expression": {
+        "expressionStatement": "${create_date}",
+        "alias": [
+          {
+            "name": "create_date",
+            "value": "create_date"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "last_update",
+      "expression": {
+        "expressionStatement": "${last_update}",
+        "alias": [
+          {
+            "name": "last_update",
+            "value": "last_update"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "customer_default_mapping-9pxt",
+  "name": "customer_default_mapping",
+  "description": ""
+}
