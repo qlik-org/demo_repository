@@ -1,0 +1,33 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.lake_landing-bmxe.databaseName": "{{task-type.lakeLanding.databaseName}}",
+    "task.lake_landing-bmxe.sourceConnection": "",
+    "task.lake_landing-bmxe.targetConnection": "",
+    "task.lake_landing-bmxe:null$_$dbo.schema": "",
+    "task.replication-bmxf.sourceConnection": "",
+    "task.replication-bmxf.targetConnection": "",
+    "task.replication-bmxf.targetStorageConnection": "",
+    "task.replication-bmxf:null$_$dbo.schema": ""
+  },
+  "idToNameMap": {
+    "lake_landing-bmxe": "Lake_landing",
+    "replication-bmxf": "Replication"
+  },
+  "connectionProperties": {
+    "task.lake_landing-bmxe.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.lake_landing-bmxe.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.replication-bmxf.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication-bmxf.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}
