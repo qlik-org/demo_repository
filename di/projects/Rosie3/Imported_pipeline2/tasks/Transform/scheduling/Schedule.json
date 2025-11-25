@@ -1,19 +1,15 @@
 {
   "enabled": false,
-  "schedulingType": "TIME_BASED",
+  "schedulingType": "EVENT_BASED",
   "timeBasedScheduling": {
-    "schedule": [
-      "RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0"
-    ],
-    "startDateTime": "2025-11-24T11:31:01.733Z",
-    "timezone": "Etc/UTC"
+    "schedule": []
   },
   "eventBasedScheduling": {
     "eventSchedulingType": "ANY_INPUT_TASK",
     "triggerApps": []
   },
   "runOnReconnect": "ONSCHEDULED",
-  "id": "schedule-iqi7",
+  "id": "schedule-bmyt",
   "name": "Schedule",
   "description": "",
   "version": "1"

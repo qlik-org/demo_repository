@@ -1,18 +1,8 @@
 {
-  "ddlHandlingPolicy": {
-    "addColumn": "APPLY_TO_TARGET",
-    "changeColumnType": "IGNORE",
-    "renameTable": "SUSPEND_TABLE",
-    "renameColumn": "SUSPEND_TABLE",
-    "dropTable": "IGNORE",
-    "dropColumn": "IGNORE",
-    "truncateTable": "IGNORE",
-    "createTable": "APPLY_TO_TARGET"
-  },
   "artifactsSettings": {
-    "liveViewsEnabled": true,
+    "liveViewsEnabled": false,
     "historyEnabled": true,
-    "materialized": true,
+    "materialized": false,
     "changeTablesEnabled": true,
     "currentTableSuffix": "__current",
     "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
@@ -20,14 +10,14 @@
   },
   "fullLoadOnly": false,
   "artifactsLocation": {
-    "internalSchema": "{{task.onboarding_storage-iqi6.internalSchema}}",
-    "taskSchema": "{{task.onboarding_storage-iqi6.taskSchema}}",
-    "databaseName": "{{task.onboarding_storage-iqi6.databaseName}}"
+    "internalSchema": "{{task.transform-bmys.internalSchema}}",
+    "taskSchema": "{{task.transform-bmys.taskSchema}}",
+    "databaseName": "{{task.transform-bmys.databaseName}}"
   },
   "taskRuntime": {
     "tableUpdateConcurrency": 10,
     "warehouseSelection": {
-      "warehouseName": "{{task.onboarding_storage-iqi6.warehouseName}}"
+      "warehouseName": "{{task.transform-bmys.warehouseName}}"
     }
   },
   "catalogIntegration": {
