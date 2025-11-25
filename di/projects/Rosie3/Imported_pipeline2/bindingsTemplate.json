@@ -40,6 +40,12 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
+    "task.file_based_knowledge_mart-bmx6.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
+    "task.file_based_knowledge_mart-bmx6.indexDatabase": "{{task-type.fileBasedKnowledgeMart.indexDatabase}}",
+    "task.file_based_knowledge_mart-bmx6.indexName": "",
+    "task.file_based_knowledge_mart-bmx6.indexSchema": "",
+    "task.file_based_knowledge_mart-bmx6.sourceConnection": "",
+    "task.file_based_knowledge_mart-bmx6.warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
     "task.onboarding_landing-iqi5.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboarding_landing-iqi5.sourceConnection": "",
     "task.onboarding_landing-iqi5.taskSchema": "",
@@ -47,13 +53,29 @@
     "task.onboarding_storage-iqi6.databaseName": "{{task-type.storage.databaseName}}",
     "task.onboarding_storage-iqi6.internalSchema": "",
     "task.onboarding_storage-iqi6.taskSchema": "",
-    "task.onboarding_storage-iqi6.warehouseName": "{{task-type.storage.warehouseName}}"
+    "task.onboarding_storage-iqi6.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.registered_data-bmx8.databaseName": "{{task-type.registered.databaseName}}",
+    "task.registered_data-bmx8.internalSchema": "",
+    "task.registered_data-bmx8.taskSchema": "",
+    "task.registered_data-bmx8:ROSIE$_$Apr01_3_landing.database": "",
+    "task.registered_data-bmx8:ROSIE$_$Apr01_3_landing.schema": "",
+    "task.registered_data_storage-bmx9.databaseName": "{{task-type.storage.databaseName}}",
+    "task.registered_data_storage-bmx9.internalSchema": "",
+    "task.registered_data_storage-bmx9.taskSchema": "",
+    "task.registered_data_storage-bmx9.warehouseName": "{{task-type.storage.warehouseName}}"
   },
   "idToNameMap": {
+    "file_based_knowledge_mart-bmx6": "File-based knowledge mart",
     "onboarding_landing-iqi5": "Onboarding_Landing",
-    "onboarding_storage-iqi6": "Onboarding_Storage"
+    "onboarding_storage-iqi6": "Onboarding_Storage",
+    "registered_data-bmx8": "Registered_data",
+    "registered_data_storage-bmx9": "Registered_data_Storage"
   },
   "connectionProperties": {
+    "task.file_based_knowledge_mart-bmx6.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "filesource:sharepoint"
+    },
     "task.onboarding_landing-iqi5.sourceConnection": {
       "type": "repsrc_mssql"
     }
