@@ -39,8 +39,18 @@
     "task-type.transform.databaseName": "",
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
-    "task-type.transform.warehouseSelectionMethod": ""
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.landing-fvzh.databaseName": "{{task-type.landing.databaseName}}",
+    "task.landing-fvzh.sourceConnection": "",
+    "task.landing-fvzh.taskSchema": "",
+    "task.landing-fvzh:null$_$dbo.schema": ""
   },
-  "idToNameMap": {},
-  "connectionProperties": {}
+  "idToNameMap": {
+    "landing-fvzh": "Landing"
+  },
+  "connectionProperties": {
+    "task.landing-fvzh.sourceConnection": {
+      "type": "repsrc_mssql"
+    }
+  }
 }
