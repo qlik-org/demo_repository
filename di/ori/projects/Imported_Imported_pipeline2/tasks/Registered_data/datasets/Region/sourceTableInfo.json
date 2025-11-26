@@ -1,0 +1,46 @@
+{
+  "id": "$registered_data$Apr01_3_landing_region",
+  "name": "Apr01_3_landing_Region",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "Region",
+    "dbSchema": "{{task.registered_data-bmx8:ROSIE$_$Apr01_3_landing.schema}}",
+    "dbName": "{{task.registered_data-bmx8:ROSIE$_$Apr01_3_landing.database}}",
+    "columns": [
+      {
+        "name": "RegionID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "regionid",
+        "flags": "NONE"
+      },
+      {
+        "name": "RegionDescription",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "regiondescription",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

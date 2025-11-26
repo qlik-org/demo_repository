@@ -1,0 +1,18 @@
+{
+  "id": "region",
+  "name": "Region",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$Apr01_3_landing_region",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-bmx8",
+      "schema": "{{task.registered_data-bmx8:ROSIE$_$Apr01_3_landing.schema}}",
+      "database": "{{task.registered_data-bmx8:ROSIE$_$Apr01_3_landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
