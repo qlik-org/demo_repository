@@ -1,0 +1,62 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "categories-qwod",
+    "name": "Categories",
+    "projectId": "{{project.rosie$_$dm.projectId}}",
+    "taskId": "storage_1-qwob"
+  },
+  "mappingFields": [
+    {
+      "columnId": "categoryid",
+      "expression": {
+        "expressionStatement": "${CategoryID}",
+        "alias": [
+          {
+            "name": "CategoryID",
+            "value": "CategoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "categoryname",
+      "expression": {
+        "expressionStatement": "${CategoryName}",
+        "alias": [
+          {
+            "name": "CategoryName",
+            "value": "CategoryName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "description",
+      "expression": {
+        "expressionStatement": "${Description}",
+        "alias": [
+          {
+            "name": "Description",
+            "value": "Description"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "picture",
+      "expression": {
+        "expressionStatement": "${Picture}",
+        "alias": [
+          {
+            "name": "Picture",
+            "value": "Picture"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "categories_default_mapping-tmrh",
+  "name": "Categories_default_mapping",
+  "description": ""
+}
