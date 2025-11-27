@@ -46,6 +46,15 @@
     "task.data_mart-tmrq.internalSchema": "",
     "task.data_mart-tmrq.taskSchema": "",
     "task.data_mart-tmrq.warehouseName": "{{task-type.datamart.warehouseName}}",
+    "task.knowledge_mart-tmrt.databaseName": "{{task-type.knowledgeMart.databaseName}}",
+    "task.knowledge_mart-tmrt.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
+    "task.knowledge_mart-tmrt.indexDatabase": "{{task-type.knowledgeMart.indexDatabase}}",
+    "task.knowledge_mart-tmrt.indexName": "",
+    "task.knowledge_mart-tmrt.indexSchema": "",
+    "task.knowledge_mart-tmrt.internalSchema": "",
+    "task.knowledge_mart-tmrt.maxNumberOfRecords": "",
+    "task.knowledge_mart-tmrt.taskSchema": "",
+    "task.knowledge_mart-tmrt.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
     "task.onboarding_landing-iqi5.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboarding_landing-iqi5.sourceConnection": "",
     "task.onboarding_landing-iqi5.taskSchema": "",
@@ -61,6 +70,7 @@
   },
   "idToNameMap": {
     "data_mart-tmrq": "Data mart",
+    "knowledge_mart-tmrt": "Knowledge mart",
     "onboarding_landing-iqi5": "Onboarding_Landing",
     "onboarding_storage-iqi6": "Onboarding_Storage",
     "transform-tmrc": "Transform"
