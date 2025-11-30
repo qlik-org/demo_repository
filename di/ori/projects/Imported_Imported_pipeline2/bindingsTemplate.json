@@ -40,12 +40,6 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
-    "task.file_based_knowledge_mart-bmx6.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
-    "task.file_based_knowledge_mart-bmx6.indexDatabase": "{{task-type.fileBasedKnowledgeMart.indexDatabase}}",
-    "task.file_based_knowledge_mart-bmx6.indexName": "",
-    "task.file_based_knowledge_mart-bmx6.indexSchema": "",
-    "task.file_based_knowledge_mart-bmx6.sourceConnection": "",
-    "task.file_based_knowledge_mart-bmx6.warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
     "task.knowledge_mart-bmyb.databaseName": "{{task-type.knowledgeMart.databaseName}}",
     "task.knowledge_mart-bmyb.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
     "task.knowledge_mart-bmyb.indexName": "",
@@ -74,7 +68,6 @@
     "task.transform-bmys.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
-    "file_based_knowledge_mart-bmx6": "File-based knowledge mart",
     "knowledge_mart-bmyb": "Knowledge mart",
     "onboarding_landing-iqi5": "Onboarding_Landing",
     "registered_data-bmx8": "Registered_data",
@@ -82,10 +75,6 @@
     "transform-bmys": "Transform"
   },
   "connectionProperties": {
-    "task.file_based_knowledge_mart-bmx6.sourceConnection": {
-      "type": "external_data_provider",
-      "kindId": "filesource:sharepoint"
-    },
     "task.knowledge_mart-bmyb.llmConnection": {
       "type": "external_data_provider",
       "kindId": "llm:AzureOpenAI@1.0.0"
