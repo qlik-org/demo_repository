@@ -1,0 +1,52 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.knowledge_mart-iqgw.internalSchema}}",
+    "taskSchema": "{{task.knowledge_mart-iqgw.taskSchema}}",
+    "databaseName": "{{task.knowledge_mart-iqgw.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "bulkSize": "100",
+    "maxNumberOfRecords": "{{task.knowledge_mart-iqgw.maxNumberOfRecords}}",
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.knowledge_mart-iqgw.warehouseName}}"
+    }
+  },
+  "loadViewsSuffix": "__publish_doc_view",
+  "cdcViewsSuffix": "__publish_doc_cdc_view",
+  "outputDirectory": "",
+  "indexActionOnPrepare": "RECREATE",
+  "viewType": "DEFAULT",
+  "testAssistantSettings": {
+    "numberOfDocumentsRetrieved": 6,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
+    "filterConditions": "{\u0022metadata LIKE\u0022: \u0022%\\\u0022UnitsInStock\\\u0022:36%\u0022}",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "searchFunction": ""
+  },
+  "indexArtifactsLocation": {
+    "databricksVectorSearchEndpoint": "{{task.knowledge_mart-iqgw.databricksVectorSearchEndpoint}}",
+    "schema": "{{task.knowledge_mart-iqgw.indexSchema}}",
+    "name": "{{task.knowledge_mart-iqgw.indexName}}",
+    "database": "{{task.knowledge_mart-iqgw.indexDatabase}}"
+  },
+  "vectorDbTargetType": "PROJECT_PLATFORM",
+  "llmSettings": {
+    "kindId": "llm:databricks",
+    "parameters": {
+      "embedding_model_serving_endpoint": "databricks-gte-large-en",
+      "completion_model_serving_endpoint": "databricks-meta-llama-3-3-70b-instruct"
+    }
+  },
+  "fullLoadOnly": false
+}

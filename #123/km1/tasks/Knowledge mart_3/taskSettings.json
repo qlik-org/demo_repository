@@ -1,0 +1,52 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.knowledge_mart_3-02b1.internalSchema}}",
+    "taskSchema": "{{task.knowledge_mart_3-02b1.taskSchema}}",
+    "databaseName": "{{task.knowledge_mart_3-02b1.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "bulkSize": "100",
+    "maxNumberOfRecords": "{{task.knowledge_mart_3-02b1.maxNumberOfRecords}}",
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.knowledge_mart_3-02b1.warehouseName}}"
+    }
+  },
+  "loadViewsSuffix": "__publish_doc_view",
+  "cdcViewsSuffix": "__publish_doc_cdc_view",
+  "outputDirectory": "",
+  "indexActionOnPrepare": "RECREATE",
+  "viewType": "DEFAULT",
+  "testAssistantSettings": {
+    "numberOfDocumentsRetrieved": 5,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
+    "filterConditions": "{\u0022metadata LIKE\u0022: \u0022%\\\u0022UnitsInStock\\\u0022:39%\u0022}",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "searchFunction": ""
+  },
+  "indexArtifactsLocation": {
+    "databricksVectorSearchEndpoint": "{{task.knowledge_mart_3-02b1.databricksVectorSearchEndpoint}}",
+    "schema": "{{task.knowledge_mart_3-02b1.indexSchema}}",
+    "name": "{{task.knowledge_mart_3-02b1.indexName}}",
+    "database": "{{task.knowledge_mart_3-02b1.indexDatabase}}"
+  },
+  "vectorDbTargetType": "PROJECT_PLATFORM",
+  "llmSettings": {
+    "kindId": "llm:databricks",
+    "parameters": {
+      "embedding_model_serving_endpoint": "databricks-gte-large-en",
+      "completion_model_serving_endpoint": "databricks-meta-llama-3-3-70b-instruct"
+    }
+  },
+  "fullLoadOnly": false
+}

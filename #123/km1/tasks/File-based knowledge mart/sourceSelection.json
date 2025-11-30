@@ -1,0 +1,22 @@
+{
+  "sourceConnection": "{{task.file_based_knowledge_mart-iqgi.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Lib2",
+      "type": "DIRECTORY",
+      "sourceTableId": "Lib2"
+    },
+    {
+      "name": "Lib2/Lib3",
+      "type": "DIRECTORY",
+      "sourceTableId": "Lib2$_$Lib3"
+    },
+    {
+      "name": "Lib2/Lib3/Lib4",
+      "type": "DIRECTORY",
+      "sourceTableId": "Lib2$_$Lib3$_$Lib4"
+    }
+  ]
+}
