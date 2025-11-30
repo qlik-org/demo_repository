@@ -40,15 +40,6 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
-    "task.knowledge_mart-bmyb.databaseName": "{{task-type.knowledgeMart.databaseName}}",
-    "task.knowledge_mart-bmyb.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
-    "task.knowledge_mart-bmyb.indexName": "",
-    "task.knowledge_mart-bmyb.internalSchema": "",
-    "task.knowledge_mart-bmyb.llmConnection": "",
-    "task.knowledge_mart-bmyb.maxNumberOfRecords": "",
-    "task.knowledge_mart-bmyb.taskSchema": "",
-    "task.knowledge_mart-bmyb.vectorDbConnection": "",
-    "task.knowledge_mart-bmyb.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
     "task.onboarding_landing-iqi5.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboarding_landing-iqi5.sourceConnection": "",
     "task.onboarding_landing-iqi5.taskSchema": "",
@@ -68,21 +59,12 @@
     "task.transform-bmys.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
-    "knowledge_mart-bmyb": "Knowledge mart",
     "onboarding_landing-iqi5": "Onboarding_Landing",
     "registered_data-bmx8": "Registered_data",
     "registered_data_storage-bmx9": "Registered_data_Storage",
     "transform-bmys": "Transform"
   },
   "connectionProperties": {
-    "task.knowledge_mart-bmyb.llmConnection": {
-      "type": "external_data_provider",
-      "kindId": "llm:AzureOpenAI@1.0.0"
-    },
-    "task.knowledge_mart-bmyb.vectorDbConnection": {
-      "type": "external_data_provider",
-      "kindId": "vectordb:Pinecone@1.0.0"
-    },
     "task.onboarding_landing-iqi5.sourceConnection": {
       "type": "repsrc_mssql"
     }
