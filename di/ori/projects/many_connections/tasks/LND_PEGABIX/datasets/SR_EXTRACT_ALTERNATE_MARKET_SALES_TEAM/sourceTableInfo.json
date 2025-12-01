@@ -1,0 +1,207 @@
+{
+  "id": "$external_data_provider$_TALEND_PEGA_BIX_sr_extract_alternate_market_sales_team",
+  "name": "LND_TALEND_PEGA_BIX_SR_EXTRACT_ALTERNATE_MARKET_SALES_TEAM",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "SR_EXTRACT_ALTERNATE_MARKET_SALES_TEAM",
+    "columns": [
+      {
+        "name": "DW_Id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "pzInsKey",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pzinskey",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxExtractIdentifier",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxextractidentifier",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxExtractDateTime",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxextractdatetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "AlternateMarketSalesTeam_id",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "alternatemarketsalesteam_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "Primary_Market",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "primary_market",
+        "flags": "NONE"
+      },
+      {
+        "name": "Divisional_Manager",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "divisional_manager",
+        "flags": "NONE"
+      },
+      {
+        "name": "Primary_Sales",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "primary_sales",
+        "flags": "NONE"
+      },
+      {
+        "name": "Regional_Manager",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "regional_manager",
+        "flags": "NONE"
+      },
+      {
+        "name": "Territory",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "territory",
+        "flags": "NONE"
+      },
+      {
+        "name": "VP_Sales",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vp_sales",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_SourceCode",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_sourcecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "Load_TimeStamp",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "load_timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

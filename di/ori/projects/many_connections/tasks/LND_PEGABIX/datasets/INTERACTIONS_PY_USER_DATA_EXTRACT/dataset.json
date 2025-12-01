@@ -1,0 +1,16 @@
+{
+  "id": "interactions_py_user_data_extract",
+  "name": "INTERACTIONS_PY_USER_DATA_EXTRACT",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_PEGA_BIX_interactions_py_user_data_extract",
+      "name": "INTERACTIONS_PY_USER_DATA_EXTRACT",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_pegabix-hzpc"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

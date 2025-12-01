@@ -1,0 +1,16 @@
+{
+  "id": "sr_extract_linked_srs",
+  "name": "SR_EXTRACT_LINKED_SRS",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_PEGA_BIX_sr_extract_linked_srs",
+      "name": "SR_EXTRACT_LINKED_SRS",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_pegabix-hzpc"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

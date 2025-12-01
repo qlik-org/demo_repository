@@ -1,0 +1,1437 @@
+{
+  "id": "$external_data_provider$_QCDI_TX_HIST_STG_BPCS_us_sih",
+  "name": "LND_QCDI_TX_HIST_STG_BPCS_US_SIH",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "US_SIH",
+    "columns": [
+      {
+        "name": "DW_Id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIID",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siid",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIINVN",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siinvn",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICUST",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicust",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICHG",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "sichg",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICOMP",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicomp",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICTYP",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sictyp",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIDISC",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sidisc",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIINVD",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siinvd",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICST",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "sicst",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIORD",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siord",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIPRF",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siprf",
+        "flags": "NONE"
+      },
+      {
+        "name": "SISAL",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sisal",
+        "flags": "NONE"
+      },
+      {
+        "name": "SISPC",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "sispc",
+        "flags": "NONE"
+      },
+      {
+        "name": "SITAX",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "sitax",
+        "flags": "NONE"
+      },
+      {
+        "name": "SITERM",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siterm",
+        "flags": "NONE"
+      },
+      {
+        "name": "SITOT",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "sitot",
+        "flags": "NONE"
+      },
+      {
+        "name": "SITYPE",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sitype",
+        "flags": "NONE"
+      },
+      {
+        "name": "SISTN",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sistn",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICURR",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicurr",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICNFC",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 7,
+          "originalTypeFull": ""
+        },
+        "id": "sicnfc",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIGCNV",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 7,
+          "originalTypeFull": ""
+        },
+        "id": "sigcnv",
+        "flags": "NONE"
+      },
+      {
+        "name": "SILINS",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "silins",
+        "flags": "NONE"
+      },
+      {
+        "name": "SISAL2",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sisal2",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICPO",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicpo",
+        "flags": "NONE"
+      },
+      {
+        "name": "SITDES",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sitdes",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIVIA",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sivia",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIATN",
+        "ordinal": 28,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siatn",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIAD1",
+        "ordinal": 29,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siad1",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIAD2",
+        "ordinal": 30,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siad2",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIAD3",
+        "ordinal": 31,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siad3",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICOUN",
+        "ordinal": 32,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicoun",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIZIP",
+        "ordinal": 33,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 9,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sizip",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIBACK",
+        "ordinal": 34,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siback",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIQTY",
+        "ordinal": 35,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "siqty",
+        "flags": "NONE"
+      },
+      {
+        "name": "SISDTE",
+        "ordinal": 36,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sisdte",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIWHSE",
+        "ordinal": 37,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siwhse",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIRDTE",
+        "ordinal": 38,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sirdte",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICOND",
+        "ordinal": 39,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicond",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIREG",
+        "ordinal": 40,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sireg",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIPAY",
+        "ordinal": 41,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sipay",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIUSEC",
+        "ordinal": 42,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siusec",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIDISD",
+        "ordinal": 43,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sidisd",
+        "flags": "NONE"
+      },
+      {
+        "name": "SISTE",
+        "ordinal": 44,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siste",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIVATC",
+        "ordinal": 45,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sivatc",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIVATA",
+        "ordinal": 46,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "sivata",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIBTOT",
+        "ordinal": 47,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "sibtot",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIOWGH",
+        "ordinal": 48,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "siowgh",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIOWUM",
+        "ordinal": 49,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "siowum",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIDISA",
+        "ordinal": 50,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "sidisa",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIDTSP",
+        "ordinal": 51,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sidtsp",
+        "flags": "NONE"
+      },
+      {
+        "name": "SISRCE",
+        "ordinal": 52,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sisrce",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICARR",
+        "ordinal": 53,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicarr",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIROUT",
+        "ordinal": 54,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sirout",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICOM",
+        "ordinal": 55,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicom",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICOM2",
+        "ordinal": 56,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicom2",
+        "flags": "NONE"
+      },
+      {
+        "name": "SISHPR",
+        "ordinal": 57,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sishpr",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIINS",
+        "ordinal": 58,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "siins",
+        "flags": "NONE"
+      },
+      {
+        "name": "SISTOR",
+        "ordinal": 59,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sistor",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIOTDS",
+        "ordinal": 60,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "siotds",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIJRNO",
+        "ordinal": 61,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sijrno",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHCCOM",
+        "ordinal": 62,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihccom",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIS1CM",
+        "ordinal": 63,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sis1cm",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIS2CM",
+        "ordinal": 64,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sis2cm",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICOMM",
+        "ordinal": 65,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicomm",
+        "flags": "NONE"
+      },
+      {
+        "name": "SFRES",
+        "ordinal": 66,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sfres",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIDTE1",
+        "ordinal": 67,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sidte1",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIDTE2",
+        "ordinal": 68,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sidte2",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICPRF",
+        "ordinal": 69,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicprf",
+        "flags": "NONE"
+      },
+      {
+        "name": "SICPTP",
+        "ordinal": 70,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sicptp",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHDPFX",
+        "ordinal": 71,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihdpfx",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHDOCN",
+        "ordinal": 72,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihdocn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHDYR",
+        "ordinal": 73,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihdyr",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHDTYP",
+        "ordinal": 74,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihdtyp",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHODPX",
+        "ordinal": 75,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihodpx",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHODYR",
+        "ordinal": 76,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihodyr",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHODTP",
+        "ordinal": 77,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihodtp",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHPRCC",
+        "ordinal": 78,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihprcc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IHPRNO",
+        "ordinal": 79,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ihprno",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIRES1",
+        "ordinal": 80,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sires1",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIRES2",
+        "ordinal": 81,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sires2",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIRES3",
+        "ordinal": 82,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sires3",
+        "flags": "NONE"
+      },
+      {
+        "name": "SIRMA#",
+        "ordinal": 83,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sirma#",
+        "flags": "NONE"
+      },
+      {
+        "name": "SINAM",
+        "ordinal": 84,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sinam",
+        "flags": "NONE"
+      },
+      {
+        "name": "LastUpdate",
+        "ordinal": 85,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 7,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lastupdate",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_Batch",
+        "ordinal": 86,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_batch",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_SourceCode",
+        "ordinal": 87,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_sourcecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_TimeStamp",
+        "ordinal": 88,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_timestamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Type II Hash Key",
+        "ordinal": 89,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd type ii hash key",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD From DateTime",
+        "ordinal": 90,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd from datetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD To DateTime",
+        "ordinal": 91,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd to datetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Is Current",
+        "ordinal": 92,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd is current",
+        "flags": "NONE"
+      },
+      {
+        "name": "SourceCode",
+        "ordinal": 93,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sourcecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Surrogate Hash Key",
+        "ordinal": 94,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd surrogate hash key",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Type I Hash Key",
+        "ordinal": 95,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd type i hash key",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

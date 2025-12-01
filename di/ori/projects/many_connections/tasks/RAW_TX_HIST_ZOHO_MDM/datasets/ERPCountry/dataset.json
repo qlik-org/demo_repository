@@ -1,0 +1,24 @@
+{
+  "id": "erpcountry-mknm",
+  "name": "ERPCountry",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "erpcountry_json",
+      "name": "ERPCountry",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_zoho_mdm-w-ri"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

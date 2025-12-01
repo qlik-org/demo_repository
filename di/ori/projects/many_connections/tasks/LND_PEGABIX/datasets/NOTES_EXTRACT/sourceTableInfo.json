@@ -1,0 +1,222 @@
+{
+  "id": "$external_data_provider$_TALEND_PEGA_BIX_notes_extract",
+  "name": "LND_TALEND_PEGA_BIX_NOTES_EXTRACT",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "NOTES_EXTRACT",
+    "columns": [
+      {
+        "name": "DW_Id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "pzInsKey",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pzinskey",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxExtractIdentifier",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxextractidentifier",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxExtractDateTime",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxextractdatetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "Note",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10240,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "note",
+        "flags": "NONE"
+      },
+      {
+        "name": "Note_Create_Time",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "note_create_time",
+        "flags": "NONE"
+      },
+      {
+        "name": "Note_Created_By",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "note_created_by",
+        "flags": "NONE"
+      },
+      {
+        "name": "Note_Creator_Division",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 300,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "note_creator_division",
+        "flags": "NONE"
+      },
+      {
+        "name": "Note_Creator_Organization",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "note_creator_organization",
+        "flags": "NONE"
+      },
+      {
+        "name": "Note_Creator_Unit",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "note_creator_unit",
+        "flags": "NONE"
+      },
+      {
+        "name": "Note_Creator_WorkGroup",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "note_creator_workgroup",
+        "flags": "NONE"
+      },
+      {
+        "name": "SRNumber",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2000,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "srnumber",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_SourceCode",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_sourcecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "Load_TimeStamp",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "load_timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

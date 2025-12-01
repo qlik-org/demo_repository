@@ -1,0 +1,987 @@
+{
+  "id": "$external_data_provider$_QCDI_TX_HIST_STG_BPCS_us_propswrk",
+  "name": "LND_QCDI_TX_HIST_STG_BPCS_US_PROPSWRK",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "US_PROPSWRK",
+    "columns": [
+      {
+        "name": "DW_Id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSORDR",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osordr",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSORDL",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osordl",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSSHDT",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osshdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSNM01",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osnm01",
+        "flags": "NONE"
+      },
+      {
+        "name": "LastUpdate",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 7,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lastupdate",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSAL01",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osal01",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSAL02",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osal02",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSAL03",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osal03",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSAL04",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osal04",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSAL05",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osal05",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSAL06",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osal06",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSAL07",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osal07",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSAL08",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osal08",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSALCQ",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osalcq",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSAUDT",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osaudt",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSBKNG",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osbkng",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSBOL",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osbol",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSBPNO",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osbpno",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSCARI",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "oscari",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSCARR",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "oscarr",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSCART",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "oscart",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSCUST",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "oscust",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSDATE",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osdate",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSFLG1",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osflg1",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSFLG2",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osflg2",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSFLG3",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osflg3",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSFRGT",
+        "ordinal": 28,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "osfrgt",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSIDSC",
+        "ordinal": 29,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osidsc",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSINV",
+        "ordinal": 30,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 22,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osinv",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSITEM",
+        "ordinal": 31,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ositem",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSLPNO",
+        "ordinal": 32,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 9,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "oslpno",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSMODE",
+        "ordinal": 33,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osmode",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSNM02",
+        "ordinal": 34,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osnm02",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSNM03",
+        "ordinal": 35,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osnm03",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSNM04",
+        "ordinal": 36,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osnm04",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSNM05",
+        "ordinal": 37,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osnm05",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSNM06",
+        "ordinal": 38,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "osnm06",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSOBOL",
+        "ordinal": 39,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osobol",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSOST",
+        "ordinal": 40,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osost",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSOTYP",
+        "ordinal": 41,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osotyp",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSPIKQ",
+        "ordinal": 42,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ospikq",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSPST",
+        "ordinal": 43,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ospst",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSSEAL",
+        "ordinal": 44,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osseal",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSSHPQ",
+        "ordinal": 45,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osshpq",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSSTAT",
+        "ordinal": 46,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osstat",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSTIME",
+        "ordinal": 47,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ostime",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSTRK",
+        "ordinal": 48,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ostrk",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSTRLR",
+        "ordinal": 49,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 12,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ostrlr",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSUSER",
+        "ordinal": 50,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osuser",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSVETA",
+        "ordinal": 51,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osveta",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSVETD",
+        "ordinal": 52,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osvetd",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSVOYG",
+        "ordinal": 53,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 12,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osvoyg",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSVSLN",
+        "ordinal": 54,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osvsln",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSWGHT",
+        "ordinal": 55,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "oswght",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSWHSE",
+        "ordinal": 56,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "oswhse",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_Batch",
+        "ordinal": 57,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_batch",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_SourceCode",
+        "ordinal": 58,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_sourcecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_TimeStamp",
+        "ordinal": 59,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_timestamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD From DateTime",
+        "ordinal": 60,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd from datetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD To DateTime",
+        "ordinal": 61,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd to datetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Is Current",
+        "ordinal": 62,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd is current",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Type II Hash Key",
+        "ordinal": 63,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd type ii hash key",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Surrogate Hash Key",
+        "ordinal": 64,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd surrogate hash key",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Type I Hash Key",
+        "ordinal": 65,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd type i hash key",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

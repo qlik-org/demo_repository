@@ -1,0 +1,252 @@
+{
+  "id": "$external_data_provider$_TALEND_PEGA_BIX_interactions_notes_extract",
+  "name": "LND_TALEND_PEGA_BIX_INTERACTIONS_NOTES_EXTRACT",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "INTERACTIONS_NOTES_EXTRACT",
+    "columns": [
+      {
+        "name": "DW_Id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "pzInsKey",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pzinskey",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxExtractIdentifier",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxextractidentifier",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxExtractDateTime",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxextractdatetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "pyPostContextClass",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pypostcontextclass",
+        "flags": "NONE"
+      },
+      {
+        "name": "pyID",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pyid",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxCreateDateTime",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxcreatedatetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxCreateOperator",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxcreateoperator",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxCreateOpName",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxcreateopname",
+        "flags": "NONE"
+      },
+      {
+        "name": "pyObject",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pyobject",
+        "flags": "NONE"
+      },
+      {
+        "name": "pyObjectType",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pyobjecttype",
+        "flags": "NONE"
+      },
+      {
+        "name": "pyIndirectObject",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pyindirectobject",
+        "flags": "NONE"
+      },
+      {
+        "name": "pyIndirectObjectID",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pyindirectobjectid",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxUpdateDateTime",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxupdatedatetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_SourceCode",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_sourcecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "Load_TimeStamp",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "load_timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

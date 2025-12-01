@@ -1,0 +1,942 @@
+{
+  "id": "$external_data_provider$_TALEND_PEGA_BIX_sr_extract_order_info_invoice_list",
+  "name": "LND_TALEND_PEGA_BIX_SR_EXTRACT_ORDER_INFO_INVOICE_LIST",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "SR_EXTRACT_ORDER_INFO_INVOICE_LIST",
+    "columns": [
+      {
+        "name": "DW_Id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "pzInsKey",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pzinskey",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxExtractIdentifier",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxextractidentifier",
+        "flags": "NONE"
+      },
+      {
+        "name": "pxExtractDateTime",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "pxextractdatetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "InvoiceList_id",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "invoicelist_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "OrderInfo_id",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "orderinfo_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "Account_Number",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "account_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Line_Number",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "line_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Purchase_order_Number",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "purchase_order_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Account_Name",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "account_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "Invoice_Number",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "invoice_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Order_Ship_to_Number",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "order_ship_to_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Order_Type",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "order_type",
+        "flags": "NONE"
+      },
+      {
+        "name": "Victaulic_Order_Number",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "victaulic_order_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Order_Created_by",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "order_created_by",
+        "flags": "NONE"
+      },
+      {
+        "name": "Ship_Date",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ship_date",
+        "flags": "NONE"
+      },
+      {
+        "name": "Accommodation_Type",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "accommodation_type",
+        "flags": "NONE"
+      },
+      {
+        "name": "Invoice_Error_Credit_Amount",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "invoice_error_credit_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "Total_Invoice_Credit_Amount",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "total_invoice_credit_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "Warehouse_Contact",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "warehouse_contact",
+        "flags": "NONE"
+      },
+      {
+        "name": "Warehouse",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "warehouse",
+        "flags": "NONE"
+      },
+      {
+        "name": "Carrier",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "carrier",
+        "flags": "NONE"
+      },
+      {
+        "name": "Tracking_Number",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tracking_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "OSNB_Number",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "osnb_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Total_Boxes",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "total_boxes",
+        "flags": "NONE"
+      },
+      {
+        "name": "Total_Weight",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "total_weight",
+        "flags": "NONE"
+      },
+      {
+        "name": "Packer",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "packer",
+        "flags": "NONE"
+      },
+      {
+        "name": "Agreement_Date",
+        "ordinal": 28,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "agreement_date",
+        "flags": "NONE"
+      },
+      {
+        "name": "Agree_to_Repay",
+        "ordinal": 29,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "agree_to_repay",
+        "flags": "NONE"
+      },
+      {
+        "name": "Agree_to_Repay_Amount",
+        "ordinal": 30,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "agree_to_repay_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "Agree_to_Repay_Contact_Name",
+        "ordinal": 31,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "agree_to_repay_contact_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "Agree_to_Repay_Contact_Phone_Email",
+        "ordinal": 32,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "agree_to_repay_contact_phone_email",
+        "flags": "NONE"
+      },
+      {
+        "name": "DM_Amount",
+        "ordinal": 33,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dm_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "DM_Number",
+        "ordinal": 34,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dm_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Check_date",
+        "ordinal": 35,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "check_date",
+        "flags": "NONE"
+      },
+      {
+        "name": "CheckNumber",
+        "ordinal": 36,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "checknumber",
+        "flags": "NONE"
+      },
+      {
+        "name": "Reason_Code",
+        "ordinal": 37,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "reason_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "Supervisor_Approval",
+        "ordinal": 38,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supervisor_approval",
+        "flags": "NONE"
+      },
+      {
+        "name": "Supervisor_Contact",
+        "ordinal": 39,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supervisor_contact",
+        "flags": "NONE"
+      },
+      {
+        "name": "Customer_Support_Verified",
+        "ordinal": 40,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "customer_support_verified",
+        "flags": "NONE"
+      },
+      {
+        "name": "Customer_Support_Contact",
+        "ordinal": 41,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "customer_support_contact",
+        "flags": "NONE"
+      },
+      {
+        "name": "Original_Inv_CM_Number",
+        "ordinal": 42,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "original_inv_cm_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Original_Inv_CM_Amount",
+        "ordinal": 43,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "original_inv_cm_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "Original_Inv_CM_Date",
+        "ordinal": 44,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "original_inv_cm_date",
+        "flags": "NONE"
+      },
+      {
+        "name": "Project_Name",
+        "ordinal": 45,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "project_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "Project_Number",
+        "ordinal": 46,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "project_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Store_Number",
+        "ordinal": 47,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "store_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Invoice_Ship_to_Address",
+        "ordinal": 48,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 256,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "invoice_ship_to_address",
+        "flags": "NONE"
+      },
+      {
+        "name": "Replacement_Option",
+        "ordinal": 49,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "replacement_option",
+        "flags": "NONE"
+      },
+      {
+        "name": "Replacement_Order",
+        "ordinal": 50,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "replacement_order",
+        "flags": "NONE"
+      },
+      {
+        "name": "RMA_Number",
+        "ordinal": 51,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rma_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "RMA_Option",
+        "ordinal": 52,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rma_option",
+        "flags": "NONE"
+      },
+      {
+        "name": "RMA_CM_Number",
+        "ordinal": 53,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rma_cm_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "RMA_CM_Date",
+        "ordinal": 54,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rma_cm_date",
+        "flags": "NONE"
+      },
+      {
+        "name": "RMA_Credit_Amt",
+        "ordinal": 55,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "rma_credit_amt",
+        "flags": "NONE"
+      },
+      {
+        "name": "Billing_Only_Order_Number",
+        "ordinal": 56,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "billing_only_order_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Credit_Code",
+        "ordinal": 57,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "credit_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "Billing_Only_Quote_Number",
+        "ordinal": 58,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "billing_only_quote_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "Check_Rec_d_Date",
+        "ordinal": 59,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "check_rec_d_date",
+        "flags": "NONE"
+      },
+      {
+        "name": "Debit_Invoice_Number",
+        "ordinal": 60,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "debit_invoice_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_SourceCode",
+        "ordinal": 61,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_sourcecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "Load_TimeStamp",
+        "ordinal": 62,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "load_timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

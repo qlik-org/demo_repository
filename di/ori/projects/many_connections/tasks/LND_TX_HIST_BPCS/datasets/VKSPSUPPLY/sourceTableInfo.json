@@ -1,0 +1,507 @@
+{
+  "id": "$external_data_provider$_QCDI_TX_HIST_STG_BPCS_vkspsupply",
+  "name": "LND_QCDI_TX_HIST_STG_BPCS_VKSPSUPPLY",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "VKSPSUPPLY",
+    "columns": [
+      {
+        "name": "DW_Id",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "SUPPLY_POINT",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supply_point",
+        "flags": "NONE"
+      },
+      {
+        "name": "DESCRIPTION",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "description",
+        "flags": "NONE"
+      },
+      {
+        "name": "SUPPLY_TYPE",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supply_type",
+        "flags": "NONE"
+      },
+      {
+        "name": "WAREHOUSE",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "warehouse",
+        "flags": "NONE"
+      },
+      {
+        "name": "BACKFLUSH_WAREHOUSE",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "backflush_warehouse",
+        "flags": "NONE"
+      },
+      {
+        "name": "BACKFLUSH_LOCATION",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "backflush_location",
+        "flags": "NONE"
+      },
+      {
+        "name": "COMPANY_CODE",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "company_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "VENDOR_ID",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vendor_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "STAGING_WAREHOUSE",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "staging_warehouse",
+        "flags": "NONE"
+      },
+      {
+        "name": "NUM_PRINT_COPIES",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "num_print_copies",
+        "flags": "NONE"
+      },
+      {
+        "name": "CONSIGNMENT",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "consignment",
+        "flags": "NONE"
+      },
+      {
+        "name": "CONSIGNMENT_WAREHOUSE",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "consignment_warehouse",
+        "flags": "NONE"
+      },
+      {
+        "name": "CONSIGNMENT_LOCATION",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "consignment_location",
+        "flags": "NONE"
+      },
+      {
+        "name": "DROP_SHIP",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "drop_ship",
+        "flags": "NONE"
+      },
+      {
+        "name": "TRIGGER_CHILD_KANBANS",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "trigger_child_kanbans",
+        "flags": "NONE"
+      },
+      {
+        "name": "TRIGGER_CHILD_WITH_PARENT_ITEM",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "trigger_child_with_parent_item",
+        "flags": "NONE"
+      },
+      {
+        "name": "OA_SUPPLY_POINT",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "oa_supply_point",
+        "flags": "NONE"
+      },
+      {
+        "name": "RESUPPLY_RELEASE_PACKSET_TYPE",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "resupply_release_packset_type",
+        "flags": "NONE"
+      },
+      {
+        "name": "DO_NOT_CREATE_RESUPPLY",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "do_not_create_resupply",
+        "flags": "NONE"
+      },
+      {
+        "name": "ALTERNATE_SUPPLY_POINT",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "alternate_supply_point",
+        "flags": "NONE"
+      },
+      {
+        "name": "BUILD_TICKET_RELEASE_SEQUENCE",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "build_ticket_release_sequence",
+        "flags": "NONE"
+      },
+      {
+        "name": "RECORD_STATUS",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "record_status",
+        "flags": "NONE"
+      },
+      {
+        "name": "LastUpdate",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 7,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lastupdate",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_Batch",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_batch",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_SourceCode",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_sourcecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "DW_TimeStamp",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_timestamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Surrogate Hash Key",
+        "ordinal": 28,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd surrogate hash key",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Type I Hash Key",
+        "ordinal": 29,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd type i hash key",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Type II Hash Key",
+        "ordinal": 30,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd type ii hash key",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD From DateTime",
+        "ordinal": 31,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd from datetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD To DateTime",
+        "ordinal": 32,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd to datetime",
+        "flags": "NONE"
+      },
+      {
+        "name": "SCD Is Current",
+        "ordinal": 33,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "scd is current",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
