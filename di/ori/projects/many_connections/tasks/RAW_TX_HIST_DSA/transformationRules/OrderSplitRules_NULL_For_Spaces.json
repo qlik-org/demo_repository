@@ -1,0 +1,44 @@
+{
+  "ordinal": 0,
+  "actionType": "REPLACE_COLUMN_VALUE",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "%OrderSplitRules%",
+    "whereColumnName": "%",
+    "whereDatatype": "STRING",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "action": {
+    "renameType": "RENAME",
+    "expression": {
+      "expressionStatement": "$REPLACE(${Q_D_COLUMN_DATA}, \u0027 \u0027, \u0027\u0027)",
+      "alias": [
+        {
+          "name": "Q_D_COLUMN_DATA",
+          "value": "$Q_D_COLUMN_DATA"
+        }
+      ]
+    },
+    "applyColumnDatatype": false,
+    "column": {
+      "ordinal": 0,
+      "nullable": true,
+      "primaryKeyOrdinal": 0,
+      "datatype": {
+        "type": "STRING",
+        "length": 50,
+        "precision": 0,
+        "scale": 0,
+        "originalTypeFull": ""
+      },
+      "flags": "NONE"
+    }
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "OrderSplitRules_NULL_For_Spaces",
+  "id": "ordersplitrules_null_for_spaces-c8ol",
+  "description": ""
+}

@@ -1,0 +1,28 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "lnd_tx_hist_bpcs-cuub",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "lnd_tx_hist_bpcs-cuub",
+      "tablePattern": "US_%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "lnd_tx_hist_bpcs-cuub",
+      "tablePattern": "CAN_%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "explicitlySelected": []
+}

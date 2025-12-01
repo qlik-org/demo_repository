@@ -1,0 +1,16 @@
+{
+  "id": "orderlinessplit",
+  "name": "OrderLinesSplit",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_M3_orderlinessplit",
+      "name": "OrderLinesSplit",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_m3-vmqt"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
