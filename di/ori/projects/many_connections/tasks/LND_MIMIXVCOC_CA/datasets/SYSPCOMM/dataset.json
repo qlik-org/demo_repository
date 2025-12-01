@@ -1,0 +1,16 @@
+{
+  "id": "syspcomm",
+  "name": "SYSPCOMM",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_CDCCONNECT_CA_syspcomm",
+      "name": "SYSPCOMM",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoc_ca-9nfq"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,87 @@
+{
+  "id": "$external_data_provider$_dim_country",
+  "name": "dbo_dim_Country",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "dim_Country",
+    "columns": [
+      {
+        "name": "Country_Code",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "country_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "Country_Code_Description",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "country_code_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "CPI_Country_Description",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cpi_country_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "FCPA_Region",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "fcpa_region",
+        "flags": "NONE"
+      },
+      {
+        "name": "Country_Code_Short_Description",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "country_code_short_description",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

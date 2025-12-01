@@ -1,0 +1,37 @@
+{
+  "sourceConnection": "{{task.lnd_sales_split-te6g.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "InvoiceChargeSplitResult",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_invoicechargesplitresult"
+    },
+    {
+      "name": "InvoiceLinesSplitResult",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_invoicelinessplitresult"
+    },
+    {
+      "name": "MarketStructure",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_marketstructure"
+    },
+    {
+      "name": "OrderChargeSplitResult",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_orderchargesplitresult"
+    },
+    {
+      "name": "OrderLinesSplitResult",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_orderlinessplitresult"
+    },
+    {
+      "name": "SalesTerritoryStructure",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_salesterritorystructure"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "id": "$external_data_provider$_dim_supply_pt",
+  "name": "dbo_dim_Supply_Pt",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "dim_Supply_Pt",
+    "columns": [
+      {
+        "name": "Supply_Pt",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supply_pt",
+        "flags": "NONE"
+      },
+      {
+        "name": "Responsible_Facility",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "responsible_facility",
+        "flags": "NONE"
+      },
+      {
+        "name": "Responsible_Facility_Fixed",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "responsible_facility_fixed",
+        "flags": "NONE"
+      },
+      {
+        "name": "KB_Trigger_Grouping",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "kb_trigger_grouping",
+        "flags": "NONE"
+      },
+      {
+        "name": "Supply_Chain_Responsible",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supply_chain_responsible",
+        "flags": "NONE"
+      },
+      {
+        "name": "SC_Phone",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sc_phone",
+        "flags": "NONE"
+      },
+      {
+        "name": "Manager_Responsible",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "manager_responsible",
+        "flags": "NONE"
+      },
+      {
+        "name": "Manager_Phone",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "manager_phone",
+        "flags": "NONE"
+      },
+      {
+        "name": "Max_Capacity",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 18,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "max_capacity",
+        "flags": "NONE"
+      },
+      {
+        "name": "Supply_Chain_Responsible_Email",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supply_chain_responsible_email",
+        "flags": "NONE"
+      },
+      {
+        "name": "Supply_Pt_Description",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supply_pt_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "Generated_Timestamp",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "generated_timestamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "Responsible_Facility_Backup_Group",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "responsible_facility_backup_group",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

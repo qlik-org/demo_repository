@@ -1,0 +1,16 @@
+{
+  "id": "gjwa",
+  "name": "GJWA",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_CDCCONNECT_CA_gjwa",
+      "name": "GJWA",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoc_ca-9nfq"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

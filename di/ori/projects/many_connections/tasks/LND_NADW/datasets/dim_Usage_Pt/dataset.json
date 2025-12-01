@@ -1,0 +1,16 @@
+{
+  "id": "dim_usage_pt",
+  "name": "dim_Usage_Pt",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_dim_usage_pt",
+      "name": "dim_Usage_Pt",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_nadw-wn_3"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

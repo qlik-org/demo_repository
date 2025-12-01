@@ -1,0 +1,102 @@
+{
+  "id": "$external_data_provider$_dim_usage_pt",
+  "name": "dbo_dim_Usage_Pt",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "dim_Usage_Pt",
+    "columns": [
+      {
+        "name": "Usage_Pt",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "usage_pt",
+        "flags": "NONE"
+      },
+      {
+        "name": "Supply_Chain_Responsible",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supply_chain_responsible",
+        "flags": "NONE"
+      },
+      {
+        "name": "SC_Phone",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sc_phone",
+        "flags": "NONE"
+      },
+      {
+        "name": "Manager_Responsible",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "manager_responsible",
+        "flags": "NONE"
+      },
+      {
+        "name": "Manager_Phone",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "manager_phone",
+        "flags": "NONE"
+      },
+      {
+        "name": "Supply_Chain_Responsible_Email",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supply_chain_responsible_email",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "$external_data_provider$_dim_fab_type",
+  "name": "dbo_dim_Fab_Type",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "dim_Fab_Type",
+    "columns": [
+      {
+        "name": "Fab_Type",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 17,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "fab_type",
+        "flags": "NONE"
+      },
+      {
+        "name": "Fab_Type_Description",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "fab_type_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "Fab_Type_Global_Description",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "fab_type_global_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "Fab_Is_Prefab",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "fab_is_prefab",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "tspparts",
+  "name": "TSPPARTS",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_CDCCONNECT_CA_tspparts",
+      "name": "TSPPARTS",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoc_ca-9nfq"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

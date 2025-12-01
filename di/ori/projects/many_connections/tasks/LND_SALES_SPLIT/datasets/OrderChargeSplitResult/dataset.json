@@ -1,0 +1,16 @@
+{
+  "id": "orderchargesplitresult",
+  "name": "OrderChargeSplitResult",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_orderchargesplitresult",
+      "name": "OrderChargeSplitResult",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_sales_split-te6g"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

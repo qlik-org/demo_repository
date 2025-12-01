@@ -1,0 +1,16 @@
+{
+  "id": "orderlinessplitresult",
+  "name": "OrderLinesSplitResult",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_orderlinessplitresult",
+      "name": "OrderLinesSplitResult",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_sales_split-te6g"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

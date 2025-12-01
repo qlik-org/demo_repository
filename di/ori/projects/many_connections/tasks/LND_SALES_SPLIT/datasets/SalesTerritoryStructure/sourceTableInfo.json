@@ -1,0 +1,237 @@
+{
+  "id": "$external_data_provider$_salesterritorystructure",
+  "name": "dbo_SalesTerritoryStructure",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "SalesTerritoryStructure",
+    "columns": [
+      {
+        "name": "SalesTerritoryCode",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesterritorycode",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesTerritoryDescription",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesterritorydescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "MainSalesTerritoryCode",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "mainsalesterritorycode",
+        "flags": "NONE"
+      },
+      {
+        "name": "MainSalesTerritoryDescription",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "mainsalesterritorydescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesTeamCode",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesteamcode",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesTeamDescription",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 350,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesteamdescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesDivisionCode",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesdivisioncode",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesDivisionGlobalGrouping",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesdivisionglobalgrouping",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesAdminResponsible",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 200,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesadminresponsible",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesDivisionManagerCode",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 200,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesdivisionmanagercode",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesDivisionRegionManagerCode",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 200,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesdivisionregionmanagercode",
+        "flags": "NONE"
+      },
+      {
+        "name": "GeographicalDivision",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "geographicaldivision",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesTeamManager",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesteammanager",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesTeamReportingCurrency",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesteamreportingcurrency",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesTerritoryArea",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesterritoryarea",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

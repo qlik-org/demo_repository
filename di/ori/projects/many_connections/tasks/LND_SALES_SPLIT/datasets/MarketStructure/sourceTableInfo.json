@@ -1,0 +1,72 @@
+{
+  "id": "$external_data_provider$_marketstructure",
+  "name": "dbo_MarketStructure",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "MarketStructure",
+    "columns": [
+      {
+        "name": "MarketCode",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "marketcode",
+        "flags": "NONE"
+      },
+      {
+        "name": "MarketDescription",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "marketdescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "MajorMarketCode",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "majormarketcode",
+        "flags": "NONE"
+      },
+      {
+        "name": "MajorMarketDescription",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "majormarketdescription",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "$external_data_provider$_dim_enduse",
+  "name": "dbo_dim_Enduse",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "dim_Enduse",
+    "columns": [
+      {
+        "name": "Enduse",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "enduse",
+        "flags": "NONE"
+      },
+      {
+        "name": "Enduse_Description",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "enduse_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "Enduse_Market",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "enduse_market",
+        "flags": "NONE"
+      },
+      {
+        "name": "Enduse_Market_Description",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "enduse_market_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "Enduse_Global_Major_Market",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "enduse_global_major_market",
+        "flags": "NONE"
+      },
+      {
+        "name": "Enduse_Global_Major_Market_Description",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "enduse_global_major_market_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "Enduse_Sort",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "enduse_sort",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

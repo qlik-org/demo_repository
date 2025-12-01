@@ -1,0 +1,16 @@
+{
+  "id": "inv_warehouse_type",
+  "name": "Inv_Warehouse_Type",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_inv_warehouse_type",
+      "name": "Inv_Warehouse_Type",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_nadw-wn_3"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

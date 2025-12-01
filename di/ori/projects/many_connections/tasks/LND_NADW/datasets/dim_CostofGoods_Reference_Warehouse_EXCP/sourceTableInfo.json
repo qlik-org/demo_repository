@@ -1,0 +1,147 @@
+{
+  "id": "$external_data_provider$_dim_costofgoods_reference_warehouse_excp",
+  "name": "dbo_dim_CostofGoods_Reference_Warehouse_EXCP",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "dim_CostofGoods_Reference_Warehouse_EXCP",
+    "columns": [
+      {
+        "name": "ERP",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "erp",
+        "flags": "NONE"
+      },
+      {
+        "name": "WarehouseCode",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "warehousecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "TransactionType",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "transactiontype",
+        "flags": "NONE"
+      },
+      {
+        "name": "TransactionTypeM3",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "transactiontypem3",
+        "flags": "NONE"
+      },
+      {
+        "name": "SignRequired",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "signrequired",
+        "flags": "NONE"
+      },
+      {
+        "name": "OrderType",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ordertype",
+        "flags": "NONE"
+      },
+      {
+        "name": "CostConsumedFlag",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "costconsumedflag",
+        "flags": "NONE"
+      },
+      {
+        "name": "CostSoldFlag",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "costsoldflag",
+        "flags": "NONE"
+      },
+      {
+        "name": "InterCompanyLogic",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "intercompanylogic",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
