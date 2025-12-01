@@ -1,0 +1,16 @@
+{
+  "id": "hpo_deduped",
+  "name": "HPO_DEDUPED",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_CDCCONNECT_US_hpo_deduped",
+      "name": "HPO_DEDUPED",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoa_us_1-ipic"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

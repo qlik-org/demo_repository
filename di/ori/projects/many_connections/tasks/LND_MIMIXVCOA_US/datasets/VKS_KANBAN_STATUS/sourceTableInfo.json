@@ -1,0 +1,72 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_vks_kanban_status",
+  "name": "LND_CDCCONNECT_US_VKS_KANBAN_STATUS",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "VKS_KANBAN_STATUS",
+    "columns": [
+      {
+        "name": "STATUS_CODE",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "status_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "SHORT_DESCRIPTION",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "short_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "LONG_DESCRIPTION",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "long_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

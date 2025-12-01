@@ -1,0 +1,117 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_vks_kanban_substatus",
+  "name": "LND_CDCCONNECT_US_VKS_KANBAN_SUBSTATUS",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "VKS_KANBAN_SUBSTATUS",
+    "columns": [
+      {
+        "name": "SUBSTATUS_CODE",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "substatus_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "PARENT_STATUS_CODE",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "parent_status_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "EXCEPTION_PARENT_STATUS_CODE",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "exception_parent_status_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "SHORT_DESCRIPTION",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "short_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "LONG_DESCRIPTION",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "long_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "CLOSE_KANBAN",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "close_kanban",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

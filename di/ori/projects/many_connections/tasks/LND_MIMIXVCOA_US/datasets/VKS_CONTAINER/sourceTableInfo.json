@@ -1,0 +1,117 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_vks_container",
+  "name": "LND_CDCCONNECT_US_VKS_CONTAINER",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "VKS_CONTAINER",
+    "columns": [
+      {
+        "name": "CONTAINER_CODE",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "container_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "SHORT_DESCRIPTION",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "short_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "LONG_DESCRIPTION",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "long_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "TARE_WEIGHT_POUNDS",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "tare_weight_pounds",
+        "flags": "NONE"
+      },
+      {
+        "name": "TARE_WEIGHT_KILOGRAMS",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "tare_weight_kilograms",
+        "flags": "NONE"
+      },
+      {
+        "name": "RECORD_STATUS",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "record_status",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
