@@ -1,0 +1,24 @@
+{
+  "id": "globe_item_type-hywb",
+  "name": "GLOBE_ITEM_TYPE",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "globe_item_type",
+      "name": "GLOBE_ITEM_TYPE",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_custom_data-gqwk"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item_warehouse_status_map-r2aa",
+  "name": "ITEM_WAREHOUSE_STATUS_MAP",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "item_warehouse_status_map",
+      "name": "ITEM_WAREHOUSE_STATUS_MAP",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_custom_data-gqwk"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

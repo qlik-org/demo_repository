@@ -1,0 +1,24 @@
+{
+  "id": "geo_area_excel_geographical_area-782r",
+  "name": "GEO_AREA_EXCEL_GEOGRAPHICAL_AREA",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "geo_area_excel_geographical_area",
+      "name": "GEO_AREA_EXCEL_GEOGRAPHICAL_AREA",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_custom_data-gqwk"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
