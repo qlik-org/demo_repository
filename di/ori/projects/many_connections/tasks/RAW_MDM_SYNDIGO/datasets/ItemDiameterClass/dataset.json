@@ -1,0 +1,24 @@
+{
+  "id": "itemdiameterclass-djvx",
+  "name": "ItemDiameterClass",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "itemdiameterclass",
+      "name": "ItemDiameterClass",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mdm_syndigo-djvt"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

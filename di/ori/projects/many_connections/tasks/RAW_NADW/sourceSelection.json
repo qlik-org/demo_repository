@@ -1,0 +1,21 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "lnd_nadw-wn_3",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "lnd_nadw-wn_3",
+      "name": "dim_CostofGoods_Reference_Warehouse_EXCP",
+      "type": "NONE",
+      "sourceTableId": "dim_costofgoods_reference_warehouse_excp"
+    }
+  ]
+}

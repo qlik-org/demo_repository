@@ -1,0 +1,24 @@
+{
+  "id": "dim_fab_type-gkdp",
+  "name": "dim_Fab_Type",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "dim_fab_type",
+      "name": "dim_Fab_Type",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_nadw-wn_3"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

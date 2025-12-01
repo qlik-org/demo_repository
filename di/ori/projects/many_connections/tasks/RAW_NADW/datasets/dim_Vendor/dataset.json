@@ -1,0 +1,24 @@
+{
+  "id": "dim_vendor-wn_5",
+  "name": "dim_Vendor",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "dim_vendor",
+      "name": "dim_Vendor",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_nadw-wn_3"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,59 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "ADD",
+        "columnName": "PK",
+        "newDataType": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "$IFF(${ERP} = \u0027BPCS\u0027,\n\n$CONCAT(${ERP}, ${WarehouseCode},${TransactionType})\n\n, $CONCAT(${ERP}, ${WarehouseCode},${TransactionTypeM3}))",
+          "alias": [
+            {
+              "name": "ERP",
+              "value": "erp"
+            },
+            {
+              "name": "WarehouseCode",
+              "value": "warehousecode"
+            },
+            {
+              "name": "TransactionType",
+              "value": "transactiontype"
+            },
+            {
+              "name": "TransactionTypeM3",
+              "value": "transactiontypem3"
+            }
+          ]
+        },
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "addedColumnId": "3468477a-ea5b-4c81-b2ac-cb1f477ea443",
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "datasetId": "dim_costofgoods_reference_warehouse_excp-yvre",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "dim_CostofGoods_Reference_Warehouse_EXCP",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "dim_CostofGoods_Reference_Warehouse_EXCP",
+  "id": "dim_costofgoods_reference_warehouse_excp-yvrf",
+  "description": ""
+}

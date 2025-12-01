@@ -1,0 +1,24 @@
+{
+  "id": "itemcoreproducttargetlt-djvw",
+  "name": "ItemCoreProductTargetLT",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "itemcoreproducttargetlt",
+      "name": "ItemCoreProductTargetLT",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mdm_syndigo-djvt"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

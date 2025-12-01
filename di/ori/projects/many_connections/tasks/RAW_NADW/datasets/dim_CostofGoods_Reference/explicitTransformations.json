@@ -1,0 +1,73 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "KEEP",
+        "columnName": "ERP",
+        "newColumnName": "ERP",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "TransactionType",
+        "newColumnName": "TransactionType",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false
+      },
+      {
+        "action": "ADD",
+        "columnName": "PK",
+        "newDataType": {
+          "type": "STRING",
+          "length": 256,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "$IFF(${ERP} = \u0027BPCS\u0027,\n\n$CONCAT(${ERP}, ${TransactionType})\n\n, $CONCAT(${ERP}, ${TransactionTypeM3}))",
+          "alias": [
+            {
+              "name": "ERP",
+              "value": "erp"
+            },
+            {
+              "name": "TransactionType",
+              "value": "transactiontype"
+            },
+            {
+              "name": "TransactionTypeM3",
+              "value": "transactiontypem3"
+            }
+          ]
+        },
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "addedColumnId": "bebe39c5-2156-4618-932d-b3da342d0d82",
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "datasetId": "dim_costofgoods_reference-gkdm",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "dim_CostofGoods_Reference",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "dim_CostofGoods_Reference",
+  "id": "dim_costofgoods_reference-8xue",
+  "description": ""
+}

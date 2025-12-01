@@ -1,0 +1,24 @@
+{
+  "id": "inv_warehouse_type-27mv",
+  "name": "Inv_Warehouse_Type",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "inv_warehouse_type",
+      "name": "Inv_Warehouse_Type",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_nadw-wn_3"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
