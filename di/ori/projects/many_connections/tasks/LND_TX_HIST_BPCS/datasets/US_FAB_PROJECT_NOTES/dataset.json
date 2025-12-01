@@ -1,0 +1,16 @@
+{
+  "id": "us_fab_project_notes",
+  "name": "US_FAB_PROJECT_NOTES",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_BPCS_us_fab_project_notes",
+      "name": "US_FAB_PROJECT_NOTES",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_bpcs-cuub"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

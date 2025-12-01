@@ -1,0 +1,16 @@
+{
+  "id": "us_echvquote",
+  "name": "US_ECHVQUOTE",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_BPCS_us_echvquote",
+      "name": "US_ECHVQUOTE",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_bpcs-cuub"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
