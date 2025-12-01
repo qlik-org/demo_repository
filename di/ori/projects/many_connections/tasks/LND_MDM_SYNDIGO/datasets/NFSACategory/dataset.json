@@ -1,0 +1,16 @@
+{
+  "id": "nfsacategory",
+  "name": "NFSACategory",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_nfsacategory",
+      "name": "NFSACategory",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mdm_syndigo-djvt"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,57 @@
+{
+  "id": "$external_data_provider$_nfsacategory",
+  "name": "dbo_NFSACategory",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "NFSACategory",
+    "columns": [
+      {
+        "name": "NFSA_Category",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "nfsa_category",
+        "flags": "NONE"
+      },
+      {
+        "name": "NFSA_Description",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "nfsa_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "timestamp",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

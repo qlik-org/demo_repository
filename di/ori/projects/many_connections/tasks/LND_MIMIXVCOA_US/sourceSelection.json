@@ -1,0 +1,18 @@
+{
+  "sourceConnection": "{{task.lnd_mimixvcoa_us_1-ipic.sourceConnection}}",
+  "includePatterns": [
+    {
+      "tablePattern": "%",
+      "schemaPattern": "{{task.lnd_mimixvcoa_us_1-ipic:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [
+    {
+      "tablePattern": "HPO",
+      "schemaPattern": "{{task.lnd_mimixvcoa_us_1-ipic:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "explicitlySelected": []
+}

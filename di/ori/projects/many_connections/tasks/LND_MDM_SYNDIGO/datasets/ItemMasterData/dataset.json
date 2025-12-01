@@ -1,0 +1,16 @@
+{
+  "id": "itemmasterdata",
+  "name": "ItemMasterData",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_itemmasterdata",
+      "name": "ItemMasterData",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mdm_syndigo-djvt"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

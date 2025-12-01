@@ -1,0 +1,57 @@
+{
+  "id": "$external_data_provider$_sizegroupreference",
+  "name": "dbo_SizeGroupReference",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "SizeGroupReference",
+    "columns": [
+      {
+        "name": "SizeGroupCode",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 9,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sizegroupcode",
+        "flags": "NONE"
+      },
+      {
+        "name": "SizeGroupDescription",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sizegroupdescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "timestamp",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 7,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

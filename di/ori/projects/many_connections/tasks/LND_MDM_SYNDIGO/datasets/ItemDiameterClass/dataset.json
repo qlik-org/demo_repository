@@ -1,0 +1,16 @@
+{
+  "id": "itemdiameterclass",
+  "name": "ItemDiameterClass",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_itemdiameterclass",
+      "name": "ItemDiameterClass",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mdm_syndigo-djvt"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

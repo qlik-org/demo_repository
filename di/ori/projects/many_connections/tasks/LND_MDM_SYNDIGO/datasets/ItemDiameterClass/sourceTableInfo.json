@@ -1,0 +1,57 @@
+{
+  "id": "$external_data_provider$_itemdiameterclass",
+  "name": "dbo_ItemDiameterClass",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "ItemDiameterClass",
+    "columns": [
+      {
+        "name": "DiameterClassCode",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "diameterclasscode",
+        "flags": "NONE"
+      },
+      {
+        "name": "DiameterClassDescription",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "diameterclassdescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "timestamp",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

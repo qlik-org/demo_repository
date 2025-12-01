@@ -1,0 +1,72 @@
+{
+  "id": "$external_data_provider$_supplychainproductsubcategory",
+  "name": "dbo_SupplyChainProductSubCategory",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "SupplyChainProductSubCategory",
+    "columns": [
+      {
+        "name": "Size_Group_Code",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 9,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "size_group_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "Size_Group_Description",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "size_group_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "Supply_Chain_Product_SubCategory",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "supply_chain_product_subcategory",
+        "flags": "NONE"
+      },
+      {
+        "name": "timestamp",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

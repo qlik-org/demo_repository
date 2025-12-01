@@ -1,0 +1,57 @@
+{
+  "id": "$external_data_provider$_saleslinereference",
+  "name": "dbo_SalesLineReference",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "SalesLineReference",
+    "columns": [
+      {
+        "name": "SalesLineCode",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "saleslinecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesLineDescription",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "saleslinedescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "timestamp",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 7,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

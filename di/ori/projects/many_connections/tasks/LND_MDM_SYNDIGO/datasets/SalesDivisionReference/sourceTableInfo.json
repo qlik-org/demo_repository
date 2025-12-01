@@ -1,0 +1,57 @@
+{
+  "id": "$external_data_provider$_salesdivisionreference",
+  "name": "dbo_SalesDivisionReference",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "SalesDivisionReference",
+    "columns": [
+      {
+        "name": "SalesDivisionCode",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesdivisioncode",
+        "flags": "NONE"
+      },
+      {
+        "name": "SalesDivisionDescription",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "salesdivisiondescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "timestamp",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 7,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "timestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
