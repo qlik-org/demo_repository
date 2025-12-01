@@ -1,0 +1,24 @@
+{
+  "id": "exs-jnn4",
+  "name": "EXS",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "exs",
+      "name": "EXS",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoc_ca-9nfq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

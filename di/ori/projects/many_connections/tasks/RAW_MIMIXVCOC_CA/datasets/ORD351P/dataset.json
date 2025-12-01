@@ -1,0 +1,24 @@
+{
+  "id": "ord351p-jnoh",
+  "name": "ORD351P",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "ord351p",
+      "name": "ORD351P",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoc_ca-9nfq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

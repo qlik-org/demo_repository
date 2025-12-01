@@ -1,0 +1,16 @@
+{
+  "id": "current_currency_rates",
+  "name": "CURRENT_CURRENCY_RATES",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_CURRENCY_RATES_current_currency_rates",
+      "name": "CURRENT_CURRENCY_RATES",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_currency_rates-1n5u"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

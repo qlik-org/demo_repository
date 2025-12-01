@@ -1,0 +1,24 @@
+{
+  "id": "estx-jnn2",
+  "name": "ESTX",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "estx",
+      "name": "ESTX",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoc_ca-9nfq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

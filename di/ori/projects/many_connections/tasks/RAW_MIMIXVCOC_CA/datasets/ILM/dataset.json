@@ -1,0 +1,24 @@
+{
+  "id": "ilm-jnov",
+  "name": "ILM",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "ilm",
+      "name": "ILM",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoc_ca-9nfq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

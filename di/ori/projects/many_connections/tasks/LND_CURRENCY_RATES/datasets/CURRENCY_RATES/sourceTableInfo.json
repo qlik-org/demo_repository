@@ -1,0 +1,132 @@
+{
+  "id": "$external_data_provider$_TALEND_CURRENCY_RATES_currency_rates",
+  "name": "LND_TALEND_CURRENCY_RATES_CURRENCY_RATES",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "CURRENCY_RATES",
+    "columns": [
+      {
+        "name": "CRATEPK",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cratepk",
+        "flags": "NONE"
+      },
+      {
+        "name": "CURRENCYRATEKEY",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 12,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "currencyratekey",
+        "flags": "NONE"
+      },
+      {
+        "name": "LOCALCURRENCY",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "localcurrency",
+        "flags": "NONE"
+      },
+      {
+        "name": "CURRENCY",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "currency",
+        "flags": "NONE"
+      },
+      {
+        "name": "CURRENCYRATETYPE",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "currencyratetype",
+        "flags": "NONE"
+      },
+      {
+        "name": "CURRENCYRATE",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 18,
+          "scale": 8,
+          "originalTypeFull": ""
+        },
+        "id": "currencyrate",
+        "flags": "NONE"
+      },
+      {
+        "name": "CURRENCYRATEDATE",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATE",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "currencyratedate",
+        "flags": "NONE"
+      },
+      {
+        "name": "LOADFLAG",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "loadflag",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

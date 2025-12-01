@@ -1,0 +1,22 @@
+{
+  "sourceConnection": "{{task.lnd_currency_rates-1n5u.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "CURRENCY_RATES",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_TALEND_CURRENCY_RATES_currency_rates"
+    },
+    {
+      "name": "CURRENT_CURRENCY_RATES",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_TALEND_CURRENCY_RATES_current_currency_rates"
+    },
+    {
+      "name": "RAW_CURRENCY_RATES",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_TALEND_CURRENCY_RATES_raw_currency_rates"
+    }
+  ]
+}
