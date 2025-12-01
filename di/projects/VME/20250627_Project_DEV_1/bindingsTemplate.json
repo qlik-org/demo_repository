@@ -40,6 +40,14 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
+    "task.onboarding_123456_landing-wi1i.databaseName": "{{task-type.landing.databaseName}}",
+    "task.onboarding_123456_landing-wi1i.sourceConnection": "",
+    "task.onboarding_123456_landing-wi1i.taskSchema": "",
+    "task.onboarding_123456_landing-wi1i:null$_$humanresources.schema": "",
+    "task.onboarding_123456_storage-wi1j.databaseName": "{{task-type.storage.databaseName}}",
+    "task.onboarding_123456_storage-wi1j.internalSchema": "",
+    "task.onboarding_123456_storage-wi1j.taskSchema": "",
+    "task.onboarding_123456_storage-wi1j.warehouseName": "{{task-type.storage.warehouseName}}",
     "task.onboarding_data_1_landing-qtau.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboarding_data_1_landing-qtau.sourceConnection": "",
     "task.onboarding_data_1_landing-qtau.taskSchema": "",
@@ -66,6 +74,8 @@
     "task.transform890-uati.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
+    "onboarding_123456_landing-wi1i": "Onboarding_123456_Landing",
+    "onboarding_123456_storage-wi1j": "Onboarding_123456_Storage",
     "onboarding_data_1_landing-qtau": "Landing_MySakilaDB",
     "onboarding_data_1_storage-qtav": "Onboarding-data-1_Storage",
     "onboardingdata1234_landing-uatd": "OnboardingDAta1234_Landing",
@@ -74,6 +84,9 @@
     "transform890-uati": "Transform890"
   },
   "connectionProperties": {
+    "task.onboarding_123456_landing-wi1i.sourceConnection": {
+      "type": "repsrc_postgresql"
+    },
     "task.onboarding_data_1_landing-qtau.sourceConnection": {
       "type": "repsrc_mysql"
     },

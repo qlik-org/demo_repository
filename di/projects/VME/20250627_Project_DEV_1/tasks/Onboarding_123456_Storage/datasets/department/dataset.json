@@ -1,0 +1,24 @@
+{
+  "id": "department-wi1l",
+  "name": "department",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "department",
+      "name": "department",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_123456_landing-wi1i"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

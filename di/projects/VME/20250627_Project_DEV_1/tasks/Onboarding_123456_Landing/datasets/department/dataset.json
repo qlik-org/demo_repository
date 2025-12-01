@@ -1,0 +1,17 @@
+{
+  "id": "department",
+  "name": "department",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$humanresources_department",
+      "name": "department",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_123456_landing-wi1i",
+      "schema": "{{task.onboarding_123456_landing-wi1i:null$_$humanresources.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
