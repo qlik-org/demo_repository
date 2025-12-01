@@ -1,0 +1,16 @@
+{
+  "id": "holiday_calendar_calendar_events",
+  "name": "Holiday_Calendar_Calendar_Events",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_WORKDAY_holiday_calendar_calendar_events",
+      "name": "Holiday_Calendar_Calendar_Events",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_workday-oeam"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

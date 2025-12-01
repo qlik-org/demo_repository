@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.lnd_tx_hist_zoho_sales-trxc.sourceConnection}}",
+  "includePatterns": [
+    {
+      "tablePattern": "%_json",
+      "schemaPattern": "{{task.lnd_tx_hist_zoho_sales-trxc:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}

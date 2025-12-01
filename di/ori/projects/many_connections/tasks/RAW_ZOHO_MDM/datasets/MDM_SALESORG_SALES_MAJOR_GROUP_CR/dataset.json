@@ -1,0 +1,24 @@
+{
+  "id": "mdm_salesorg_sales_major_group_cr-7ptj",
+  "name": "MDM_SALESORG_SALES_MAJOR_GROUP_CR",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "mdm_salesorg_sales_major_group_cr",
+      "name": "MDM_SALESORG_SALES_MAJOR_GROUP_CR",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_mdm-7ps1"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,24 @@
+{
+  "id": "scar_recv_shipping_log-0gu5",
+  "name": "SCAR_RECV_SHIPPING_LOG",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "scar_recv_shipping_log",
+      "name": "SCAR_RECV_SHIPPING_LOG",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_scar-0guz"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

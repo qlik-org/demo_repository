@@ -1,0 +1,24 @@
+{
+  "id": "mdm_salesorg_global_grouping-7ptg",
+  "name": "MDM_SALESORG_GLOBAL_GROUPING",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "mdm_salesorg_global_grouping",
+      "name": "MDM_SALESORG_GLOBAL_GROUPING",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_mdm-7ps1"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

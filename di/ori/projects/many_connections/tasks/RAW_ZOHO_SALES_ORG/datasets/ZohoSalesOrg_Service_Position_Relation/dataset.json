@@ -1,0 +1,24 @@
+{
+  "id": "zohosalesorg_service_position_relation-a-c4",
+  "name": "ZohoSalesOrg_Service_Position_Relation",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "zohosalesorg_service_position_relation",
+      "name": "ZohoSalesOrg_Service_Position_Relation",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_sales_org-a-cs"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

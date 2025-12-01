@@ -1,0 +1,16 @@
+{
+  "id": "orderlineext",
+  "name": "OrderLineExt",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_DSA_orderlineext",
+      "name": "OrderLineExt",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_dsa-boah"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

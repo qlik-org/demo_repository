@@ -1,0 +1,24 @@
+{
+  "id": "mdm_salesorg_sales_product_line_cr-7ptl",
+  "name": "MDM_SALESORG_SALES_PRODUCT_LINE_CR",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "mdm_salesorg_sales_product_line_cr",
+      "name": "MDM_SALESORG_SALES_PRODUCT_LINE_CR",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_mdm-7ps1"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,24 @@
+{
+  "id": "scar_regional_qa-0gu6",
+  "name": "SCAR_REGIONAL_QA",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "scar_regional_qa",
+      "name": "SCAR_REGIONAL_QA",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_scar-0guz"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

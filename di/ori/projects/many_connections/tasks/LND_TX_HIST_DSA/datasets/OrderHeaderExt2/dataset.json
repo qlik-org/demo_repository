@@ -1,0 +1,16 @@
+{
+  "id": "orderheaderext2",
+  "name": "OrderHeaderExt2",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_DSA_orderheaderext2",
+      "name": "OrderHeaderExt2",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_dsa-boah"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,24 @@
+{
+  "id": "scar_tool_repair_maint-0gu8",
+  "name": "SCAR_TOOL_REPAIR_MAINT",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "scar_tool_repair_maint",
+      "name": "SCAR_TOOL_REPAIR_MAINT",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_scar-0guz"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

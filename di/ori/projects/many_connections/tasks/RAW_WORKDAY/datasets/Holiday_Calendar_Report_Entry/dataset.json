@@ -1,0 +1,24 @@
+{
+  "id": "holiday_calendar_report_entry-oeap",
+  "name": "Holiday_Calendar_Report_Entry",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "holiday_calendar_report_entry",
+      "name": "Holiday_Calendar_Report_Entry",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_workday-oeam"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

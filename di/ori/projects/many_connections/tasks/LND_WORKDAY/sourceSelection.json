@@ -1,0 +1,17 @@
+{
+  "sourceConnection": "{{task.lnd_workday-oeam.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Holiday_Calendar_Calendar_Events",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_TALEND_WORKDAY_holiday_calendar_calendar_events"
+    },
+    {
+      "name": "Holiday_Calendar_Report_Entry",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_TALEND_WORKDAY_holiday_calendar_report_entry"
+    }
+  ]
+}
