@@ -1,0 +1,16 @@
+{
+  "id": "reportparameter_excel_salesstatistics",
+  "name": "ReportParameter_Excel_SalesStatistics",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_APP_REP_UNITE_reportparameter_excel_salesstatistics",
+      "name": "ReportParameter_Excel_SalesStatistics",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_app_rep_unite-9qzg"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

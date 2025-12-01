@@ -1,0 +1,16 @@
+{
+  "id": "f011_edubudget_excel_budget",
+  "name": "F011_EduBudget_Excel_Budget",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_APP_REP_UNITE_f011_edubudget_excel_budget",
+      "name": "F011_EduBudget_Excel_Budget",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_app_rep_unite-9qzg"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

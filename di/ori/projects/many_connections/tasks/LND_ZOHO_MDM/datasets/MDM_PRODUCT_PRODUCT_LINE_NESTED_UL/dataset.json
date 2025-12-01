@@ -1,0 +1,16 @@
+{
+  "id": "mdm_product_product_line_nested_ul",
+  "name": "MDM_PRODUCT_PRODUCT_LINE_NESTED_UL",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_ZOHO_MDM_mdm_product_product_line_nested_ul",
+      "name": "MDM_PRODUCT_PRODUCT_LINE_NESTED_UL",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_mdm-7ps1"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

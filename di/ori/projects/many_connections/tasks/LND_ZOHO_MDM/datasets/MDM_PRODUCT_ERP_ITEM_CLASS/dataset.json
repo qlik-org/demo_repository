@@ -1,0 +1,16 @@
+{
+  "id": "mdm_product_erp_item_class",
+  "name": "MDM_PRODUCT_ERP_ITEM_CLASS",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_ZOHO_MDM_mdm_product_erp_item_class",
+      "name": "MDM_PRODUCT_ERP_ITEM_CLASS",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_mdm-7ps1"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

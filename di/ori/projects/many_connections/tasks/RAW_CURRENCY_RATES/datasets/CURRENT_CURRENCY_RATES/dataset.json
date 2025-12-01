@@ -1,0 +1,24 @@
+{
+  "id": "current_currency_rates-1n5x",
+  "name": "CURRENT_CURRENCY_RATES",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "current_currency_rates",
+      "name": "CURRENT_CURRENCY_RATES",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_currency_rates-1n5u"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

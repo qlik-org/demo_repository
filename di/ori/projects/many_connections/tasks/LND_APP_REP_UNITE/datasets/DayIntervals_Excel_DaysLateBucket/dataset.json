@@ -1,0 +1,16 @@
+{
+  "id": "dayintervals_excel_dayslatebucket",
+  "name": "DayIntervals_Excel_DaysLateBucket",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_APP_REP_UNITE_dayintervals_excel_dayslatebucket",
+      "name": "DayIntervals_Excel_DaysLateBucket",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_app_rep_unite-9qzg"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

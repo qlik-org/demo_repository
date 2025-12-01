@@ -1,0 +1,16 @@
+{
+  "id": "si_pp_incentive_bonus",
+  "name": "SI_PP_INCENTIVE_BONUS",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_ZOHO_SALESINCENTIVES_si_pp_incentive_bonus",
+      "name": "SI_PP_INCENTIVE_BONUS",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_sales_incentives-3fmm"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
