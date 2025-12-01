@@ -1,0 +1,327 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_gjd",
+  "name": "LND_CDCCONNECT_US_GJD",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "GJD",
+    "columns": [
+      {
+        "name": "JDID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdid",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDSTAT",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdstat",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDCOMP",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 2,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdcomp",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDYEAR",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 4,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdyear",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDPERD",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 2,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdperd",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDJRN",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 4,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdjrn",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDSEQ",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 5,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdseq",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDPC",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 6,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdpc",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDACCT",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 7,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdacct",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDAMT",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "jdamt",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDQTY",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "jdqty",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDDESC",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jddesc",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDREF1",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdref1",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDREF2",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdref2",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDCNFL",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdcnfl",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDINCO",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 2,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdinco",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDREAS",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdreas",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDDCRF",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jddcrf",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDDCDT",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jddcdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "JDINTC",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jdintc",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

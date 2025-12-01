@@ -1,0 +1,402 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_edipasnwh",
+  "name": "LND_CDCCONNECT_US_EDIPASNWH",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "EDIPASNWH",
+    "columns": [
+      {
+        "name": "AWHENV",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhenv",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhid",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHVEND",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhvend",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHSHIP",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhship",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHMTH",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhmth",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHBOL",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhbol",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHNCTN",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 7,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhnctn",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHGWT",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "awhgwt",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHUOM",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhuom",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHSCAC",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 17,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhscac",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHCNAME",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhcname",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHSFROM",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhsfrom",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHSFNAME",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhsfname",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHSTO",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhsto",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHSTNAME",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhstname",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHTERMS",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhterms",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHSDATE",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATE",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhsdate",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHSTIME",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "TIME",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhstime",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHEDATE",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATE",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhedate",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHCDATE",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATE",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhcdate",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHCTIME",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "TIME",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhctime",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHTSTAMP",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhtstamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHRSTAT",
+        "ordinal": 23,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhrstat",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHDROP",
+        "ordinal": 24,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awhdrop",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWHERRS",
+        "ordinal": 25,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awherrs",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 26,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

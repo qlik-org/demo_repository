@@ -1,0 +1,372 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_est",
+  "name": "LND_CDCCONNECT_US_EST",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "EST",
+    "columns": [
+      {
+        "name": "TID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tid",
+        "flags": "NONE"
+      },
+      {
+        "name": "TCUST",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tcust",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSHIP",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 4,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tship",
+        "flags": "NONE"
+      },
+      {
+        "name": "TNAME",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tname",
+        "flags": "NONE"
+      },
+      {
+        "name": "TATN",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tatn",
+        "flags": "NONE"
+      },
+      {
+        "name": "TADR1",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tadr1",
+        "flags": "NONE"
+      },
+      {
+        "name": "TADR2",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tadr2",
+        "flags": "NONE"
+      },
+      {
+        "name": "TADR3",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tadr3",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSTE",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tste",
+        "flags": "NONE"
+      },
+      {
+        "name": "TCOUN",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tcoun",
+        "flags": "NONE"
+      },
+      {
+        "name": "TPOST",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 9,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tpost",
+        "flags": "NONE"
+      },
+      {
+        "name": "TPHONE",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tphone",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSAL",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tsal",
+        "flags": "NONE"
+      },
+      {
+        "name": "TREG",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "treg",
+        "flags": "NONE"
+      },
+      {
+        "name": "TCONT",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tcont",
+        "flags": "NONE"
+      },
+      {
+        "name": "TTAX",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ttax",
+        "flags": "NONE"
+      },
+      {
+        "name": "TFTRM",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tftrm",
+        "flags": "NONE"
+      },
+      {
+        "name": "TWHSE",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "twhse",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSTORE",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tstore",
+        "flags": "NONE"
+      },
+      {
+        "name": "TROUT",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "trout",
+        "flags": "NONE"
+      },
+      {
+        "name": "TBO",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tbo",
+        "flags": "NONE"
+      },
+      {
+        "name": "STSRCC",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "stsrcc",
+        "flags": "NONE"
+      },
+      {
+        "name": "STSRNO",
+        "ordinal": 23,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "stsrno",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 24,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

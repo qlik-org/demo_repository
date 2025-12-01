@@ -1,0 +1,342 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_fab_project_detail",
+  "name": "LND_CDCCONNECT_US_FAB_PROJECT_DETAIL",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "FAB_PROJECT_DETAIL",
+    "columns": [
+      {
+        "name": "PROJECT_ID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "project_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_NUMBER",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "line_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_STATUS",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "line_status",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_TYPE",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "line_type",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_DESCRIPTION",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "line_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_PERCENTAGE",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "line_percentage",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_TOTAL_AMOUNT",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "line_total_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_MATERIAL_AMOUNT",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "line_material_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_LABOR_AMOUNT",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "line_labor_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_FREIGHT_AMOUNT",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "line_freight_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_OTHER_AMOUNT",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "line_other_amount",
+        "flags": "NONE"
+      },
+      {
+        "name": "ESTIMATED_BILL_DATE",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATE",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "estimated_bill_date",
+        "flags": "NONE"
+      },
+      {
+        "name": "ACTUAL_BILLED_DATE",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATE",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "actual_billed_date",
+        "flags": "NONE"
+      },
+      {
+        "name": "OVERRIDE_PO",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "override_po",
+        "flags": "NONE"
+      },
+      {
+        "name": "OVERRIDE_REF",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "override_ref",
+        "flags": "NONE"
+      },
+      {
+        "name": "CREATED_BY",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "created_by",
+        "flags": "NONE"
+      },
+      {
+        "name": "CREATED_TIME",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "created_time",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATED_BY",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_updated_by",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATED_TIME",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_updated_time",
+        "flags": "NONE"
+      },
+      {
+        "name": "BILLED_BY",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "billed_by",
+        "flags": "NONE"
+      },
+      {
+        "name": "BILLED_TIME",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "billed_time",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

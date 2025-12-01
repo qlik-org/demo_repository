@@ -1,0 +1,1107 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_eboprvw",
+  "name": "LND_CDCCONNECT_US_EBOPRVW",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "EBOPRVW",
+    "columns": [
+      {
+        "name": "RVID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvid",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCORD",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcord",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCLIN",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvclin",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVWREF",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 9,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvwref",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVWLIN",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvwlin",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVPART",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvpart",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCUST",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcust",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVSTOR",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvstor",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVRSN1",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvrsn1",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVRSN2",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvrsn2",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVRSN3",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvrsn3",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVRSN4",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvrsn4",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVRSN5",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvrsn5",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVAUTH",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvauth",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCRBY",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcrby",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCRDT",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcrdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCRTM",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 4,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcrtm",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCGBY",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcgby",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCGDT",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcgdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCGTM",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcgtm",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVVERS",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvvers",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVRULE",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 5,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvrule",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVRRSN",
+        "ordinal": 23,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvrrsn",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVHTYP",
+        "ordinal": 24,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvhtyp",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCKAN",
+        "ordinal": 25,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvckan",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVEMCC",
+        "ordinal": 26,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvemcc",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVSACK",
+        "ordinal": 27,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvsack",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVSINI",
+        "ordinal": 28,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvsini",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVRSPK",
+        "ordinal": 29,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvrspk",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVORPK",
+        "ordinal": 30,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvorpk",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVOSSN",
+        "ordinal": 31,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvossn",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVOSHL",
+        "ordinal": 32,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvoshl",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVLUSR",
+        "ordinal": 33,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvlusr",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVOUSR",
+        "ordinal": 34,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvousr",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCMNT",
+        "ordinal": 35,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcmnt",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCMT1",
+        "ordinal": 36,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcmt1",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCMT2",
+        "ordinal": 37,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcmt2",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCMT3",
+        "ordinal": 38,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcmt3",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCMT4",
+        "ordinal": 39,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcmt4",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVCMT5",
+        "ordinal": 40,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvcmt5",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVBFRC",
+        "ordinal": 41,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvbfrc",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVAFTR",
+        "ordinal": 42,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvaftr",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF01A",
+        "ordinal": 43,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf01a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF02A",
+        "ordinal": 44,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf02a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF03A",
+        "ordinal": 45,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf03a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF04A",
+        "ordinal": 46,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf04a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF05A",
+        "ordinal": 47,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf05a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF06A",
+        "ordinal": 48,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf06a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF07A",
+        "ordinal": 49,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf07a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF08A",
+        "ordinal": 50,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf08a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF09A",
+        "ordinal": 51,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf09a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF10A",
+        "ordinal": 52,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvf10a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF01N",
+        "ordinal": 53,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf01n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF02N",
+        "ordinal": 54,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf02n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF03N",
+        "ordinal": 55,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf03n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF04N",
+        "ordinal": 56,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf04n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF05N",
+        "ordinal": 57,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf05n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF06N",
+        "ordinal": 58,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf06n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF07N",
+        "ordinal": 59,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf07n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF08N",
+        "ordinal": 60,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf08n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF09N",
+        "ordinal": 61,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf09n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVF10N",
+        "ordinal": 62,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rvf10n",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG01A",
+        "ordinal": 63,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg01a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG02A",
+        "ordinal": 64,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg02a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG03A",
+        "ordinal": 65,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg03a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG04A",
+        "ordinal": 66,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg04a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG05A",
+        "ordinal": 67,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg05a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG06A",
+        "ordinal": 68,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg06a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG07A",
+        "ordinal": 69,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg07a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG08A",
+        "ordinal": 70,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg08a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG09A",
+        "ordinal": 71,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg09a",
+        "flags": "NONE"
+      },
+      {
+        "name": "RVG10A",
+        "ordinal": 72,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rvg10a",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 73,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

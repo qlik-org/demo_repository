@@ -1,0 +1,402 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_edipasnwd",
+  "name": "LND_CDCCONNECT_US_EDIPASNWD",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "EDIPASNWD",
+    "columns": [
+      {
+        "name": "AWDENV",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdenv",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdid",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDVEND",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdvend",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDSHIP",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdship",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDSLINE",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 4,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 7,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdsline",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDPORD",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdpord",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDPLINE",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdpline",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDKBID",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdkbid",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDPROD",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdprod",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDPREF",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdpref",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDQTYS",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "awdqtys",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDQTYP",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "awdqtyp",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDUOM",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awduom",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDPPO",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "awdppo",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDPASN",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "awdpasn",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDRSTAT",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdrstat",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDRPOQ",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "awdrpoq",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDRQTY",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "awdrqty",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDDESC",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awddesc",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDSUPP",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 12,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdsupp",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDUSEP",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 12,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdusep",
+        "flags": "NONE"
+      },
+      {
+        "name": "RECTSTAMP",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 5,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rectstamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDCNTR",
+        "ordinal": 23,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 48,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdcntr",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDPALLET",
+        "ordinal": 24,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 48,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awdpallet",
+        "flags": "NONE"
+      },
+      {
+        "name": "AWDERRS",
+        "ordinal": 25,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 100,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "awderrs",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 26,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

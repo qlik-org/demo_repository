@@ -1,0 +1,942 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_ecl",
+  "name": "LND_CDCCONNECT_US_ECL",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "ECL",
+    "columns": [
+      {
+        "name": "LID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lid",
+        "flags": "NONE"
+      },
+      {
+        "name": "LORD",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lord",
+        "flags": "NONE"
+      },
+      {
+        "name": "LLINE",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lline",
+        "flags": "NONE"
+      },
+      {
+        "name": "LPROD",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lprod",
+        "flags": "NONE"
+      },
+      {
+        "name": "LCLAS",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lclas",
+        "flags": "NONE"
+      },
+      {
+        "name": "LPFDV",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lpfdv",
+        "flags": "NONE"
+      },
+      {
+        "name": "LQORD",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lqord",
+        "flags": "NONE"
+      },
+      {
+        "name": "LQALL",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lqall",
+        "flags": "NONE"
+      },
+      {
+        "name": "LQSHP",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lqshp",
+        "flags": "NONE"
+      },
+      {
+        "name": "LUM",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lum",
+        "flags": "NONE"
+      },
+      {
+        "name": "LRDTE",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lrdte",
+        "flags": "NONE"
+      },
+      {
+        "name": "LSDTE",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lsdte",
+        "flags": "NONE"
+      },
+      {
+        "name": "LNET",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lnet",
+        "flags": "NONE"
+      },
+      {
+        "name": "LLIST",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "llist",
+        "flags": "NONE"
+      },
+      {
+        "name": "LOVRP",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lovrp",
+        "flags": "NONE"
+      },
+      {
+        "name": "LSTAT",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lstat",
+        "flags": "NONE"
+      },
+      {
+        "name": "LLOC",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lloc",
+        "flags": "NONE"
+      },
+      {
+        "name": "LWHS",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lwhs",
+        "flags": "NONE"
+      },
+      {
+        "name": "LSAL",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lsal",
+        "flags": "NONE"
+      },
+      {
+        "name": "LDESC",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ldesc",
+        "flags": "NONE"
+      },
+      {
+        "name": "LCUST",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lcust",
+        "flags": "NONE"
+      },
+      {
+        "name": "LODTE",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lodte",
+        "flags": "NONE"
+      },
+      {
+        "name": "LDROP",
+        "ordinal": 23,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ldrop",
+        "flags": "NONE"
+      },
+      {
+        "name": "LCONT",
+        "ordinal": 24,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lcont",
+        "flags": "NONE"
+      },
+      {
+        "name": "LORPR",
+        "ordinal": 25,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lorpr",
+        "flags": "NONE"
+      },
+      {
+        "name": "LBNET",
+        "ordinal": 26,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lbnet",
+        "flags": "NONE"
+      },
+      {
+        "name": "LBLST",
+        "ordinal": 27,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lblst",
+        "flags": "NONE"
+      },
+      {
+        "name": "LTOWH",
+        "ordinal": 28,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ltowh",
+        "flags": "NONE"
+      },
+      {
+        "name": "LRQTY",
+        "ordinal": 29,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lrqty",
+        "flags": "NONE"
+      },
+      {
+        "name": "LSCDT",
+        "ordinal": 30,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lscdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "LCPNT",
+        "ordinal": 31,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lcpnt",
+        "flags": "NONE"
+      },
+      {
+        "name": "LRRSC",
+        "ordinal": 32,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lrrsc",
+        "flags": "NONE"
+      },
+      {
+        "name": "LCOM",
+        "ordinal": 33,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lcom",
+        "flags": "NONE"
+      },
+      {
+        "name": "LPORD",
+        "ordinal": 34,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lpord",
+        "flags": "NONE"
+      },
+      {
+        "name": "LPLIN",
+        "ordinal": 35,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lplin",
+        "flags": "NONE"
+      },
+      {
+        "name": "CLSAL",
+        "ordinal": 36,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "clsal",
+        "flags": "NONE"
+      },
+      {
+        "name": "LICOM",
+        "ordinal": 37,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "licom",
+        "flags": "NONE"
+      },
+      {
+        "name": "CLONLY",
+        "ordinal": 38,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "clonly",
+        "flags": "NONE"
+      },
+      {
+        "name": "CLBASI",
+        "ordinal": 39,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "clbasi",
+        "flags": "NONE"
+      },
+      {
+        "name": "LBO",
+        "ordinal": 40,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lbo",
+        "flags": "NONE"
+      },
+      {
+        "name": "LALOPR",
+        "ordinal": 41,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 2,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lalopr",
+        "flags": "NONE"
+      },
+      {
+        "name": "LITEM",
+        "ordinal": 42,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "litem",
+        "flags": "NONE"
+      },
+      {
+        "name": "LIRES",
+        "ordinal": 43,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lires",
+        "flags": "NONE"
+      },
+      {
+        "name": "LSHIP",
+        "ordinal": 44,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 4,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lship",
+        "flags": "NONE"
+      },
+      {
+        "name": "LROUT",
+        "ordinal": 45,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lrout",
+        "flags": "NONE"
+      },
+      {
+        "name": "LCARR",
+        "ordinal": 46,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lcarr",
+        "flags": "NONE"
+      },
+      {
+        "name": "LICFAC",
+        "ordinal": 47,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "licfac",
+        "flags": "NONE"
+      },
+      {
+        "name": "LQSALL",
+        "ordinal": 48,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lqsall",
+        "flags": "NONE"
+      },
+      {
+        "name": "LQPCK",
+        "ordinal": 49,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lqpck",
+        "flags": "NONE"
+      },
+      {
+        "name": "LQTIN",
+        "ordinal": 50,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "lqtin",
+        "flags": "NONE"
+      },
+      {
+        "name": "LCONSL",
+        "ordinal": 51,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lconsl",
+        "flags": "NONE"
+      },
+      {
+        "name": "LPRCON",
+        "ordinal": 52,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lprcon",
+        "flags": "NONE"
+      },
+      {
+        "name": "CLFOR",
+        "ordinal": 53,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "clfor",
+        "flags": "NONE"
+      },
+      {
+        "name": "LUDTE1",
+        "ordinal": 54,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ludte1",
+        "flags": "NONE"
+      },
+      {
+        "name": "LUDTE2",
+        "ordinal": 55,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ludte2",
+        "flags": "NONE"
+      },
+      {
+        "name": "CLMNDT",
+        "ordinal": 56,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "clmndt",
+        "flags": "NONE"
+      },
+      {
+        "name": "LRES1",
+        "ordinal": 57,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lres1",
+        "flags": "NONE"
+      },
+      {
+        "name": "LRES2",
+        "ordinal": 58,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lres2",
+        "flags": "NONE"
+      },
+      {
+        "name": "LRES3",
+        "ordinal": 59,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lres3",
+        "flags": "NONE"
+      },
+      {
+        "name": "LRLINE",
+        "ordinal": 60,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lrline",
+        "flags": "NONE"
+      },
+      {
+        "name": "LDSTY",
+        "ordinal": 61,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ldsty",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 62,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

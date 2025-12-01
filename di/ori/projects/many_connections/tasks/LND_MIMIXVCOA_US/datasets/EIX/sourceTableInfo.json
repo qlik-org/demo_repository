@@ -1,0 +1,282 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_eix",
+  "name": "LND_CDCCONNECT_US_EIX",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "EIX",
+    "columns": [
+      {
+        "name": "IXID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixid",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXITEM",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixitem",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXCUST",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixcust",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXSHIP",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 4,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixship",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXPROD",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixprod",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXDESC",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixdesc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXDES2",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixdes2",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXSTAT",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixstat",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXCVFL",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixcvfl",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXPACK",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixpack",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXPPCK",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixppck",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXPSHP",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixpshp",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXPINV",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixpinv",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXPEDI",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixpedi",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXPRT1",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixprt1",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXPRT2",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixprt2",
+        "flags": "NONE"
+      },
+      {
+        "name": "IXPRT3",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ixprt3",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

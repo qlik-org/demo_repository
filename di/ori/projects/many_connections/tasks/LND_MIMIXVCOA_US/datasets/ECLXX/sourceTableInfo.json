@@ -1,0 +1,957 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_eclxx",
+  "name": "LND_CDCCONNECT_US_ECLXX",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "ECLXX",
+    "columns": [
+      {
+        "name": "LIDXX",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lidxx",
+        "flags": "NONE"
+      },
+      {
+        "name": "LORDXX",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lordxx",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINEXX",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "linexx",
+        "flags": "NONE"
+      },
+      {
+        "name": "CREQDT",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "creqdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "LASTAK",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lastak",
+        "flags": "NONE"
+      },
+      {
+        "name": "CPOLNX",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 4,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cpolnx",
+        "flags": "NONE"
+      },
+      {
+        "name": "CPOPRX",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "cpoprx",
+        "flags": "NONE"
+      },
+      {
+        "name": "CPARTX",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cpartx",
+        "flags": "NONE"
+      },
+      {
+        "name": "EDITBX",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "editbx",
+        "flags": "NONE"
+      },
+      {
+        "name": "CURRXX",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "currxx",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA01",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla01",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA02",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla02",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA03",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla03",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA04",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla04",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA05",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla05",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA06",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla06",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA07",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla07",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA08",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla08",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA09",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla09",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA10",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla10",
+        "flags": "NONE"
+      },
+      {
+        "name": "PART15",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "part15",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA11",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla11",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA12",
+        "ordinal": 23,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla12",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA13",
+        "ordinal": 24,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla13",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA14",
+        "ordinal": 25,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla14",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA15",
+        "ordinal": 26,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla15",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA16",
+        "ordinal": 27,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla16",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA17",
+        "ordinal": 28,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla17",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA18",
+        "ordinal": 29,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla18",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA19",
+        "ordinal": 30,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla19",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA20",
+        "ordinal": 31,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla20",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA21",
+        "ordinal": 32,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla21",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA22",
+        "ordinal": 33,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla22",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA23",
+        "ordinal": 34,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla23",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA24",
+        "ordinal": 35,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla24",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA25",
+        "ordinal": 36,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla25",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA26",
+        "ordinal": 37,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla26",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA27",
+        "ordinal": 38,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla27",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA28",
+        "ordinal": 39,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla28",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA29",
+        "ordinal": 40,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla29",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLA30",
+        "ordinal": 41,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xfla30",
+        "flags": "NONE"
+      },
+      {
+        "name": "XDATE1",
+        "ordinal": 42,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xdate1",
+        "flags": "NONE"
+      },
+      {
+        "name": "XDATE2",
+        "ordinal": 43,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xdate2",
+        "flags": "NONE"
+      },
+      {
+        "name": "XDATE3",
+        "ordinal": 44,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xdate3",
+        "flags": "NONE"
+      },
+      {
+        "name": "XDATE4",
+        "ordinal": 45,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xdate4",
+        "flags": "NONE"
+      },
+      {
+        "name": "XDATE5",
+        "ordinal": 46,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xdate5",
+        "flags": "NONE"
+      },
+      {
+        "name": "XDATE6",
+        "ordinal": 47,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xdate6",
+        "flags": "NONE"
+      },
+      {
+        "name": "XDATE7",
+        "ordinal": 48,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xdate7",
+        "flags": "NONE"
+      },
+      {
+        "name": "XDATE8",
+        "ordinal": 49,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xdate8",
+        "flags": "NONE"
+      },
+      {
+        "name": "XDATE9",
+        "ordinal": 50,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xdate9",
+        "flags": "NONE"
+      },
+      {
+        "name": "XSHP01",
+        "ordinal": 51,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xshp01",
+        "flags": "NONE"
+      },
+      {
+        "name": "XSHP10",
+        "ordinal": 52,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "xshp10",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN01",
+        "ordinal": 53,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln01",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN02",
+        "ordinal": 54,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln02",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN03",
+        "ordinal": 55,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln03",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN04",
+        "ordinal": 56,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln04",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN05",
+        "ordinal": 57,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln05",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN06",
+        "ordinal": 58,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln06",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN07",
+        "ordinal": 59,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln07",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN08",
+        "ordinal": 60,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln08",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN09",
+        "ordinal": 61,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln09",
+        "flags": "NONE"
+      },
+      {
+        "name": "XFLN10",
+        "ordinal": 62,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 13,
+          "scale": 3,
+          "originalTypeFull": ""
+        },
+        "id": "xfln10",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 63,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

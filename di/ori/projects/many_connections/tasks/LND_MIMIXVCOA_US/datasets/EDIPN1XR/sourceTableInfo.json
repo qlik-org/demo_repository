@@ -1,0 +1,87 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_edipn1xr",
+  "name": "LND_CDCCONNECT_US_EDIPN1XR",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "EDIPN1XR",
+    "columns": [
+      {
+        "name": "N104DT",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 80,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "n104dt",
+        "flags": "NONE"
+      },
+      {
+        "name": "CUST#",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cust#",
+        "flags": "NONE"
+      },
+      {
+        "name": "SHIP#",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 4,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ship#",
+        "flags": "NONE"
+      },
+      {
+        "name": "MASTER",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 4,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "master",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
