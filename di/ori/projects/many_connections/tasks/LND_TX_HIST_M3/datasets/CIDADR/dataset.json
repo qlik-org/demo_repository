@@ -1,0 +1,16 @@
+{
+  "id": "cidadr",
+  "name": "CIDADR",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_M3_cidadr",
+      "name": "CIDADR",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_m3-vmqt"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.lnd_tx_hist_zoho_sales_incentive-v_km.sourceConnection}}",
+  "includePatterns": [
+    {
+      "tablePattern": "%_json",
+      "schemaPattern": "{{task.lnd_tx_hist_zoho_sales_incentive-v_km:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}

@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.lnd_tx_hist_m3-vmqt.sourceConnection}}",
+  "includePatterns": [
+    {
+      "tablePattern": "%",
+      "schemaPattern": "{{task.lnd_tx_hist_m3-vmqt:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "priority_product_json",
+  "name": "Priority_Product_json",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_ZOHO_SALES_INCENTIVE_priority_product_json",
+      "name": "Priority_Product_json",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_zoho_sales_incentive-v_km"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
