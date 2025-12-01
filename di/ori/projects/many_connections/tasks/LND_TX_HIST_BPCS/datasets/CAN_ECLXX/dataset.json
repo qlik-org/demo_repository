@@ -1,0 +1,16 @@
+{
+  "id": "can_eclxx",
+  "name": "CAN_ECLXX",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_BPCS_can_eclxx",
+      "name": "CAN_ECLXX",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_bpcs-cuub"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.lnd_tx_hist_bpcs-cuub.sourceConnection}}",
+  "includePatterns": [
+    {
+      "tablePattern": "%",
+      "schemaPattern": "{{task.lnd_tx_hist_bpcs-cuub:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}

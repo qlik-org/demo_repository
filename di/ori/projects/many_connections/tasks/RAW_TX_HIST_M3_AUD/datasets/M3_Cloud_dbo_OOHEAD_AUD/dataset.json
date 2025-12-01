@@ -1,0 +1,24 @@
+{
+  "id": "m3_cloud_dbo_oohead_aud-kahx",
+  "name": "M3_Cloud_dbo_OOHEAD_AUD",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "m3_cloud_dbo_oohead_aud",
+      "name": "M3_Cloud_dbo_OOHEAD_AUD",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_m3_aud-kahu"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
