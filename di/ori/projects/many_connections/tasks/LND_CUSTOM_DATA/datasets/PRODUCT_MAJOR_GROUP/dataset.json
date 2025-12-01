@@ -1,0 +1,16 @@
+{
+  "id": "product_major_group",
+  "name": "PRODUCT_MAJOR_GROUP",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_CUSTOM_DATA_product_major_group",
+      "name": "PRODUCT_MAJOR_GROUP",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_custom_data-gqwk"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

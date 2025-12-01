@@ -1,0 +1,72 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_m3_order_line_type",
+  "name": "BLD_CUSTOM_DATA_M3_ORDER_LINE_TYPE",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "M3_ORDER_LINE_TYPE",
+    "columns": [
+      {
+        "name": "ORDERLINETYPECODE",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "orderlinetypecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "ORDERLINETYPEDESCRIPTION",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "orderlinetypedescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "ORDERLINETYPEBK",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "orderlinetypebk",
+        "flags": "NONE"
+      },
+      {
+        "name": "SOURCECODE",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sourcecode",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

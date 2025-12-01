@@ -1,0 +1,72 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_geo_area_excel_geographical_area",
+  "name": "BLD_CUSTOM_DATA_GEO_AREA_EXCEL_GEOGRAPHICAL_AREA",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "GEO_AREA_EXCEL_GEOGRAPHICAL_AREA",
+    "columns": [
+      {
+        "name": "ROWID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rowid",
+        "flags": "NONE"
+      },
+      {
+        "name": "COUNTRYCODE",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "countrycode",
+        "flags": "NONE"
+      },
+      {
+        "name": "COUNTRY_NAME",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "country_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "GEOGRAPHICALAREA",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "geographicalarea",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

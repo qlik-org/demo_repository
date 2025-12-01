@@ -1,0 +1,72 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_globe_item_type",
+  "name": "BLD_CUSTOM_DATA_GLOBE_ITEM_TYPE",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "GLOBE_ITEM_TYPE",
+    "columns": [
+      {
+        "name": "ITEMTYPECODE",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "itemtypecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "ITEMTYPEDESCRIPTION",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "itemtypedescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "SOURCECODE",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sourcecode",
+        "flags": "NONE"
+      },
+      {
+        "name": "INCREMENTALTIMESTAMP",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "incrementaltimestamp",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_order_type",
+  "name": "BLD_CUSTOM_DATA_ORDER_TYPE",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "ORDER_TYPE",
+    "columns": [
+      {
+        "name": "SOURCE_CODE",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "source_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "ORDER_TYPE_CODE",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "order_type_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "ORDER_TYPE_DESCRIPTION",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "order_type_description",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

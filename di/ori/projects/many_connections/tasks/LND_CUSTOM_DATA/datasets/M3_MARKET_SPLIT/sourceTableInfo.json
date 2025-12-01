@@ -1,0 +1,57 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_m3_market_split",
+  "name": "BLD_CUSTOM_DATA_M3_MARKET_SPLIT",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "M3_MARKET_SPLIT",
+    "columns": [
+      {
+        "name": "SOURCE_CODE",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "source_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "MARKET_SPLIT_CODE",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "market_split_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "MARKET_SPLIT_DESCRIPTION",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "market_split_description",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

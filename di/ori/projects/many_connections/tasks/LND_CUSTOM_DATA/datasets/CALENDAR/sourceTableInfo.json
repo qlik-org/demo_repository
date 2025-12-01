@@ -1,0 +1,42 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_calendar",
+  "name": "BLD_CUSTOM_DATA_CALENDAR",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "CALENDAR",
+    "columns": [
+      {
+        "name": "DATE_KEY",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "date_key",
+        "flags": "NONE"
+      },
+      {
+        "name": "CALENDAR_DATE",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATE",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "calendar_date",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

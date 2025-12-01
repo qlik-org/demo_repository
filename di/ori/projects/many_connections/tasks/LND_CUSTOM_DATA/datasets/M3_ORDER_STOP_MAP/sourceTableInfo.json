@@ -1,0 +1,42 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_m3_order_stop_map",
+  "name": "BLD_CUSTOM_DATA_M3_ORDER_STOP_MAP",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "M3_ORDER_STOP_MAP",
+    "columns": [
+      {
+        "name": "KEY",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "key",
+        "flags": "NONE"
+      },
+      {
+        "name": "VALUE",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "value",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

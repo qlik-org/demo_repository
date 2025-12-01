@@ -1,0 +1,16 @@
+{
+  "id": "ciaddr",
+  "name": "CIADDR",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_ciaddr",
+      "name": "CIADDR",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_m3ce-zmhm"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

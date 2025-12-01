@@ -1,0 +1,42 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_item_warehouse_status_map",
+  "name": "BLD_CUSTOM_DATA_ITEM_WAREHOUSE_STATUS_MAP",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "ITEM_WAREHOUSE_STATUS_MAP",
+    "columns": [
+      {
+        "name": "ITEMWAREHOUSESATUSCODE",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "itemwarehousesatuscode",
+        "flags": "NONE"
+      },
+      {
+        "name": "ITEMWAREHOUSESATUSDESCRIPTION",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "itemwarehousesatusdescription",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

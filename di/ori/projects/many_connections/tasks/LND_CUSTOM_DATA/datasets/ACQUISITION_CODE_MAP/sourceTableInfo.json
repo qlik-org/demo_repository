@@ -1,0 +1,42 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_acquisition_code_map",
+  "name": "BLD_CUSTOM_DATA_ACQUISITION_CODE_MAP",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "ACQUISITION_CODE_MAP",
+    "columns": [
+      {
+        "name": "ACQUISITIONCODE",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "acquisitioncode",
+        "flags": "NONE"
+      },
+      {
+        "name": "ACQUISITIONCODEDESCRIPTION",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "acquisitioncodedescription",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

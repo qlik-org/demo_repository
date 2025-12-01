@@ -1,0 +1,42 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_m3_region_division_mapping",
+  "name": "BLD_CUSTOM_DATA_M3_REGION_DIVISION_MAPPING",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "M3_REGION_DIVISION_MAPPING",
+    "columns": [
+      {
+        "name": "REGIONCODE",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "regioncode",
+        "flags": "NONE"
+      },
+      {
+        "name": "DIVISIONCODE",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "divisioncode",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "cutp_field_map",
+  "name": "CUTP_FIELD_MAP",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_CUSTOM_DATA_cutp_field_map",
+      "name": "CUTP_FIELD_MAP",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_custom_data-gqwk"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

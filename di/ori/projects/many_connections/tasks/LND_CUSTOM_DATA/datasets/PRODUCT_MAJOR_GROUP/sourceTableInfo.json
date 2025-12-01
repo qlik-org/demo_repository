@@ -1,0 +1,42 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_product_major_group",
+  "name": "BLD_CUSTOM_DATA_PRODUCT_MAJOR_GROUP",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "PRODUCT_MAJOR_GROUP",
+    "columns": [
+      {
+        "name": "PRODUCT_MAJOR_GROUP_CODE",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "product_major_group_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "PRODUCT_MAJOR_GROUP_DESCRIPTION",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "product_major_group_description",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

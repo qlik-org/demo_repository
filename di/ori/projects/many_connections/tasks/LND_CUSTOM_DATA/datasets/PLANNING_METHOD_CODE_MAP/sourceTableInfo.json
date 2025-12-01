@@ -1,0 +1,42 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_planning_method_code_map",
+  "name": "BLD_CUSTOM_DATA_PLANNING_METHOD_CODE_MAP",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "PLANNING_METHOD_CODE_MAP",
+    "columns": [
+      {
+        "name": "PLANNINGMETHODCODE",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "planningmethodcode",
+        "flags": "NONE"
+      },
+      {
+        "name": "PLANNINGMETHODDESCRIPTION",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "planningmethoddescription",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

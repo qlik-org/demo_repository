@@ -1,0 +1,42 @@
+{
+  "id": "$external_data_provider$_CUSTOM_DATA_cutp_field_map",
+  "name": "BLD_CUSTOM_DATA_CUTP_FIELD_MAP",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "CUTP_FIELD_MAP",
+    "columns": [
+      {
+        "name": "CUTP_KEY",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cutp_key",
+        "flags": "NONE"
+      },
+      {
+        "name": "CUTP_VALUE",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cutp_value",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

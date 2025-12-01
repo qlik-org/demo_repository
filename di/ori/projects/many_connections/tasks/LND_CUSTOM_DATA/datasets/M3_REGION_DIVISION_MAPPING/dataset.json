@@ -1,0 +1,16 @@
+{
+  "id": "m3_region_division_mapping",
+  "name": "M3_REGION_DIVISION_MAPPING",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_CUSTOM_DATA_m3_region_division_mapping",
+      "name": "M3_REGION_DIVISION_MAPPING",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_custom_data-gqwk"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
