@@ -1,0 +1,24 @@
+{
+  "id": "sr_extract_market_sales_team-hzpo",
+  "name": "SR_EXTRACT_MARKET_SALES_TEAM",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "sr_extract_market_sales_team",
+      "name": "SR_EXTRACT_MARKET_SALES_TEAM",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_pegabix-hzpc"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

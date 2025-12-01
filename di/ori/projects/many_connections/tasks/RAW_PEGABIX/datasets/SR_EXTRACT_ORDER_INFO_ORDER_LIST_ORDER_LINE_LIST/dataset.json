@@ -1,0 +1,24 @@
+{
+  "id": "sr_extract_order_info_order_list_order_line_list-hzpw",
+  "name": "SR_EXTRACT_ORDER_INFO_ORDER_LIST_ORDER_LINE_LIST",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "sr_extract_order_info_order_list_order_line_list",
+      "name": "SR_EXTRACT_ORDER_INFO_ORDER_LIST_ORDER_LINE_LIST",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_pegabix-hzpc"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "sr_extract_order_info_tool_list",
+  "name": "SR_EXTRACT_ORDER_INFO_TOOL_LIST",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_PEGA_BIX_sr_extract_order_info_tool_list",
+      "name": "SR_EXTRACT_ORDER_INFO_TOOL_LIST",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_pegabix-hzpc"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

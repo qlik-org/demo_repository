@@ -1,0 +1,16 @@
+{
+  "id": "sr_extract_order_info_invoice_list_invoice_line_list_invoice_error_results",
+  "name": "SR_EXTRACT_ORDER_INFO_INVOICE_LIST_INVOICE_LINE_LIST_INVOICE_ERROR_RESULTS",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_PEGA_BIX_sr_extract_order_info_invoice_list_invoice_line_list_invoice_error_results",
+      "name": "SR_EXTRACT_ORDER_INFO_INVOICE_LIST_INVOICE_LINE_LIST_INVOICE_ERROR_RESULTS",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_pegabix-hzpc"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
