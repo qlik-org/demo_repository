@@ -1,0 +1,16 @@
+{
+  "id": "us_cmf_rt",
+  "name": "US_CMF_RT",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_BPCS_us_cmf_rt",
+      "name": "US_CMF_RT",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_bpcs-cuub"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

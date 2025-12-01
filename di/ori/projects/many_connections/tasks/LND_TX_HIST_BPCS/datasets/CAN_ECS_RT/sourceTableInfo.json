@@ -1,0 +1,57 @@
+{
+  "id": "$external_data_provider$_QCDI_TX_HIST_STG_BPCS_can_ecs_rt",
+  "name": "LND_QCDI_TX_HIST_STG_BPCS_CAN_ECS_RT",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "CAN_ECS_RT",
+    "columns": [
+      {
+        "name": "DW_Id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dw_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "DummyCustomerCode",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dummycustomercode",
+        "flags": "NONE"
+      },
+      {
+        "name": "CAN_ECH_Key",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "can_ech_key",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

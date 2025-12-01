@@ -1,0 +1,16 @@
+{
+  "id": "can_ecl_bak_0704",
+  "name": "CAN_ECL_bak_0704",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_BPCS_can_ecl_bak_0704",
+      "name": "CAN_ECL_bak_0704",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_bpcs-cuub"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
