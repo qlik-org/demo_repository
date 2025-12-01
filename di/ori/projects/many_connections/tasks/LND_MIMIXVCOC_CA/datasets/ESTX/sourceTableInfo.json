@@ -1,0 +1,447 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_CA_estx",
+  "name": "LND_CDCCONNECT_CA_ESTX",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "ESTX",
+    "columns": [
+      {
+        "name": "TIDX",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tidx",
+        "flags": "NONE"
+      },
+      {
+        "name": "TCUSTX",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tcustx",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSHIPX",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 4,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tshipx",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSM#01",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tsm#01",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSM#02",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tsm#02",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSM#03",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tsm#03",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSM#04",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tsm#04",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSM#05",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tsm#05",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSM#06",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "tsm#06",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSMP01",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "tsmp01",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSMP02",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "tsmp02",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSMP03",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "tsmp03",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSMP04",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "tsmp04",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSMP05",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "tsmp05",
+        "flags": "NONE"
+      },
+      {
+        "name": "TSMP06",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "tsmp06",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEU#01",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "teu#01",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEU#02",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "teu#02",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEU#03",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "teu#03",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEU#04",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "teu#04",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEU#05",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "teu#05",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEU#06",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "teu#06",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEUP01",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "teup01",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEUP02",
+        "ordinal": 23,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "teup02",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEUP03",
+        "ordinal": 24,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "teup03",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEUP04",
+        "ordinal": 25,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "teup04",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEUP05",
+        "ordinal": 26,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "teup05",
+        "flags": "NONE"
+      },
+      {
+        "name": "TEUP06",
+        "ordinal": 27,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "teup06",
+        "flags": "NONE"
+      },
+      {
+        "name": "TWHSE#",
+        "ordinal": 28,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "twhse#",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 29,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

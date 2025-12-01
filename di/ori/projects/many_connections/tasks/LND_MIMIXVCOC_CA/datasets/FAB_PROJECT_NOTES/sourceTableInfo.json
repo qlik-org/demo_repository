@@ -1,0 +1,87 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_CA_fab_project_notes",
+  "name": "LND_CDCCONNECT_CA_FAB_PROJECT_NOTES",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "FAB_PROJECT_NOTES",
+    "columns": [
+      {
+        "name": "PROJECT_ID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "project_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "LINE_NUMBER",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "line_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "BILLING_NOTE",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4098,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "billing_note",
+        "flags": "NONE"
+      },
+      {
+        "name": "INTERNAL_NOTE",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4098,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "internal_note",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

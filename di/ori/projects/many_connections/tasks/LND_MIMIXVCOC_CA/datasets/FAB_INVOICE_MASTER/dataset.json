@@ -1,0 +1,16 @@
+{
+  "id": "fab_invoice_master",
+  "name": "FAB_INVOICE_MASTER",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_CDCCONNECT_CA_fab_invoice_master",
+      "name": "FAB_INVOICE_MASTER",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoc_ca-9nfq"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

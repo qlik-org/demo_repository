@@ -1,0 +1,16 @@
+{
+  "id": "dmpcum",
+  "name": "DMPCUM",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_CDCCONNECT_CA_dmpcum",
+      "name": "DMPCUM",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoc_ca-9nfq"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

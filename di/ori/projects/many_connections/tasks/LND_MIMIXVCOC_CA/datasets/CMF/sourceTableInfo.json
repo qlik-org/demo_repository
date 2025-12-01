@@ -1,0 +1,132 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_CA_cmf",
+  "name": "LND_CDCCONNECT_CA_CMF",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "CMF",
+    "columns": [
+      {
+        "name": "CFID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cfid",
+        "flags": "NONE"
+      },
+      {
+        "name": "CFPROD",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cfprod",
+        "flags": "NONE"
+      },
+      {
+        "name": "CFFAC",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cffac",
+        "flags": "NONE"
+      },
+      {
+        "name": "CFCSET",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 2,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cfcset",
+        "flags": "NONE"
+      },
+      {
+        "name": "CFCBKT",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 4,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "cfcbkt",
+        "flags": "NONE"
+      },
+      {
+        "name": "CFTLVL",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "cftlvl",
+        "flags": "NONE"
+      },
+      {
+        "name": "CFPLVL",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "cfplvl",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

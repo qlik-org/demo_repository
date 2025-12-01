@@ -1,0 +1,387 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_CA_frt",
+  "name": "LND_CDCCONNECT_CA_FRT",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "FRT",
+    "columns": [
+      {
+        "name": "RID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rid",
+        "flags": "NONE"
+      },
+      {
+        "name": "RPROD",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rprod",
+        "flags": "NONE"
+      },
+      {
+        "name": "ROPNO",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ropno",
+        "flags": "NONE"
+      },
+      {
+        "name": "RSTAT",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rstat",
+        "flags": "NONE"
+      },
+      {
+        "name": "RWRKC",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rwrkc",
+        "flags": "NONE"
+      },
+      {
+        "name": "ROPDS",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ropds",
+        "flags": "NONE"
+      },
+      {
+        "name": "RBAS",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 4,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rbas",
+        "flags": "NONE"
+      },
+      {
+        "name": "RLAB",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "rlab",
+        "flags": "NONE"
+      },
+      {
+        "name": "RSET",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "rset",
+        "flags": "NONE"
+      },
+      {
+        "name": "RMAC",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 7,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "rmac",
+        "flags": "NONE"
+      },
+      {
+        "name": "ROPER",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "roper",
+        "flags": "NONE"
+      },
+      {
+        "name": "RTOOL",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 5,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rtool",
+        "flags": "NONE"
+      },
+      {
+        "name": "RMOVE",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 1,
+          "originalTypeFull": ""
+        },
+        "id": "rmove",
+        "flags": "NONE"
+      },
+      {
+        "name": "RQUE",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 1,
+          "originalTypeFull": ""
+        },
+        "id": "rque",
+        "flags": "NONE"
+      },
+      {
+        "name": "RSTYD",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 7,
+          "scale": 5,
+          "originalTypeFull": ""
+        },
+        "id": "rstyd",
+        "flags": "NONE"
+      },
+      {
+        "name": "REFDT",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "refdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "RDDDT",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rdddt",
+        "flags": "NONE"
+      },
+      {
+        "name": "RCEFD",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rcefd",
+        "flags": "NONE"
+      },
+      {
+        "name": "RCDSD",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rcdsd",
+        "flags": "NONE"
+      },
+      {
+        "name": "RTWHS",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 6,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rtwhs",
+        "flags": "NONE"
+      },
+      {
+        "name": "RSUOP",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rsuop",
+        "flags": "NONE"
+      },
+      {
+        "name": "RTOPGP",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rtopgp",
+        "flags": "NONE"
+      },
+      {
+        "name": "RTSTOP",
+        "ordinal": 23,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rtstop",
+        "flags": "NONE"
+      },
+      {
+        "name": "RTRTEM",
+        "ordinal": 24,
+        "nullable": false,
+        "primaryKeyOrdinal": 7,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "rtrtem",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 25,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
