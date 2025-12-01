@@ -1,0 +1,3177 @@
+{
+  "id": "$external_data_provider$_mpline",
+  "name": "dbo_MPLINE",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "MPLINE",
+    "columns": [
+      {
+        "name": "IBCONO",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcono",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPUNO",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpuno",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPNLI",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpnli",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPNLS",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 4,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpnls",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBFACI",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibfaci",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBWHLO",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibwhlo",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBORTY",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iborty",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPOTC",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpotc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBLTPP",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibltpp",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPUST",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpust",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPUSL",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpusl",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBIDAG",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibidag",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSUNO",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsuno",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSUAG",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsuag",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBITNO",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibitno",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPRCS",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibprcs",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSUFI",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsufi",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSITE",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsite",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPITD",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpitd",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPITT",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 120,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpitt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSORN",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsorn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPROD",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibprod",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBECVE",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibecve",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBNOED",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibnoed",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBREVN",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrevn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBETRF",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibetrf",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPUPR",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 17,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibpupr",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBODI1",
+        "ordinal": 28,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "ibodi1",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBODI2",
+        "ordinal": 29,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "ibodi2",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBODI3",
+        "ordinal": 30,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "ibodi3",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCPPR",
+        "ordinal": 31,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 17,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibcppr",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCFD1",
+        "ordinal": 32,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "ibcfd1",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCFD2",
+        "ordinal": 33,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "ibcfd2",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCFD3",
+        "ordinal": 34,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "ibcfd3",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPUUN",
+        "ordinal": 35,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpuun",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPPUN",
+        "ordinal": 36,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibppun",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPUCD",
+        "ordinal": 37,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpucd",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCPUC",
+        "ordinal": 38,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcpuc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPTCD",
+        "ordinal": 39,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibptcd",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBOTOD",
+        "ordinal": 40,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibotod",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBLNAM",
+        "ordinal": 41,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "iblnam",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBDWDT",
+        "ordinal": 42,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibdwdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCODT",
+        "ordinal": 43,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcodt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBECDD",
+        "ordinal": 44,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibecdd",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPDDT",
+        "ordinal": 45,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpddt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBVDDT",
+        "ordinal": 46,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibvddt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBORQA",
+        "ordinal": 47,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "iborqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCFQA",
+        "ordinal": 48,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibcfqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBADQA",
+        "ordinal": 49,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibadqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTNQA",
+        "ordinal": 50,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibtnqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRVQA",
+        "ordinal": 51,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibrvqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRCDT",
+        "ordinal": 52,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrcdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBDT4T",
+        "ordinal": 53,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibdt4t",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCAQA",
+        "ordinal": 54,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibcaqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRJQA",
+        "ordinal": 55,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibrjqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSDQA",
+        "ordinal": 56,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibsdqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRRQA",
+        "ordinal": 57,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibrrqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBLPUD",
+        "ordinal": 58,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iblpud",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBIVQA",
+        "ordinal": 59,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibivqa",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBIDAT",
+        "ordinal": 60,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibidat",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRORC",
+        "ordinal": 61,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrorc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRORN",
+        "ordinal": 62,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrorn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRORL",
+        "ordinal": 63,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrorl",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBOURR",
+        "ordinal": 64,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibourr",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBOURT",
+        "ordinal": 65,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibourt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUPAV",
+        "ordinal": 66,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibupav",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBREPP",
+        "ordinal": 67,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrepp",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPRIP",
+        "ordinal": 68,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibprip",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBFUSC",
+        "ordinal": 69,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibfusc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBEXAT",
+        "ordinal": 70,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibexat",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBEXAV",
+        "ordinal": 71,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibexav",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPLPN",
+        "ordinal": 72,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibplpn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPLPS",
+        "ordinal": 73,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibplps",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPURC",
+        "ordinal": 74,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpurc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBBUYE",
+        "ordinal": 75,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibbuye",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRESF",
+        "ordinal": 76,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibresf",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTERE",
+        "ordinal": 77,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtere",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBGRMT",
+        "ordinal": 78,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibgrmt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBIRCV",
+        "ordinal": 79,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibircv",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUPIV",
+        "ordinal": 80,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibupiv",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBATDT",
+        "ordinal": 81,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibatdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSUDO",
+        "ordinal": 82,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsudo",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPACT",
+        "ordinal": 83,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpact",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCLLI",
+        "ordinal": 84,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibclli",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBNPDE",
+        "ordinal": 85,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibnpde",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBVTCD",
+        "ordinal": 86,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibvtcd",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBLICC",
+        "ordinal": 87,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iblicc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBACLI",
+        "ordinal": 88,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibacli",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBULEX",
+        "ordinal": 89,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibulex",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBEXEP",
+        "ordinal": 90,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "ibexep",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBINEP",
+        "ordinal": 91,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "ibinep",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBOEND",
+        "ordinal": 92,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iboend",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPLDT",
+        "ordinal": 93,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpldt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBACRF",
+        "ordinal": 94,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 8,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibacrf",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCOCE",
+        "ordinal": 95,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcoce",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCSNO",
+        "ordinal": 96,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 16,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcsno",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBECLC",
+        "ordinal": 97,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibeclc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBVRCD",
+        "ordinal": 98,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibvrcd",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBECF1",
+        "ordinal": 99,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibecf1",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBECF2",
+        "ordinal": 100,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibecf2",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBECF3",
+        "ordinal": 101,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibecf3",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBECF4",
+        "ordinal": 102,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibecf4",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBECF5",
+        "ordinal": 103,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibecf5",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTXID",
+        "ordinal": 104,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtxid",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBDTID",
+        "ordinal": 105,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibdtid",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPROJ",
+        "ordinal": 106,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 7,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibproj",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBELNO",
+        "ordinal": 107,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 8,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibelno",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBDWCP",
+        "ordinal": 108,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibdwcp",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCPRI",
+        "ordinal": 109,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcpri",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBHAFE",
+        "ordinal": 110,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibhafe",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTAXC",
+        "ordinal": 111,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtaxc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTIHM",
+        "ordinal": 112,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtihm",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCFIN",
+        "ordinal": 113,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcfin",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBHDPR",
+        "ordinal": 114,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibhdpr",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBECVS",
+        "ordinal": 115,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibecvs",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBATNR",
+        "ordinal": 116,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibatnr",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSEQN",
+        "ordinal": 117,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibseqn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBATPR",
+        "ordinal": 118,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibatpr",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPGRN",
+        "ordinal": 119,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpgrn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCFMB",
+        "ordinal": 120,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 9,
+          "originalTypeFull": ""
+        },
+        "id": "ibcfmb",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCFPB",
+        "ordinal": 121,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 9,
+          "originalTypeFull": ""
+        },
+        "id": "ibcfpb",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBMSTN",
+        "ordinal": 122,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibmstn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCLAN",
+        "ordinal": 123,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibclan",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCLLN",
+        "ordinal": 124,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibclln",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSEBI",
+        "ordinal": 125,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsebi",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBAGNB",
+        "ordinal": 126,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 7,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibagnb",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRGDT",
+        "ordinal": 127,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrgdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRGTM",
+        "ordinal": 128,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrgtm",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBLMDT",
+        "ordinal": 129,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iblmdt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCHNO",
+        "ordinal": 130,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibchno",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCHID",
+        "ordinal": 131,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibchid",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRORX",
+        "ordinal": 132,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrorx",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUPCK",
+        "ordinal": 133,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibupck",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBOPTX",
+        "ordinal": 134,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iboptx",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBOPTY",
+        "ordinal": 135,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibopty",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBOPTZ",
+        "ordinal": 136,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iboptz",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBBAOR",
+        "ordinal": 137,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibbaor",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBFATP",
+        "ordinal": 138,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibfatp",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRE20",
+        "ordinal": 139,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibre20",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBLMTS",
+        "ordinal": 140,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iblmts",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBORCO",
+        "ordinal": 141,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iborco",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBMODL",
+        "ordinal": 142,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibmodl",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTEDL",
+        "ordinal": 143,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtedl",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTEL1",
+        "ordinal": 144,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 36,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtel1",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBGETY",
+        "ordinal": 145,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibgety",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBFSCD",
+        "ordinal": 146,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibfscd",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPSET",
+        "ordinal": 147,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpset",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSRCD",
+        "ordinal": 148,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsrcd",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSFLI",
+        "ordinal": 149,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsfli",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSFLS",
+        "ordinal": 150,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsfls",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBDUPL",
+        "ordinal": 151,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibdupl",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBDUPO",
+        "ordinal": 152,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibdupo",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBGEOC",
+        "ordinal": 153,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibgeoc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBBANO",
+        "ordinal": 154,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibbano",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTRRC",
+        "ordinal": 155,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtrrc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTRRN",
+        "ordinal": 156,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtrrn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTRRL",
+        "ordinal": 157,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtrrl",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTRRX",
+        "ordinal": 158,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibtrrx",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBRASN",
+        "ordinal": 159,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibrasn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBDNDT",
+        "ordinal": 160,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibdndt",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBFRRC",
+        "ordinal": 161,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibfrrc",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBFRRE",
+        "ordinal": 162,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibfrre",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSDES",
+        "ordinal": 163,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsdes",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCDES",
+        "ordinal": 164,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcdes",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPIAD",
+        "ordinal": 165,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibpiad",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCIAD",
+        "ordinal": 166,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibciad",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBORAD",
+        "ordinal": 167,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iborad",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCOLO",
+        "ordinal": 168,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcolo",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSIZE",
+        "ordinal": 169,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsize",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCHCS",
+        "ordinal": 170,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibchcs",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBWSCA",
+        "ordinal": 171,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 6,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibwsca",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBOWHL",
+        "ordinal": 172,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibowhl",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBOFCI",
+        "ordinal": 173,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibofci",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSORL",
+        "ordinal": 174,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsorl",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSORX",
+        "ordinal": 175,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsorx",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCPRD",
+        "ordinal": 176,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcprd",
+        "flags": "NONE"
+      },
+      {
+        "name": "accountingEntity",
+        "ordinal": 177,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 7,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "accountingentity",
+        "flags": "NONE"
+      },
+      {
+        "name": "variationNumber",
+        "ordinal": 178,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "variationnumber",
+        "flags": "NONE"
+      },
+      {
+        "name": "timestamp",
+        "ordinal": 179,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "timestamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "deleted",
+        "ordinal": 180,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "deleted",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBASNE",
+        "ordinal": 181,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibasne",
+        "flags": "NONE"
+      },
+      {
+        "name": "dlDocumentDate",
+        "ordinal": 182,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dldocumentdate",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA1",
+        "ordinal": 183,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca1",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA2",
+        "ordinal": 184,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca2",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA3",
+        "ordinal": 185,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca3",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA4",
+        "ordinal": 186,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca4",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA5",
+        "ordinal": 187,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca5",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA6",
+        "ordinal": 188,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca6",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA7",
+        "ordinal": 189,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca7",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA8",
+        "ordinal": 190,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca8",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA9",
+        "ordinal": 191,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca9",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCA0",
+        "ordinal": 192,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuca0",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUDN1",
+        "ordinal": 193,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 17,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibudn1",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUDN2",
+        "ordinal": 194,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 17,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibudn2",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUDN3",
+        "ordinal": 195,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 17,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibudn3",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUDN4",
+        "ordinal": 196,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 17,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibudn4",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUDN5",
+        "ordinal": 197,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 17,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibudn5",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUDN6",
+        "ordinal": 198,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 17,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibudn6",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUID1",
+        "ordinal": 199,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuid1",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUID2",
+        "ordinal": 200,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuid2",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUID3",
+        "ordinal": 201,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuid3",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBUCT1",
+        "ordinal": 202,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 128,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibuct1",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBMUFT",
+        "ordinal": 203,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibmuft",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBPORG",
+        "ordinal": 204,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibporg",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSCHN",
+        "ordinal": 205,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibschn",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBKITQ",
+        "ordinal": 206,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibkitq",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBTOCQ",
+        "ordinal": 207,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 15,
+          "scale": 6,
+          "originalTypeFull": ""
+        },
+        "id": "ibtocq",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBCOUM",
+        "ordinal": 208,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibcoum",
+        "flags": "NONE"
+      },
+      {
+        "name": "archived",
+        "ordinal": 209,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "archived",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSRGR",
+        "ordinal": 210,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsrgr",
+        "flags": "NONE"
+      },
+      {
+        "name": "IBSRAM",
+        "ordinal": 211,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "ibsram",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

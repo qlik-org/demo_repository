@@ -1,0 +1,16 @@
+{
+  "id": "ocusad",
+  "name": "OCUSAD",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_ocusad",
+      "name": "OCUSAD",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_m3ce-zmhm"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

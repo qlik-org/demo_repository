@@ -1,0 +1,16 @@
+{
+  "id": "mittra",
+  "name": "MITTRA",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_mittra",
+      "name": "MITTRA",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_m3ce-zmhm"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

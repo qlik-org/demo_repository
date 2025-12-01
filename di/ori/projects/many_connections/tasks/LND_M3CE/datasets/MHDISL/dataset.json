@@ -1,0 +1,16 @@
+{
+  "id": "mhdisl",
+  "name": "MHDISL",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_mhdisl",
+      "name": "MHDISL",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_m3ce-zmhm"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
