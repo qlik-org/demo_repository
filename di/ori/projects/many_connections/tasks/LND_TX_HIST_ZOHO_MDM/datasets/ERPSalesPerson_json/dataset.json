@@ -1,0 +1,16 @@
+{
+  "id": "erpsalesperson_json",
+  "name": "ERPSalesPerson_json",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_QCDI_TX_HIST_STG_ZOHO_MDM_erpsalesperson_json",
+      "name": "ERPSalesPerson_json",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_zoho_mdm-w-ri"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
