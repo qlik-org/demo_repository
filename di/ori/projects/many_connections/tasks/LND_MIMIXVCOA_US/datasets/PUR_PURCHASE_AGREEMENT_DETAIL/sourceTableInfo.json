@@ -1,0 +1,102 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_pur_purchase_agreement_detail",
+  "name": "LND_CDCCONNECT_US_PUR_PURCHASE_AGREEMENT_DETAIL",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "PUR_PURCHASE_AGREEMENT_DETAIL",
+    "columns": [
+      {
+        "name": "VENDOR_ID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 5,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vendor_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "CONTRACT_NUMBER",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "contract_number",
+        "flags": "NONE"
+      },
+      {
+        "name": "CURRENCY_CODE",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "currency_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "PRODUCT_TYPE",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 4,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "product_type",
+        "flags": "NONE"
+      },
+      {
+        "name": "PRODUCT_CODE",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 5,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "product_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

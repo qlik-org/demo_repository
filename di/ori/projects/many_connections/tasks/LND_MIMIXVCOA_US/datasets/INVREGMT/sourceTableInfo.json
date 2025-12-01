@@ -1,0 +1,762 @@
+{
+  "id": "$external_data_provider$_CDCCONNECT_US_invregmt",
+  "name": "LND_CDCCONNECT_US_INVREGMT",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "INVREGMT",
+    "columns": [
+      {
+        "name": "INVCOD",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "invcod",
+        "flags": "NONE"
+      },
+      {
+        "name": "BADDR1",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "baddr1",
+        "flags": "NONE"
+      },
+      {
+        "name": "CUSTM#",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "custm#",
+        "flags": "NONE"
+      },
+      {
+        "name": "NOINV",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 7,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "noinv",
+        "flags": "NONE"
+      },
+      {
+        "name": "VORDYR",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vordyr",
+        "flags": "NONE"
+      },
+      {
+        "name": "VFRMWH",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vfrmwh",
+        "flags": "NONE"
+      },
+      {
+        "name": "VTOWHS",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 4,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vtowhs",
+        "flags": "NONE"
+      },
+      {
+        "name": "VSEQ#",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 5,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vseq#",
+        "flags": "NONE"
+      },
+      {
+        "name": "VSPLIT",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 6,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vsplit",
+        "flags": "NONE"
+      },
+      {
+        "name": "VINDER",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 7,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vinder",
+        "flags": "NONE"
+      },
+      {
+        "name": "VBCKOR",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 8,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "vbckor",
+        "flags": "NONE"
+      },
+      {
+        "name": "GRSINV",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "grsinv",
+        "flags": "NONE"
+      },
+      {
+        "name": "INVTAX",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "invtax",
+        "flags": "NONE"
+      },
+      {
+        "name": "FEDTAX",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "fedtax",
+        "flags": "NONE"
+      },
+      {
+        "name": "FRTCHG",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "frtchg",
+        "flags": "NONE"
+      },
+      {
+        "name": "NETINV",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 8,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "netinv",
+        "flags": "NONE"
+      },
+      {
+        "name": "DEST",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 2,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "dest",
+        "flags": "NONE"
+      },
+      {
+        "name": "EU#01",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "eu#01",
+        "flags": "NONE"
+      },
+      {
+        "name": "EU#02",
+        "ordinal": 19,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "eu#02",
+        "flags": "NONE"
+      },
+      {
+        "name": "EU#03",
+        "ordinal": 20,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "eu#03",
+        "flags": "NONE"
+      },
+      {
+        "name": "EU#04",
+        "ordinal": 21,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "eu#04",
+        "flags": "NONE"
+      },
+      {
+        "name": "EU#05",
+        "ordinal": 22,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "eu#05",
+        "flags": "NONE"
+      },
+      {
+        "name": "EU#06",
+        "ordinal": 23,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "eu#06",
+        "flags": "NONE"
+      },
+      {
+        "name": "EUPC01",
+        "ordinal": 24,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "eupc01",
+        "flags": "NONE"
+      },
+      {
+        "name": "EUPC02",
+        "ordinal": 25,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "eupc02",
+        "flags": "NONE"
+      },
+      {
+        "name": "EUPC03",
+        "ordinal": 26,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "eupc03",
+        "flags": "NONE"
+      },
+      {
+        "name": "EUPC04",
+        "ordinal": 27,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "eupc04",
+        "flags": "NONE"
+      },
+      {
+        "name": "EUPC05",
+        "ordinal": 28,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "eupc05",
+        "flags": "NONE"
+      },
+      {
+        "name": "EUPC06",
+        "ordinal": 29,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "eupc06",
+        "flags": "NONE"
+      },
+      {
+        "name": "SM#01",
+        "ordinal": 30,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sm#01",
+        "flags": "NONE"
+      },
+      {
+        "name": "SM#02",
+        "ordinal": 31,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sm#02",
+        "flags": "NONE"
+      },
+      {
+        "name": "SM#03",
+        "ordinal": 32,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sm#03",
+        "flags": "NONE"
+      },
+      {
+        "name": "SM#04",
+        "ordinal": 33,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sm#04",
+        "flags": "NONE"
+      },
+      {
+        "name": "SM#05",
+        "ordinal": 34,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sm#05",
+        "flags": "NONE"
+      },
+      {
+        "name": "SM#06",
+        "ordinal": 35,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 3,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "sm#06",
+        "flags": "NONE"
+      },
+      {
+        "name": "SMPC01",
+        "ordinal": 36,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "smpc01",
+        "flags": "NONE"
+      },
+      {
+        "name": "SMPC02",
+        "ordinal": 37,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "smpc02",
+        "flags": "NONE"
+      },
+      {
+        "name": "SMPC03",
+        "ordinal": 38,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "smpc03",
+        "flags": "NONE"
+      },
+      {
+        "name": "SMPC04",
+        "ordinal": 39,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "smpc04",
+        "flags": "NONE"
+      },
+      {
+        "name": "SMPC05",
+        "ordinal": 40,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "smpc05",
+        "flags": "NONE"
+      },
+      {
+        "name": "SMPC06",
+        "ordinal": 41,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 3,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "smpc06",
+        "flags": "NONE"
+      },
+      {
+        "name": "IMONTH",
+        "ordinal": 42,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 2,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "imonth",
+        "flags": "NONE"
+      },
+      {
+        "name": "IDAY",
+        "ordinal": 43,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 2,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iday",
+        "flags": "NONE"
+      },
+      {
+        "name": "IYR",
+        "ordinal": 44,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 4,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "iyr",
+        "flags": "NONE"
+      },
+      {
+        "name": "ICY",
+        "ordinal": 45,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 1,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "icy",
+        "flags": "NONE"
+      },
+      {
+        "name": "INDISC",
+        "ordinal": 46,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "indisc",
+        "flags": "NONE"
+      },
+      {
+        "name": "INCHGS",
+        "ordinal": 47,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "inchgs",
+        "flags": "NONE"
+      },
+      {
+        "name": "CGSSTD",
+        "ordinal": 48,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "cgsstd",
+        "flags": "NONE"
+      },
+      {
+        "name": "CGSSPC",
+        "ordinal": 49,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 11,
+          "scale": 2,
+          "originalTypeFull": ""
+        },
+        "id": "cgsspc",
+        "flags": "NONE"
+      },
+      {
+        "name": "LAST_UPDATE",
+        "ordinal": 50,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 9,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
