@@ -1,0 +1,16 @@
+{
+  "id": "zohosalesorg_state_province_abbr",
+  "name": "ZohoSalesOrg_State_Province_Abbr",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_ZOHO_SALESORG_zohosalesorg_state_province_abbr",
+      "name": "ZohoSalesOrg_State_Province_Abbr",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_sales_org-a-cs"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

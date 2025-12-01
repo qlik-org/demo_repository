@@ -1,0 +1,24 @@
+{
+  "id": "dayintervals_excel_dayslatebucket-9qzi",
+  "name": "DayIntervals_Excel_DaysLateBucket",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "dayintervals_excel_dayslatebucket",
+      "name": "DayIntervals_Excel_DaysLateBucket",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_app_rep_unite-9qzg"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

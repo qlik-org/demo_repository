@@ -1,0 +1,16 @@
+{
+  "id": "si_pp_sales_hierarchy_lvl",
+  "name": "SI_PP_SALES_HIERARCHY_LVL",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_ZOHO_SALESINCENTIVES_si_pp_sales_hierarchy_lvl",
+      "name": "SI_PP_SALES_HIERARCHY_LVL",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_sales_incentives-3fmm"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "si_pp_size_group",
+  "name": "SI_PP_SIZE_GROUP",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_ZOHO_SALESINCENTIVES_si_pp_size_group",
+      "name": "SI_PP_SIZE_GROUP",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_sales_incentives-3fmm"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

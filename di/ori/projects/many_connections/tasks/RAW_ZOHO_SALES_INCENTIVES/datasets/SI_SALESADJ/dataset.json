@@ -1,0 +1,24 @@
+{
+  "id": "si_salesadj-3fmz",
+  "name": "SI_SALESADJ",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "si_salesadj",
+      "name": "SI_SALESADJ",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_sales_incentives-3fmm"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

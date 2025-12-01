@@ -1,0 +1,16 @@
+{
+  "id": "scar_receipt_of_tool",
+  "name": "SCAR_RECEIPT_OF_TOOL",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_ZOHO_SCAR_scar_receipt_of_tool",
+      "name": "SCAR_RECEIPT_OF_TOOL",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_scar-0guz"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

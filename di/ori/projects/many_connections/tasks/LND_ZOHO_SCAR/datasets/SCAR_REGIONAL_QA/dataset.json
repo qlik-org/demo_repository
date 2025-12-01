@@ -1,0 +1,16 @@
+{
+  "id": "scar_regional_qa",
+  "name": "SCAR_REGIONAL_QA",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_ZOHO_SCAR_scar_regional_qa",
+      "name": "SCAR_REGIONAL_QA",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_scar-0guz"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

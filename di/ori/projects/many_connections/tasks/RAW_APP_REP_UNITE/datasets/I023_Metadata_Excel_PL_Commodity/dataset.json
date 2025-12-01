@@ -1,0 +1,24 @@
+{
+  "id": "i023_metadata_excel_pl_commodity-9qzl",
+  "name": "I023_Metadata_Excel_PL_Commodity",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "i023_metadata_excel_pl_commodity",
+      "name": "I023_Metadata_Excel_PL_Commodity",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_app_rep_unite-9qzg"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "si_priority_product",
+  "name": "SI_PRIORITY_PRODUCT",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_TALEND_ZOHO_SALESINCENTIVES_si_priority_product",
+      "name": "SI_PRIORITY_PRODUCT",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_zoho_sales_incentives-3fmm"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
