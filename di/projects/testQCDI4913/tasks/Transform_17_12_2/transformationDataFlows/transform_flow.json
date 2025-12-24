@@ -1,0 +1,112 @@
+{
+  "name": "transform_flow",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform_17_12_2-uezs"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "54c04edd-6528-46bc-9b53-7ad16eaa2ad9",
+        "label": "Categories",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "21617c45-c4c0-4563-b08f-d6c5e29ddcb6",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_17_12_storage-x7lm",
+              "entityId": "categories-x7lo"
+            },
+            "configuration": {
+              "name": "Categories"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "01d6a63d-7660-47d2-a043-bd7e9dfa332a",
+        "label": "transform_flow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "bafe70fc-6ac6-4bf5-91ae-4ebc568b845a",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "transform_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "CategoryID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CategoryName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Description",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Picture",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "b3edb530-bec8-46be-a727-3802cb35173b",
+        "sourceHandle": "21617c45-c4c0-4563-b08f-d6c5e29ddcb6",
+        "targetHandle": "bafe70fc-6ac6-4bf5-91ae-4ebc568b845a"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

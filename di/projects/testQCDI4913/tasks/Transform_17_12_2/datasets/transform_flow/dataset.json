@@ -1,0 +1,29 @@
+{
+  "id": "transform_flow-6zpj",
+  "name": "transform_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "categories-x7lo",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_17_12_storage-x7lm"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, transform_flow)}}",
+    "targetId": "01d6a63d-7660-47d2-a043-bd7e9dfa332a",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
