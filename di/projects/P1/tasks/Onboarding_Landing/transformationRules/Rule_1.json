@@ -1,0 +1,35 @@
+{
+  "ordinal": 1,
+  "actionType": "DROP_COLUMN",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Products",
+    "whereColumnName": "SupplierID",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "action": {
+    "renameType": "NONE",
+    "applyColumnDatatype": false,
+    "column": {
+      "ordinal": 0,
+      "nullable": true,
+      "primaryKeyOrdinal": 0,
+      "datatype": {
+        "type": "STRING",
+        "length": 50,
+        "precision": 0,
+        "scale": 0,
+        "originalTypeFull": ""
+      },
+      "flags": "NONE"
+    }
+  },
+  "enabled": false,
+  "internalRule": false,
+  "name": "Rule_1",
+  "id": "rule_1-xcp5",
+  "description": ""
+}

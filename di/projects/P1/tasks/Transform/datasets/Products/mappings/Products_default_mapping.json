@@ -1,0 +1,146 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "products-v7e5",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-v7e3"
+  },
+  "mappingFields": [
+    {
+      "columnId": "productid",
+      "expression": {
+        "expressionStatement": "${ProductID}",
+        "alias": [
+          {
+            "name": "ProductID",
+            "value": "ProductID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "productname",
+      "expression": {
+        "expressionStatement": "${ProductName}",
+        "alias": [
+          {
+            "name": "ProductName",
+            "value": "ProductName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "supplierid",
+      "expression": {
+        "expressionStatement": "${SupplierID}",
+        "alias": [
+          {
+            "name": "SupplierID",
+            "value": "SupplierID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "categoryid",
+      "expression": {
+        "expressionStatement": "${CategoryID}",
+        "alias": [
+          {
+            "name": "CategoryID",
+            "value": "CategoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "unitprice",
+      "expression": {
+        "expressionStatement": "${UnitPrice}",
+        "alias": [
+          {
+            "name": "UnitPrice",
+            "value": "UnitPrice"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "unitsinstock",
+      "expression": {
+        "expressionStatement": "${UnitsInStock}",
+        "alias": [
+          {
+            "name": "UnitsInStock",
+            "value": "UnitsInStock"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "unitsonorder",
+      "expression": {
+        "expressionStatement": "${UnitsOnOrder}",
+        "alias": [
+          {
+            "name": "UnitsOnOrder",
+            "value": "UnitsOnOrder"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "reorderlevel",
+      "expression": {
+        "expressionStatement": "${ReorderLevel}",
+        "alias": [
+          {
+            "name": "ReorderLevel",
+            "value": "ReorderLevel"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "discontinued",
+      "expression": {
+        "expressionStatement": "${Discontinued}",
+        "alias": [
+          {
+            "name": "Discontinued",
+            "value": "Discontinued"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shahar-c964",
+      "expression": {
+        "expressionStatement": "${ProductName}",
+        "alias": [
+          {
+            "name": "ProductName",
+            "value": "ProductName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "QuantityPerUnit-a9f4",
+      "expression": {
+        "expressionStatement": "${QuantityPerUnit}",
+        "alias": [
+          {
+            "name": "QuantityPerUnit",
+            "value": "QuantityPerUnit"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "products_default_mapping-v7fd",
+  "name": "Products_default_mapping",
+  "description": ""
+}
