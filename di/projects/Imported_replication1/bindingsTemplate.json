@@ -1,0 +1,22 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.replication-ymyz.sourceConnection": "",
+    "task.replication-ymyz.targetConnection": "",
+    "task.replication-ymyz.targetStorageConnection": "",
+    "task.replication-ymyz:null$_$dbo.schema": ""
+  },
+  "idToNameMap": {
+    "replication-ymyz": "Replication"
+  },
+  "connectionProperties": {
+    "task.replication-ymyz.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication-ymyz.targetConnection": {
+      "type": "reptgt_mssqltarget"
+    }
+  }
+}
