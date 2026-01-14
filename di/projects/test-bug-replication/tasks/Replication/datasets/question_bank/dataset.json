@@ -1,0 +1,16 @@
+{
+  "id": "question_bank",
+  "name": "question_bank",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "VIEW",
+      "datasetId": "$external_data_provider$_question_bank$_$Question Bank",
+      "name": "question_bank",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "replication-pp3h"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

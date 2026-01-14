@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "schedulingType": "TIME_BASED",
+  "timeBasedScheduling": {
+    "schedule": [
+      "RRULE:FREQ=HOURLY;INTERVAL=6;BYMINUTE=29;BYSECOND=0"
+    ],
+    "startDateTime": "2026-01-14T18:29:00.000Z",
+    "timezone": "Etc/UTC"
+  },
+  "eventBasedScheduling": {
+    "eventSchedulingType": "ANY_INPUT_TASK",
+    "triggerApps": []
+  },
+  "runOnReconnect": "ONSCHEDULED",
+  "id": "schedule-pp3n",
+  "name": "Schedule",
+  "description": "",
+  "version": "1"
+}

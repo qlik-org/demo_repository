@@ -1,0 +1,17 @@
+{
+  "id": "categories",
+  "name": "Categories",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_categories",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lake_landing_1-pp3p",
+      "schema": "{{task.lake_landing_1-pp3p:null$_$dbo.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
