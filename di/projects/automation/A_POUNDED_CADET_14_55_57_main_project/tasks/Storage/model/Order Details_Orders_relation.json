@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "order_details-ez8k",
+    "name": "Order Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-ez8i"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "orders-ez8l",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-ez8i"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "OrderID",
+      "targetColumn": "OrderID",
+      "sourceColumnId": "orderid",
+      "targetColumnId": "orderid"
+    }
+  ],
+  "name": "Order Details_Orders_relation",
+  "description": "",
+  "id": "order_details_orders_relation-hncb"
+}

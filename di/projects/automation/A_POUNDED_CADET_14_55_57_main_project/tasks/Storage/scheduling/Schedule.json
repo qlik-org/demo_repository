@@ -1,0 +1,20 @@
+{
+  "enabled": false,
+  "schedulingType": "TIME_BASED",
+  "timeBasedScheduling": {
+    "schedule": [
+      "RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0"
+    ],
+    "startDateTime": "2026-01-12T15:24:26.217Z",
+    "timezone": "Etc/UTC"
+  },
+  "eventBasedScheduling": {
+    "eventSchedulingType": "ANY_INPUT_TASK",
+    "triggerApps": []
+  },
+  "runOnReconnect": "ONSCHEDULED",
+  "id": "schedule-ez8j",
+  "name": "Schedule",
+  "description": "",
+  "version": "1"
+}
