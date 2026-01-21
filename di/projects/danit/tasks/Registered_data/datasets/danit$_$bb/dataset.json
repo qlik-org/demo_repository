@@ -1,0 +1,18 @@
+{
+  "id": "danit$2F$bb",
+  "name": "danit$_$bb",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$dbo_danit$2F$bb",
+      "name": "danit/bb",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-khms",
+      "schema": "{{task.registered_data-khms:NORTHWIND_mini$_$dbo.schema}}",
+      "database": "{{task.registered_data-khms:NORTHWIND_mini$_$dbo.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

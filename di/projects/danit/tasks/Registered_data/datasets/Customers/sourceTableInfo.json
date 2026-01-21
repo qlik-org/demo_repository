@@ -1,0 +1,12 @@
+{
+  "id": "$registered_data$dbo_customers",
+  "name": "dbo_Customers",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "Customers",
+    "dbSchema": "{{task.registered_data-khms:NORTHWIND_mini$_$dbo.schema}}",
+    "dbName": "{{task.registered_data-khms:NORTHWIND_mini$_$dbo.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

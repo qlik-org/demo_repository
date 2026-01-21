@@ -1,0 +1,24 @@
+{
+  "materialized": false,
+  "hasHistory": false,
+  "taskRuntime": {
+    "tableUpdateInterval": 15,
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task-type.datamart.warehouseName}}",
+      "selectionMethod": "{{task-type.datamart.warehouseSelectionMethod}}"
+    }
+  },
+  "taskRunSchedule": {
+    "runInterval": 15,
+    "schedulingType": "EVENT_BASED"
+  },
+  "catalogIntegration": {
+    "publishDatasets": true
+  },
+  "databaseSelection": {
+    "databaseName": "{{task-type.datamart.databaseName}}",
+    "selectionMethod": "{{task-type.datamart.databaseSelectionMethod}}"
+  },
+  "viewType": "DEFAULT"
+}
