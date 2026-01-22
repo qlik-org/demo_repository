@@ -1,0 +1,1083 @@
+{
+  "id": "employees-hnex",
+  "name": "Employees",
+  "type": "DIMENSION",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "employees-hnes",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform-tti6"
+    },
+    {
+      "type": "NONE",
+      "datasetId": "employees-hnes",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform-tti6"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Employees",
+    "columns": [
+      {
+        "name": "EmployeeID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "LastName",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(20)"
+        },
+        "id": "lastname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "FirstName",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "firstname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Title",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(30)"
+        },
+        "id": "title",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(25)"
+        },
+        "id": "titleofcourtesy",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "BirthDate",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "birthdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "HireDate",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "hiredate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Address",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(60)"
+        },
+        "id": "address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "City",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Region",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "PostalCode",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Country",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "HomePhone",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(24)"
+        },
+        "id": "homephone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Extension",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(4)"
+        },
+        "id": "extension",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Notes",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 8388608,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(8388608)"
+        },
+        "id": "notes",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "ReportsTo",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "reportsto",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_LastName",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(20)"
+        },
+        "id": "employees_employees-hnet$_$lastname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_FirstName",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "employees_employees-hnet$_$firstname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_Title",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(30)"
+        },
+        "id": "employees_employees-hnet$_$title",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_TitleOfCourtesy",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(25)"
+        },
+        "id": "employees_employees-hnet$_$titleofcourtesy",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_BirthDate",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "employees_employees-hnet$_$birthdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_HireDate",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "employees_employees-hnet$_$hiredate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_Address",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(60)"
+        },
+        "id": "employees_employees-hnet$_$address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_City",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "employees_employees-hnet$_$city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_Region",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "employees_employees-hnet$_$region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_PostalCode",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "employees_employees-hnet$_$postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_Country",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "employees_employees-hnet$_$country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_HomePhone",
+        "ordinal": 28,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(24)"
+        },
+        "id": "employees_employees-hnet$_$homephone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_Extension",
+        "ordinal": 29,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(4)"
+        },
+        "id": "employees_employees-hnet$_$extension",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_Notes",
+        "ordinal": 30,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 8388608,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(8388608)"
+        },
+        "id": "employees_employees-hnet$_$notes",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "Employees_Employees_ReportsTo",
+        "ordinal": 31,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "employees_employees-hnet$_$reportsto",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "dimensionDatasetSettings": {
+    "type": "TYPE2",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "employees-hnes",
+      "name": "Employees",
+      "isPattern": false,
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform-tti6"
+    },
+    "entityRelationshipPath": [
+      "employees_employees-hnet"
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "EmployeeID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "LastName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${LastName}",
+            "alias": [
+              {
+                "name": "LastName",
+                "value": "LastName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "FirstName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${FirstName}",
+            "alias": [
+              {
+                "name": "FirstName",
+                "value": "FirstName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Title",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Title}",
+            "alias": [
+              {
+                "name": "Title",
+                "value": "Title"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TitleOfCourtesy",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${TitleOfCourtesy}",
+            "alias": [
+              {
+                "name": "TitleOfCourtesy",
+                "value": "TitleOfCourtesy"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "BirthDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${BirthDate}",
+            "alias": [
+              {
+                "name": "BirthDate",
+                "value": "BirthDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HireDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HireDate}",
+            "alias": [
+              {
+                "name": "HireDate",
+                "value": "HireDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Address}",
+            "alias": [
+              {
+                "name": "Address",
+                "value": "Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${City}",
+            "alias": [
+              {
+                "name": "City",
+                "value": "City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Region}",
+            "alias": [
+              {
+                "name": "Region",
+                "value": "Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${PostalCode}",
+            "alias": [
+              {
+                "name": "PostalCode",
+                "value": "PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Country}",
+            "alias": [
+              {
+                "name": "Country",
+                "value": "Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HomePhone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HomePhone}",
+            "alias": [
+              {
+                "name": "HomePhone",
+                "value": "HomePhone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Extension",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Extension}",
+            "alias": [
+              {
+                "name": "Extension",
+                "value": "Extension"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Notes",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Notes}",
+            "alias": [
+              {
+                "name": "Notes",
+                "value": "Notes"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReportsTo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReportsTo}",
+            "alias": [
+              {
+                "name": "ReportsTo",
+                "value": "ReportsTo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_LastName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_LastName}",
+            "alias": [
+              {
+                "name": "Employees_Employees_LastName",
+                "value": "employees_employees-hnet$_$LastName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_FirstName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_FirstName}",
+            "alias": [
+              {
+                "name": "Employees_Employees_FirstName",
+                "value": "employees_employees-hnet$_$FirstName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_Title",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_Title}",
+            "alias": [
+              {
+                "name": "Employees_Employees_Title",
+                "value": "employees_employees-hnet$_$Title"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_TitleOfCourtesy",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_TitleOfCourtesy}",
+            "alias": [
+              {
+                "name": "Employees_Employees_TitleOfCourtesy",
+                "value": "employees_employees-hnet$_$TitleOfCourtesy"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_BirthDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_BirthDate}",
+            "alias": [
+              {
+                "name": "Employees_Employees_BirthDate",
+                "value": "employees_employees-hnet$_$BirthDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_HireDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_HireDate}",
+            "alias": [
+              {
+                "name": "Employees_Employees_HireDate",
+                "value": "employees_employees-hnet$_$HireDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_Address}",
+            "alias": [
+              {
+                "name": "Employees_Employees_Address",
+                "value": "employees_employees-hnet$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_City}",
+            "alias": [
+              {
+                "name": "Employees_Employees_City",
+                "value": "employees_employees-hnet$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_Region}",
+            "alias": [
+              {
+                "name": "Employees_Employees_Region",
+                "value": "employees_employees-hnet$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_PostalCode}",
+            "alias": [
+              {
+                "name": "Employees_Employees_PostalCode",
+                "value": "employees_employees-hnet$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_Country}",
+            "alias": [
+              {
+                "name": "Employees_Employees_Country",
+                "value": "employees_employees-hnet$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_HomePhone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_HomePhone}",
+            "alias": [
+              {
+                "name": "Employees_Employees_HomePhone",
+                "value": "employees_employees-hnet$_$HomePhone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_Extension",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_Extension}",
+            "alias": [
+              {
+                "name": "Employees_Employees_Extension",
+                "value": "employees_employees-hnet$_$Extension"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_Notes",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_Notes}",
+            "alias": [
+              {
+                "name": "Employees_Employees_Notes",
+                "value": "employees_employees-hnet$_$Notes"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Employees_Employees_ReportsTo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Employees_Employees_ReportsTo}",
+            "alias": [
+              {
+                "name": "Employees_Employees_ReportsTo",
+                "value": "employees_employees-hnet$_$ReportsTo"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
