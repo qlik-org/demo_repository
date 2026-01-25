@@ -1,0 +1,23 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.replication-9grk.sourceConnection": "",
+    "task.replication-9grk.targetConnection": "",
+    "task.replication-9grk.targetSchema": "",
+    "task.replication-9grk.targetStorageConnection": "",
+    "task.replication-9grk:null$_$dbo.schema": ""
+  },
+  "idToNameMap": {
+    "replication-9grk": "Replication"
+  },
+  "connectionProperties": {
+    "task.replication-9grk.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication-9grk.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}
