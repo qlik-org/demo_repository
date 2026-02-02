@@ -1,0 +1,12 @@
+id: employees
+name: Employees
+type: LANDING
+inputDatasets:
+  - type: TABLE
+    datasetId: $replicate$dbo_employees
+    name: Employees
+    projectId: '{{ref(project.current.projectId)}}'
+    taskId: simple_landing-wgtz
+    schema: '{{task.simple_landing-wgtz:null$_$dbo.schema}}'
+virtualDataset: false
+description: ''

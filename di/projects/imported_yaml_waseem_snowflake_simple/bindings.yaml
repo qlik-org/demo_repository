@@ -1,0 +1,58 @@
+variables:
+  cloudStagingConnection: 
+  platformConnection: '{{id(connection, waseem.Waseem_Snowflake_Target)}}'
+  projectName: imported_yaml_waseem_snowflake_simple
+  project.current.prefixSchema: ''
+  task-type.datamart.databaseName: ''
+  task-type.datamart.databaseSelectionMethod: DEFAULT
+  task-type.datamart.warehouseName: ''
+  task-type.datamart.warehouseSelectionMethod: DEFAULT
+  task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint: qlik_vector_search_endpoint
+  task-type.fileBasedKnowledgeMart.indexDatabase: ''
+  task-type.fileBasedKnowledgeMart.indexDatabaseSelectionMethod: DEFAULT
+  task-type.fileBasedKnowledgeMart.llmConnection: 
+  task-type.fileBasedKnowledgeMart.vectorDbConnection: 
+  task-type.fileBasedKnowledgeMart.vectorDbTargetType: PROJECT_PLATFORM
+  task-type.fileBasedKnowledgeMart.warehouseName: ''
+  task-type.fileBasedKnowledgeMart.warehouseSelectionMethod: DEFAULT
+  task-type.knowledgeMart.databaseName: ''
+  task-type.knowledgeMart.databaseSelectionMethod: DEFAULT
+  task-type.knowledgeMart.databricksVectorSearchEndpoint: qlik_vector_search_endpoint
+  task-type.knowledgeMart.indexDatabase: ''
+  task-type.knowledgeMart.indexDatabaseSelectionMethod: DEFAULT
+  task-type.knowledgeMart.llmConnection: 
+  task-type.knowledgeMart.vectorDbConnection: 
+  task-type.knowledgeMart.vectorDbTargetType: PROJECT_PLATFORM
+  task-type.knowledgeMart.warehouseName: ''
+  task-type.knowledgeMart.warehouseSelectionMethod: DEFAULT
+  task-type.landing.databaseName: ''
+  task-type.landing.databaseSelectionMethod: DEFAULT
+  task-type.landing.warehouseName: ''
+  task-type.landing.warehouseSelectionMethod: DEFAULT
+  task-type.registered.databaseName: ''
+  task-type.registered.databaseSelectionMethod: DEFAULT
+  task-type.storage.databaseName: ''
+  task-type.storage.databaseSelectionMethod: DEFAULT
+  task-type.storage.warehouseName: ''
+  task-type.storage.warehouseSelectionMethod: DEFAULT
+  task-type.transform.databaseName: ''
+  task-type.transform.databaseSelectionMethod: DEFAULT
+  task-type.transform.warehouseName: ''
+  task-type.transform.warehouseSelectionMethod: DEFAULT
+  task.simple_landing-wgtz.databaseName: '{{task-type.landing.databaseName}}'
+  task.simple_landing-wgtz.sourceConnection: '{{id(connection, waseem.waseem_Microsoft_SQL_Server_(log_based))}}'
+  task.simple_landing-wgtz.taskSchema: ''
+  task.simple_landing-wgtz:null$_$dbo.schema: dbo
+  task.simple_storage-wgt0.databaseName: '{{task-type.storage.databaseName}}'
+  task.simple_storage-wgt0.internalSchema: ''
+  task.simple_storage-wgt0.taskSchema: ''
+  task.simple_storage-wgt0.warehouseName: '{{task-type.storage.warehouseName}}'
+idToNameMap:
+  simple_landing-wgtz: simple_Landing
+  simple_storage-wgt0: simple_Storage
+nameToIdMap:
+  '{{id(connection, waseem.Waseem_Snowflake_Target)}}': c829be41-0f71-4579-8514-6a0e6d78bfc0
+  '{{id(connection, waseem.waseem_Microsoft_SQL_Server_(log_based))}}': 720f4a3d-2b7f-4eab-8c37-d994fc76fa7c
+connectionProperties:
+  task.simple_landing-wgtz.sourceConnection:
+    type: repsrc_mssql

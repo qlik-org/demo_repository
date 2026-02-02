@@ -1,0 +1,28 @@
+transformedTableLocal:
+  transformedColumnsLocal:
+    - action: KEEP
+      columnName: Description
+      newColumnName: MyDescription
+      primaryKeyOrdinal: 0
+      ordinal: 0
+      nullable: true
+      markAsMetadata: false
+      hash: false
+datasetId: categories
+actionType: LOCAL_MANIPULATION
+scopeType: COLUMN
+scope:
+  whereOwnerName: '%'
+  whereTableName: Categories
+  whereColumnName: '%'
+  whereDatatype: UNSPECIFIED
+  whereColumnKeyAttribute: ANY
+  whereColumnNullability: ANY
+action:
+  renameType: NONE
+  applyColumnDatatype: false
+enabled: true
+internalRule: false
+name: Categories
+id: categories-e3bg
+description: ''

@@ -1,0 +1,14 @@
+sourceConnection: '{{task.simple_landing-wgtz.sourceConnection}}'
+explicitlySelected:
+  - name: Categories
+    schema: '{{task.simple_landing-wgtz:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_categories
+  - name: Customers
+    schema: '{{task.simple_landing-wgtz:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_customers
+  - name: Employees
+    schema: '{{task.simple_landing-wgtz:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_employees

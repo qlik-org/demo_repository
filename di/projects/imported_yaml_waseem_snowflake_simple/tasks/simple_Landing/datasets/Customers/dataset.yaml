@@ -1,0 +1,12 @@
+id: customers
+name: Customers
+type: LANDING
+inputDatasets:
+  - type: TABLE
+    datasetId: $replicate$dbo_customers
+    name: Customers
+    projectId: '{{ref(project.current.projectId)}}'
+    taskId: simple_landing-wgtz
+    schema: '{{task.simple_landing-wgtz:null$_$dbo.schema}}'
+virtualDataset: false
+description: ''

@@ -1,0 +1,18 @@
+id: categories-wgt2
+name: Categories
+type: STORAGE
+inputDatasets:
+  - type: NONE
+    datasetId: categories
+    name: Categories
+    projectId: '{{ref(project.current.projectId)}}'
+    taskId: simple_landing-wgtz
+datasetAttributes:
+  materialized: INHERIT
+  hasHistory: INHERIT
+  hasLiveViews: INHERIT
+  hasChanges: INHERIT
+  hasStandardViewsWithHeaders: INHERIT
+  watermarkIncrementalSettings: INHERIT
+virtualDataset: false
+description: ''
