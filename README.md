@@ -40,3 +40,15 @@ After creating a project directory:
 1. Configure your project settings in `project.json`
 2. Add tasks to the `tasks/` directory
 3. Update `bindingsTemplate.json` with your connection variables and mappings
+
+## GitHub Actions Workflow
+
+Alternatively, you can use the GitHub Actions workflow to create a new project directory:
+
+1. Go to the **Actions** tab in the repository
+2. Select **Create Project Directory** workflow
+3. Click **Run workflow**
+4. Enter the project name and optionally customize the base path
+5. The workflow will create the directory and commit it to the repository
+
+This is useful for team members who want to create new project directories without running scripts locally.
