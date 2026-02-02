@@ -1,0 +1,30 @@
+{
+  "transformedTableLocal": {
+    "filter": {
+      "expressionStatement": "${OrderID} \u003C 10300",
+      "alias": [
+        {
+          "name": "OrderID",
+          "value": "orderid"
+        }
+      ]
+    },
+    "transformedColumnsLocal": []
+  },
+  "datasetId": "orders-hnek",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Orders",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Orders",
+  "id": "orders-s2wp",
+  "description": ""
+}
