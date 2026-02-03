@@ -1,0 +1,21 @@
+{
+  "enabled": false,
+  "schedulingType": "TIME_BASED",
+  "timeBasedScheduling": {
+    "schedule": [
+      "RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0"
+    ],
+    "startDateTime": "2024-12-08T09:05:38.895Z",
+    "timezone": "Etc/UTC",
+    "fullloadInterval": 0
+  },
+  "eventBasedScheduling": {
+    "eventSchedulingType": "ANY_INPUT_TASK",
+    "triggerApps": []
+  },
+  "runOnReconnect": "ONSCHEDULED",
+  "id": "schedule-ijs4",
+  "name": "Schedule",
+  "description": "",
+  "version": "1"
+}
