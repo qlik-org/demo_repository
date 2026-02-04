@@ -1,13 +1,19 @@
 {
-  "sourceConnection": "{{task.landing-khm4.sourceConnection}}",
+  "sourceConnection": "{{task.landing-4zyl.sourceConnection}}",
   "includePatterns": [],
   "excludePatterns": [],
   "explicitlySelected": [
     {
       "name": "Categories",
-      "schema": "{{task.landing-khm4:null$_$dbo.schema}}",
+      "schema": "{{task.landing-4zyl:null$_$dbo.schema}}",
       "type": "TABLE",
       "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "name": "Customers",
+      "schema": "{{task.landing-4zyl:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
     }
   ]
 }
