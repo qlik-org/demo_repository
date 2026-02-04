@@ -1,0 +1,24 @@
+{
+  "id": "region-jdrp",
+  "name": "Region",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "region",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-jdrm"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

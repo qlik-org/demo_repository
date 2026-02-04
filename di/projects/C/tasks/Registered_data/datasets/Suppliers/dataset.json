@@ -1,0 +1,18 @@
+{
+  "id": "suppliers",
+  "name": "Suppliers",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$dbo_suppliers",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-jdrm",
+      "schema": "{{task.registered_data-jdrm:AUTONORTHWIND$_$dbo.schema}}",
+      "database": "{{task.registered_data-jdrm:AUTONORTHWIND$_$dbo.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
