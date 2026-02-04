@@ -1,11 +1,10 @@
 {
-  "id": "$registered_data$dbo_categories",
+  "id": "$replicate$dbo_categories",
   "name": "dbo_Categories",
-  "type": "EXTERNAL_TABLE",
+  "type": "LANDING",
   "tableDef": {
     "name": "Categories",
-    "dbSchema": "{{task.registered_data-khms:NORTHWIND_mini$_$dbo.schema}}",
-    "dbName": "{{task.registered_data-khms:NORTHWIND_mini$_$dbo.database}}",
+    "dbSchema": "{{task.landing-khm4:null$_$dbo.schema}}",
     "columns": [
       {
         "name": "CategoryID",
@@ -17,8 +16,7 @@
           "length": 0,
           "precision": 0,
           "scale": 0,
-          "originalType": "int",
-          "originalTypeFull": "INT"
+          "originalTypeFull": ""
         },
         "id": "categoryid",
         "flags": "NONE",
@@ -34,8 +32,7 @@
           "length": 15,
           "precision": 0,
           "scale": 0,
-          "originalType": "nvarchar",
-          "originalTypeFull": "NVARCHAR(15)"
+          "originalTypeFull": ""
         },
         "id": "categoryname",
         "flags": "NONE",
@@ -48,11 +45,10 @@
         "primaryKeyOrdinal": 0,
         "datatype": {
           "type": "NCLOB",
-          "length": 0,
+          "length": 1073741823,
           "precision": 0,
           "scale": 0,
-          "originalType": "ntext",
-          "originalTypeFull": "NVARCHAR(MAX)"
+          "originalTypeFull": ""
         },
         "id": "description",
         "flags": "NONE",
@@ -68,8 +64,7 @@
           "length": 2147483647,
           "precision": 0,
           "scale": 0,
-          "originalType": "image",
-          "originalTypeFull": "VARBINARY(MAX)"
+          "originalTypeFull": ""
         },
         "id": "picture",
         "flags": "NONE",
