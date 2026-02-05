@@ -1,0 +1,16 @@
+properties:
+  id: categories
+  name: Categories
+  type: LANDING
+  inputDatasets:
+    - type: TABLE
+      datasetId: $replicate$dbo_categories
+      name: Categories
+      taskId: replication_new-v4jv
+      schema: '{{task.replication_new-v4jv:null$_$dbo.schema}}'
+sourceTable:
+  id: $replicate$dbo_categories
+  name: dbo_Categories
+  type: LANDING
+  tableDef:
+    dbSchema: '{{task.replication_new-v4jv:null$_$dbo.schema}}'

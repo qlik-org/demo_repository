@@ -1,0 +1,13 @@
+properties:
+  name: Lake_landing_new
+  id: lake_landing_new-v4jw
+  description: ''
+  type: LAKE_LANDING
+settings:
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+  changeDataPartitioning:
+    partitionBaseTime: 2026-01-21T00:00:00.0000000Z
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing_new-v4jw.targetConnection}}'
+  dataProviderType: REPLICATE

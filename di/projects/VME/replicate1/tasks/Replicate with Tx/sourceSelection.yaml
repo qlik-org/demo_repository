@@ -1,0 +1,6 @@
+sourceConnection: '{{task.replication2-i6bc.sourceConnection}}'
+explicitlySelected:
+  - name: Employees
+    schema: '{{task.replication2-i6bc:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_employees

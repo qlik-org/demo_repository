@@ -1,0 +1,16 @@
+properties:
+  id: invoices
+  name: Invoices
+  type: LANDING
+  inputDatasets:
+    - type: VIEW
+      datasetId: $replicate$dbo_invoices
+      name: Invoices
+      taskId: replicate_cdc_reload-cmvy
+      schema: '{{task.replicate_cdc_reload-cmvy:null$_$dbo.schema}}'
+sourceTable:
+  id: $replicate$dbo_invoices
+  name: dbo_Invoices
+  type: LANDING
+  tableDef:
+    dbSchema: '{{task.replicate_cdc_reload-cmvy:null$_$dbo.schema}}'

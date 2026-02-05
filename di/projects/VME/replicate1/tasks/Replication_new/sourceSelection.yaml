@@ -1,0 +1,6 @@
+sourceConnection: '{{task.replication_new-v4jv.sourceConnection}}'
+explicitlySelected:
+  - name: Categories
+    schema: '{{task.replication_new-v4jv:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_categories

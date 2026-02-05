@@ -1,0 +1,10 @@
+sourceConnection: '{{task.lake_landing_cdc-5-xt.sourceConnection}}'
+excludePatterns:
+  - tablePattern: '%exc'
+    schemaPattern: '{{task.lake_landing_cdc-5-xt:null$_$%.schemaPattern}}'
+    type: VIEW
+explicitlySelected:
+  - name: Customers
+    schema: '{{task.lake_landing_cdc-5-xt:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_customers

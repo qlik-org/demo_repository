@@ -1,0 +1,16 @@
+properties:
+  id: categories
+  name: Categories
+  type: LANDING
+  inputDatasets:
+    - type: TABLE
+      datasetId: $replicate$dbo_categories
+      name: Categories
+      taskId: lake_landing_new-v4jw
+      schema: '{{task.lake_landing_new-v4jw:null$_$dbo.schema}}'
+sourceTable:
+  id: $replicate$dbo_categories
+  name: dbo_Categories
+  type: LANDING
+  tableDef:
+    dbSchema: '{{task.lake_landing_new-v4jw:null$_$dbo.schema}}'

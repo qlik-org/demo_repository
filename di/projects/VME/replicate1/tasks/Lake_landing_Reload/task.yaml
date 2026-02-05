@@ -1,0 +1,40 @@
+properties:
+  name: Lake_landing_Reload
+  id: lake_landing_reload-5-xs
+  description: ''
+  type: LAKE_LANDING
+settings:
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+  changeDataPartitioning:
+    mode: PARTITION_OFF
+    partitionEvery: 60
+  fileAttributes:
+    general:
+      addMetadataHeader:
+        withColumnName: true
+        withDataTypes: true
+    metadataFiles:
+      createInTargetFolder: true
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false
+  metadata:
+    controlTableSelection:
+      - tableId: CHANGE_DATA_PARTITIONS
+        targetName: attrep_cdc_partitions
+        isChecked: false
+  storeChangesOptions:
+    changeTableHeaderColumn:
+      - id: PARTITION_NAME
+        headerColumn: partition_name
+        isChecked: false
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing_reload-5-xs.targetConnection}}'
+  dataProviderType: REPLICATE

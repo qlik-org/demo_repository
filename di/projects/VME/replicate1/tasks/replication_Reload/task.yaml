@@ -1,0 +1,29 @@
+properties:
+  name: replication_Reload
+  id: replicate_cdc_reload-cmvy
+  description: ''
+  type: REPLICATION
+settings:
+  replicationAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+  taskSettings:
+    fullLoad: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2025-11-24T09:07:08.6470000Z
+    changeTableHeaderColumn:
+      - id: STREAM_POSITION
+        headerColumn: stream_position
+        isChecked: false
+      - id: TRANSACTION_ID
+        headerColumn: transaction_id
+        isChecked: false
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  targetEndpoint:
+    targetConnection: '{{task.replicate_cdc_reload-cmvy.targetConnection}}'
+    targetStorageConnection: '{{task.replicate_cdc_reload-cmvy.targetStorageConnection}}'
+  dataProviderType: REPLICATE

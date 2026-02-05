@@ -1,0 +1,30 @@
+properties:
+  name: Replicate with Tx
+  id: replication2-i6bc
+  description: this is a task that includes transformations in it, not a folder for transformed datasets
+  type: REPLICATION
+settings:
+  replicationAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2025-09-30T10:40:05.5800000Z
+    changeTableHeaderColumn:
+      - id: STREAM_POSITION
+        headerColumn: stream_position
+        isChecked: false
+      - id: TRANSACTION_ID
+        headerColumn: transaction_id
+        isChecked: false
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  targetEndpoint:
+    targetConnection: '{{task.replication2-i6bc.targetConnection}}'
+    targetStorageConnection: '{{task.replication2-i6bc.targetStorageConnection}}'
+  dataProviderType: REPLICATE

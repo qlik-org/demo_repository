@@ -1,0 +1,16 @@
+properties:
+  id: customers
+  name: Customers
+  type: LANDING
+  inputDatasets:
+    - type: TABLE
+      datasetId: $replicate$dbo_customers
+      name: Customers
+      taskId: lake_landing_cdc-5-xt
+      schema: '{{task.lake_landing_cdc-5-xt:null$_$dbo.schema}}'
+sourceTable:
+  id: $replicate$dbo_customers
+  name: dbo_Customers
+  type: LANDING
+  tableDef:
+    dbSchema: '{{task.lake_landing_cdc-5-xt:null$_$dbo.schema}}'

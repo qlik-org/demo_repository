@@ -1,0 +1,14 @@
+sourceConnection: '{{task.lake_landing_reload-5-xs.sourceConnection}}'
+includePatterns:
+  - tablePattern: '%inc'
+    schemaPattern: '{{task.lake_landing_reload-5-xs:null$_$%.schemaPattern}}'
+    type: VIEW
+excludePatterns:
+  - tablePattern: '%exc'
+    schemaPattern: '{{task.lake_landing_reload-5-xs:null$_$%.schemaPattern}}'
+    type: VIEW
+explicitlySelected:
+  - name: Invoices
+    schema: '{{task.lake_landing_reload-5-xs:null$_$dbo.schema}}'
+    type: VIEW
+    sourceTableId: $replicate$dbo_invoices

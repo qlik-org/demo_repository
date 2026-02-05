@@ -1,0 +1,10 @@
+sourceConnection: '{{task.replicate_cdc_reload-cmvy.sourceConnection}}'
+excludePatterns:
+  - tablePattern: '%paex'
+    schemaPattern: '{{task.replicate_cdc_reload-cmvy:null$_$dbo.schemaPattern}}'
+    type: TABLE
+explicitlySelected:
+  - name: Invoices
+    schema: '{{task.replicate_cdc_reload-cmvy:null$_$dbo.schema}}'
+    type: VIEW
+    sourceTableId: $replicate$dbo_invoices

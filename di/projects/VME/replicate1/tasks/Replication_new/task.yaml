@@ -1,0 +1,25 @@
+properties:
+  name: Replication_new
+  id: replication_new-v4jv
+  description: ''
+  type: REPLICATION
+settings:
+  replicationAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-01-21T13:57:15.7650000Z
+    changeTableHeaderColumn:
+      - id: STREAM_POSITION
+        headerColumn: stream_position
+        isChecked: false
+      - id: TRANSACTION_ID
+        headerColumn: transaction_id
+        isChecked: false
+  targetEndpoint:
+    targetConnection: '{{task.replication_new-v4jv.targetConnection}}'
+    targetStorageConnection: '{{task.replication_new-v4jv.targetStorageConnection}}'
+  dataProviderType: REPLICATE

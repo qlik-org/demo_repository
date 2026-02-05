@@ -1,0 +1,135 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_TABLE
+    scope:
+      whereOwnerName: '%aa'
+      whereTableName: '%bb'
+    action:
+      renameType: RENAME
+      value: newname
+    enabled: false
+    name: Rule
+    id: rule-76ou
+  - ordinal: 1
+    actionType: RENAME_TABLE
+    action:
+      renameType: ADD_PREFIX
+      value: a
+    enabled: false
+    name: Rule_1
+    id: rule_1-76ov
+  - ordinal: 2
+    actionType: RENAME_TABLE
+    action:
+      renameType: REMOVE_SUFFIX
+      value: a
+    enabled: false
+    name: Rule_2
+    id: rule_2-76ow
+  - ordinal: 3
+    actionType: RENAME_TABLE
+    action:
+      renameType: REPLACE_PREFIX
+      value: b
+      oldValue: a
+    enabled: false
+    name: Rule_3
+    id: rule_3-76ox
+  - ordinal: 4
+    actionType: RENAME_TABLE
+    action:
+      renameType: TO_LOWER
+      value: ''
+    enabled: false
+    name: Rule_4
+    id: rule_4-76oy
+  - ordinal: 5
+    actionType: RENAME_TABLE
+    action:
+      renameType: TO_UPPER
+      value: ''
+    enabled: false
+    name: Rule_5
+    id: rule_5-76oz
+  - ordinal: 6
+    actionType: RENAME_TABLE
+    action:
+      renameType: EXPRESSION
+      expression:
+        expressionStatement: $TRIM(${string}, ${character})
+        alias:
+          - name: string
+            value: $Q_M_SOURCE_SCHEMA_NAME
+          - name: character
+            value: $Q_M_TABLE_NAME
+      value: ''
+    enabled: false
+    name: Rule_6
+    id: rule_6-4flz
+  - ordinal: 7
+    actionType: RENAME_TABLE
+    action:
+      renameType: NAME_MAPPING
+      value: ''
+      valueMapping:
+        aaa: vv
+    enabled: false
+    name: Rule_7
+    id: rule_7-4fl0
+  - ordinal: 8
+    actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereOwnerName: '%a'
+      whereTableName: '%b'
+      whereColumnName: '%c'
+      whereDatatype: INT1
+      whereColumnKeyAttribute: PK_ONLY
+      whereColumnNullability: NOT_NULLABLE_ONLY
+    action:
+      renameType: RENAME
+      value: aaa
+    enabled: false
+    name: Rule_8
+    id: rule_8-4fl1
+  - ordinal: 9
+    actionType: ADD_COLUMN
+    scopeType: COLUMN
+    action:
+      renameType: RENAME
+      expression:
+        expressionStatement: f
+        alias: []
+      column:
+        name: vv
+    enabled: false
+    name: Rule_9
+    id: rule_9-ew2i
+  - ordinal: 10
+    actionType: DROP_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereOwnerName: '%aa'
+      whereTableName: '%aaa'
+    enabled: false
+    name: Rule_10
+    id: rule_10-4fl2
+  - ordinal: 11
+    actionType: CHANGE_COLUMN_DATA_TYPE
+    scopeType: COLUMN
+    action:
+      renameType: RENAME
+    enabled: false
+    name: Rule_11
+    id: rule_11-76oa
+  - ordinal: 12
+    actionType: REPLACE_COLUMN_VALUE
+    scopeType: COLUMN
+    action:
+      renameType: RENAME
+      expression:
+        expressionStatement: aa
+        alias: []
+    enabled: false
+    name: Rule_12
+    id: rule_12-lbyz

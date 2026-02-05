@@ -1,0 +1,16 @@
+properties:
+  id: invoices
+  name: Invoices
+  type: LANDING
+  inputDatasets:
+    - type: VIEW
+      datasetId: $replicate$dbo_invoices
+      name: Invoices
+      taskId: lake_landing_reload-5-xs
+      schema: '{{task.lake_landing_reload-5-xs:null$_$dbo.schema}}'
+sourceTable:
+  id: $replicate$dbo_invoices
+  name: dbo_Invoices
+  type: LANDING
+  tableDef:
+    dbSchema: '{{task.lake_landing_reload-5-xs:null$_$dbo.schema}}'

@@ -1,0 +1,59 @@
+properties:
+  id: employees
+  name: Employees
+  type: LANDING
+  inputDatasets:
+    - type: TABLE
+      datasetId: $replicate$dbo_employees
+      name: Employees
+      taskId: replication2-i6bc
+      schema: '{{task.replication2-i6bc:null$_$dbo.schema}}'
+explicitRule:
+  transformedTableLocal:
+    transformedColumnsLocal:
+      - action: ADD
+        columnName: newcol
+        newDataType:
+          type: BOOLEAN
+          length: 0
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        expression:
+          expressionStatement: ''
+          alias: []
+        addedColumnId: 4d620844-19aa-476d-b19c-e4ea61225816
+      - action: DROP
+        columnName: PhotoPath
+      - action: KEEP
+        columnName: ReportsTo
+        newColumnName: ReportsToRen
+      - action: KEEP
+        columnName: Notes
+        newColumnName: Notes
+        newDataType:
+          type: CLOB
+          length: 0
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+      - action: KEEP
+        columnName: Extension
+        expression:
+          expressionStatement: $UPPER(${string})
+          alias:
+            - name: string
+              value: title
+        ordinal: 14
+  datasetId: employees
+  scopeType: COLUMN
+  scope:
+    whereTableName: Employees
+  name: Employees
+  id: employees-jot1
+sourceTable:
+  id: $replicate$dbo_employees
+  name: dbo_Employees
+  type: LANDING
+  tableDef:
+    dbSchema: '{{task.replication2-i6bc:null$_$dbo.schema}}'

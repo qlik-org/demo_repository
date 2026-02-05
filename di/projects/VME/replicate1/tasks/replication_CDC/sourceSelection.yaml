@@ -1,0 +1,14 @@
+sourceConnection: '{{task.replicate_cdc_cdc-cmvz.sourceConnection}}'
+includePatterns:
+  - tablePattern: '%pa'
+    schemaPattern: '{{task.replicate_cdc_cdc-cmvz:null$_$dbo.schemaPattern}}'
+    type: TABLE
+excludePatterns:
+  - tablePattern: '%paex'
+    schemaPattern: '{{task.replicate_cdc_cdc-cmvz:null$_$dbo.schemaPattern}}'
+    type: TABLE
+explicitlySelected:
+  - name: Categories
+    schema: '{{task.replicate_cdc_cdc-cmvz:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_categories
