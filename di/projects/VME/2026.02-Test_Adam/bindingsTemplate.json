@@ -1,0 +1,61 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.datamart.databaseName": "",
+    "task-type.datamart.databaseSelectionMethod": "",
+    "task-type.datamart.warehouseName": "",
+    "task-type.datamart.warehouseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabase": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.llmConnection": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbConnection": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbTargetType": "",
+    "task-type.fileBasedKnowledgeMart.warehouseName": "",
+    "task-type.fileBasedKnowledgeMart.warehouseSelectionMethod": "",
+    "task-type.knowledgeMart.databaseName": "",
+    "task-type.knowledgeMart.databaseSelectionMethod": "",
+    "task-type.knowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.knowledgeMart.indexDatabase": "",
+    "task-type.knowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.knowledgeMart.llmConnection": "",
+    "task-type.knowledgeMart.vectorDbConnection": "",
+    "task-type.knowledgeMart.vectorDbTargetType": "",
+    "task-type.knowledgeMart.warehouseName": "",
+    "task-type.knowledgeMart.warehouseSelectionMethod": "",
+    "task-type.landing.databaseName": "",
+    "task-type.landing.databaseSelectionMethod": "",
+    "task-type.landing.warehouseName": "",
+    "task-type.landing.warehouseSelectionMethod": "",
+    "task-type.registered.databaseName": "",
+    "task-type.registered.databaseSelectionMethod": "",
+    "task-type.storage.databaseName": "",
+    "task-type.storage.databaseSelectionMethod": "",
+    "task-type.storage.warehouseName": "",
+    "task-type.storage.warehouseSelectionMethod": "",
+    "task-type.transform.databaseName": "",
+    "task-type.transform.databaseSelectionMethod": "",
+    "task-type.transform.warehouseName": "",
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.onboarding_202602_landing-orl_.databaseName": "{{task-type.landing.databaseName}}",
+    "task.onboarding_202602_landing-orl_.sourceConnection": "",
+    "task.onboarding_202602_landing-orl_.taskSchema": "",
+    "task.onboarding_202602_landing-orl_:null$_$sakila.schema": "",
+    "task.onboarding_202602_storage-orma.databaseName": "{{task-type.storage.databaseName}}",
+    "task.onboarding_202602_storage-orma.internalSchema": "",
+    "task.onboarding_202602_storage-orma.taskSchema": "",
+    "task.onboarding_202602_storage-orma.warehouseName": "{{task-type.storage.warehouseName}}"
+  },
+  "idToNameMap": {
+    "onboarding_202602_landing-orl_": "Onboarding_202602_Landing",
+    "onboarding_202602_storage-orma": "Onboarding_202602_Storage"
+  },
+  "connectionProperties": {
+    "task.onboarding_202602_landing-orl_.sourceConnection": {
+      "type": "repsrc_mysql"
+    }
+  }
+}
