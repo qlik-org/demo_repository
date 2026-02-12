@@ -1,0 +1,18 @@
+properties:
+  id: survey_details_pages_questions_headings
+  name: survey_details_pages_questions_headings
+  type: LANDING
+  inputDatasets:
+    - type: VIEW
+      datasetId: $external_data_provider$_survey_details_pages_questions_headings$_$Survey Details
+      name: survey_details_pages_questions_headings
+      taskId: cmgsanityprecog_landing_reload-oy0f
+sourceTable:
+  id: $external_data_provider$_survey_details_pages_questions_headings$_$Survey Details
+  name: survey_details_pages_questions_headings
+  type: LANDING
+  tableDef:
+    datasetId: surveydetailspagesquestionsheadings
+    dbTableId: survey_details_pages_questions_headings$_$Survey Details
+    entityId: surveydetailspagesquestionsheadings
+    fullLoadOnly: true

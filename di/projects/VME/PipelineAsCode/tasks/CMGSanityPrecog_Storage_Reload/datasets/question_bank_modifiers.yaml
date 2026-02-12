@@ -1,0 +1,16 @@
+properties:
+  id: question_bank_modifiers-oy0l
+  name: question_bank_modifiers
+  type: STORAGE
+  inputDatasets:
+    - datasetId: question_bank_modifiers
+      name: question_bank_modifiers
+      taskId: cmgsanityprecog_landing_reload-oy0f
+  datasetAttributes:
+    materialized: INHERIT
+    hasHistory: INHERIT
+    hasLiveViews: INHERIT
+    hasChanges: INHERIT
+    hasStandardViewsWithHeaders: INHERIT
+    watermarkIncrementalSettings: INHERIT
+    createExternalArtifacts: INHERIT

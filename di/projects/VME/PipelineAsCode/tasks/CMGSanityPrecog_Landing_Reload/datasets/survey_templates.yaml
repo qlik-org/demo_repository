@@ -1,0 +1,18 @@
+properties:
+  id: survey_templates
+  name: survey_templates
+  type: LANDING
+  inputDatasets:
+    - type: VIEW
+      datasetId: $external_data_provider$_survey_templates$_$Survey Templates
+      name: survey_templates
+      taskId: cmgsanityprecog_landing_reload-oy0f
+sourceTable:
+  id: $external_data_provider$_survey_templates$_$Survey Templates
+  name: survey_templates
+  type: LANDING
+  tableDef:
+    datasetId: surveytemplates
+    dbTableId: survey_templates$_$Survey Templates
+    entityId: surveytemplates
+    fullLoadOnly: true

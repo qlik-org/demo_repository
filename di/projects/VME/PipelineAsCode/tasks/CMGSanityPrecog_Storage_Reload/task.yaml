@@ -1,0 +1,13 @@
+properties:
+  name: CMGSanityPrecog_Storage_Reload
+  id: cmgsanityprecog_storage_reload-oy0g
+  description: ''
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.cmgsanityprecog_storage_reload-oy0g.internalSchema}}'
+    taskSchema: '{{task.cmgsanityprecog_storage_reload-oy0g.taskSchema}}'
+    databaseName: '{{task.cmgsanityprecog_storage_reload-oy0g.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.cmgsanityprecog_storage_reload-oy0g.warehouseName}}'

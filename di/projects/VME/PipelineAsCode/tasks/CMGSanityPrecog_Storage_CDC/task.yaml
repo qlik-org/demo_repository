@@ -1,0 +1,13 @@
+properties:
+  name: CMGSanityPrecog_Storage_CDC
+  id: cmgsanityprecog_storage_cdc-oy0v
+  description: ''
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.cmgsanityprecog_storage_cdc-oy0v.internalSchema}}'
+    taskSchema: '{{task.cmgsanityprecog_storage_cdc-oy0v.taskSchema}}'
+    databaseName: '{{task.cmgsanityprecog_storage_cdc-oy0v.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.cmgsanityprecog_storage_cdc-oy0v.warehouseName}}'

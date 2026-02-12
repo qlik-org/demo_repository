@@ -1,0 +1,16 @@
+properties:
+  id: surveys-oy0x
+  name: surveys
+  type: STORAGE
+  inputDatasets:
+    - datasetId: surveys
+      name: surveys
+      taskId: cmgsanityprecog_landing_cdc-oy0u
+  datasetAttributes:
+    materialized: INHERIT
+    hasHistory: INHERIT
+    hasLiveViews: INHERIT
+    hasChanges: INHERIT
+    hasStandardViewsWithHeaders: INHERIT
+    watermarkIncrementalSettings: INHERIT
+    createExternalArtifacts: INHERIT

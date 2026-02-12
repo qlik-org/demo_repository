@@ -1,0 +1,16 @@
+properties:
+  id: survey_details_pages-oy0p
+  name: survey_details_pages
+  type: STORAGE
+  inputDatasets:
+    - datasetId: survey_details_pages
+      name: survey_details_pages
+      taskId: cmgsanityprecog_landing_reload-oy0f
+  datasetAttributes:
+    materialized: INHERIT
+    hasHistory: INHERIT
+    hasLiveViews: INHERIT
+    hasChanges: INHERIT
+    hasStandardViewsWithHeaders: INHERIT
+    watermarkIncrementalSettings: INHERIT
+    createExternalArtifacts: INHERIT

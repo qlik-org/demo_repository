@@ -1,0 +1,18 @@
+properties:
+  id: question_bank_modifiers_options
+  name: question_bank_modifiers_options
+  type: LANDING
+  inputDatasets:
+    - type: VIEW
+      datasetId: $external_data_provider$_question_bank_modifiers_options$_$Question Bank
+      name: question_bank_modifiers_options
+      taskId: cmgsanityprecog_landing_reload-oy0f
+sourceTable:
+  id: $external_data_provider$_question_bank_modifiers_options$_$Question Bank
+  name: question_bank_modifiers_options
+  type: LANDING
+  tableDef:
+    datasetId: questionbankmodifiersoptions
+    dbTableId: question_bank_modifiers_options$_$Question Bank
+    entityId: questionbankmodifiersoptions
+    fullLoadOnly: true

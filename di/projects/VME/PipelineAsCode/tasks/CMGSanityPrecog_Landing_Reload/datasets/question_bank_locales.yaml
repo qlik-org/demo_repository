@@ -1,0 +1,18 @@
+properties:
+  id: question_bank_locales
+  name: question_bank_locales
+  type: LANDING
+  inputDatasets:
+    - type: VIEW
+      datasetId: $external_data_provider$_question_bank_locales$_$Question Bank
+      name: question_bank_locales
+      taskId: cmgsanityprecog_landing_reload-oy0f
+sourceTable:
+  id: $external_data_provider$_question_bank_locales$_$Question Bank
+  name: question_bank_locales
+  type: LANDING
+  tableDef:
+    datasetId: questionbanklocales
+    dbTableId: question_bank_locales$_$Question Bank
+    entityId: questionbanklocales
+    fullLoadOnly: true

@@ -1,0 +1,17 @@
+scheduling:
+  - enabled: false
+    schedulingType: TIME_BASED
+    timeBasedScheduling:
+      schedule:
+        - RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0
+      startDateTime: 2026-02-01T11:48:58.3170000Z
+      timezone: Etc/UTC
+      fullloadInterval: 0
+    eventBasedScheduling:
+      eventSchedulingType: ANY_INPUT_TASK
+      triggerApps: []
+    runOnReconnect: ONSCHEDULED
+    id: schedule-oyz-
+    name: Schedule
+    description: ''
+    version: 1

@@ -1,0 +1,13 @@
+properties:
+  name: Transform-Flow
+  id: transform_flow-ad6y
+  description: ''
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform_flow-ad6y.internalSchema}}'
+    taskSchema: '{{task.transform_flow-ad6y.taskSchema}}'
+    databaseName: '{{task.transform_flow-ad6y.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_flow-ad6y.warehouseName}}'

@@ -1,0 +1,11 @@
+properties:
+  name: CMGSanityPrecog_Landing_CDC
+  id: cmgsanityprecog_landing_cdc-oy0u
+  description: ''
+  type: LANDING_SAAS_MANAGED
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      database: '{{task.cmgsanityprecog_landing_cdc-oy0u.databaseName}}'
+      dataAssetSchema: '{{task.cmgsanityprecog_landing_cdc-oy0u.taskSchema}}'
+  landingType: PRECOG

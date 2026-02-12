@@ -1,0 +1,15 @@
+properties:
+  name: CMGSanityPrecog_Landing_Reload
+  id: cmgsanityprecog_landing_reload-oy0f
+  description: ''
+  type: LANDING_SAAS_MANAGED
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      database: '{{task.cmgsanityprecog_landing_reload-oy0f.databaseName}}'
+      dataAssetSchema: '{{task.cmgsanityprecog_landing_reload-oy0f.taskSchema}}'
+  landingType: PRECOG
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false

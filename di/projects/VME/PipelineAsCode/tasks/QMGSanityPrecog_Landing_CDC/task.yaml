@@ -1,0 +1,14 @@
+properties:
+  name: QMGSanityPrecog_Landing_CDC
+  id: qmgsanityprecog_landing_cdc-oyz8
+  description: test
+  type: LANDING_SAAS_MANAGED
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      database: '{{task.qmgsanityprecog_landing_cdc-oyz8.databaseName}}'
+      dataAssetSchema: '{{task.qmgsanityprecog_landing_cdc-oyz8.taskSchema}}'
+  landingType: PRECOG
+  ddlHandlingPolicy:
+    addColumn: IGNORE
+    createTable: IGNORE

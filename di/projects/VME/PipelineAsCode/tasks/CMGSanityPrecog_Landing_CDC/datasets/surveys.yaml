@@ -1,0 +1,17 @@
+properties:
+  id: surveys
+  name: surveys
+  type: LANDING
+  inputDatasets:
+    - type: TABLE
+      datasetId: $external_data_provider$_surveys$_$Surveys
+      name: surveys
+      taskId: cmgsanityprecog_landing_cdc-oy0u
+sourceTable:
+  id: $external_data_provider$_surveys$_$Surveys
+  name: surveys
+  type: LANDING
+  tableDef:
+    datasetId: surveys
+    dbTableId: surveys$_$Surveys
+    entityId: surveys

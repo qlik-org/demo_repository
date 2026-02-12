@@ -1,0 +1,22 @@
+properties:
+  id: filtered_data-ad6a
+  name: Filtered_data
+  type: DATAFLOW
+  inputDatasets:
+    - datasetId: surveys-oyz_
+      taskId: qmgsanityprecog_storage_cdc-oyz9
+  datasetAttributes:
+    materialized: INHERIT
+    hasHistory: INHERIT
+    hasLiveViews: INHERIT
+    hasChanges: INHERIT
+    hasStandardViewsWithHeaders: INHERIT
+    watermarkIncrementalSettings: INHERIT
+    createExternalArtifacts: INHERIT
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, Filtered_data)}}'
+    targetId: 05ac6d64-ab65-48b0-b664-899f8b2db853
+    dataflowTargetState: VALID
+    incremental: false
+mappings:
+  mappings: []
