@@ -1,0 +1,45 @@
+{
+  "id": "$external_data_provider$_survey_categories$_$Survey Categories",
+  "name": "survey_categories",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "survey_categories",
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "id",
+        "flags": "NONE"
+      },
+      {
+        "name": "name",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "name",
+        "flags": "NONE"
+      }
+    ],
+    "datasetId": "surveycategories",
+    "dbTableId": "survey_categories$_$Survey Categories",
+    "entityId": "surveycategories",
+    "secureQri": "",
+    "fullLoadOnly": true
+  }
+}

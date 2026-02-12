@@ -1,0 +1,16 @@
+{
+  "id": "surveys",
+  "name": "surveys",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_surveys$_$Surveys",
+      "name": "surveys",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "cmgsanityprecog_landing_cdc-oy0u"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

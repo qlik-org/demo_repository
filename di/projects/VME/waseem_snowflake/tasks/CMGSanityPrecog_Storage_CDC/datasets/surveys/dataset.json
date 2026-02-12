@@ -1,0 +1,24 @@
+{
+  "id": "surveys-oy0x",
+  "name": "surveys",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "surveys",
+      "name": "surveys",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "cmgsanityprecog_landing_cdc-oy0u"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

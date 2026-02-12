@@ -1,0 +1,60 @@
+{
+  "id": "$external_data_provider$_question_bank_locales$_$Question Bank",
+  "name": "question_bank_locales",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "question_bank_locales",
+    "columns": [
+      {
+        "name": "array_index",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "array_index",
+        "flags": "NONE"
+      },
+      {
+        "name": "locales",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "locales",
+        "flags": "NONE"
+      },
+      {
+        "name": "question_id_question_bank",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "question_id_question_bank",
+        "flags": "NONE"
+      }
+    ],
+    "datasetId": "questionbanklocales",
+    "dbTableId": "question_bank_locales$_$Question Bank",
+    "entityId": "questionbanklocales",
+    "secureQri": "",
+    "fullLoadOnly": true
+  }
+}

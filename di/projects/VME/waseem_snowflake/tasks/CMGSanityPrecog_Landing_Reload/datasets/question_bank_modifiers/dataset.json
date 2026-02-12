@@ -1,0 +1,16 @@
+{
+  "id": "question_bank_modifiers",
+  "name": "question_bank_modifiers",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "VIEW",
+      "datasetId": "$external_data_provider$_question_bank_modifiers$_$Question Bank",
+      "name": "question_bank_modifiers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "cmgsanityprecog_landing_reload-oy0f"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

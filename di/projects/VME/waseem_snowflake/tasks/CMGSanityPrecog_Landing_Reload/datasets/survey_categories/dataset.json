@@ -1,0 +1,16 @@
+{
+  "id": "survey_categories",
+  "name": "survey_categories",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "VIEW",
+      "datasetId": "$external_data_provider$_survey_categories$_$Survey Categories",
+      "name": "survey_categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "cmgsanityprecog_landing_reload-oy0f"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

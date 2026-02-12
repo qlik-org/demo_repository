@@ -1,0 +1,165 @@
+{
+  "id": "$external_data_provider$_survey_details_pages_questions$_$Survey Details",
+  "name": "survey_details_pages_questions",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "survey_details_pages_questions",
+    "columns": [
+      {
+        "name": "array_index",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "array_index",
+        "flags": "NONE"
+      },
+      {
+        "name": "array_index_survey_details_pages",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "array_index_survey_details_pages",
+        "flags": "NONE"
+      },
+      {
+        "name": "family",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 13,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "family",
+        "flags": "NONE"
+      },
+      {
+        "name": "forced_ranking",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "forced_ranking",
+        "flags": "NONE"
+      },
+      {
+        "name": "href",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 84,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "href",
+        "flags": "NONE"
+      },
+      {
+        "name": "id",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 9,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "id",
+        "flags": "NONE"
+      },
+      {
+        "name": "id_survey_details",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 3,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 9,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "id_survey_details",
+        "flags": "NONE"
+      },
+      {
+        "name": "position",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "position",
+        "flags": "NONE"
+      },
+      {
+        "name": "subtype",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 8,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "subtype",
+        "flags": "NONE"
+      },
+      {
+        "name": "visible",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "visible",
+        "flags": "NONE"
+      }
+    ],
+    "datasetId": "surveydetailspagesquestions",
+    "dbTableId": "survey_details_pages_questions$_$Survey Details",
+    "entityId": "surveydetailspagesquestions",
+    "secureQri": "",
+    "fullLoadOnly": true
+  }
+}

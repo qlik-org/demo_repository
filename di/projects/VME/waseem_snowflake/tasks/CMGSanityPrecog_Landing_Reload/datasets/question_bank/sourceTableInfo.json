@@ -1,0 +1,45 @@
+{
+  "id": "$external_data_provider$_question_bank$_$Question Bank",
+  "name": "question_bank",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "question_bank",
+    "columns": [
+      {
+        "name": "question_id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "question_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "text",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 454,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "text",
+        "flags": "NONE"
+      }
+    ],
+    "datasetId": "questionbank",
+    "dbTableId": "question_bank$_$Question Bank",
+    "entityId": "questionbank",
+    "secureQri": "",
+    "fullLoadOnly": true
+  }
+}

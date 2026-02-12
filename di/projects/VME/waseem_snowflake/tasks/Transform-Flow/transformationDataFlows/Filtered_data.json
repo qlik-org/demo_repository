@@ -1,0 +1,386 @@
+{
+  "name": "Filtered_data",
+  "description": "filter",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform_flow-ad6y"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "25609270-1b66-46c6-ac6c-484e03a3224a",
+        "label": "surveys",
+        "graphical": {
+          "position": {
+            "x": -80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "c1e9ef5b-2071-4491-97d2-c0e0bafddb0e",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "qmgsanityprecog_storage_cdc-oyz9",
+              "entityId": "surveys-oyz_"
+            },
+            "configuration": {
+              "name": "surveys"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "05ac6d64-ab65-48b0-b664-899f8b2db853",
+        "label": "Filtered_data",
+        "graphical": {
+          "position": {
+            "x": 960,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "5ad86632-c249-41ea-ae29-619cd7fd4e37",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "Filtered_data",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "date_created",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "date_modified",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "nickname",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "question_count",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "response_count",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "16ed1777-bba0-4e9c-abb2-79c4c91a50ba",
+        "label": "Filter 1",
+        "graphical": {
+          "position": {
+            "x": 720,
+            "y": 40
+          },
+          "icon": "filter-row-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "7b20cfb3-1f9e-4179-9cf0-286a72b42339",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "980c26e5-5f89-4311-83ee-0309d0ebc59f",
+              "type": "DEFAULT"
+            },
+            {
+              "id": "9162bf6f-43f0-4829-b70c-394e1128bccf",
+              "type": "REJECT"
+            }
+          ]
+        },
+        "component": {
+          "type": "filter",
+          "label": "Filter",
+          "properties": {
+            "tckType": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjRmlsdGVy",
+            "configuration": {
+              "logicalOpType": "ALL",
+              "filters": [
+                {
+                  "columnName": "question_count",
+                  "function": "EMPTY",
+                  "operator": "EQUAL",
+                  "compareWith": "VALUE",
+                  "value": "100",
+                  "columnToCompareWith": "",
+                  "$columnName_name": "question_count"
+                }
+              ],
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "8538ceed-92e2-4fd7-a7ea-9318164a21b4",
+        "label": "Select columns 1",
+        "graphical": {
+          "position": {
+            "x": 200,
+            "y": 40
+          },
+          "icon": "field-selector-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "47be2214-ed21-4aa5-8b12-542487919050",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "94926ff5-0376-42fa-8bfd-ee4458db0e5a",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "field-selector",
+          "label": "Select columns",
+          "properties": {
+            "tckType": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjRmllbGRTZWxlY3Rvcg",
+            "configuration": {
+              "selectors": [
+                {
+                  "path": "date_created",
+                  "field": "date_created",
+                  "output": "",
+                  "selected": true
+                },
+                {
+                  "path": "date_modified",
+                  "field": "date_modified",
+                  "output": "",
+                  "selected": true
+                },
+                {
+                  "path": "nickname",
+                  "field": "nickname",
+                  "output": "",
+                  "selected": true
+                },
+                {
+                  "path": "question_count",
+                  "field": "question_count",
+                  "output": "",
+                  "selected": true
+                },
+                {
+                  "path": "response_count",
+                  "field": "response_count",
+                  "output": "",
+                  "selected": true
+                }
+              ],
+              "distinct": false,
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "a1c7b97d-d130-4b6b-b5fc-4e882207809a",
+        "label": "Math 1",
+        "graphical": {
+          "position": {
+            "x": 480,
+            "y": 40
+          },
+          "icon": "maths-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "d317eb1d-633f-4be6-a6ba-8684cb9edfc5",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "575d4a43-a601-41f6-8f8e-2cd31df75b8e",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "math",
+          "label": "Math",
+          "properties": {
+            "tckType": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwTWF0aA",
+            "configuration": {
+              "type": "NUMERIC_OPS",
+              "absoluteConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "$columnsToProcess_name": ""
+              },
+              "cosNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "$columnsToProcess_name": ""
+              },
+              "sinNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "$columnsToProcess_name": ""
+              },
+              "tanNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "$columnsToProcess_name": ""
+              },
+              "negateNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "$columnsToProcess_name": ""
+              },
+              "logarithmNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "$columnsToProcess_name": ""
+              },
+              "squareRootNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "$columnsToProcess_name": ""
+              },
+              "exponentialNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "$columnsToProcess_name": ""
+              },
+              "naturalLogarithmNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "$columnsToProcess_name": ""
+              },
+              "numericOpsConfiguration": {
+                "columnsToProcess": "question_count",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "mode": "WITH_VALUE",
+                "constantValue": "100",
+                "operator": "MULTIPLY",
+                "$operator_name": "x",
+                "$columnsToProcess_name": "question_count"
+              },
+              "moduloConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "mode": "WITH_VALUE",
+                "constantValue": "",
+                "$columnsToProcess_name": ""
+              },
+              "maxNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "mode": "WITH_VALUE",
+                "constantValue": "",
+                "$columnsToProcess_name": ""
+              },
+              "minNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "mode": "WITH_VALUE",
+                "constantValue": "",
+                "$columnsToProcess_name": ""
+              },
+              "powNumbersConfiguration": {
+                "columnsToProcess": "",
+                "shouldCreateNewColumn": false,
+                "newColumnName": "",
+                "mode": "WITH_VALUE",
+                "constantValue": "",
+                "$columnsToProcess_name": ""
+              },
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "18996415-2a4d-4aff-9b6d-4d5a375eec43",
+        "sourceHandle": "c1e9ef5b-2071-4491-97d2-c0e0bafddb0e",
+        "targetHandle": "47be2214-ed21-4aa5-8b12-542487919050"
+      },
+      {
+        "id": "reactflow__edge-16ed1777-bba0-4e9c-abb2-79c4c91a50ba980c26e5-5f89-4311-83ee-0309d0ebc59f-05ac6d64-ab65-48b0-b664-899f8b2db8535ad86632-c249-41ea-ae29-619cd7fd4e37",
+        "sourceHandle": "980c26e5-5f89-4311-83ee-0309d0ebc59f",
+        "targetHandle": "5ad86632-c249-41ea-ae29-619cd7fd4e37"
+      },
+      {
+        "id": "4b05982d-3847-4793-97e5-36179e6f5430",
+        "sourceHandle": "94926ff5-0376-42fa-8bfd-ee4458db0e5a",
+        "targetHandle": "d317eb1d-633f-4be6-a6ba-8684cb9edfc5"
+      },
+      {
+        "id": "ed4a4ff1-3b8a-41ab-a7e9-6945206c8931",
+        "sourceHandle": "575d4a43-a601-41f6-8f8e-2cd31df75b8e",
+        "targetHandle": "7b20cfb3-1f9e-4179-9cf0-286a72b42339"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

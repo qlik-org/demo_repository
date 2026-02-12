@@ -1,0 +1,16 @@
+{
+  "id": "survey_templates",
+  "name": "survey_templates",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "VIEW",
+      "datasetId": "$external_data_provider$_survey_templates$_$Survey Templates",
+      "name": "survey_templates",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "cmgsanityprecog_landing_reload-oy0f"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
