@@ -1,0 +1,27 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_FAD_ANA_00_53_53landing.database}}",
+      "name": "Customers",
+      "schema": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_FAD_ANA_00_53_53landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$vc_imp_pipe_landing_customers"
+    },
+    {
+      "database": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_FAD_ANA_00_53_53landing.database}}",
+      "name": "Employees",
+      "schema": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_FAD_ANA_00_53_53landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$vc_imp_pipe_landing_employees"
+    },
+    {
+      "database": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_FAD_ANA_00_53_53landing.database}}",
+      "name": "Orders",
+      "schema": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_FAD_ANA_00_53_53landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$vc_imp_pipe_landing_orders"
+    }
+  ]
+}
