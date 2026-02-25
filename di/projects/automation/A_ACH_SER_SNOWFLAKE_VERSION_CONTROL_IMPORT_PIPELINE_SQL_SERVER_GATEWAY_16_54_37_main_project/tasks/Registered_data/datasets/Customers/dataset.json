@@ -1,0 +1,18 @@
+{
+  "id": "customers",
+  "name": "Customers",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$vc_imp_pipe_landing_customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-s2w0",
+      "schema": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_ACH_SER_16_54_37landing.schema}}",
+      "database": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_ACH_SER_16_54_37landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
