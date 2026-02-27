@@ -1,0 +1,18 @@
+{
+  "id": "orders",
+  "name": "Orders",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$vc_imp_pipe_landing_orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-s2w0",
+      "schema": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_MIL_EXP_22_12_09landing.schema}}",
+      "database": "{{task.registered_data-s2w0:DIS_AUTOMATION$_$A_MIL_EXP_22_12_09landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
