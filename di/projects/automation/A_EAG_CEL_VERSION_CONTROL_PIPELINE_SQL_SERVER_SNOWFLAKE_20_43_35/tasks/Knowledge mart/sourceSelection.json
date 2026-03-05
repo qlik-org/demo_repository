@@ -1,0 +1,27 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform--c0y",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-sfwr"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform--c0y",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees--c00"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform--c0y",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-ijob"
+    }
+  ]
+}
