@@ -1,0 +1,30 @@
+{
+  "id": "transform_flow-4d_h",
+  "name": "transform_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "orders-tnig",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "project1_storage2-tnie"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "ON",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, transform_flow)}}",
+    "targetId": "239c5c16-2bad-46c7-bcab-31d0f4c94370",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

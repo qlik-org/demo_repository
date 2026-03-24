@@ -1,0 +1,122 @@
+{
+  "id": "sql-jxuq",
+  "name": "sql",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "customers-7_3j",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "project1_storage1-pbfg"
+    },
+    {
+      "type": "NONE",
+      "datasetId": "orders-tnig",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "project1_storage2-tnie"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "sql",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "orderid",
+        "flags": "NONE"
+      },
+      {
+        "name": "OrderDate",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "orderdate",
+        "flags": "NONE"
+      },
+      {
+        "name": "CustomerID",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(5)"
+        },
+        "id": "customerid",
+        "flags": "NONE"
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(40)"
+        },
+        "id": "companyname",
+        "flags": "NONE"
+      }
+    ],
+    "entityId": "sql-jxuq",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {
+      "expressionStatement": "select\n  o.\u0022OrderID\u0022,\n  o.\u0022OrderDate\u0022,\n  c.\u0022CustomerID\u0022,\n  c.\u0022CompanyName\u0022\nfrom\n  ${Customers} c\n  inner join ${Orders} o on c.\u0022CustomerID\u0022 = o.\u0022CustomerID\u0022",
+      "alias": [
+        {
+          "name": "Customers",
+          "value": "{{ref(project.current.projectId)}}$_$project1_storage1-pbfg$_$customers-7_3j"
+        },
+        {
+          "name": "Orders",
+          "value": "{{ref(project.current.projectId)}}$_$project1_storage2-tnie$_$orders-tnig"
+        }
+      ]
+    },
+    "incremental": false,
+    "text2sqlPrompt": "",
+    "text2sqlResult": ""
+  },
+  "virtualDataset": false,
+  "description": ""
+}

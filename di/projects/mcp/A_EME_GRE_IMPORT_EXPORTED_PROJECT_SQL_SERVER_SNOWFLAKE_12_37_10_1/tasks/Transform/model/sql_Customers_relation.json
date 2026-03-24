@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "sql-jxuq",
+    "name": "sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-jxuo"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "customers-4d_i",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-jxuo"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "sql_Customers_relation",
+  "description": "",
+  "id": "sql_customers_relation-4d_k"
+}

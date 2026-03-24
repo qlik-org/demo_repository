@@ -1,0 +1,18 @@
+{
+  "id": "orders",
+  "name": "Orders",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$project1_landing_orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "project1_registered_data-tnid",
+      "schema": "{{task.project1_registered_data-tnid:DIS_AUTOMATION$_$A_EME_GRE_12_37_10project1_landing.schema}}",
+      "database": "{{task.project1_registered_data-tnid:DIS_AUTOMATION$_$A_EME_GRE_12_37_10project1_landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

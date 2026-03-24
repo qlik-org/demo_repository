@@ -1,0 +1,159 @@
+{
+  "id": "orders_fom_sql_transform-4d_l",
+  "name": "orders_fom_sql_transform",
+  "type": "FACT",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "sql-jxuq",
+      "name": "sql",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform-jxuo"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "orders_fom_sql_transform",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "orderid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CustomerID",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(5)"
+        },
+        "id": "customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(40)"
+        },
+        "id": "companyname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "orders_fom_sql_transform-4d_l",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "factDatasetSettings": {
+    "type": "TRANSACTIONAL",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "sql-jxuq",
+      "name": "sql",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform-jxuo"
+    },
+    "factDimension": [
+      {
+        "name": "Customers",
+        "dimension": {
+          "type": "NONE",
+          "entityId": "customers-4d_m",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "datamart-3hu3"
+        },
+        "dimensionRelationshipPath": "sql_customers_relation-4d_k",
+        "dimensionRelationshipPathDisplayName": "sql_Customers_relation",
+        "dimensionRelationshipPathShortName": ""
+      }
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "OrderID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${OrderID}",
+            "alias": [
+              {
+                "name": "OrderID",
+                "value": "OrderID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CustomerID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CustomerID}",
+            "alias": [
+              {
+                "name": "CustomerID",
+                "value": "CustomerID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CompanyName}",
+            "alias": [
+              {
+                "name": "CompanyName",
+                "value": "CompanyName"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
