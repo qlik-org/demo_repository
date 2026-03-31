@@ -1,0 +1,25 @@
+{
+  "id": "products-a4jj",
+  "name": "Products",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "products",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "ob_compare_landing-a4jv"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
