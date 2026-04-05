@@ -1,0 +1,21 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-ijoo",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.automation$_$A_AVE_ENF_ADD_MIDDLE_COLUMN_FL_SQL_SERVER_SNOWFLAKE_09_33_54_1 (ave_lip).projectId}}",
+      "sourceTask": "transform-1YhB",
+      "name": "MyCategories",
+      "type": "NONE",
+      "sourceTableId": "mycategories-1YhD"
+    }
+  ]
+}
