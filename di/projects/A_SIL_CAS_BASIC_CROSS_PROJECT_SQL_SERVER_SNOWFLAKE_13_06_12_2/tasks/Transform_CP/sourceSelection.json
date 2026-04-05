@@ -1,0 +1,20 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding2_cp_storage-rkc2",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-rkc4"
+    },
+    {
+      "sourceProject": "{{project.automation$_$A_CIT_FUS_BASIC_CROSS_PROJECT_SQL_SERVER_SNOWFLAKE_13_06_12_1.projectId}}",
+      "sourceTask": "onboarding_source1_storage-yygp",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-yygr"
+    }
+  ]
+}

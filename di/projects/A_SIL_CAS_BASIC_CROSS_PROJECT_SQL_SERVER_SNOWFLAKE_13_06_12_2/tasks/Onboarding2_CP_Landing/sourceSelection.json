@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.onboarding2_cp_landing-rkc1.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Customers",
+      "schema": "{{task.onboarding2_cp_landing-rkc1:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    }
+  ]
+}
