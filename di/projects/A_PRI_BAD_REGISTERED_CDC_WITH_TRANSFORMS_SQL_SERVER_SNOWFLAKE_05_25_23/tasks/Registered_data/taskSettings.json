@@ -1,0 +1,32 @@
+{
+  "fullLoadOnly": false,
+  "artifactsLocation": {
+    "internalSchema": "{{task.registered_data-tMjY.internalSchema}}",
+    "taskSchema": "{{task.registered_data-tMjY.taskSchema}}",
+    "databaseName": "{{task.registered_data-tMjY.databaseName}}"
+  },
+  "incrementalSettings": {
+    "registeredType": "REPLICATE",
+    "watermarkColumnName": {
+      "expressionStatement": "header__change_seq"
+    },
+    "useBatchTimeAsFromDate": false,
+    "fromDateColumnName": {
+      "expressionStatement": "header__timestamp"
+    },
+    "useSameTableAsCt": false,
+    "ctTableName": {
+      "expressionStatement": "${SOURCE_TABLE_NAME}__ct"
+    },
+    "softDeleteSupport": false,
+    "priorImageSupport": false
+  },
+  "artifactsSettings": {
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  },
+  "viewType": "DEFAULT"
+}

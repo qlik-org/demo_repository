@@ -1,0 +1,25 @@
+{
+  "sourceConnection": "{{task.landing-5D4X.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Employees",
+      "schema": "{{task.landing-5D4X:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    },
+    {
+      "name": "Orders",
+      "schema": "{{task.landing-5D4X:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_orders"
+    },
+    {
+      "name": "Shippers",
+      "schema": "{{task.landing-5D4X:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_shippers"
+    }
+  ]
+}

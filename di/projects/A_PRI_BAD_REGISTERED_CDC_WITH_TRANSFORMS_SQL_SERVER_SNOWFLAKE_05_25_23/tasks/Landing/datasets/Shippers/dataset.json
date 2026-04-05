@@ -1,0 +1,17 @@
+{
+  "id": "shippers",
+  "name": "Shippers",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "$replicate$dbo_shippers",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-5D4X",
+      "schema": "{{task.landing-5D4X:null$_$dbo.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

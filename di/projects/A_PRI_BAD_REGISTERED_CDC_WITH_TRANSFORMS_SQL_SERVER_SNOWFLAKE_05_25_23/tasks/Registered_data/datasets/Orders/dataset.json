@@ -1,0 +1,18 @@
+{
+  "id": "orders",
+  "name": "Orders",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "$registered_data$snow_2_landing_orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-tMjY",
+      "schema": "{{task.registered_data-tMjY:DIS_AUTOMATION$_$A_PRI_BAD_05_25_23snow_2_landing.schema}}",
+      "database": "{{task.registered_data-tMjY:DIS_AUTOMATION$_$A_PRI_BAD_05_25_23snow_2_landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

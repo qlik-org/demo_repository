@@ -1,0 +1,62 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "KEEP",
+        "columnName": "ShipRegion",
+        "newColumnName": "ShipRegion",
+        "newDataType": {
+          "type": "UNSPECIFIED",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "$CONCAT(${X},$CONCAT(\u0027_\u0027, ${Y}))",
+          "alias": [
+            {
+              "name": "X",
+              "value": "shipcity"
+            },
+            {
+              "name": "Y",
+              "value": "shipcountry"
+            }
+          ]
+        },
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "OrderID",
+        "newColumnName": "Order_ID",
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "markAsMetadata": false,
+        "hash": false
+      }
+    ]
+  },
+  "datasetId": "orders",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Orders",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Orders",
+  "id": "orders-dG0f",
+  "description": ""
+}
