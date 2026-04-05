@@ -1,0 +1,134 @@
+{
+  "id": "shippers-mEUa",
+  "name": "Shippers",
+  "type": "DIMENSION",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "shippers-GAVq",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "rosie8_storage-GAVm"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Shippers",
+    "columns": [
+      {
+        "name": "ShipperID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "shipperid",
+        "flags": "NONE"
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "companyname",
+        "flags": "NONE"
+      },
+      {
+        "name": "Phone",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "phone",
+        "flags": "NONE"
+      }
+    ],
+    "entityId": "shippers-mEUa",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "dimensionDatasetSettings": {
+    "type": "TYPE2",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "shippers-GAVq",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "rosie8_storage-GAVm"
+    },
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "ShipperID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${ShipperID}",
+            "alias": [
+              {
+                "name": "ShipperID",
+                "value": "ShipperID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CompanyName}",
+            "alias": [
+              {
+                "name": "CompanyName",
+                "value": "CompanyName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Phone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Phone}",
+            "alias": [
+              {
+                "name": "Phone",
+                "value": "Phone"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

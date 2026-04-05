@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "schedulingType": "EVENT_BASED",
+  "timeBasedScheduling": {
+    "schedule": [
+      "RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0"
+    ],
+    "startDateTime": "2023-02-21T13:22:10.658Z",
+    "timezone": "Etc/UTC",
+    "fullloadInterval": 0
+  },
+  "eventBasedScheduling": {
+    "eventSchedulingType": "ANY_INPUT_TASK",
+    "triggerApps": []
+  },
+  "runOnReconnect": "ONSCHEDULED",
+  "id": "schedule-osii",
+  "name": "Schedule",
+  "description": "",
+  "version": "1"
+}

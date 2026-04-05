@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orders-GAVp",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "rosie8_storage-GAVm"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "shippers-GAVq",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "rosie8_storage-GAVm"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipVia",
+      "targetColumn": "ShipperID"
+    }
+  ],
+  "name": "orders_shippers",
+  "description": "",
+  "id": "orders_shippers-GAVt"
+}

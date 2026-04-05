@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "employees-GAVn",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "rosie8_storage-GAVm"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "employees-GAVn",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "rosie8_storage-GAVm"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ReportsTo",
+      "targetColumn": "EmployeeID"
+    }
+  ],
+  "name": "employees_employees",
+  "description": "",
+  "id": "employees_employees-GAVu"
+}
