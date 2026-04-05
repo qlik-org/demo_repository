@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.onboarding_5_4_landing-1pnf.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Products",
+      "schema": "{{task.onboarding_5_4_landing-1pnf:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    },
+    {
+      "name": "Region",
+      "schema": "{{task.onboarding_5_4_landing-1pnf:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_region"
+    }
+  ]
+}
