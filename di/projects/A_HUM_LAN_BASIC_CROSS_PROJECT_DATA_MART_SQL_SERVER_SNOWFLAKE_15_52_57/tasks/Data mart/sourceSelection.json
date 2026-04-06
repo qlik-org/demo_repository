@@ -1,0 +1,42 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage_cp_dm-oclu",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage_cp_dm-oclu",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-wng7"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage_cp_dm-oclu",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products-wng8"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage_cp_dm-oclu",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers-wng9"
+    },
+    {
+      "sourceProject": "{{project.automation$_$A_CHA_LEA_BASIC_CROSS_PROJECT_DATA_MART_SQL_SERVER_SNOWFLAKE_15_52_57.projectId}}",
+      "sourceTask": "storage_cp_dm-wng1",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-scln"
+    }
+  ]
+}
