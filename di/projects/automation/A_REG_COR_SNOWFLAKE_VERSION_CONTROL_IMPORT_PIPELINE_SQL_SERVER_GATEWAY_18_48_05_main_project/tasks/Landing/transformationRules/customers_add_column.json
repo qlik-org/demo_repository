@@ -1,0 +1,36 @@
+{
+  "ordinal": 0,
+  "actionType": "ADD_COLUMN",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Customers",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "action": {
+    "renameType": "RENAME",
+    "applyColumnDatatype": false,
+    "column": {
+      "name": "FullAddress",
+      "ordinal": 0,
+      "nullable": true,
+      "primaryKeyOrdinal": 0,
+      "datatype": {
+        "type": "STRING",
+        "length": 80,
+        "precision": 0,
+        "scale": 0,
+        "originalTypeFull": ""
+      },
+      "flags": "NONE"
+    }
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "customers_add_column",
+  "id": "customers_add_column-tti5",
+  "description": ""
+}
