@@ -1,0 +1,21 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-ijoo",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.automation$_$A_ABS_PIL_BASIC_FLOW_LAKELANDING_SQL_SERVER_SNOWFLAKE_18_11_56.projectId}}",
+      "sourceTask": "transform-1YhB",
+      "name": "MyCategories",
+      "type": "NONE",
+      "sourceTableId": "mycategories-1YhD"
+    }
+  ]
+}
