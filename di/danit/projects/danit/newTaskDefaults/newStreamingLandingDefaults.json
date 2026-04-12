@@ -1,0 +1,15 @@
+{
+  "taskRuntime": {
+    "numberOfReadersTaskSettings": {
+      "numberOfReaders": 1,
+      "numberOfReadersType": "AUTOMATIC"
+    },
+    "lakehouseClusterId": "{{task-type.streamingLanding.lakehouseCluster}}"
+  },
+  "folderRetentionSettings": {
+    "type": "NONE",
+    "daysOfRetention": 1
+  },
+  "folderLocationType": "DATA_ASSET_NAME",
+  "specificFolder": ""
+}

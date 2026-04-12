@@ -1,0 +1,26 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.icebergStorage.lakehouseCluster": "",
+    "task-type.icebergTransform.lakehouseCluster": "",
+    "task-type.streamingLanding.lakehouseCluster": "",
+    "task.onboarding_streaming_landing-feqz.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.onboarding_streaming_landing-feqz.sourceConnection": "",
+    "task.onboarding_streaming_transform-feqa.internalSchema": "",
+    "task.onboarding_streaming_transform-feqa.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.onboarding_streaming_transform-feqa.taskSchema": ""
+  },
+  "idToNameMap": {
+    "onboarding_streaming_landing-feqz": "Onboarding_Streaming_landing",
+    "onboarding_streaming_transform-feqa": "Onboarding_Streaming_Transform"
+  },
+  "connectionProperties": {
+    "task.onboarding_streaming_landing-feqz.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-kinesis"
+    }
+  }
+}

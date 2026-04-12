@@ -1,0 +1,25 @@
+{
+  "taskRuntime": {
+    "lakehouseClusterId": "{{task-type.icebergTransform.lakehouseCluster}}"
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  },
+  "folderLocationType": "DATA_ASSET_NAME",
+  "specificFolder": "",
+  "viewDefinitionSettings": {
+    "standardViewHeaders": {
+      "hdrFromTimestamp": false,
+      "hdrInsertedTimestamp": false,
+      "hdrModifiedTimestamp": false,
+      "hdrBatchIdentifier": false
+    },
+    "historyViewHeaders": {
+      "hdrFromTimestamp": true,
+      "hdrToTimestamp": true,
+      "hdrInsertedTimestamp": false,
+      "hdrModifiedTimestamp": false,
+      "hdrBatchIdentifier": false
+    }
+  }
+}

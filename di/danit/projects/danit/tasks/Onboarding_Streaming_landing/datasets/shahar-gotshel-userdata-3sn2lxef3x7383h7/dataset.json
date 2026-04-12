@@ -1,0 +1,47 @@
+{
+  "id": "shahar_gotshel_userdata_3sn2lxef3x7383h7",
+  "name": "shahar-gotshel-userdata-3sn2lxef3x7383h7",
+  "type": "STREAMING_LANDING",
+  "inputDatasets": [],
+  "virtualDataset": false,
+  "description": "",
+  "streamingLandingDatasetSettings": {
+    "inputEntities": {
+      "includePatterns": [],
+      "explicitlySelected": [
+        "shahar-gotshel-userdata-3sn2lxef3x7383h7"
+      ]
+    },
+    "generalSettings": {
+      "entityFolderRetentionSettings": {
+        "attributeSourceValue": "INHERIT",
+        "folderRetentionSettings": {
+          "type": "NONE",
+          "daysOfRetention": 1
+        }
+      },
+      "entityStartReadDataFrom": {
+        "attributeSourceValue": "INHERIT",
+        "startReadDataFrom": "EARLIEST_EVENT"
+      },
+      "entityProcessFilesFromPastSettings": {
+        "attributeSourceValue": "INHERIT",
+        "processPastFilesSettings": {
+          "timeAmount": 1,
+          "timeUnit": "DAYS"
+        }
+      },
+      "entityDeleteFilesInSourceSettings": {
+        "attributeSourceValue": "INHERIT",
+        "deleteFilesInSourceAfterLoad": false
+      },
+      "entityStrategy": "NONE"
+    },
+    "runtimeSettings": {
+      "numberOfReadersSettings": {
+        "numberOfReaders": 0,
+        "attributeSourceValue": "INHERIT"
+      }
+    }
+  }
+}

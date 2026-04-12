@@ -1,0 +1,122 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "shahar_gotshel_userdata_3sn2lxef3x7383h7",
+    "name": "shahar-gotshel-userdata-3sn2lxef3x7383h7",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_streaming_landing-feqz"
+  },
+  "mappingFields": [
+    {
+      "columnId": "customer",
+      "expression": {
+        "expressionStatement": "${customer}",
+        "alias": [
+          {
+            "name": "customer",
+            "value": "customer"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "\u0022data\u0022",
+      "expression": {
+        "expressionStatement": "${\u0022data\u0022}",
+        "alias": [
+          {
+            "name": "\u0022data\u0022",
+            "value": "\u0022data\u0022"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "nettotal",
+      "expression": {
+        "expressionStatement": "${netTotal}",
+        "alias": [
+          {
+            "name": "netTotal",
+            "value": "netTotal"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "orderdate",
+      "expression": {
+        "expressionStatement": "${orderDate}",
+        "alias": [
+          {
+            "name": "orderDate",
+            "value": "orderDate"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "orderid",
+      "expression": {
+        "expressionStatement": "${orderId}",
+        "alias": [
+          {
+            "name": "orderId",
+            "value": "orderId"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "ordertype",
+      "expression": {
+        "expressionStatement": "${orderType}",
+        "alias": [
+          {
+            "name": "orderType",
+            "value": "orderType"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "saleinfo",
+      "expression": {
+        "expressionStatement": "${saleInfo}",
+        "alias": [
+          {
+            "name": "saleInfo",
+            "value": "saleInfo"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shippinginfo",
+      "expression": {
+        "expressionStatement": "${shippingInfo}",
+        "alias": [
+          {
+            "name": "shippingInfo",
+            "value": "shippingInfo"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "taxrate",
+      "expression": {
+        "expressionStatement": "${taxRate}",
+        "alias": [
+          {
+            "name": "taxRate",
+            "value": "taxRate"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "shahar_gotshel_userdata_3sn2lxef3x7383h7_default_mapping-feqc",
+  "name": "shahar-gotshel-userdata-3sn2lxef3x7383h7_default_mapping",
+  "description": ""
+}

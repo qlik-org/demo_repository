@@ -1,0 +1,63 @@
+{
+  "generalSettings": {
+    "storageLocationSettings": {
+      "folderLocationType": "DATA_ASSET_NAME",
+      "specificFolder": ""
+    },
+    "folderRetentionSettings": {
+      "type": "NONE",
+      "daysOfRetention": 1
+    },
+    "startReadDataFrom": "EARLIEST_EVENT",
+    "contentTypeSettings": {
+      "format": "JSON",
+      "csvTypeSettings": {
+        "header": "",
+        "recordDelimiter": ",",
+        "quoteEscapeCharacter": "\u0022",
+        "nullValue": "",
+        "duplicateHeader": false,
+        "automaticallyInferTypes": false
+      },
+      "avroWithSchemaTypeSettings": {
+        "schemaRegistryUrl": ""
+      },
+      "tsvTypeSettings": {
+        "header": "",
+        "nullValue": "",
+        "duplicateHeader": false,
+        "automaticallyInferTypes": false
+      },
+      "regexTypeSettings": {
+        "pattern": "(?\u003Cline\u003E.*)",
+        "multiLine": false,
+        "automaticallyInferTypes": false
+      },
+      "splitLinesTypeSettings": {
+        "pattern": ""
+      }
+    },
+    "processPastFilesSettings": {
+      "timeAmount": 24,
+      "timeUnit": "HOURS"
+    },
+    "deleteFilesInSourceAfterLoad": false
+  },
+  "taskRuntime": {
+    "numberOfReadersTaskSettings": {
+      "numberOfReaders": 1,
+      "numberOfReadersType": "AUTOMATIC"
+    },
+    "lakehouseClusterId": "{{task.onboarding_streaming_landing-feqz.lakehouseCluster}}"
+  },
+  "ddlHandlingPolicy": {
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "SUSPEND_TABLE",
+    "renameColumn": "SUSPEND_TABLE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE",
+    "createTable": "APPLY_TO_TARGET"
+  }
+}

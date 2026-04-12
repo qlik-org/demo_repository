@@ -1,0 +1,520 @@
+{
+  "id": "shahar_gotshel_userdata_3sn2lxef3x7383h7-feqb",
+  "name": "test",
+  "type": "ICEBERG_TRANSFORM",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "shahar_gotshel_userdata_3sn2lxef3x7383h7",
+      "name": "shahar-gotshel-userdata-3sn2lxef3x7383h7",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_streaming_landing-feqz"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "test",
+    "columns": [
+      {
+        "name": "customer",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRUCT",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022address\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022address1\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022address2\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022city\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022country\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022postCode\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022state\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}},{\u0022name\u0022:\u0022email\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022firstName\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022lastName\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}",
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${customer}",
+          "alias": [
+            {
+              "name": "customer",
+              "value": "customer"
+            }
+          ]
+        },
+        "id": "customer",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "customer"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "data",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRUCT",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022items\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022category\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022discountRate\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Real8\u0022}},{\u0022name\u0022:\u0022itemId\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Int8\u0022}},{\u0022name\u0022:\u0022name\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022quantity\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Int8\u0022}},{\u0022name\u0022:\u0022unitPrice\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Real8\u0022}}]}}}]}",
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${\u0022data\u0022}",
+          "alias": [
+            {
+              "name": "\u0022data\u0022",
+              "value": "\u0022data\u0022"
+            }
+          ]
+        },
+        "id": "\u0022data\u0022",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "data"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "netTotal",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${netTotal}",
+          "alias": [
+            {
+              "name": "netTotal",
+              "value": "netTotal"
+            }
+          ]
+        },
+        "id": "nettotal",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "netTotal"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "orderDate",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${orderDate}",
+          "alias": [
+            {
+              "name": "orderDate",
+              "value": "orderDate"
+            }
+          ]
+        },
+        "id": "orderdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "orderDate"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "orderId",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${orderId}",
+          "alias": [
+            {
+              "name": "orderId",
+              "value": "orderId"
+            }
+          ]
+        },
+        "id": "orderid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "orderId"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "orderType",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${orderType}",
+          "alias": [
+            {
+              "name": "orderType",
+              "value": "orderType"
+            }
+          ]
+        },
+        "id": "ordertype",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "orderType"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "saleInfo",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRUCT",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022source\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022store\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022location\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022country\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022name\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}},{\u0022name\u0022:\u0022servicedBy\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022employeeId\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Int8\u0022}},{\u0022name\u0022:\u0022firstName\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022lastName\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}}]}},{\u0022name\u0022:\u0022web\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022ip\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022userAgent\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}}]}",
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${saleInfo}",
+          "alias": [
+            {
+              "name": "saleInfo",
+              "value": "saleInfo"
+            }
+          ]
+        },
+        "id": "saleinfo",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "saleInfo"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "shippingInfo",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRUCT",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022address\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022address1\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022address2\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022city\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022country\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022postCode\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022state\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}},{\u0022name\u0022:\u0022method\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022recipient\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022firstName\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022lastName\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}}]}",
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${shippingInfo}",
+          "alias": [
+            {
+              "name": "shippingInfo",
+              "value": "shippingInfo"
+            }
+          ]
+        },
+        "id": "shippinginfo",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "shippingInfo"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "taxRate",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${taxRate}",
+          "alias": [
+            {
+              "name": "taxRate",
+              "value": "taxRate"
+            }
+          ]
+        },
+        "id": "taxrate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "taxRate"
+            ],
+            "hash": false
+          }
+        }
+      }
+    ],
+    "entityId": "shahar_gotshel_userdata_3sn2lxef3x7383h7-feqb",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "virtualDataset": false,
+  "description": "",
+  "icebergTransformDatasetSettings": {
+    "mappings": [
+      {
+        "sourceDataEntityKey": {
+          "type": "NONE",
+          "entityId": "shahar_gotshel_userdata_3sn2lxef3x7383h7",
+          "name": "shahar-gotshel-userdata-3sn2lxef3x7383h7",
+          "projectId": "69db69f60e27a1be8b15e418",
+          "dataAppId": "onboarding_streaming_landing-feqz"
+        },
+        "mappingFields": [
+          {
+            "toColName": "customer",
+            "mappingType": "EXPRESSION",
+            "expression": {
+              "expressionStatement": "${customer}",
+              "alias": [
+                {
+                  "name": "customer",
+                  "value": "customer"
+                }
+              ]
+            }
+          },
+          {
+            "toColName": "data",
+            "mappingType": "EXPRESSION",
+            "expression": {
+              "expressionStatement": "${\u0022data\u0022}",
+              "alias": [
+                {
+                  "name": "\u0022data\u0022",
+                  "value": "\u0022data\u0022"
+                }
+              ]
+            }
+          },
+          {
+            "toColName": "netTotal",
+            "mappingType": "EXPRESSION",
+            "expression": {
+              "expressionStatement": "${netTotal}",
+              "alias": [
+                {
+                  "name": "netTotal",
+                  "value": "netTotal"
+                }
+              ]
+            }
+          },
+          {
+            "toColName": "orderDate",
+            "mappingType": "EXPRESSION",
+            "expression": {
+              "expressionStatement": "${orderDate}",
+              "alias": [
+                {
+                  "name": "orderDate",
+                  "value": "orderDate"
+                }
+              ]
+            }
+          },
+          {
+            "toColName": "orderId",
+            "mappingType": "EXPRESSION",
+            "expression": {
+              "expressionStatement": "${orderId}",
+              "alias": [
+                {
+                  "name": "orderId",
+                  "value": "orderId"
+                }
+              ]
+            }
+          },
+          {
+            "toColName": "orderType",
+            "mappingType": "EXPRESSION",
+            "expression": {
+              "expressionStatement": "${orderType}",
+              "alias": [
+                {
+                  "name": "orderType",
+                  "value": "orderType"
+                }
+              ]
+            }
+          },
+          {
+            "toColName": "saleInfo",
+            "mappingType": "EXPRESSION",
+            "expression": {
+              "expressionStatement": "${saleInfo}",
+              "alias": [
+                {
+                  "name": "saleInfo",
+                  "value": "saleInfo"
+                }
+              ]
+            }
+          },
+          {
+            "toColName": "shippingInfo",
+            "mappingType": "EXPRESSION",
+            "expression": {
+              "expressionStatement": "${shippingInfo}",
+              "alias": [
+                {
+                  "name": "shippingInfo",
+                  "value": "shippingInfo"
+                }
+              ]
+            }
+          },
+          {
+            "toColName": "taxRate",
+            "mappingType": "EXPRESSION",
+            "expression": {
+              "expressionStatement": "${taxRate}",
+              "alias": [
+                {
+                  "name": "taxRate",
+                  "value": "taxRate"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "generalSettings": {
+      "entityLoadSettings": {
+        "loadMode": "APPEND_ONLY",
+        "mergeSettings": {
+          "softDelete": false,
+          "hasHistory": false
+        }
+      },
+      "entityPartitionSettings": {
+        "partitionColumnSettings": []
+      },
+      "retentionSettings": {
+        "type": "NONE",
+        "days": 1
+      },
+      "sortSettings": {
+        "columns": []
+      },
+      "snapshotSettings": {
+        "expirationValue": 2,
+        "durationType": "HOUR"
+      },
+      "nestedFieldsHandling": "KEEP_NESTED_FIELDS"
+    },
+    "viewDefinitionSettings": {
+      "standardViewHeaders": {
+        "attributeSourceValue": "INHERIT",
+        "standardViewHeaders": {
+          "hdrFromTimestamp": false,
+          "hdrInsertedTimestamp": false,
+          "hdrModifiedTimestamp": false,
+          "hdrBatchIdentifier": false
+        }
+      },
+      "historyViewHeaders": {
+        "attributeSourceValue": "INHERIT",
+        "historyViewHeaders": {
+          "hdrFromTimestamp": true,
+          "hdrToTimestamp": true,
+          "hdrInsertedTimestamp": false,
+          "hdrModifiedTimestamp": false,
+          "hdrBatchIdentifier": false
+        }
+      }
+    }
+  }
+}
