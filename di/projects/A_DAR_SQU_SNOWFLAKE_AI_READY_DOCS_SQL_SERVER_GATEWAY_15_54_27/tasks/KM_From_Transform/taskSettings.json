@@ -1,0 +1,52 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.km_from_transform-kjxf.internalSchema}}",
+    "taskSchema": "{{task.km_from_transform-kjxf.taskSchema}}",
+    "databaseName": "{{task.km_from_transform-kjxf.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "bulkSize": "100",
+    "maxNumberOfRecords": "{{task.km_from_transform-kjxf.maxNumberOfRecords}}",
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.km_from_transform-kjxf.warehouseName}}"
+    }
+  },
+  "loadViewsSuffix": "__publish_doc_view",
+  "cdcViewsSuffix": "__publish_doc_cdc_view",
+  "outputDirectory": "",
+  "indexActionOnPrepare": "RECREATE",
+  "viewType": "DEFAULT",
+  "testAssistantSettings": {
+    "numberOfDocumentsRetrieved": 2,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
+    "filterConditions": "",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "searchFunction": ""
+  },
+  "indexArtifactsLocation": {
+    "databricksVectorSearchEndpoint": "{{task.km_from_transform-kjxf.databricksVectorSearchEndpoint}}",
+    "schema": "{{task.km_from_transform-kjxf.indexSchema}}",
+    "name": "{{task.km_from_transform-kjxf.indexName}}",
+    "database": "{{task.km_from_transform-kjxf.indexDatabase}}"
+  },
+  "vectorDbTargetType": "PROJECT_PLATFORM",
+  "llmSettings": {
+    "kindId": "llm:snowflake",
+    "parameters": {
+      "embedding_model": "nv-embed-qa-4",
+      "completion_model": "mistral-7b"
+    }
+  },
+  "fullLoadOnly": false
+}

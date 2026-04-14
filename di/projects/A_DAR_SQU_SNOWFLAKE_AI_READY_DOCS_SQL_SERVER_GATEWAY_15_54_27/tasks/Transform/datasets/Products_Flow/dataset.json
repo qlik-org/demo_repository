@@ -1,0 +1,30 @@
+{
+  "id": "products_flow-kjw0",
+  "name": "Products_Flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "products-kjv9",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-kjv4"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, Products_Flow)}}",
+    "targetId": "022ae5ab-9b06-4909-a49d-83787d381185",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

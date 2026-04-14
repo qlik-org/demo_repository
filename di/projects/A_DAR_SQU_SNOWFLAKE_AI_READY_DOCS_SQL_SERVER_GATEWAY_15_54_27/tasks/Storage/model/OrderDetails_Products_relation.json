@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orderdetails-kjv7",
+    "name": "OrderDetails",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-kjv4"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "products-kjv9",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-kjv4"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ProductID",
+      "targetColumn": "ProductID",
+      "sourceColumnId": "productid",
+      "targetColumnId": "productid"
+    }
+  ],
+  "name": "OrderDetails_Products_relation",
+  "description": "",
+  "id": "orderdetails_products_relation-kjv_"
+}

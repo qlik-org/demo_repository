@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orderdetails-kjw3",
+    "name": "OrderDetails",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-kjwd"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "products_flow-kjw0",
+    "name": "Products_Flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-kjwd"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ProductID",
+      "targetColumn": "ProductID",
+      "sourceColumnId": "productid",
+      "targetColumnId": "productid"
+    }
+  ],
+  "name": "OrderDetails_Products_Flow_relation",
+  "description": "",
+  "id": "orderdetails_products_flow_relation-kjw6"
+}

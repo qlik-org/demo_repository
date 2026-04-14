@@ -1,0 +1,499 @@
+{
+  "id": "products-kjxo",
+  "name": "Products",
+  "type": "DOCUMENT_SCHEMA",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "products-kjv9",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-kjv4"
+    },
+    {
+      "type": "NONE",
+      "datasetId": "orders-kjv8",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-kjv4"
+    },
+    {
+      "type": "NONE",
+      "datasetId": "orderdetails-kjv7",
+      "name": "OrderDetails",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-kjv4"
+    },
+    {
+      "type": "NONE",
+      "datasetId": "categories-kjv6",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-kjv4"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Products",
+    "columns": [
+      {
+        "name": "ProductID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "productid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "ProductName",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "productname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "SupplierID",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "supplierid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "CategoryID",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "categoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "QuantityPerUnit",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "quantityperunit",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "UnitPrice",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "unitprice",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "UnitsInStock",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "unitsinstock",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "UnitsOnOrder",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "unitsonorder",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "ReorderLevel",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "reorderlevel",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "Discontinued",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BOOLEAN"
+        },
+        "id": "discontinued",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "CategoryName",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "products_categories_relation-kjwa$_$categoryname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "Picture",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BLOB",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "id": "products_categories_relation-kjwa$_$picture",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "UnitLeftOnStock",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "UnitLeftOnStock-9ebe",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "documentDataEntitySettings": {
+    "repeatedDataEntities": [
+      {
+        "rootDataEntityId": {
+          "type": "NONE",
+          "entityId": "orderdetails-kjv7",
+          "name": "OrderDetails",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "storage-kjv4"
+        },
+        "entityRelationshipPath": "orderdetails_products_relation-kjv_",
+        "dimensionId": "products_orderdetails-kjxn"
+      }
+    ],
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "products-kjv9",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "storage-kjv4"
+    },
+    "entityRelationshipPath": [
+      "products_categories_relation-kjwa"
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "ProductID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${ProductID}",
+            "alias": [
+              {
+                "name": "ProductID",
+                "value": "ProductID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ProductName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ProductName}",
+            "alias": [
+              {
+                "name": "ProductName",
+                "value": "ProductName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "SupplierID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${SupplierID}",
+            "alias": [
+              {
+                "name": "SupplierID",
+                "value": "SupplierID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CategoryID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryID}",
+            "alias": [
+              {
+                "name": "CategoryID",
+                "value": "CategoryID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "QuantityPerUnit",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${QuantityPerUnit}",
+            "alias": [
+              {
+                "name": "QuantityPerUnit",
+                "value": "QuantityPerUnit"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitPrice",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitPrice}",
+            "alias": [
+              {
+                "name": "UnitPrice",
+                "value": "UnitPrice"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitsInStock",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitsInStock}",
+            "alias": [
+              {
+                "name": "UnitsInStock",
+                "value": "UnitsInStock"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitsOnOrder",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitsOnOrder}",
+            "alias": [
+              {
+                "name": "UnitsOnOrder",
+                "value": "UnitsOnOrder"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReorderLevel",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReorderLevel}",
+            "alias": [
+              {
+                "name": "ReorderLevel",
+                "value": "ReorderLevel"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Discontinued",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Discontinued}",
+            "alias": [
+              {
+                "name": "Discontinued",
+                "value": "Discontinued"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CategoryName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryName}",
+            "alias": [
+              {
+                "name": "CategoryName",
+                "value": "products_categories_relation-kjwa$_$CategoryName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Picture",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Picture}",
+            "alias": [
+              {
+                "name": "Picture",
+                "value": "products_categories_relation-kjwa$_$Picture"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitLeftOnStock",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitsInStock}-${UnitsOnOrder}",
+            "alias": [
+              {
+                "name": "UnitsInStock",
+                "value": "UnitsInStock"
+              },
+              {
+                "name": "UnitsOnOrder",
+                "value": "UnitsOnOrder"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "checkedTreeNodesForDisplay": [
+      "orderdetails_products_relation-kjv_$_$orderdetails_orders_relation-kjv-",
+      "products_categories_relation-kjwa",
+      "orderdetails_products_relation-kjv_"
+    ],
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

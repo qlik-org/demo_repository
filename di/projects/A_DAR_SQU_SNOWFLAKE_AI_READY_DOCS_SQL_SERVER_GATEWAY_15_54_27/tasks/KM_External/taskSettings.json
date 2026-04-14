@@ -1,0 +1,54 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.km_external-kjxs.internalSchema}}",
+    "taskSchema": "{{task.km_external-kjxs.taskSchema}}",
+    "databaseName": "{{task.km_external-kjxs.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "bulkSize": "100",
+    "maxNumberOfRecords": "{{task.km_external-kjxs.maxNumberOfRecords}}",
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.km_external-kjxs.warehouseName}}"
+    }
+  },
+  "loadViewsSuffix": "__publish_doc_view",
+  "cdcViewsSuffix": "__publish_doc_cdc_view",
+  "outputDirectory": "",
+  "indexActionOnPrepare": "RECREATE",
+  "viewType": "DEFAULT",
+  "testAssistantSettings": {
+    "numberOfDocumentsRetrieved": 2,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
+    "filterConditions": "",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "searchFunction": ""
+  },
+  "indexArtifactsLocation": {
+    "databricksVectorSearchEndpoint": "{{task.km_external-kjxs.databricksVectorSearchEndpoint}}",
+    "schema": "A_EQUILAT_10_23_33km_external",
+    "name": "{{task.km_external-kjxs.indexName}}",
+    "database": "DIS_AUTOMATION"
+  },
+  "vectorDbTargetType": "EXTERNAL_VECTOR_DB",
+  "vectorDbConnection": "{{task.km_external-kjxs.vectorDbConnection}}",
+  "llmConnection": "{{task.km_external-kjxs.llmConnection}}",
+  "llmSettings": {
+    "kindId": "llm:OpenAI@1.0.0",
+    "parameters": {
+      "embedding_model": "text-embedding-3-large",
+      "completion_model": "gpt-4o"
+    }
+  },
+  "fullLoadOnly": false
+}

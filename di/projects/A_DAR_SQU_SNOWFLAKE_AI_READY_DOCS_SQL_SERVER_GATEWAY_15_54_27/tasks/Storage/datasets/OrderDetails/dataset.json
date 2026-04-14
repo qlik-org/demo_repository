@@ -1,0 +1,25 @@
+{
+  "id": "orderdetails-kjv7",
+  "name": "OrderDetails",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "order_details",
+      "name": "OrderDetails",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-7cBE"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

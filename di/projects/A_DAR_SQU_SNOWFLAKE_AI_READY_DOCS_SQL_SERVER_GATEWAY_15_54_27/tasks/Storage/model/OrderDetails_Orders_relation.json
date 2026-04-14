@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orderdetails-kjv7",
+    "name": "OrderDetails",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-kjv4"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "orders-kjv8",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-kjv4"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "OrderID",
+      "targetColumn": "OrderID",
+      "sourceColumnId": "orderid",
+      "targetColumnId": "orderid"
+    }
+  ],
+  "name": "OrderDetails_Orders_relation",
+  "description": "",
+  "id": "orderdetails_orders_relation-kjv-"
+}

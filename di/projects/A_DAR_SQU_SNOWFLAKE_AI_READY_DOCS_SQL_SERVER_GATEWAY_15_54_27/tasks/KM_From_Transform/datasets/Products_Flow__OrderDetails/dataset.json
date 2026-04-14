@@ -1,0 +1,663 @@
+{
+  "id": "products_flow_orderdetails-kjxi",
+  "name": "Products_Flow__OrderDetails",
+  "type": "DOCUMENT_SCHEMA",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "orderdetails-kjw3",
+      "name": "OrderDetails",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform-kjwd"
+    },
+    {
+      "type": "NONE",
+      "datasetId": "products_flow-kjw0",
+      "name": "Products_Flow",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform-kjwd"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Products_Flow__OrderDetails",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orderid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ProductID",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "productid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitPrice",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "unitprice",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Quantity",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "quantity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Discount",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "FLOAT4"
+        },
+        "id": "discount",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CustomerID",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(5)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "EmployeeID",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDate",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$orderdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RequiredDate",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$requireddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShippedDate",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$shippeddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipVia",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$shipvia",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Freight",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$freight",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipName",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(40)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$shipname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipAddress",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(60)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$shipaddress",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCity",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$shipcity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipRegion",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$shipregion",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipPostalCode",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$shippostalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCountry",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "orderdetails_orders_sql_relation-kjw5$_$shipcountry",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Added_ShipName",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(40)"
+        },
+        "id": "ShipName_1-652f",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "documentDataEntitySettings": {
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "orderdetails-kjw3",
+      "name": "OrderDetails",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform-kjwd"
+    },
+    "entityRelationshipPath": [
+      "orderdetails_orders_sql_relation-kjw5"
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "OrderID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${OrderID}",
+            "alias": [
+              {
+                "name": "OrderID",
+                "value": "OrderID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ProductID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${ProductID}",
+            "alias": [
+              {
+                "name": "ProductID",
+                "value": "ProductID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitPrice",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitPrice}",
+            "alias": [
+              {
+                "name": "UnitPrice",
+                "value": "UnitPrice"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Quantity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Quantity}",
+            "alias": [
+              {
+                "name": "Quantity",
+                "value": "Quantity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Discount",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Discount}",
+            "alias": [
+              {
+                "name": "Discount",
+                "value": "Discount"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CustomerID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CustomerID}",
+            "alias": [
+              {
+                "name": "CustomerID",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$CustomerID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "EmployeeID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDate}",
+            "alias": [
+              {
+                "name": "OrderDate",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RequiredDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RequiredDate}",
+            "alias": [
+              {
+                "name": "RequiredDate",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$RequiredDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShippedDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShippedDate}",
+            "alias": [
+              {
+                "name": "ShippedDate",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$ShippedDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipVia",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipVia}",
+            "alias": [
+              {
+                "name": "ShipVia",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$ShipVia"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Freight",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Freight}",
+            "alias": [
+              {
+                "name": "Freight",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$Freight"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipName}",
+            "alias": [
+              {
+                "name": "ShipName",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$ShipName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipAddress",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipAddress}",
+            "alias": [
+              {
+                "name": "ShipAddress",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$ShipAddress"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCity}",
+            "alias": [
+              {
+                "name": "ShipCity",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$ShipCity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipRegion",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipRegion}",
+            "alias": [
+              {
+                "name": "ShipRegion",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$ShipRegion"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipPostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipPostalCode}",
+            "alias": [
+              {
+                "name": "ShipPostalCode",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$ShipPostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCountry",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCountry}",
+            "alias": [
+              {
+                "name": "ShipCountry",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$ShipCountry"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Added_ShipName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipName}",
+            "alias": [
+              {
+                "name": "ShipName",
+                "value": "orderdetails_orders_sql_relation-kjw5$_$ShipName"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
+  },
+  "virtualDataset": true,
+  "description": ""
+}

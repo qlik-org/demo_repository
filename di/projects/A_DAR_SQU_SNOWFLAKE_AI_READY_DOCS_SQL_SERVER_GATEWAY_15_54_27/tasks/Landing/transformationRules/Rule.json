@@ -1,0 +1,36 @@
+{
+  "ordinal": 0,
+  "actionType": "RENAME_TABLE",
+  "scopeType": "TABLE",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Order Details",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "action": {
+    "renameType": "RENAME",
+    "value": "OrderDetails",
+    "applyColumnDatatype": false,
+    "column": {
+      "ordinal": 0,
+      "nullable": true,
+      "primaryKeyOrdinal": 0,
+      "datatype": {
+        "type": "STRING",
+        "length": 50,
+        "precision": 0,
+        "scale": 0,
+        "originalTypeFull": ""
+      },
+      "flags": "NONE"
+    }
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Rule",
+  "id": "rule-kjv1",
+  "description": ""
+}

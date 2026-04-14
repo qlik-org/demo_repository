@@ -1,0 +1,142 @@
+{
+  "name": "Products_Flow",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform-kjwd"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "26e1e4fd-cd5f-4d2a-99d3-e7c3ce352f66",
+        "label": "Products",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "48c0f3aa-8137-413c-b41d-8f479cc50e15",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "storage-kjv4",
+              "entityId": "products-kjv9"
+            },
+            "configuration": {
+              "name": "Products"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "022ae5ab-9b06-4909-a49d-83787d381185",
+        "label": "Products_Flow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "32285d49-2d4f-43ba-98a4-4bd6a64144ba",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "Products_Flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "ProductID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "ProductName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "SupplierID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "CategoryID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "QuantityPerUnit",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitPrice",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsInStock",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsOnOrder",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ReorderLevel",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Discontinued",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "99142741-4948-4799-a5b5-c3b44af68de3",
+        "sourceHandle": "48c0f3aa-8137-413c-b41d-8f479cc50e15",
+        "targetHandle": "32285d49-2d4f-43ba-98a4-4bd6a64144ba"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}
