@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.landing-a4ir.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Products",
+      "schema": "{{task.landing-a4ir:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    }
+  ]
+}
