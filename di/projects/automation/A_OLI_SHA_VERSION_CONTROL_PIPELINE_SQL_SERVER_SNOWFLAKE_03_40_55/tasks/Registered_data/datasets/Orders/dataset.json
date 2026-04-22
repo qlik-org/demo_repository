@@ -1,0 +1,18 @@
+{
+  "id": "orders",
+  "name": "Orders",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$vc_pipe_test1_landing_orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-bu-g",
+      "schema": "{{task.registered_data-bu-g:DIS_AUTOMATION$_$vc_pipe_test1_landing.schema}}",
+      "database": "{{task.registered_data-bu-g:DIS_AUTOMATION$_$vc_pipe_test1_landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
