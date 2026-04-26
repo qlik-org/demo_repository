@@ -1,0 +1,41 @@
+name: Create Project Directory
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_name:
+        description: 'Name of the new project directory'
+        required: true
+        type: string
+      base_path:
+        description: 'Base path for the project (default: di/projects/automation)'
+        required: false
+        default: 'di/projects/automation'
+        type: string
+
+jobs:
+  create-directory:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Create project directory
+      run: |
+        chmod +x scripts/create_project_directory.sh
+        ./scripts/create_project_directory.sh "${{ github.event.inputs.project_name }}" "${{ github.event.inputs.base_path }}"
+        
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Create project directory: ${{ github.event.inputs.project_name }}"
+          git push
+        fi
