@@ -1,0 +1,17 @@
+rules:
+  - ordinal: 0
+    actionType: DROP_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereDatatype: BLOB
+    internalRule: true
+    name: QLIK__REMOVE_BLOB_COLUMNS
+    description: 'Removes all BLOB columns. This rule is automatically generated and added for compatibility reasons.'
+  - ordinal: 1
+    actionType: DROP_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereDatatype: BYTES
+    internalRule: true
+    name: QLIK__REMOVE_BYTES_COLUMNS
+    description: 'Removes all BYTES columns. This rule is automatically generated and added for compatibility reasons.'

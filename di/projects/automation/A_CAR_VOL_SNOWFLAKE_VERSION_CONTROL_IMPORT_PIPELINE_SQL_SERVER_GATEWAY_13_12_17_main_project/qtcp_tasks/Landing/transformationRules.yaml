@@ -1,0 +1,13 @@
+rules:
+  - ordinal: 0
+    actionType: ADD_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereTableName: Customers
+    action:
+      renameType: RENAME
+      column:
+        name: FullAddress
+        datatype:
+          length: 80
+    name: customers_add_column
