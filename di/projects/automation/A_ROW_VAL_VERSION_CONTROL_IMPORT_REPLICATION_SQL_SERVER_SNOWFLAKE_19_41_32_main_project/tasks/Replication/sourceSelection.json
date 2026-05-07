@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.replication-hyix.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Customers",
+      "schema": "{{task.replication-hyix:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    },
+    {
+      "name": "Employees",
+      "schema": "{{task.replication-hyix:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    }
+  ]
+}
