@@ -1,0 +1,49 @@
+relationships:
+  - sourceEntity:
+      datasetId: orders-s2ws
+      name: Orders
+      taskId: transform-tti6
+    targetEntity:
+      datasetId: employees-hnes
+      name: Employees
+      taskId: transform-tti6
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation-tti9
+  - sourceEntity:
+      datasetId: employees-hnes
+      name: Employees
+      taskId: transform-tti6
+    targetEntity:
+      datasetId: employees-hnes
+      name: Employees
+      taskId: transform-tti6
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: Employees_Employees
+    description: ''
+    id: employees_employees-hnet
+  - sourceEntity:
+      datasetId: orders-s2ws
+      name: Orders
+      taskId: transform-tti6
+    targetEntity:
+      datasetId: customers-hneq
+      name: Customers
+      taskId: transform-tti6
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-tti8
