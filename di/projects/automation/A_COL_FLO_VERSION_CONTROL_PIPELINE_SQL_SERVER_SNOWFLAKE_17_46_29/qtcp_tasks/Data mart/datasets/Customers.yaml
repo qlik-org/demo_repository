@@ -1,0 +1,202 @@
+properties:
+  id: customers-d0ry
+  name: Customers
+  inputDatasets:
+    - datasetId: customers-sfwr
+      name: Customers
+      taskId: transform--c0y
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Customers
+    columns:
+      - name: CustomerID
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 5
+        id: customerid
+        properties:
+          documentMetadata: false
+      - name: CompanyName
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+        id: companyname
+        properties:
+          documentMetadata: false
+      - name: ContactName
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+        id: contactname
+        properties:
+          documentMetadata: false
+      - name: ContactTitle
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+        id: contacttitle
+        properties:
+          documentMetadata: false
+      - name: Address
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+        id: address
+        properties:
+          documentMetadata: false
+      - name: City
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+        id: city
+        properties:
+          documentMetadata: false
+      - name: Region
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+        id: region
+        properties:
+          documentMetadata: false
+      - name: PostalCode
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+        id: postalcode
+        properties:
+          documentMetadata: false
+      - name: Country
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+        id: country
+        properties:
+          documentMetadata: false
+      - name: Phone
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+        id: phone
+        properties:
+          documentMetadata: false
+      - name: Fax
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+        id: fax
+        properties:
+          documentMetadata: false
+    entityId: ''
+  dimensionDatasetSettings:
+    type: TYPE2
+    rootDataEntityId:
+      datasetId: customers-sfwr
+      name: Customers
+      taskId: transform--c0y
+    mapping:
+      columns:
+        - columnName: CustomerID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${CustomerID}
+            alias:
+              - name: CustomerID
+                value: CustomerID
+        - columnName: CompanyName
+          type: NONE
+          expression:
+            expressionStatement: ${CompanyName}
+            alias:
+              - name: CompanyName
+                value: CompanyName
+        - columnName: ContactName
+          type: NONE
+          expression:
+            expressionStatement: ${ContactName}
+            alias:
+              - name: ContactName
+                value: ContactName
+        - columnName: ContactTitle
+          type: NONE
+          expression:
+            expressionStatement: ${ContactTitle}
+            alias:
+              - name: ContactTitle
+                value: ContactTitle
+        - columnName: Address
+          type: NONE
+          expression:
+            expressionStatement: ${Address}
+            alias:
+              - name: Address
+                value: Address
+        - columnName: City
+          type: NONE
+          expression:
+            expressionStatement: ${City}
+            alias:
+              - name: City
+                value: City
+        - columnName: Region
+          type: NONE
+          expression:
+            expressionStatement: ${Region}
+            alias:
+              - name: Region
+                value: Region
+        - columnName: PostalCode
+          type: NONE
+          expression:
+            expressionStatement: ${PostalCode}
+            alias:
+              - name: PostalCode
+                value: PostalCode
+        - columnName: Country
+          type: NONE
+          expression:
+            expressionStatement: ${Country}
+            alias:
+              - name: Country
+                value: Country
+        - columnName: Phone
+          type: NONE
+          expression:
+            expressionStatement: ${Phone}
+            alias:
+              - name: Phone
+                value: Phone
+        - columnName: Fax
+          type: NONE
+          expression:
+            expressionStatement: ${Fax}
+            alias:
+              - name: Fax
+                value: Fax
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false
