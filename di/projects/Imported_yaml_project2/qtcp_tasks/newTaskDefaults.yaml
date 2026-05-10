@@ -1,0 +1,36 @@
+landing:
+  taskRuntime:
+    tableLoadInParallel: 6
+storage:
+  taskRunSchedule:
+    runInterval: 30
+  catalogIntegration:
+    publishDatasets: true
+  viewType: SECURE_VIEW
+transform:
+  taskRunSchedule:
+    runInterval: 45
+    schedulingType: TIME_BASED
+  viewType: SECURE_VIEW
+datamart:
+  taskRunSchedule:
+    schedulingType: NONE
+  catalogIntegration:
+    publishDatasets: false
+knowledgeMart:
+  taskRunSchedule:
+    runInterval: 60
+    schedulingType: TIME_BASED
+  llmSettings:
+    kindId: 'llm:OpenAI@1.0.0'
+    parameters:
+      embedding_model: text-embedding-3-large
+      completion_model: gpt-4o
+fileBasedKnowledgeMart:
+  taskRunSchedule:
+    schedulingType: NONE
+  llmSettings:
+    kindId: 'llm:OpenAI@1.0.0'
+    parameters:
+      embedding_model: text-embedding-3-large
+      completion_model: gpt-4o
