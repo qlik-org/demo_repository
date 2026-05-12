@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.onboardingdata1234_landing-uatd.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "actor",
+      "schema": "{{task.onboardingdata1234_landing-uatd:null$_$sakila.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$sakila_actor"
+    },
+    {
+      "name": "address",
+      "schema": "{{task.onboardingdata1234_landing-uatd:null$_$sakila.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$sakila_address"
+    }
+  ]
+}

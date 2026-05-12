@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.onboarding_data_1_landing-qtau.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "customer",
+      "schema": "{{task.onboarding_data_1_landing-qtau:null$_$sakila.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$sakila_customer"
+    },
+    {
+      "name": "payment",
+      "schema": "{{task.onboarding_data_1_landing-qtau:null$_$sakila.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$sakila_payment"
+    }
+  ]
+}

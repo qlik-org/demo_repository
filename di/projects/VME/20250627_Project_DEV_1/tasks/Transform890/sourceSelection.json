@@ -1,0 +1,28 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboardingdata1234_storage-uate",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_data_1_storage-qtav",
+      "name": "customer",
+      "type": "NONE",
+      "sourceTableId": "customer-n2qc"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_data_1_storage-qtav",
+      "name": "payment",
+      "type": "NONE",
+      "sourceTableId": "payment-qtax"
+    }
+  ]
+}

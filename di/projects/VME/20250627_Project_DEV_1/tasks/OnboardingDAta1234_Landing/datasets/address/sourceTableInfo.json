@@ -1,0 +1,148 @@
+{
+  "id": "$replicate$sakila_address",
+  "name": "sakila_address",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "address",
+    "dbSchema": "{{task.onboardingdata1234_landing-uatd:null$_$sakila.schema}}",
+    "columns": [
+      {
+        "name": "address_id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "UINT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "address_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "address",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "address",
+        "flags": "NONE"
+      },
+      {
+        "name": "address2",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "address2",
+        "flags": "NONE"
+      },
+      {
+        "name": "district",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "district",
+        "flags": "NONE"
+      },
+      {
+        "name": "city_id",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "UINT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "city_id",
+        "flags": "NONE"
+      },
+      {
+        "name": "postal_code",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "postal_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "phone",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "phone",
+        "flags": "NONE"
+      },
+      {
+        "name": "location",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BLOB",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "location",
+        "flags": "NONE"
+      },
+      {
+        "name": "last_update",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "last_update",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

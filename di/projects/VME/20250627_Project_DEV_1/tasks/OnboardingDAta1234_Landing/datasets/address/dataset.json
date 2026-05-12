@@ -1,0 +1,17 @@
+{
+  "id": "address",
+  "name": "address",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$sakila_address",
+      "name": "address",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboardingdata1234_landing-uatd",
+      "schema": "{{task.onboardingdata1234_landing-uatd:null$_$sakila.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
