@@ -1,0 +1,11 @@
+properties:
+  name: Landing
+  id: landing-r36u
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-r36u.taskSchema}}'
+      database: '{{task.landing-r36u.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

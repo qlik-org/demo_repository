@@ -1,0 +1,85 @@
+properties:
+  id: categories-r37f
+  name: Categories
+  inputDatasets:
+    - datasetId: categories-r36y
+      name: Categories
+      taskId: onboarding_storage-r36w
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Categories
+    columns:
+      - name: CategoryID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: categoryid
+        properties:
+          documentMetadata: false
+      - name: CategoryName
+        ordinal: 2
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: categoryname
+        properties:
+          documentMetadata: false
+      - name: Description
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: NCLOB
+          length: 1073741823
+          originalTypeFull: NVARCHAR(8388608)
+        id: description
+        properties:
+          documentMetadata: false
+      - name: Picture
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: BLOB
+          length: 2147483647
+          originalTypeFull: BINARY(8388608)
+        id: picture
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: categories-r36y
+        name: Categories
+        taskId: onboarding_storage-r36w
+      mappingFields:
+        - columnId: categoryid
+          expression:
+            expressionStatement: ${CategoryID}
+            alias:
+              - name: CategoryID
+                value: CategoryID
+        - columnId: categoryname
+          expression:
+            expressionStatement: ${CategoryName}
+            alias:
+              - name: CategoryName
+                value: CategoryName
+        - columnId: description
+          expression:
+            expressionStatement: ${Description}
+            alias:
+              - name: Description
+                value: Description
+        - columnId: picture
+          expression:
+            expressionStatement: ${Picture}
+            alias:
+              - name: Picture
+                value: Picture
+      id: categories_default_mapping-r37g
+      name: Categories_default_mapping
+      description: ''

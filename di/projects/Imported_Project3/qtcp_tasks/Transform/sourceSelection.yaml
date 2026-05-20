@@ -1,0 +1,29 @@
+includePatterns:
+  - sourceTask: storage-r362
+    tablePattern: '%'
+    schemaPattern: '%'
+explicitlySelected:
+  - sourceTask: onboarding_storage-r36w
+    name: Categories
+    sourceTableId: categories-r36y
+  - sourceTask: onboarding_storage-r36w
+    name: Order Details
+    sourceTableId: order_details-r36z
+  - sourceTask: onboarding_storage-r36w
+    name: Products
+    sourceTableId: products-r360
+  - sourceTask: onboarding_storage-r36w
+    name: Region
+    sourceTableId: region-r361
+  - sourceProject: '{{project.rosie$_$source_project.projectId}}'
+    sourceTask: transform-q7fk
+    name: Categories
+    sourceTableId: categories-q7fm
+  - sourceProject: '{{project.rosie$_$source_project.projectId}}'
+    sourceTask: transform-q7fk
+    name: Products
+    sourceTableId: products-q7fq
+  - sourceProject: '{{project.rosie$_$source_project.projectId}}'
+    sourceTask: transform-q7fk
+    name: Suppliers
+    sourceTableId: suppliers-q7fn

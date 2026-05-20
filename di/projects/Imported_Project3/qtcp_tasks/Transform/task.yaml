@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-r367
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-r367.internalSchema}}'
+    taskSchema: '{{task.transform-r367.taskSchema}}'
+    databaseName: '{{task.transform-r367.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-r367.warehouseName}}'

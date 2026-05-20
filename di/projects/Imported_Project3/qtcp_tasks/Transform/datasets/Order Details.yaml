@@ -1,0 +1,97 @@
+properties:
+  id: order_details-r37d
+  name: Order Details
+  inputDatasets:
+    - datasetId: order_details-r36z
+      name: Order Details
+      taskId: onboarding_storage-r36w
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Order Details
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: ProductID
+        ordinal: 2
+        primaryKeyOrdinal: 2
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: productid
+        properties:
+          documentMetadata: false
+      - name: UnitPrice
+        ordinal: 3
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - name: Quantity
+        ordinal: 4
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: quantity
+        properties:
+          documentMetadata: false
+      - name: Discount
+        ordinal: 5
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: discount
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: order_details-r36z
+        name: Order Details
+        taskId: onboarding_storage-r36w
+      mappingFields:
+        - columnId: orderid
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnId: productid
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnId: unitprice
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnId: quantity
+          expression:
+            expressionStatement: ${Quantity}
+            alias:
+              - name: Quantity
+                value: Quantity
+        - columnId: discount
+          expression:
+            expressionStatement: ${Discount}
+            alias:
+              - name: Discount
+                value: Discount
+      id: order_details_default_mapping-r37e
+      name: Order Details_default_mapping
+      description: ''

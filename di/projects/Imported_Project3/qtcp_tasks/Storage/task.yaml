@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-r362
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-r362.internalSchema}}'
+    taskSchema: '{{task.storage-r362.taskSchema}}'
+    databaseName: '{{task.storage-r362.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-r362.warehouseName}}'

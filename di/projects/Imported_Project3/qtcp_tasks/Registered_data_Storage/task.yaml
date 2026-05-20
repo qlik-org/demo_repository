@@ -1,0 +1,12 @@
+properties:
+  name: Registered_data_Storage
+  id: registered_data_storage-pi5q
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_storage-pi5q.internalSchema}}'
+    taskSchema: '{{task.registered_data_storage-pi5q.taskSchema}}'
+    databaseName: '{{task.registered_data_storage-pi5q.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_storage-pi5q.warehouseName}}'
