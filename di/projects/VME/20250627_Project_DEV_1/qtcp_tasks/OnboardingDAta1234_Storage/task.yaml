@@ -1,0 +1,12 @@
+properties:
+  name: OnboardingDAta1234_Storage
+  id: onboardingdata1234_storage-uate
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboardingdata1234_storage-uate.internalSchema}}'
+    taskSchema: '{{task.onboardingdata1234_storage-uate.taskSchema}}'
+    databaseName: '{{task.onboardingdata1234_storage-uate.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboardingdata1234_storage-uate.warehouseName}}'

@@ -1,0 +1,19 @@
+properties:
+  id: customer
+  name: customer
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: first_name
+      newColumnName: first_name
+      newDataType:
+        type: UNSPECIFIED
+        length: 11
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      nullable: false
+sourceTable:
+  schema: '{{task.onboarding_data_1_landing-qtau:null$_$sakila.schema}}'
+  type: TABLE
+  name: customer

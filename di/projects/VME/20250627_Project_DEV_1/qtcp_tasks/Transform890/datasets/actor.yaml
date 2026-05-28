@@ -1,0 +1,82 @@
+properties:
+  id: actor-xpho
+  name: actor
+  inputDatasets:
+    - datasetId: actor-uatg
+      name: actor
+      taskId: onboardingdata1234_storage-uate
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: actor
+    columns:
+      - name: actor_id
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: UINT2
+          originalTypeFull: INTEGER
+        id: actor_id
+        properties:
+          documentMetadata: false
+      - name: first_name
+        ordinal: 2
+        datatype:
+          type: WSTRING
+          length: 45
+          originalTypeFull: NVARCHAR(45)
+        id: first_name
+        properties:
+          documentMetadata: false
+      - name: last_name
+        ordinal: 3
+        datatype:
+          type: WSTRING
+          length: 45
+          originalTypeFull: NVARCHAR(45)
+        id: last_name
+        properties:
+          documentMetadata: false
+      - name: last_update
+        ordinal: 4
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: last_update
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: actor-uatg
+        name: actor
+        taskId: onboardingdata1234_storage-uate
+      mappingFields:
+        - columnId: actor_id
+          expression:
+            expressionStatement: ${actor_id}
+            alias:
+              - name: actor_id
+                value: actor_id
+        - columnId: first_name
+          expression:
+            expressionStatement: ${first_name}
+            alias:
+              - name: first_name
+                value: first_name
+        - columnId: last_name
+          expression:
+            expressionStatement: ${last_name}
+            alias:
+              - name: last_name
+                value: last_name
+        - columnId: last_update
+          expression:
+            expressionStatement: ${last_update}
+            alias:
+              - name: last_update
+                value: last_update
+      id: actor_default_mapping-xphp
+      name: actor_default_mapping
+      description: ''

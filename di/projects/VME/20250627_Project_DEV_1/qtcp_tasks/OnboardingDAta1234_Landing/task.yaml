@@ -1,0 +1,16 @@
+properties:
+  name: OnboardingDAta1234_Landing
+  id: onboardingdata1234_landing-uatd
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboardingdata1234_landing-uatd.taskSchema}}'
+      database: '{{task.onboardingdata1234_landing-uatd.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

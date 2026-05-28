@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding-data-1_Storage
+  id: onboarding_data_1_storage-qtav
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_data_1_storage-qtav.internalSchema}}'
+    taskSchema: '{{task.onboarding_data_1_storage-qtav.taskSchema}}'
+    databaseName: '{{task.onboarding_data_1_storage-qtav.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_data_1_storage-qtav.warehouseName}}'

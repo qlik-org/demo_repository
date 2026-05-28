@@ -1,0 +1,18 @@
+properties:
+  name: Landing_MySakilaDB
+  id: onboarding_data_1_landing-qtau
+  type: LANDING
+settings:
+  errorHandling:
+    tableError:
+      policyErrors: ERROR_POLICY_STOP_TASK
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_data_1_landing-qtau.taskSchema}}'
+      database: '{{task.onboarding_data_1_landing-qtau.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
