@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding_5_4_Landing
+  id: onboarding_5_4_landing-1pnf
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_5_4_landing-1pnf.taskSchema}}'
+      database: '{{task.onboarding_5_4_landing-1pnf.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

@@ -1,0 +1,40 @@
+properties:
+  id: sql-1pnq
+  name: sql
+  inputDatasets:
+    - datasetId: region-1pnj
+      name: Region
+      taskId: onboarding_5_4_storage-1png
+  datasetAttributes:
+    materialized: ON
+  tableDef:
+    name: sql
+    columns:
+      - name: RegionID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: regionid
+      - name: RegionDescription
+        ordinal: 2
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: regiondescription
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Region}
+      alias:
+        - name: Region
+          value: '{{ref(project.current.projectId)}}$_$onboarding_5_4_storage-1png$_$region-1pnj'
+    incremental: false
+    text2sqlPrompt: ''
+    text2sqlResult: ''
+mappings:
+  mappings: []
