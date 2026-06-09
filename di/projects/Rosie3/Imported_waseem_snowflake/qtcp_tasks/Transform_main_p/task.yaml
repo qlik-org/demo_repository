@@ -1,0 +1,12 @@
+properties:
+  name: Transform_main_p
+  id: transform--ndm
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform--ndm.internalSchema}}'
+    taskSchema: '{{task.transform--ndm.taskSchema}}'
+    databaseName: '{{task.transform--ndm.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform--ndm.warehouseName}}'
