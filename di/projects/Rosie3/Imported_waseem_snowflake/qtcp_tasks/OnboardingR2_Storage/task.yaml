@@ -1,0 +1,12 @@
+properties:
+  name: OnboardingR2_Storage
+  id: onboardingr2_storage-dgcs
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboardingr2_storage-dgcs.internalSchema}}'
+    taskSchema: '{{task.onboardingr2_storage-dgcs.taskSchema}}'
+    databaseName: '{{task.onboardingr2_storage-dgcs.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboardingr2_storage-dgcs.warehouseName}}'
