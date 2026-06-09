@@ -40,6 +40,10 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
+    "task.data_mart--nds.databaseName": "{{task-type.datamart.databaseName}}",
+    "task.data_mart--nds.internalSchema": "",
+    "task.data_mart--nds.taskSchema": "",
+    "task.data_mart--nds.warehouseName": "{{task-type.datamart.warehouseName}}",
     "task.onboardingr1_landing-dgch.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboardingr1_landing-dgch.sourceConnection": "",
     "task.onboardingr1_landing-dgch.taskSchema": "",
@@ -55,7 +59,11 @@
     "task.onboardingr2_storage-dgcs.databaseName": "{{task-type.storage.databaseName}}",
     "task.onboardingr2_storage-dgcs.internalSchema": "",
     "task.onboardingr2_storage-dgcs.taskSchema": "",
-    "task.onboardingr2_storage-dgcs.warehouseName": "{{task-type.storage.warehouseName}}"
+    "task.onboardingr2_storage-dgcs.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.transform--ndm.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform--ndm.internalSchema": "",
+    "task.transform--ndm.taskSchema": "",
+    "task.transform--ndm.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "connectionProperties": {
     "task.onboardingr1_landing-dgch.sourceConnection": {
