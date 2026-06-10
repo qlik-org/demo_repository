@@ -1,0 +1,25 @@
+properties:
+  name: Replication
+  id: replication-pust
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication-pust.targetConnection}}'
+    targetSchema: '{{task.replication-pust.targetSchema}}'
+    targetStorageConnection: '{{task.replication-pust.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    storeChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-06-02T07:32:58.0530000Z
+    changeTableHeaderColumn:
+      - id: STREAM_POSITION
+        headerColumn: stream_position
+        isChecked: true
+      - id: TRANSACTION_ID
+        headerColumn: transaction_id
+        isChecked: true
+  fileAttributes:
+    general:
+      maxFileSize: 0

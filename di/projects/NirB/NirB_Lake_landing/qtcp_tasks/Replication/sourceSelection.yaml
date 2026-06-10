@@ -1,0 +1,8 @@
+sourceConnection: '{{task.replication-pust.sourceConnection}}'
+explicitlySelected:
+  - name: cars
+    schema: '{{task.replication-pust:null$_$nir.schema}}'
+    type: TABLE
+  - name: newname
+    schema: '{{task.replication-pust:null$_$nir.schema}}'
+    type: TABLE

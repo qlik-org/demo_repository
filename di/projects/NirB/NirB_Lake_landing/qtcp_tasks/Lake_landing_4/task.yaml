@@ -1,0 +1,13 @@
+properties:
+  name: Lake_landing_4
+  id: lake_landing_4-agnj
+  type: LAKE_LANDING
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing_4-agnj.targetConnection}}'
+  changeDataPartitioning:
+    mode: PARTITION_OFF
+    partitionBaseTime: 2026-06-09T00:00:00.0000000Z
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-06-09T00:00:00.0000000Z

@@ -1,0 +1,87 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.lake_landing-pusf.sourceConnection": "",
+    "task.lake_landing-pusf.targetConnection": "",
+    "task.lake_landing-pusf:null$_$nir.schema": "",
+    "task.lake_landing_1-pus5.sourceConnection": "",
+    "task.lake_landing_1-pus5.targetConnection": "",
+    "task.lake_landing_1-pus5:null$_$nir.schema": "",
+    "task.lake_landing_2-73tp.sourceConnection": "",
+    "task.lake_landing_2-73tp.targetConnection": "",
+    "task.lake_landing_2-73tp:null$_$mysql.schema": "",
+    "task.lake_landing_3-agnc.sourceConnection": "",
+    "task.lake_landing_3-agnc.targetConnection": "",
+    "task.lake_landing_3-agnc:null$_$nir.schema": "",
+    "task.lake_landing_4-agnj.sourceConnection": "",
+    "task.lake_landing_4-agnj.targetConnection": "",
+    "task.lake_landing_4-agnj:null$_$nir.schema": "",
+    "task.replication-pust.sourceConnection": "",
+    "task.replication-pust.targetConnection": "",
+    "task.replication-pust.targetSchema": "",
+    "task.replication-pust.targetStorageConnection": "",
+    "task.replication-pust:null$_$nir.schema": "",
+    "task.replication_1-agnw.sourceConnection": "",
+    "task.replication_1-agnw.targetConnection": "",
+    "task.replication_1-agnw.targetSchema": "",
+    "task.replication_1-agnw.targetStorageConnection": "",
+    "task.replication_1-agnw:null$_$dbo.schema": "",
+    "task.replication_2-agnc.sourceConnection": "",
+    "task.replication_2-agnc.targetConnection": "",
+    "task.replication_2-agnc.targetSchema": "",
+    "task.replication_2-agnc.targetStorageConnection": "",
+    "task.replication_2-agnc:null$_$nir.schema": ""
+  },
+  "connectionProperties": {
+    "task.lake_landing-pusf.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.lake_landing-pusf.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.lake_landing_1-pus5.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.lake_landing_1-pus5.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.lake_landing_2-73tp.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.lake_landing_2-73tp.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.lake_landing_3-agnc.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.lake_landing_3-agnc.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.lake_landing_4-agnj.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.lake_landing_4-agnj.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.replication-pust.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication-pust.targetConnection": {
+      "type": "reptgt_mssqltarget"
+    },
+    "task.replication_1-agnw.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.replication_1-agnw.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.replication_2-agnc.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.replication_2-agnc.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}

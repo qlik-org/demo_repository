@@ -1,0 +1,30 @@
+properties:
+  name: Lake_landing_3
+  id: lake_landing_3-agnc
+  type: LAKE_LANDING
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing_3-agnc.targetConnection}}'
+  changeDataPartitioning:
+    partitionBaseTime: 2026-06-09T01:00:00.0000000Z
+  storeChangesOptions:
+    ddlOptions: false
+    onUpdate: false
+    changeTableCreation: NOTHING
+    suffix: __ct1
+    headerColumnPrefix: header__1
+    changeDataPartitioning:
+      partitionBaseTime: 2026-06-09T00:00:00.0000000Z
+    changeTableHeaderColumn:
+      - id: CHANGE_SEQUENCE
+        headerColumn: change_seq
+        isChecked: false
+      - id: CHANGE_OPERATION
+        headerColumn: change_oper
+        isChecked: false
+      - id: CHANGE_MASK
+        headerColumn: change_mask
+        isChecked: false
+      - id: STREAM_POSITION
+        headerColumn: stream_position
+        isChecked: false

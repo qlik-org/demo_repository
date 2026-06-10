@@ -1,0 +1,15 @@
+properties:
+  name: Replication_2
+  id: replication_2-agnc
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication_2-agnc.targetConnection}}'
+    targetSchema: '{{task.replication_2-agnc.targetSchema}}'
+    targetStorageConnection: '{{task.replication_2-agnc.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-06-10T09:58:19.7940000Z

@@ -1,0 +1,16 @@
+properties:
+  name: Replication_1
+  id: replication_1-agnw
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication_1-agnw.targetConnection}}'
+    targetSchema: '{{task.replication_1-agnw.targetSchema}}'
+    targetStorageConnection: '{{task.replication_1-agnw.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+    storeChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-06-10T08:01:20.8570000Z

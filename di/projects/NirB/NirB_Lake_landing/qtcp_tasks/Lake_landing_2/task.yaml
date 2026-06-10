@@ -1,0 +1,27 @@
+properties:
+  name: Lake_landing_2
+  id: lake_landing_2-73tp
+  type: LAKE_LANDING
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing_2-73tp.targetConnection}}'
+  changeDataPartitioning:
+    partitionEvery: 720
+    partitionBaseTime: 2026-06-07T00:00:00.0000000Z
+  storeChangesOptions:
+    changeTableCreation: TRUNCATE_IF_EXIST
+    suffix: q__ct34
+    headerColumnPrefix: header__234
+    changeDataPartitioning:
+      partitionEvery: 10
+      partitionBaseTime: 2026-06-07T11:00:00.0000000Z
+    changeTableHeaderColumn:
+      - id: CHANGE_SEQUENCE
+        headerColumn: change_seq
+        isChecked: false
+      - id: TIMESTAMP
+        headerColumn: timestamp
+        isChecked: false
+      - id: PARTITION_NAME
+        headerColumn: partition_name
+        isChecked: false

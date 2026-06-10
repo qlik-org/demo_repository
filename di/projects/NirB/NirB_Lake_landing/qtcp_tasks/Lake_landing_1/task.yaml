@@ -1,0 +1,13 @@
+properties:
+  name: Lake_landing_1
+  id: lake_landing_1-pus5
+  type: LAKE_LANDING
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing_1-pus5.targetConnection}}'
+  changeDataPartitioning:
+    partitionBaseTime: 2026-06-02T00:00:00.0000000Z
+  storeChangesOptions:
+    changeDataPartitioning:
+      mode: PARTITION_OFF
+      partitionEvery: 60

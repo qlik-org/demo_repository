@@ -1,0 +1,19 @@
+properties:
+  name: Lake_landing
+  id: lake_landing-pusf
+  type: LAKE_LANDING
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing-pusf.targetConnection}}'
+  changeDataPartitioning:
+    partitionBaseTime: 2026-06-01T00:00:00.0000000Z
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false
+  storeChangesOptions:
+    ddlOptions: false
+    changeTableCreation: NOTHING
+    changeDataPartitioning:
+      mode: PARTITION_OFF
+      partitionEvery: 60
