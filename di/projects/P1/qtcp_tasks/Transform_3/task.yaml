@@ -1,0 +1,12 @@
+properties:
+  name: Transform_3
+  id: transform_3-gsir
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform_3-gsir.internalSchema}}'
+    taskSchema: '{{task.transform_3-gsir.taskSchema}}'
+    databaseName: '{{task.transform_3-gsir.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_3-gsir.warehouseName}}'
