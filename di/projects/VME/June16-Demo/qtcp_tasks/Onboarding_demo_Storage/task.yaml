@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_demo_Storage
+  id: onboarding_may11_storage-zrvn
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_may11_storage-zrvn.internalSchema}}'
+    taskSchema: '{{task.onboarding_may11_storage-zrvn.taskSchema}}'
+    databaseName: '{{task.onboarding_may11_storage-zrvn.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_may11_storage-zrvn.warehouseName}}'
