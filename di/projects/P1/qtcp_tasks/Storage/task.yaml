@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-4epl
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-4epl.internalSchema}}'
+    taskSchema: '{{task.storage-4epl.taskSchema}}'
+    databaseName: '{{task.storage-4epl.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-4epl.warehouseName}}'

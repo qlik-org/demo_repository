@@ -1,0 +1,13 @@
+properties:
+  id: abc-zhf2
+  name: abc
+  inputDatasets:
+    - datasetId: products-v7e5
+      taskId: onboarding_storage-v7e3
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, abc)}}'
+    targetId: be2c6a00-18e3-4e96-8f78-8075529e53b1
+    dataflowTargetState: VALID
+    incremental: false
+mappings:
+  mappings: []

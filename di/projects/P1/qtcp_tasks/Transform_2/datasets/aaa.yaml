@@ -1,0 +1,15 @@
+properties:
+  id: aaa-ehps
+  name: aaa
+  inputDatasets:
+    - datasetId: shippers-v7e6
+      name: Shippers
+      taskId: onboarding_storage-v7e3
+  tableDef:
+    name: aaa
+    columns: []
+  customDatasetSettings:
+    customSql: {}
+    incremental: false
+mappings:
+  mappings: []

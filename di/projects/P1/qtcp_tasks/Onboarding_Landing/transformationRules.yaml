@@ -1,0 +1,18 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_TABLE
+    scope:
+      whereOwnerName: shahar%
+    action:
+      renameType: RENAME
+      value: abc
+    enabled: false
+    name: Rule
+  - ordinal: 1
+    actionType: DROP_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereTableName: Products
+      whereColumnName: SupplierID
+    enabled: false
+    name: Rule_1

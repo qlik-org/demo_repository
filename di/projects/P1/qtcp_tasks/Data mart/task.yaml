@@ -1,0 +1,12 @@
+properties:
+  name: Data mart
+  id: data_mart-qprr
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-qprr.internalSchema}}'
+    taskSchema: '{{task.data_mart-qprr.taskSchema}}'
+    databaseName: '{{task.data_mart-qprr.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-qprr.warehouseName}}'

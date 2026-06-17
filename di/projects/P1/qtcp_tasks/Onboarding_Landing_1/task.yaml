@@ -1,0 +1,13 @@
+properties:
+  name: Onboarding_Landing_1
+  id: onboarding_landing_1-9-sf
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing_1-9-sf.taskSchema}}'
+      database: '{{task.onboarding_landing_1-9-sf.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

@@ -1,0 +1,12 @@
+properties:
+  name: Landing
+  id: landing-9-se
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-9-se.taskSchema}}'
+      database: '{{task.landing-9-se.databaseName}}'
+  landingAppRuntime:
+    workloadExecutionEngine:
+      name: LOAD_WH

@@ -1,0 +1,175 @@
+properties:
+  id: products-4epu
+  name: Products
+  inputDatasets:
+    - datasetId: products-v7e_
+      name: Products
+      taskId: transform-v7e9
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Products
+    columns:
+      - name: ProductID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: productid
+        properties:
+          documentMetadata: false
+      - name: ProductName
+        ordinal: 2
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: productname
+        properties:
+          documentMetadata: false
+      - name: SupplierID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: supplierid
+        properties:
+          documentMetadata: false
+      - name: CategoryID
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: categoryid
+        properties:
+          documentMetadata: false
+      - name: QuantityPerUnit
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: quantityperunit
+        properties:
+          documentMetadata: false
+      - name: UnitPrice
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - name: UnitsInStock
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: unitsinstock
+        properties:
+          documentMetadata: false
+      - name: UnitsOnOrder
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: unitsonorder
+        properties:
+          documentMetadata: false
+      - name: ReorderLevel
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: reorderlevel
+        properties:
+          documentMetadata: false
+      - name: Discontinued
+        ordinal: 10
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: discontinued
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: products-v7e_
+        name: Products
+        taskId: transform-v7e9
+      mappingFields:
+        - columnId: productid
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnId: productname
+          expression:
+            expressionStatement: ${QuantityPerUnit}
+            alias:
+              - name: QuantityPerUnit
+                value: QuantityPerUnit
+        - columnId: supplierid
+          expression:
+            expressionStatement: ${SupplierID}
+            alias:
+              - name: SupplierID
+                value: SupplierID
+        - columnId: categoryid
+          expression:
+            expressionStatement: ${CategoryID}
+            alias:
+              - name: CategoryID
+                value: CategoryID
+        - columnId: quantityperunit
+          expression:
+            expressionStatement: ${QuantityPerUnit}
+            alias:
+              - name: QuantityPerUnit
+                value: QuantityPerUnit
+        - columnId: unitprice
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnId: unitsinstock
+          expression:
+            expressionStatement: ${UnitsInStock}
+            alias:
+              - name: UnitsInStock
+                value: UnitsInStock
+        - columnId: unitsonorder
+          expression:
+            expressionStatement: ${UnitsOnOrder}
+            alias:
+              - name: UnitsOnOrder
+                value: UnitsOnOrder
+        - columnId: reorderlevel
+          expression:
+            expressionStatement: ${ReorderLevel}
+            alias:
+              - name: ReorderLevel
+                value: ReorderLevel
+        - columnId: discontinued
+          expression:
+            expressionStatement: ${Discontinued}
+            alias:
+              - name: Discontinued
+                value: Discontinued
+      id: products_default_mapping-4epv
+      name: Products_default_mapping
+      description: ''

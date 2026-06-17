@@ -1,0 +1,21 @@
+properties:
+  id: products-v7e5
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: onboarding_landing-v7e2
+transformations:
+  newTableName: MyProducts
+  columnTransformations:
+    - action: ADD
+      columnName: aaa
+      newDataType:
+        type: BOOLEAN
+        length: 0
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ''
+        alias: []
+      addedColumnId: e6d20311-6463-4bf9-80aa-5983d5b17e7d
