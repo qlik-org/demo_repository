@@ -1,0 +1,16 @@
+properties:
+  name: Transform
+  id: transform-cqz0
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-cqz0.internalSchema}}'
+    taskSchema: '{{task.transform-cqz0.taskSchema}}'
+    databaseName: '{{task.transform-cqz0.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-cqz0.warehouseName}}'
+  tableTypeSettings:
+    tableType: ICEBERG
+    icebergSettings:
+      snowflakeExternalVolume: '{{task.transform-cqz0.snowflakeExternalVolume}}'

@@ -1,0 +1,16 @@
+properties:
+  name: Storage
+  id: storage-cqzv
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-cqzv.internalSchema}}'
+    taskSchema: '{{task.storage-cqzv.taskSchema}}'
+    databaseName: '{{task.storage-cqzv.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-cqzv.warehouseName}}'
+  tableTypeSettings:
+    tableType: ICEBERG
+    icebergSettings:
+      snowflakeExternalVolume: '{{task.storage-cqzv.snowflakeExternalVolume}}'

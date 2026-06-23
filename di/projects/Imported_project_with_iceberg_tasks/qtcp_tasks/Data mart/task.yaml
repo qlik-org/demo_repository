@@ -1,0 +1,16 @@
+properties:
+  name: Data mart
+  id: data_mart-cqz-
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-cqz-.internalSchema}}'
+    taskSchema: '{{task.data_mart-cqz-.taskSchema}}'
+    databaseName: '{{task.data_mart-cqz-.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-cqz-.warehouseName}}'
+  tableTypeSettings:
+    tableType: ICEBERG
+    icebergSettings:
+      snowflakeExternalVolume: '{{task.data_mart-cqz-.snowflakeExternalVolume}}'

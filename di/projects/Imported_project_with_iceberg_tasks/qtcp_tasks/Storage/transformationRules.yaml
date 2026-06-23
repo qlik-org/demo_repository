@@ -1,0 +1,15 @@
+rules:
+  - actionType: REPLACE_COLUMN_VALUE
+    scopeType: COLUMN
+    scope:
+      whereDatatype: JSON
+    action:
+      renameType: RENAME
+      expression:
+        expressionStatement: ${Q_D_COLUMN_DATA}::VARCHAR
+        alias:
+          - name: Q_D_COLUMN_DATA
+            value: $Q_D_COLUMN_DATA
+    internalRule: true
+    name: QLIK__JSON_AS_VARCHAR
+    description: 'This rule automatically converts JSON columns into VARCHAR.'
