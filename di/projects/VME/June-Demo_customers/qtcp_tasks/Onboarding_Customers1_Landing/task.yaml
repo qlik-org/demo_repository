@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding_Customers1_Landing
+  id: onboarding_customers1_landing-lylj
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_customers1_landing-lylj.taskSchema}}'
+      database: '{{task.onboarding_customers1_landing-lylj.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_Customers1_Storage
+  id: onboarding_customers1_storage-lylk
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_customers1_storage-lylk.internalSchema}}'
+    taskSchema: '{{task.onboarding_customers1_storage-lylk.taskSchema}}'
+    databaseName: '{{task.onboarding_customers1_storage-lylk.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_customers1_storage-lylk.warehouseName}}'
