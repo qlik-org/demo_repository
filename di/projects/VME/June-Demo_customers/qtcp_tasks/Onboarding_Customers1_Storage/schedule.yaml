@@ -1,0 +1,8 @@
+scheduling:
+  - schedulingType: TIME_BASED
+    enabled: true
+    timeBasedScheduling:
+      schedule:
+        - 'RRULE:FREQ=HOURLY;INTERVAL=1'
+      startDateTime: '2026-06-25T00:00:00.0000000Z'
+      timezone: 'Etc/UTC'
