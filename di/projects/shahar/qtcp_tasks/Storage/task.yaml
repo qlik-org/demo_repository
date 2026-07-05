@@ -1,0 +1,13 @@
+properties:
+  name: Storage
+  id: storage-9l6-
+  type: LAKEHOUSE_STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-9l6-.internalSchema}}'
+    taskSchema: '{{task.storage-9l6-.taskSchema}}'
+  ddlHandlingPolicy:
+    addColumn: IGNORE
+    createTable: IGNORE
+  taskRuntime:
+    lakehouseCluster: '{{task.storage-9l6-.lakehouseCluster}}'

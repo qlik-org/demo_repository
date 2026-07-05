@@ -1,0 +1,10 @@
+properties:
+  name: Onboarding_shahar1__Storage
+  id: onboarding_shahar1__storage-9l6t
+  type: LAKEHOUSE_STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_shahar1__storage-9l6t.internalSchema}}'
+    taskSchema: '{{task.onboarding_shahar1__storage-9l6t.taskSchema}}'
+  taskRuntime:
+    lakehouseCluster: '{{task.onboarding_shahar1__storage-9l6t.lakehouseCluster}}'
