@@ -1,0 +1,68 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.lake_landing-r-vt.sourceConnection": "",
+    "task.lake_landing-r-vt.targetConnection": "",
+    "task.lake_landing_1-r-vv.sourceConnection": "",
+    "task.lake_landing_1-r-vv.targetConnection": "",
+    "task.lake_landing_2-frlk.sourceConnection": "",
+    "task.lake_landing_2-frlk.targetConnection": "",
+    "task.lake_landing_2-frlk:null$_$AUTONORTHWIND.schema": "",
+    "task.replication-rvee.sourceConnection": "",
+    "task.replication-rvee.targetConnection": "",
+    "task.replication-rvee.targetSchema": "",
+    "task.replication-rvee.targetStorageConnection": "",
+    "task.replication_1-rvek.sourceConnection": "",
+    "task.replication_1-rvek.targetConnection": "",
+    "task.replication_1-rvek.targetStorageConnection": "",
+    "task.replication_1-rvek:null$_$AUTONORTHWIND.schema": "",
+    "task.replication_3-rveb.sourceConnection": "",
+    "task.replication_3-rveb.targetConnection": "",
+    "task.replication_3-rveb.targetSchema": "",
+    "task.replication_3-rveb.targetStorageConnection": ""
+  },
+  "connectionProperties": {
+    "task.lake_landing-r-vt.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "source:SurveyMonkey@1.0.0"
+    },
+    "task.lake_landing-r-vt.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.lake_landing_1-r-vv.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "source:SurveyMonkey@1.0.0"
+    },
+    "task.lake_landing_1-r-vv.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.lake_landing_2-frlk.sourceConnection": {
+      "type": "repsrc_oracle"
+    },
+    "task.lake_landing_2-frlk.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.replication-rvee.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "source:SurveyMonkey@1.0.0"
+    },
+    "task.replication-rvee.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.replication_1-rvek.sourceConnection": {
+      "type": "repsrc_oracle"
+    },
+    "task.replication_1-rvek.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.replication_3-rveb.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "source:SurveyMonkey@1.0.0"
+    },
+    "task.replication_3-rveb.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}

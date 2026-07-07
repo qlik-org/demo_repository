@@ -1,0 +1,8 @@
+sourceConnection: '{{task.replication_1-rvek.sourceConnection}}'
+explicitlySelected:
+  - name: Categories
+    schema: '{{task.replication_1-rvek:null$_$AUTONORTHWIND.schema}}'
+    type: TABLE
+  - name: CustomerDemographics
+    schema: '{{task.replication_1-rvek:null$_$AUTONORTHWIND.schema}}'
+    type: TABLE

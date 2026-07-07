@@ -1,0 +1,15 @@
+properties:
+  name: Replication_3
+  id: replication_3-rveb
+  type: REPLICATION
+settings:
+  fullLoadOnly: true
+  targetEndpoint:
+    targetConnection: '{{task.replication_3-rveb.targetConnection}}'
+    targetSchema: '{{task.replication_3-rveb.targetSchema}}'
+    targetStorageConnection: '{{task.replication_3-rveb.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+  fileAttributes:
+    general:
+      maxFileSize: 100

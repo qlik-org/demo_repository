@@ -1,0 +1,15 @@
+properties:
+  name: Replication
+  id: replication-rvee
+  type: REPLICATION
+settings:
+  fullLoadOnly: true
+  targetEndpoint:
+    targetConnection: '{{task.replication-rvee.targetConnection}}'
+    targetSchema: '{{task.replication-rvee.targetSchema}}'
+    targetStorageConnection: '{{task.replication-rvee.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+  fileAttributes:
+    general:
+      maxFileSize: 100

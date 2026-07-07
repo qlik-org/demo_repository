@@ -1,0 +1,28 @@
+properties:
+  name: Lake_landing_2
+  id: lake_landing_2-frlk
+  type: LAKE_LANDING
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing_2-frlk.targetConnection}}'
+  changeDataPartitioning:
+    mode: PARTITION_EVERY
+    partitionEvery: 1440
+    partitionBaseTime: 1970-01-01T00:00:00.0000000Z
+  fileAttributes:
+    general:
+      addMetadataHeader:
+        withColumnName: false
+        withDataTypes: false
+    metadataFiles:
+      createInTargetFolder: false
+  metadata:
+    controlTableSelection:
+      - tableId: CHANGE_DATA_PARTITIONS
+        targetName: attrep_cdc_partitions
+        isChecked: true
+  storeChangesOptions:
+    changeTableHeaderColumn:
+      - id: PARTITION_NAME
+        headerColumn: partition_name
+        isChecked: true

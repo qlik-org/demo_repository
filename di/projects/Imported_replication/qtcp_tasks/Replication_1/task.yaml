@@ -1,0 +1,14 @@
+properties:
+  name: Replication_1
+  id: replication_1-rvek
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication_1-rvek.targetConnection}}'
+    targetStorageConnection: '{{task.replication_1-rvek.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  fileAttributes:
+    general:
+      maxFileSize: 100
