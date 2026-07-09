@@ -1,0 +1,227 @@
+properties:
+  id: employees-hnes
+  name: Employees
+  inputDatasets:
+    - datasetId: employees-hnej
+      name: Employees
+      taskId: storage-hneg
+  datasetAttributes:
+    materialized: ON
+  tableDef:
+    name: Employees
+    columns:
+      - name: EmployeeID
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        expression:
+          expressionStatement: ${EmployeeID}
+          alias:
+            - name: EmployeeID
+              value: EmployeeID
+        id: employeeid
+      - name: LastName
+        datatype:
+          type: STRING
+          length: 20
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(20)
+        expression:
+          expressionStatement: ${LastName}
+          alias:
+            - name: LastName
+              value: LastName
+        id: lastname
+      - name: FirstName
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        expression:
+          expressionStatement: ${FirstName}
+          alias:
+            - name: FirstName
+              value: FirstName
+        id: firstname
+      - name: Title
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        expression:
+          expressionStatement: ${Title}
+          alias:
+            - name: Title
+              value: Title
+        id: title
+      - name: TitleOfCourtesy
+        nullable: true
+        datatype:
+          type: STRING
+          length: 25
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(25)
+        expression:
+          expressionStatement: ${TitleOfCourtesy}
+          alias:
+            - name: TitleOfCourtesy
+              value: TitleOfCourtesy
+        id: titleofcourtesy
+      - name: BirthDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        expression:
+          expressionStatement: ${BirthDate}
+          alias:
+            - name: BirthDate
+              value: BirthDate
+        id: birthdate
+      - name: HireDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        expression:
+          expressionStatement: ${HireDate}
+          alias:
+            - name: HireDate
+              value: HireDate
+        id: hiredate
+      - name: Address
+        nullable: true
+        datatype:
+          type: STRING
+          length: 60
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(60)
+        expression:
+          expressionStatement: ${Address}
+          alias:
+            - name: Address
+              value: Address
+        id: address
+      - name: City
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        expression:
+          expressionStatement: ${City}
+          alias:
+            - name: City
+              value: City
+        id: city
+      - name: Region
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        expression:
+          expressionStatement: ${Region}
+          alias:
+            - name: Region
+              value: Region
+        id: region
+      - name: PostalCode
+        nullable: true
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        expression:
+          expressionStatement: ${PostalCode}
+          alias:
+            - name: PostalCode
+              value: PostalCode
+        id: postalcode
+      - name: Country
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        expression:
+          expressionStatement: ${Country}
+          alias:
+            - name: Country
+              value: Country
+        id: country
+      - name: HomePhone
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        expression:
+          expressionStatement: ${HomePhone}
+          alias:
+            - name: HomePhone
+              value: HomePhone
+        id: homephone
+      - name: Extension
+        nullable: true
+        datatype:
+          type: STRING
+          length: 4
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(4)
+        expression:
+          expressionStatement: ${Extension}
+          alias:
+            - name: Extension
+              value: Extension
+        id: extension
+      - name: Notes
+        nullable: true
+        datatype:
+          type: STRING
+          length: 8388608
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(8388608)
+        expression:
+          expressionStatement: ${Notes}
+          alias:
+            - name: Notes
+              value: Notes
+        id: notes
+      - name: ReportsTo
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        expression:
+          expressionStatement: ${ReportsTo}
+          alias:
+            - name: ReportsTo
+              value: ReportsTo
+        id: reportsto
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Employees}
+      alias:
+        - name: Employees
+          value: '{{ref(project.current.projectId)}}$_$storage-hneg$_$employees-hnej'
+    incremental: false
+mappings:
+  mappings: []
