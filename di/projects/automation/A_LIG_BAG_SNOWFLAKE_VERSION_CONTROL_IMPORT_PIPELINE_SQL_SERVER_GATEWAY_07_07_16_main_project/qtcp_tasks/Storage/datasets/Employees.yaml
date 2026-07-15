@@ -1,0 +1,10 @@
+properties:
+  id: employees-hnej
+  name: Employees
+  inputDatasets:
+    - datasetId: employees
+      taskId: landing-tti4
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: Photo
