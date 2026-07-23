@@ -1,0 +1,27 @@
+{
+  "taskRuntime": {
+    "tableUpdateInterval": 15,
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
+      "selectionMethod": "{{task-type.knowledgeMart.warehouseSelectionMethod}}"
+    }
+  },
+  "database": {
+    "databaseName": "{{task-type.knowledgeMart.databaseName}}",
+    "selectionMethod": "{{task-type.knowledgeMart.databaseSelectionMethod}}"
+  },
+  "viewType": "DEFAULT",
+  "indexArtifactsLocation": {
+    "databaseSelection": {
+      "databaseName": "{{task-type.knowledgeMart.indexDatabase}}",
+      "selectionMethod": "{{task-type.knowledgeMart.indexDatabaseSelectionMethod}}"
+    },
+    "databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}"
+  },
+  "vectorDbTargetType": "{{task-type.knowledgeMart.vectorDbTargetType}}",
+  "vectorDbConnection": "{{task-type.knowledgeMart.vectorDbConnection}}",
+  "llmConnection": "{{task-type.knowledgeMart.llmConnection}}",
+  "llmSettings": {},
+  "fullLoadOnly": false
+}
