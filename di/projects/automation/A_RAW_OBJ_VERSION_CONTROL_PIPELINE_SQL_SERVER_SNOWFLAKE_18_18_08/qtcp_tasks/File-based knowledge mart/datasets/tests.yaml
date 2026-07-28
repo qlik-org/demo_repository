@@ -1,0 +1,13 @@
+properties:
+  id: tests
+  name: tests
+  datasetAttributes:
+    materialized: INHERIT
+    hasHistory: INHERIT
+    hasLiveViews: INHERIT
+    hasChanges: INHERIT
+    hasStandardViewsWithHeaders: INHERIT
+    watermarkIncrementalSettings: INHERIT
+sourceTable:
+  type: DIRECTORY
+  name: tests
