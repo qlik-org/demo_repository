@@ -1,0 +1,10 @@
+properties:
+  id: orders-s2ws
+  name: Orders
+  inputDatasets:
+    - datasetId: orders-hnek
+      taskId: storage-hneg
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, Orders)}}'
+    targetId: ef39abf9-c170-4031-980a-14244565c98e
+    dataflowTargetState: VALID
