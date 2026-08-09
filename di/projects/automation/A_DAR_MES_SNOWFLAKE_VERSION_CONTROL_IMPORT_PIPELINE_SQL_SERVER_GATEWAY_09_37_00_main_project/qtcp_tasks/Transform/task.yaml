@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-tti6
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-tti6.internalSchema}}'
+    taskSchema: '{{task.transform-tti6.taskSchema}}'
+    databaseName: '{{task.transform-tti6.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-tti6.warehouseName}}'
