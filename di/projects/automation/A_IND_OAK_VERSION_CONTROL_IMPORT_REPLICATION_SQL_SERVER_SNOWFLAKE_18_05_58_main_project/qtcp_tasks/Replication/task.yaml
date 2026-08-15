@@ -1,0 +1,14 @@
+properties:
+  name: Replication
+  id: replication-hyix
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication-hyix.targetConnection}}'
+    targetStorageConnection: '{{task.replication-hyix.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-08-15T18:06:17.7560000Z
