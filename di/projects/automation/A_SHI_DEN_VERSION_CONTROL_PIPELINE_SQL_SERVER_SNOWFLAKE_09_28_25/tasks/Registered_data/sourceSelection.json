@@ -1,0 +1,27 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.registered_data-bu-g:DIS_AUTOMATION$_$auto_landing.database}}",
+      "name": "Customers",
+      "schema": "{{task.registered_data-bu-g:DIS_AUTOMATION$_$auto_landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$vc_pipe_test1_landing_customers"
+    },
+    {
+      "database": "{{task.registered_data-bu-g:DIS_AUTOMATION$_$auto_landing.database}}",
+      "name": "Employees",
+      "schema": "{{task.registered_data-bu-g:DIS_AUTOMATION$_$auto_landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$vc_pipe_test1_landing_employees"
+    },
+    {
+      "database": "{{task.registered_data-bu-g:DIS_AUTOMATION$_$auto_landing.database}}",
+      "name": "Orders",
+      "schema": "{{task.registered_data-bu-g:DIS_AUTOMATION$_$auto_landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$vc_pipe_test1_landing_orders"
+    }
+  ]
+}
