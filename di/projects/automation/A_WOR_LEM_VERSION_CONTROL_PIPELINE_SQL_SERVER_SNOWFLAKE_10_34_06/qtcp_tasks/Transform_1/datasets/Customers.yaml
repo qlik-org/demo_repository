@@ -1,0 +1,140 @@
+properties:
+  id: customers-mjmv
+  name: Customers
+  inputDatasets:
+    - datasetId: customers-bu-n
+      name: Customers
+      taskId: storage_1-mjmp
+  tableDef:
+    columns:
+      - datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        name: CustomerID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${CustomerID}
+          alias:
+            - name: CustomerID
+              value: CustomerID
+        id: customerid
+      - datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        name: CompanyName
+        expression:
+          expressionStatement: ${CompanyName}
+          alias:
+            - name: CompanyName
+              value: CompanyName
+        id: companyname
+      - datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        name: ContactName
+        nullable: true
+        expression:
+          expressionStatement: ${ContactName}
+          alias:
+            - name: ContactName
+              value: ContactName
+        id: contactname
+      - datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        name: ContactTitle
+        nullable: true
+        expression:
+          expressionStatement: ${ContactTitle}
+          alias:
+            - name: ContactTitle
+              value: ContactTitle
+        id: contacttitle
+      - datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        name: Address
+        nullable: true
+        expression:
+          expressionStatement: ${Address}
+          alias:
+            - name: Address
+              value: Address
+        id: address
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: City
+        nullable: true
+        expression:
+          expressionStatement: ${City}
+          alias:
+            - name: City
+              value: City
+        id: city
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: Region
+        nullable: true
+        expression:
+          expressionStatement: ${Region}
+          alias:
+            - name: Region
+              value: Region
+        id: region
+      - datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        name: PostalCode
+        nullable: true
+        expression:
+          expressionStatement: ${PostalCode}
+          alias:
+            - name: PostalCode
+              value: PostalCode
+        id: postalcode
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: Country
+        nullable: true
+        expression:
+          expressionStatement: ${Country}
+          alias:
+            - name: Country
+              value: Country
+        id: country
+      - datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        name: Phone
+        nullable: true
+        expression:
+          expressionStatement: ${Phone}
+          alias:
+            - name: Phone
+              value: Phone
+        id: phone
+      - datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        name: Fax
+        nullable: true
+        expression:
+          expressionStatement: ${Fax}
+          alias:
+            - name: Fax
+              value: Fax
+        id: fax
