@@ -1,0 +1,175 @@
+properties:
+  id: orders-mjmt
+  name: Orders
+  inputDatasets:
+    - datasetId: orders-bu-p
+      name: Orders
+      taskId: storage_1-mjmp
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: OrderID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${OrderID}
+          alias:
+            - name: OrderID
+              value: OrderID
+        id: orderid
+      - datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        name: CustomerID
+        nullable: true
+        expression:
+          expressionStatement: ${CustomerID}
+          alias:
+            - name: CustomerID
+              value: CustomerID
+        id: customerid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: EmployeeID
+        nullable: true
+        expression:
+          expressionStatement: ${EmployeeID}
+          alias:
+            - name: EmployeeID
+              value: EmployeeID
+        id: employeeid
+      - datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        name: OrderDate
+        nullable: true
+        expression:
+          expressionStatement: ${OrderDate}
+          alias:
+            - name: OrderDate
+              value: OrderDate
+        id: orderdate
+      - datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        name: RequiredDate
+        nullable: true
+        expression:
+          expressionStatement: ${RequiredDate}
+          alias:
+            - name: RequiredDate
+              value: RequiredDate
+        id: requireddate
+      - datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        name: ShippedDate
+        nullable: true
+        expression:
+          expressionStatement: ${ShippedDate}
+          alias:
+            - name: ShippedDate
+              value: ShippedDate
+        id: shippeddate
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: ShipVia
+        nullable: true
+        expression:
+          expressionStatement: ${ShipVia}
+          alias:
+            - name: ShipVia
+              value: ShipVia
+        id: shipvia
+      - datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        name: Freight
+        nullable: true
+        expression:
+          expressionStatement: ${Freight}
+          alias:
+            - name: Freight
+              value: Freight
+        id: freight
+      - datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        name: ShipName
+        nullable: true
+        expression:
+          expressionStatement: ${ShipName}
+          alias:
+            - name: ShipName
+              value: ShipName
+        id: shipname
+      - datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        name: ShipAddress
+        nullable: true
+        expression:
+          expressionStatement: ${ShipAddress}
+          alias:
+            - name: ShipAddress
+              value: ShipAddress
+        id: shipaddress
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: ShipCity
+        nullable: true
+        expression:
+          expressionStatement: ${ShipCity}
+          alias:
+            - name: ShipCity
+              value: ShipCity
+        id: shipcity
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: ShipRegion
+        nullable: true
+        expression:
+          expressionStatement: ${ShipRegion}
+          alias:
+            - name: ShipRegion
+              value: ShipRegion
+        id: shipregion
+      - datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        name: ShipPostalCode
+        nullable: true
+        expression:
+          expressionStatement: ${ShipPostalCode}
+          alias:
+            - name: ShipPostalCode
+              value: ShipPostalCode
+        id: shippostalcode
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: ShipCountry
+        nullable: true
+        expression:
+          expressionStatement: ${ShipCountry}
+          alias:
+            - name: ShipCountry
+              value: ShipCountry
+        id: shipcountry
