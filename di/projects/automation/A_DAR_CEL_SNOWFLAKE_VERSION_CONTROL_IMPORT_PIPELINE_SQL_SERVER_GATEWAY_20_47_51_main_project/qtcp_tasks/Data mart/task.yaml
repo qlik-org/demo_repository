@@ -1,0 +1,12 @@
+properties:
+  name: Data mart
+  id: data_mart-hneu
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-hneu.internalSchema}}'
+    taskSchema: '{{task.data_mart-hneu.taskSchema}}'
+    databaseName: '{{task.data_mart-hneu.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-hneu.warehouseName}}'
