@@ -1,0 +1,18 @@
+properties:
+  name: File-based knowledge mart
+  id: file_based_knowledge_mart-bu-m
+  type: FILE_BASED_KNOWLEDGE_MART
+settings:
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.file_based_knowledge_mart-bu-m.warehouseName}}'
+  indexArtifactsLocation:
+    databricksVectorSearchEndpoint: '{{task.file_based_knowledge_mart-bu-m.databricksVectorSearchEndpoint}}'
+    schema: '{{task.file_based_knowledge_mart-bu-m.indexSchema}}'
+    name: '{{task.file_based_knowledge_mart-bu-m.indexName}}'
+    database: '{{task.file_based_knowledge_mart-bu-m.indexDatabase}}'
+  llmSettings:
+    kindId: llm:snowflake
+    parameters:
+      embedding_model: nv-embed-qa-4
+      completion_model: mistral-7b
