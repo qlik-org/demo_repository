@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-hneg
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-hneg.internalSchema}}'
+    taskSchema: '{{task.storage-hneg.taskSchema}}'
+    databaseName: '{{task.storage-hneg.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-hneg.warehouseName}}'
