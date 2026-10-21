@@ -1,0 +1,245 @@
+properties:
+  id: orders-mjmt
+  name: Orders
+  inputDatasets:
+    - datasetId: orders-bu-p
+      name: Orders
+      taskId: storage_1-mjmp
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Orders
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: CustomerID
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: customerid
+        properties:
+          documentMetadata: false
+      - name: EmployeeID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: employeeid
+        properties:
+          documentMetadata: false
+      - name: OrderDate
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orderdate
+        properties:
+          documentMetadata: false
+      - name: RequiredDate
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: requireddate
+        properties:
+          documentMetadata: false
+      - name: ShippedDate
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: shippeddate
+        properties:
+          documentMetadata: false
+      - name: ShipVia
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: shipvia
+        properties:
+          documentMetadata: false
+      - name: Freight
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: freight
+        properties:
+          documentMetadata: false
+      - name: ShipName
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: shipname
+        properties:
+          documentMetadata: false
+      - name: ShipAddress
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: shipaddress
+        properties:
+          documentMetadata: false
+      - name: ShipCity
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipcity
+        properties:
+          documentMetadata: false
+      - name: ShipRegion
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipregion
+        properties:
+          documentMetadata: false
+      - name: ShipPostalCode
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: shippostalcode
+        properties:
+          documentMetadata: false
+      - name: ShipCountry
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipcountry
+        properties:
+          documentMetadata: false
+mappingSettings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: orders-bu-p
+        name: Orders
+        taskId: storage_1-mjmp
+      mappingFields:
+        - columnId: orderid
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnId: customerid
+          expression:
+            expressionStatement: ${CustomerID}
+            alias:
+              - name: CustomerID
+                value: CustomerID
+        - columnId: employeeid
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnId: orderdate
+          expression:
+            expressionStatement: ${OrderDate}
+            alias:
+              - name: OrderDate
+                value: OrderDate
+        - columnId: requireddate
+          expression:
+            expressionStatement: ${RequiredDate}
+            alias:
+              - name: RequiredDate
+                value: RequiredDate
+        - columnId: shippeddate
+          expression:
+            expressionStatement: ${ShippedDate}
+            alias:
+              - name: ShippedDate
+                value: ShippedDate
+        - columnId: shipvia
+          expression:
+            expressionStatement: ${ShipVia}
+            alias:
+              - name: ShipVia
+                value: ShipVia
+        - columnId: freight
+          expression:
+            expressionStatement: ${Freight}
+            alias:
+              - name: Freight
+                value: Freight
+        - columnId: shipname
+          expression:
+            expressionStatement: ${ShipName}
+            alias:
+              - name: ShipName
+                value: ShipName
+        - columnId: shipaddress
+          expression:
+            expressionStatement: ${ShipAddress}
+            alias:
+              - name: ShipAddress
+                value: ShipAddress
+        - columnId: shipcity
+          expression:
+            expressionStatement: ${ShipCity}
+            alias:
+              - name: ShipCity
+                value: ShipCity
+        - columnId: shipregion
+          expression:
+            expressionStatement: ${ShipRegion}
+            alias:
+              - name: ShipRegion
+                value: ShipRegion
+        - columnId: shippostalcode
+          expression:
+            expressionStatement: ${ShipPostalCode}
+            alias:
+              - name: ShipPostalCode
+                value: ShipPostalCode
+        - columnId: shipcountry
+          expression:
+            expressionStatement: ${ShipCountry}
+            alias:
+              - name: ShipCountry
+                value: ShipCountry
+      id: orders_default_mapping-mjmx
+      name: Orders_default_mapping
+      description: ''
