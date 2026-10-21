@@ -1,0 +1,11 @@
+{
+  "id": "$replicate$dbo_orders",
+  "name": "dbo_Orders",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Orders",
+    "dbSchema": "{{task.landing-ijoc:null$_$dbo.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
