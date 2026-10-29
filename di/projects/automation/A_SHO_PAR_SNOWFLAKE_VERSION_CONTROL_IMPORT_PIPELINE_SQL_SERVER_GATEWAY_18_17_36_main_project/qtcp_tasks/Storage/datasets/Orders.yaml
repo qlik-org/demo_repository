@@ -1,0 +1,12 @@
+properties:
+  id: orders-hnek
+  name: Orders
+  inputDatasets:
+    - datasetId: orders
+      taskId: landing-tti4
+transformations:
+  filter:
+    expressionStatement: ${OrderID} < 10300
+    alias:
+      - name: OrderID
+        value: orderid
