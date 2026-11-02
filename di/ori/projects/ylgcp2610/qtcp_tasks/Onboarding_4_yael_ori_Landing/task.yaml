@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding_4_yael_ori_Landing
+  id: onboarding_4_yael_ori_landing-zcoo
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_4_yael_ori_landing-zcoo.taskSchema}}'
+      database: '{{task.onboarding_4_yael_ori_landing-zcoo.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
