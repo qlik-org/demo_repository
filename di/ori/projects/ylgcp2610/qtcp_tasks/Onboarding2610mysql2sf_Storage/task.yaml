@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding2610mysql2sf_Storage
+  id: onboarding2610mysql2sf_storage-zcfl
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding2610mysql2sf_storage-zcfl.internalSchema}}'
+    taskSchema: '{{task.onboarding2610mysql2sf_storage-zcfl.taskSchema}}'
+    databaseName: '{{task.onboarding2610mysql2sf_storage-zcfl.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding2610mysql2sf_storage-zcfl.warehouseName}}'

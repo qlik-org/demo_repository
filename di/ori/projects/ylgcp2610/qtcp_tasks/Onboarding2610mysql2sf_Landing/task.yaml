@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding2610mysql2sf_Landing
+  id: onboarding2610mysql2sf_landing-zcfk
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding2610mysql2sf_landing-zcfk.taskSchema}}'
+      database: '{{task.onboarding2610mysql2sf_landing-zcfk.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
