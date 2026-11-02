@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_Storage
+  id: onboarding_storage-zcjb
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_storage-zcjb.internalSchema}}'
+    taskSchema: '{{task.onboarding_storage-zcjb.taskSchema}}'
+    databaseName: '{{task.onboarding_storage-zcjb.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_storage-zcjb.warehouseName}}'
