@@ -1,0 +1,11 @@
+properties:
+  name: OnboardingduplicatenumOfdatasets2610_Landing
+  id: onboardingduplicatenumofdatasets2610_landing-zchu
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboardingduplicatenumofdatasets2610_landing-zchu.taskSchema}}'
+      database: '{{task.onboardingduplicatenumofdatasets2610_landing-zchu.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
