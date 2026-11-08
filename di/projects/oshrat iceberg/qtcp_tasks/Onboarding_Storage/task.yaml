@@ -1,0 +1,17 @@
+properties:
+  name: Onboarding_Storage
+  id: onboarding_storage-aenb
+  type: STORAGE
+settings:
+  artifactsSettings:
+    liveViewsEnabled: false
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_storage-aenb.internalSchema}}'
+    taskSchema: '{{task.onboarding_storage-aenb.taskSchema}}'
+    databaseName: '{{task.onboarding_storage-aenb.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_storage-aenb.warehouseName}}'
+  tableTypeSettings:
+    icebergSettings:
+      snowflakeExternalVolume: '{{task.onboarding_storage-aenb.snowflakeExternalVolume}}'

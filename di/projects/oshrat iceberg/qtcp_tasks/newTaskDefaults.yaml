@@ -1,0 +1,10 @@
+storage:
+  tableTypeSettings:
+    tableType: ICEBERG
+    icebergSettings:
+      snowflakeExternalVolume: '{{task-type.storage.snowflakeExternalVolume}}'
+transform:
+  tableTypeSettings:
+    tableType: ICEBERG
+    icebergSettings:
+      snowflakeExternalVolume: '{{task-type.transform.snowflakeExternalVolume}}'

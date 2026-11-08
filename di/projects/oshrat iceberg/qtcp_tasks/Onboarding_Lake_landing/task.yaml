@@ -1,0 +1,16 @@
+properties:
+  name: Onboarding_Lake_landing
+  id: onboarding_lake_landing-aena
+  type: LAKE_LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_lake_landing-aena.taskSchema}}'
+  landingAppRuntime:
+    workloadExecutionEngine:
+      name: RND_WH
+  metadata:
+    controlTableSelection:
+      - tableId: DDL_HISTORY
+        targetName: attrep_ddl_history
+        isChecked: false
