@@ -1,0 +1,13 @@
+properties:
+  exportVersion: '1.0'
+  name: '{{projectName}}'
+  space: 'ref{project.current.spaceId}'
+  type: DATA_PIPELINE
+  description: a1a1
+  platformType: SNOWFLAKE
+  platformConnection: '{{platformConnection}}'
+  cloudStagingConnection: '{{cloudStagingConnection}}'
+  projectVersion: '2.0'
+settings:
+  artifactsNaming:
+    prefixSchema: '{{project.current.prefixSchema}}'
