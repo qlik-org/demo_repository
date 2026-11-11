@@ -1,0 +1,60 @@
+properties:
+  id: shippers_storage-p3ea
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers-p3d7
+      name: Shippers_storage
+      taskId: storage-abpE
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: ShipperID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${ShipperID}
+          alias:
+            - name: ShipperID
+              value: ShipperID
+        id: shipperid
+      - datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        name: CompanyName
+        expression:
+          expressionStatement: ${CompanyName}
+          alias:
+            - name: CompanyName
+              value: CompanyName
+        id: companyname
+      - datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        name: PhoneNumber
+        nullable: true
+        expression:
+          expressionStatement: ${PhoneNumber}
+          alias:
+            - name: PhoneNumber
+              value: PhoneNumber
+        id: phone
+      - datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        name: Column1
+        nullable: true
+        expression:
+          expressionStatement: ${NewColumn}
+          alias:
+            - name: NewColumn
+              value: NewColumn
+        id: '7a6770f4-fffb-4a4d-89fd-ac1b1c575dd4'
+    filterExpression:
+      expressionStatement: ${ShipperID} < 5
+      alias:
+        - name: ShipperID
+          value: shipperid

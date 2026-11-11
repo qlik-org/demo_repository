@@ -1,0 +1,11 @@
+properties:
+  id: trans_flow_shippers-p3et
+  name: trans_flow_shippers
+  inputDatasets:
+    - datasetId: shippers-p3d7
+      taskId: storage-abpE
+  transformDatasetSettings: {}
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, trans_flow_shippers)}}'
+    targetId: '31d17b18-f28c-4c99-806f-653b388678e7'
+    dataflowTargetState: VALID

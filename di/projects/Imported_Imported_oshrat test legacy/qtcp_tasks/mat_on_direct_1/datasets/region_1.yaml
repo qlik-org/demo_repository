@@ -1,0 +1,34 @@
+properties:
+  id: region-RZeM
+  name: region_1
+  inputDatasets:
+    - datasetId: region-abtY
+      name: Region
+      taskId: transform-fgWr
+  datasetAttributes:
+    materialized: ON
+    hasHistory: ON
+    hasChanges: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+        name: RegionID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${RegionID}
+          alias:
+            - name: RegionID
+              value: RegionID
+        id: regionid
+      - datatype:
+          type: WSTRING
+          length: 50
+        name: RegionDescription
+        expression:
+          expressionStatement: ${RegionDescription}
+          alias:
+            - name: RegionDescription
+              value: RegionDescription
+        id: regiondescription

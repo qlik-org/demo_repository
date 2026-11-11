@@ -1,0 +1,10 @@
+properties:
+  id: trans_flow_region_4-u4o0
+  name: trans_flow_region_4
+  inputDatasets:
+    - datasetId: sql_region-9tda
+      taskId: transform_custom-9tdy
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, trans_flow_region_4)}}'
+    targetId: c119e622-51d2-43f2-aa0f-028263b7d3e5
+    dataflowTargetState: VALID

@@ -1,0 +1,25 @@
+properties:
+  id: sql_region_6-7gfm
+  name: sql_region_4
+  inputDatasets:
+    - datasetId: sql_region-9tda
+      name: sql_region
+      taskId: transform_custom-9tdy
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+        name: RegionID
+        primaryKeyOrdinal: 1
+        id: regionid
+      - datatype:
+          type: WSTRING
+          length: 50
+        name: RegionDescription
+        id: regiondescription
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${sql_region}
+      alias:
+        - name: sql_region
+          value: '{{ref(project.current.projectId)}}$_$transform_custom-9tdy$_$sql_region-9tda'

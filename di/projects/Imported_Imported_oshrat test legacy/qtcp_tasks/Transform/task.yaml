@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-1fgo
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-1fgo.internalSchema}}'
+    taskSchema: '{{task.transform-1fgo.taskSchema}}'
+    databaseName: '{{task.transform-1fgo.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-1fgo.warehouseName}}'

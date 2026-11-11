@@ -1,0 +1,8 @@
+rules:
+  - actionType: RENAME_TABLE
+    scope:
+      whereTableName: Shippers
+    action:
+      renameType: ADD_SUFFIX
+      value: _storage
+    name: Rule

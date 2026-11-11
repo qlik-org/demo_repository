@@ -1,0 +1,13 @@
+properties:
+  id: trans_flow_shippers_1-p3eq
+  name: trans_flow_shippers_1
+  inputDatasets:
+    - datasetId: shippers_storage-p3ea
+      taskId: transform-fgWr
+  datasetAttributes:
+    materialized: ON
+  transformDatasetSettings: {}
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, trans_flow_shippers_1)}}'
+    targetId: '2aa286d4-b86f-4ac4-bcae-57dddc5e45c8'
+    dataflowTargetState: VALID

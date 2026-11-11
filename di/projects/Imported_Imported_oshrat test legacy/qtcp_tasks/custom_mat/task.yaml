@@ -1,0 +1,15 @@
+properties:
+  name: custom_mat
+  id: transform_custom-9tdy
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+    createConsumptionViews: false
+  artifactsLocation:
+    internalSchema: '{{task.transform_custom-9tdy.internalSchema}}'
+    taskSchema: '{{task.transform_custom-9tdy.taskSchema}}'
+    databaseName: '{{task.transform_custom-9tdy.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_custom-9tdy.warehouseName}}'

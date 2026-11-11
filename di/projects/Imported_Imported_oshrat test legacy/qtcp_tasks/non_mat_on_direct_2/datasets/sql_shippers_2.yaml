@@ -1,0 +1,48 @@
+properties:
+  id: sql_shippers_2-p3eh
+  name: sql_shippers_2
+  inputDatasets:
+    - datasetId: shippers_storage-p3ea
+      name: Shippers
+      taskId: transform-fgWr
+  datasetAttributes:
+    materialized: OFF
+  tableDef:
+    columns:
+      - datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        name: ShipperID
+        primaryKeyOrdinal: 1
+        id: shipperid
+      - datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        name: CompanyName
+        id: companyname
+      - datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        name: Phone_Number
+        nullable: true
+        id: phone_number
+      - datatype:
+          type: STRING
+          length: 60
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(60)
+        name: Column1
+        nullable: true
+        id: column1
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Shippers}
+      alias:
+        - name: Shippers
+          value: '{{ref(project.current.projectId)}}$_$transform-fgWr$_$shippers_storage-p3ea'

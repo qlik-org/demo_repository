@@ -1,0 +1,12 @@
+properties:
+  id: trans_flow_region_3-y6sy
+  name: trans_flow_region_3
+  inputDatasets:
+    - datasetId: sql_region-9tda
+      taskId: transform_custom-9tdy
+  datasetAttributes:
+    materialized: ON
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, trans_flow_region_3)}}'
+    targetId: a2503e9a-02a4-4937-94ae-3bb2d204e4d1
+    dataflowTargetState: VALID

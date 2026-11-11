@@ -1,0 +1,25 @@
+properties:
+  id: sql_region-9tda
+  name: sql_region
+  inputDatasets:
+    - datasetId: region-abpG
+      name: Region
+      taskId: storage-abpE
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+        name: RegionID
+        primaryKeyOrdinal: 1
+        id: regionid
+      - datatype:
+          type: WSTRING
+          length: 50
+        name: RegionDescription
+        id: regiondescription
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Region}
+      alias:
+        - name: Region
+          value: '{{ref(project.current.projectId)}}$_$storage-abpE$_$region-abpG'

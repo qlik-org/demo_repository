@@ -1,0 +1,12 @@
+properties:
+  id: trans_flow_region_mat-9tdx
+  name: trans_flow_region_1
+  inputDatasets:
+    - datasetId: region-abtY
+      taskId: transform-fgWr
+  datasetAttributes:
+    materialized: ON
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, trans_flow_region_1)}}'
+    targetId: '94008558-d4c7-4f6f-9265-cd10aca261c2'
+    dataflowTargetState: VALID

@@ -1,0 +1,13 @@
+properties:
+  id: trans_flow_shippers_3-2ggg
+  name: trans_flow_shippers_3
+  inputDatasets:
+    - datasetId: sql_shippers-2gga
+      taskId: transform_custom-9tdy
+  datasetAttributes:
+    materialized: ON
+  transformDatasetSettings: {}
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, trans_flow_shippers_3)}}'
+    targetId: f47be897-8de2-4952-a1d5-0b1eed70dd0e
+    dataflowTargetState: VALID

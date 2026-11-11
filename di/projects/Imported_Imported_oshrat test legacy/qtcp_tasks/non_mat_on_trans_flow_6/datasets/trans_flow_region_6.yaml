@@ -1,0 +1,10 @@
+properties:
+  id: trans_flow_region_6-altp
+  name: trans_flow_region_6
+  inputDatasets:
+    - datasetId: trans_flow_region-u4ny
+      taskId: transform_trans_flow-7geq
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, trans_flow_region_6)}}'
+    targetId: '2af8cc4d-cc26-438b-a3f4-22f1e05201de'
+    dataflowTargetState: VALID

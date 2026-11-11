@@ -1,0 +1,46 @@
+properties:
+  id: sql_shippers_5-p3ey
+  name: sql_shippers_5
+  inputDatasets:
+    - datasetId: trans_flow_shippers-p3et
+      name: trans_flow_shippers
+      taskId: transform_trans_flow-7geq
+  tableDef:
+    columns:
+      - datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        name: ShipperID
+        primaryKeyOrdinal: 1
+        id: shipperid
+      - datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        name: CompanyName
+        id: companyname
+      - datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        name: PhoneNumber
+        nullable: true
+        id: phonenumber
+      - datatype:
+          type: STRING
+          length: 80
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(80)
+        name: NewColumn
+        nullable: true
+        id: newcolumn
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${trans_flow_shippers}
+      alias:
+        - name: trans_flow_shippers
+          value: '{{ref(project.current.projectId)}}$_$transform_trans_flow-7geq$_$trans_flow_shippers-p3et'

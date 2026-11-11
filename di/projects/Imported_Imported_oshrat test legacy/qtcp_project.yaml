@@ -1,0 +1,12 @@
+properties:
+  exportVersion: '1.0'
+  name: '{{projectName}}'
+  type: DATA_PIPELINE
+  description: Test
+  platformType: SNOWFLAKE
+  platformConnection: '{{platformConnection}}'
+  cloudStagingConnection: '{{cloudStagingConnection}}'
+  projectVersion: '2.0'
+settings:
+  artifactsNaming:
+    prefixSchema: '{{project.current.prefixSchema}}'

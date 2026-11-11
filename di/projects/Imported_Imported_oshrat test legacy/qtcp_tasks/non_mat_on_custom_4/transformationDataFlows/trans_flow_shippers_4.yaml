@@ -1,0 +1,111 @@
+name: trans_flow_shippers_4
+description: ''
+context:
+  projectId: '{{ref(project.current.projectId)}}'
+  dataAppId: non_mat_on_custom_non_mat-gxua
+graph: |-
+  {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "5ab523e7-fa3a-408c-ba55-d9e439db8511",
+        "label": "sql_shippers",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "041b4873-e993-4afc-a0c3-b491ed8dcbc3",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "transform_custom-9tdy",
+              "entityId": "sql_shippers-2gga"
+            },
+            "configuration": {
+              "name": "sql_shippers"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "4a00f322-8fff-4923-9342-09d73d646dd2",
+        "label": "trans_flow_shippers_4",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "2771a9c0-ae9c-43e6-8562-8d0a46b86e22",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "trans_flow_shippers_4",
+              "settings": {
+                "materialized": "INHERIT",
+                "createConsumptionViews": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "ShipperID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CompanyName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "RegionDescription",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "7f33c4dd-f481-4a20-8b0d-5f76706f7418",
+        "sourceHandle": "041b4873-e993-4afc-a0c3-b491ed8dcbc3",
+        "targetHandle": "2771a9c0-ae9c-43e6-8562-8d0a46b86e22"
+      }
+    ]
+  }
+modelVersion: '1.0.0'

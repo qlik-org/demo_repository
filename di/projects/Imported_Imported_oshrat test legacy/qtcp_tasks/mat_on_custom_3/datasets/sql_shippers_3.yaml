@@ -1,0 +1,47 @@
+properties:
+  id: sql_shippers_3-2ggf
+  name: sql_shippers_3
+  inputDatasets:
+    - datasetId: sql_shippers-2gga
+      name: sql_shippers
+      taskId: transform_custom-9tdy
+  datasetAttributes:
+    materialized: ON
+  tableDef:
+    columns:
+      - datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        name: ShipperID
+        primaryKeyOrdinal: 1
+        id: shipperid
+      - datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        name: CompanyName
+        id: companyname
+      - datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        name: Phone
+        nullable: true
+        id: phone
+      - datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        name: RegionDescription
+        id: regiondescription
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${sql_shippers}
+      alias:
+        - name: sql_shippers
+          value: '{{ref(project.current.projectId)}}$_$transform_custom-9tdy$_$sql_shippers-2gga'

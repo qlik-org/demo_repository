@@ -1,0 +1,9 @@
+sourceConnection: '{{task.landing-abpD.sourceConnection}}'
+explicitlySelected:
+  - database: DIS_AUTOMATION
+    name: Region
+    schema: dbo
+    type: TABLE
+  - name: Shippers
+    schema: '{{task.landing-abpD:null$_$dbo.schema}}'
+    type: TABLE

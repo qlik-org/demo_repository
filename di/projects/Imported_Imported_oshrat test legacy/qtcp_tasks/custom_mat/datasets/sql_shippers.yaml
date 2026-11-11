@@ -1,0 +1,60 @@
+properties:
+  id: sql_shippers-2gga
+  name: sql_shippers
+  inputDatasets:
+    - datasetId: region-abpG
+      name: Region
+      taskId: storage-abpE
+    - datasetId: shippers-p3d7
+      name: Shippers_storage
+      taskId: storage-abpE
+  tableDef:
+    columns:
+      - datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        name: ShipperID
+        primaryKeyOrdinal: 1
+        id: shipperid
+      - datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        name: CompanyName
+        id: companyname
+      - datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        name: Phone
+        nullable: true
+        id: phone
+      - datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        name: RegionDescription
+        id: regiondescription
+  customDatasetSettings:
+    customSql:
+      expressionStatement: |-
+        SELECT d."ShipperID", d."CompanyName", d."PhoneNumber" AS "Phone", r."RegionDescription"
+        FROM (SELECT * FROM ${Shippers_storage}) AS d
+        JOIN (SELECT * FROM ${Region}) AS r
+            ON d."ShipperID" = r."RegionID";
+      alias:
+        - name: Shippers_storage
+          value: '{{ref(project.current.projectId)}}$_$storage-abpE$_$shippers-p3d7'
+        - name: Region
+          value: '{{ref(project.current.projectId)}}$_$storage-abpE$_$region-abpG'
+transformations:
+  filter:
+    expressionStatement: ${ShipperID} < 5
+    alias:
+      - name: ShipperID
+        value: shipperid
