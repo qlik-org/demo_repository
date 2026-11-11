@@ -1,0 +1,11 @@
+properties:
+  id: trans_flow_region-u4ny
+  name: trans_flow_region
+  inputDatasets:
+    - datasetId: region-abpG
+      taskId: storage-abpE
+  transformDatasetSettings: {}
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, trans_flow_region)}}'
+    targetId: '95d6e45e-ca74-400f-83b3-c13c8c66b062'
+    dataflowTargetState: VALID

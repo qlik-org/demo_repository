@@ -1,0 +1,15 @@
+properties:
+  name: trans_flow_mat
+  id: transform_trans_flow-7geq
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+    createConsumptionViews: false
+  artifactsLocation:
+    internalSchema: '{{task.transform_trans_flow-7geq.internalSchema}}'
+    taskSchema: '{{task.transform_trans_flow-7geq.taskSchema}}'
+    databaseName: '{{task.transform_trans_flow-7geq.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_trans_flow-7geq.warehouseName}}'

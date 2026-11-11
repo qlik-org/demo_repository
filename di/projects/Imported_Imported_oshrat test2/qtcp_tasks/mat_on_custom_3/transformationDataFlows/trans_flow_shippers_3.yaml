@@ -1,0 +1,111 @@
+name: trans_flow_shippers_3
+description: ''
+context:
+  projectId: '{{ref(project.current.projectId)}}'
+  dataAppId: mat_based_on_custom_non_mat-gxtz
+graph: |-
+  {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "0e95413d-9597-44dd-8e3d-e3d58e5fccf9",
+        "label": "sql_shippers",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "d4cfef00-c0a3-4d86-b881-6147876dd71e",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "transform_custom-9tdy",
+              "entityId": "sql_shippers-2gga"
+            },
+            "configuration": {
+              "name": "sql_shippers"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "f47be897-8de2-4952-a1d5-0b1eed70dd0e",
+        "label": "trans_flow_shippers_3",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "3f876ef3-5799-4096-bd20-05034b5f10b9",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "trans_flow_shippers_3",
+              "settings": {
+                "materialized": "ON",
+                "createConsumptionViews": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "ShipperID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CompanyName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "RegionDescription",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "1deff3be-ee03-4a60-9012-d7eeaff95f4b",
+        "sourceHandle": "d4cfef00-c0a3-4d86-b881-6147876dd71e",
+        "targetHandle": "3f876ef3-5799-4096-bd20-05034b5f10b9"
+      }
+    ]
+  }
+modelVersion: '1.0.0'

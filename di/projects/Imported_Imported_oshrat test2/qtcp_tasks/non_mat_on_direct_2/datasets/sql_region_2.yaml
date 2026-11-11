@@ -1,0 +1,28 @@
+properties:
+  id: sql_non_mat-ZiNP
+  name: sql_region_2
+  inputDatasets:
+    - datasetId: region-abtY
+      name: Region
+      taskId: transform-fgWr
+  datasetAttributes:
+    materialized: OFF
+  tableDef:
+    columns:
+      - datatype:
+          type: NUMERIC
+          precision: 38
+        name: RegionID
+        primaryKeyOrdinal: 1
+        id: regionid
+      - datatype:
+          type: STRING
+          length: 50
+        name: RegionDescription
+        id: regiondescription
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Region}
+      alias:
+        - name: Region
+          value: '{{ref(project.current.projectId)}}$_$transform-fgWr$_$region-abtY'

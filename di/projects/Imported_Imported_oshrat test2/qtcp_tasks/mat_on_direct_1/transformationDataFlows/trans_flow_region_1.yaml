@@ -1,0 +1,101 @@
+name: trans_flow_region_1
+description: ''
+context:
+  projectId: '{{ref(project.current.projectId)}}'
+  dataAppId: transform_11-tuIa
+graph: |-
+  {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "b0c4864f-7e42-47f1-bdcb-56461789ae00",
+        "label": "Region",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "136f0100-da1a-4fc4-8fb6-4cf703718902",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "transform-fgWr",
+              "entityId": "region-abtY"
+            },
+            "configuration": {
+              "name": "Region"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "94008558-d4c7-4f6f-9265-cd10aca261c2",
+        "label": "trans_flow_region_1",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "70f56252-5997-4657-990f-2c84af16e784",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "trans_flow_region_1",
+              "settings": {
+                "materialized": "ON",
+                "createConsumptionViews": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "RegionID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "RegionDescription",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "a87bb2df-df8c-4dea-9bbf-87ecc4bc6d7a",
+        "sourceHandle": "136f0100-da1a-4fc4-8fb6-4cf703718902",
+        "targetHandle": "70f56252-5997-4657-990f-2c84af16e784"
+      }
+    ]
+  }
+modelVersion: '1.0.0'

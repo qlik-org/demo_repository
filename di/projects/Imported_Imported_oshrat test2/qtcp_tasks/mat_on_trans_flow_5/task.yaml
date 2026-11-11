@@ -1,0 +1,14 @@
+properties:
+  name: mat_on_trans_flow_5
+  id: mat_on_trans_flow_non_mat-gxt-
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.mat_on_trans_flow_non_mat-gxt-.internalSchema}}'
+    taskSchema: '{{task.mat_on_trans_flow_non_mat-gxt-.taskSchema}}'
+    databaseName: '{{task.mat_on_trans_flow_non_mat-gxt-.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mat_on_trans_flow_non_mat-gxt-.warehouseName}}'

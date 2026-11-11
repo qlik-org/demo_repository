@@ -1,0 +1,12 @@
+properties:
+  name: mat_on_custom_3
+  id: mat_based_on_custom_non_mat-gxtz
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mat_based_on_custom_non_mat-gxtz.internalSchema}}'
+    taskSchema: '{{task.mat_based_on_custom_non_mat-gxtz.taskSchema}}'
+    databaseName: '{{task.mat_based_on_custom_non_mat-gxtz.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mat_based_on_custom_non_mat-gxtz.warehouseName}}'

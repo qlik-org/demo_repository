@@ -1,0 +1,61 @@
+properties:
+  id: sql_shippers-2ggd
+  name: shippers_3
+  inputDatasets:
+    - datasetId: sql_shippers-2gga
+      name: sql_shippers
+      taskId: transform_custom-9tdy
+  datasetAttributes:
+    materialized: ON
+  tableDef:
+    columns:
+      - datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        name: ShipperID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${ShipperID}
+          alias:
+            - name: ShipperID
+              value: ShipperID
+        id: shipperid
+      - datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        name: CompanyName
+        expression:
+          expressionStatement: ${CompanyName}
+          alias:
+            - name: CompanyName
+              value: CompanyName
+        id: companyname
+      - datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        name: Phone
+        nullable: true
+        expression:
+          expressionStatement: ${Phone}
+          alias:
+            - name: Phone
+              value: Phone
+        id: phone
+      - datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        name: RegionDescription
+        expression:
+          expressionStatement: ${RegionDescription}
+          alias:
+            - name: RegionDescription
+              value: RegionDescription
+        id: regiondescription

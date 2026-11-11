@@ -1,0 +1,56 @@
+properties:
+  id: trans_flow_shippers-2ggu
+  name: shippers_6
+  inputDatasets:
+    - datasetId: trans_flow_shippers-p3et
+      name: trans_flow_shippers
+      taskId: transform_trans_flow-7geq
+  tableDef:
+    columns:
+      - datatype:
+          type: NUMERIC
+          precision: 38
+          originalTypeFull: NUMBER(38,0)
+        name: ShipperID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${ShipperID}
+          alias:
+            - name: ShipperID
+              value: ShipperID
+        id: shipperid
+      - datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        name: CompanyName
+        expression:
+          expressionStatement: ${CompanyName}
+          alias:
+            - name: CompanyName
+              value: CompanyName
+        id: companyname
+      - datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        name: PhoneNumber
+        nullable: true
+        expression:
+          expressionStatement: ${PhoneNumber}
+          alias:
+            - name: PhoneNumber
+              value: PhoneNumber
+        id: phonenumber
+      - datatype:
+          type: WSTRING
+          length: 80
+          originalTypeFull: NVARCHAR(80)
+        name: NewColumn
+        nullable: true
+        expression:
+          expressionStatement: ${NewColumn}
+          alias:
+            - name: NewColumn
+              value: NewColumn
+        id: newcolumn

@@ -1,0 +1,30 @@
+properties:
+  id: trans_flow_region-y6si
+  name: region_6
+  inputDatasets:
+    - datasetId: trans_flow_region-u4ny
+      name: trans_flow_region
+      taskId: transform_trans_flow-7geq
+  tableDef:
+    columns:
+      - datatype:
+          type: NUMERIC
+          precision: 38
+        name: RegionID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${RegionID}
+          alias:
+            - name: RegionID
+              value: RegionID
+        id: regionid
+      - datatype:
+          type: WSTRING
+          length: 50
+        name: RegionDescription
+        expression:
+          expressionStatement: ${RegionDescription}
+          alias:
+            - name: RegionDescription
+              value: RegionDescription
+        id: regiondescription

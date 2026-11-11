@@ -1,0 +1,25 @@
+properties:
+  id: sql_region_6-7gfq
+  name: sql_region_6
+  inputDatasets:
+    - datasetId: trans_flow_region-u4ny
+      name: trans_flow_region
+      taskId: transform_trans_flow-7geq
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+        name: RegionID
+        primaryKeyOrdinal: 1
+        id: regionid
+      - datatype:
+          type: WSTRING
+          length: 50
+        name: RegionDescription
+        id: regiondescription
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${trans_flow_region}
+      alias:
+        - name: trans_flow_region
+          value: '{{ref(project.current.projectId)}}$_$transform_trans_flow-7geq$_$trans_flow_region-u4ny'

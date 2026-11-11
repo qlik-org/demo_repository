@@ -1,0 +1,15 @@
+properties:
+  name: direct_mat
+  id: transform-fgWr
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+    createConsumptionViews: false
+  artifactsLocation:
+    internalSchema: '{{task.transform-fgWr.internalSchema}}'
+    taskSchema: '{{task.transform-fgWr.taskSchema}}'
+    databaseName: '{{task.transform-fgWr.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-fgWr.warehouseName}}'

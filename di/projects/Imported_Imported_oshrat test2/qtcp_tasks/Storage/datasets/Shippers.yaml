@@ -1,0 +1,30 @@
+properties:
+  id: shippers-p3d7
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers
+      taskId: landing-abpD
+transformations:
+  filter:
+    expressionStatement: ${ShipperID} > 1
+    alias:
+      - name: ShipperID
+        value: shipperid
+  columnTransformations:
+    - action: KEEP
+      columnName: Phone
+      newColumnName: PhoneNumber
+    - action: ADD
+      columnName: NewColumn
+      newDataType:
+        type: WSTRING
+        length: 80
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${CompanyName}
+        alias:
+          - name: CompanyName
+            value: companyname
+      addedColumnId: '7a6770f4-fffb-4a4d-89fd-ac1b1c575dd4'

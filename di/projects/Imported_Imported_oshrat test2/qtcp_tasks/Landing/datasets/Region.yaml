@@ -1,0 +1,18 @@
+properties:
+  id: region
+  name: Region
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: Newcolum
+      newDataType:
+        type: WSTRING
+        length: 10
+        precision: 0
+        scale: 0
+        originalTypeFull: NVARCHAR(10)
+      expression: {}
+      addedColumnId: newcolum
+sourceTable:
+  schema: '{{task.landing-abpD:null$_$dbo.schema}}'
+  name: Region

@@ -1,0 +1,9 @@
+rules:
+  - actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: PhoneNumber
+    action:
+      renameType: RENAME
+      value: Phone_Number
+    name: Rule

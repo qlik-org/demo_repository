@@ -1,0 +1,16 @@
+properties:
+  name: Storage
+  id: storage-abpE
+  type: STORAGE
+settings:
+  ddlHandlingPolicy:
+    renameColumn: IGNORE
+  artifactsSettings:
+    createConsumptionViews: false
+  artifactsLocation:
+    internalSchema: '{{task.storage-abpE.internalSchema}}'
+    taskSchema: '{{task.storage-abpE.taskSchema}}'
+    databaseName: '{{task.storage-abpE.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-abpE.warehouseName}}'

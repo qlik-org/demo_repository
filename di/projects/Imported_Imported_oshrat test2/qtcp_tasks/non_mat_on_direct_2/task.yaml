@@ -1,0 +1,14 @@
+properties:
+  name: non_mat_on_direct_2
+  id: transform_12-abte
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform_12-abte.internalSchema}}'
+    taskSchema: '{{task.transform_12-abte.taskSchema}}'
+    databaseName: '{{task.transform_12-abte.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_12-abte.warehouseName}}'

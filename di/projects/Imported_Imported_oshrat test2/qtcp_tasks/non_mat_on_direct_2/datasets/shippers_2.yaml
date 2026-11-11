@@ -1,0 +1,57 @@
+properties:
+  id: shippers-p3ef
+  name: shippers_2
+  inputDatasets:
+    - datasetId: shippers_storage-p3ea
+      name: Shippers
+      taskId: transform-fgWr
+  datasetAttributes:
+    materialized: OFF
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: ShipperID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${ShipperID}
+          alias:
+            - name: ShipperID
+              value: ShipperID
+        id: shipperid
+      - datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        name: CompanyName
+        expression:
+          expressionStatement: ${CompanyName}
+          alias:
+            - name: CompanyName
+              value: CompanyName
+        id: companyname
+      - datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        name: Phone_Number
+        nullable: true
+        expression:
+          expressionStatement: ${Phone_Number}
+          alias:
+            - name: Phone_Number
+              value: Phone_Number
+        id: phone
+      - datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        name: Column1
+        nullable: true
+        expression:
+          expressionStatement: ${Column1}
+          alias:
+            - name: Column1
+              value: Column1
+        id: '7a6770f4-fffb-4a4d-89fd-ac1b1c575dd4'

@@ -1,0 +1,29 @@
+properties:
+  id: sql_region-gxui
+  name: region_4
+  inputDatasets:
+    - datasetId: sql_region-9tda
+      name: sql_region
+      taskId: transform_custom-9tdy
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+        name: RegionID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${RegionID}
+          alias:
+            - name: RegionID
+              value: RegionID
+        id: regionid
+      - datatype:
+          type: WSTRING
+          length: 50
+        name: RegionDescription
+        expression:
+          expressionStatement: ${RegionDescription}
+          alias:
+            - name: RegionDescription
+              value: RegionDescription
+        id: regiondescription

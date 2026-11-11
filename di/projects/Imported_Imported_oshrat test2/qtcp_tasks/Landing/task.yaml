@@ -1,0 +1,29 @@
+properties:
+  name: Landing
+  id: landing-abpD
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-abpD.taskSchema}}'
+      database: '{{task.landing-abpD.databaseName}}'
+  landingStorageSettings:
+    folderLocationType: SPECIFIC_FOLDER
+    specificFolder: '{{task.landing-abpD.folder}}'
+  landingAppRuntime:
+    workloadExecutionEngine:
+      name: LOAD_WH
+  fileAttributes:
+    general:
+      maxFileSize: 2000
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false
+  ddlHandlingPolicy:
+    renameColumn: IGNORE
