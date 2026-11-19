@@ -1,0 +1,33 @@
+relationships:
+  - sourceEntity:
+      datasetId: orders-ijob
+      name: Orders
+      taskId: transform--c0y
+    targetEntity:
+      datasetId: customers-sfwr
+      name: Customers
+      taskId: transform--c0y
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-mhuk
+  - sourceEntity:
+      datasetId: orders-ijob
+      name: Orders
+      taskId: transform--c0y
+    targetEntity:
+      datasetId: employees--c00
+      name: Employees
+      taskId: transform--c0y
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation-vqlk
